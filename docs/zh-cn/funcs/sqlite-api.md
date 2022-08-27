@@ -1,3 +1,9 @@
+---
+title: Sqlite命令函数
+description: EasyClick 自动化脚本 android免root Sqlite命令函数
+keywords: [EasyClick 自动化脚本 android免root Sqlite命令函数]
+---
+
 ## 说明
 - sqlite模块函数主要是用于操作sqlite数据库
 - sqlite模块的对象前缀是sqlite，例如 sqlite.close()这样调用

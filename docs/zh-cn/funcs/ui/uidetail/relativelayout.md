@@ -1,3 +1,10 @@
+---
+title: RelativeLayout绝对布局
+description: EasyClick 自动化脚本 android免root RelativeLayout绝对布局
+keywords: [EasyClick 自动化脚本 android免root RelativeLayout绝对布局]
+---
+
+
 ## 说明
 相对布局是通过相对定位的方式制定控件位置，即以其他的控件或父容器为参照物，摆放控件位置。在设计相对布局时要遵循控件之间的依赖关系，后放入的控件的位置要依赖于先放入的控件。
 ## 使用示例

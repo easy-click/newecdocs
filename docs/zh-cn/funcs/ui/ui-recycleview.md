@@ -1,3 +1,10 @@
+---
+title: 代码编写UI
+description: EasyClick 自动化脚本 android免root 代码编写UI
+keywords: [EasyClick 自动化脚本 android免root 代码编写UI]
+---
+
+
 
 - 使用代码编写UI
 - 这里演示的是使用androidx中的RecyclerView

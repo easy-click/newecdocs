@@ -1,3 +1,9 @@
+---
+title: WebView内嵌浏览器
+description: EasyClick 自动化脚本 android免root WebView内嵌浏览器
+keywords: [EasyClick 自动化脚本 android免root WebView内嵌浏览器]
+---
+
 ## 说明
 WebView内嵌浏览器，支持H5和JS操作
 ## 使用示例

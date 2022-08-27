@@ -1,3 +1,9 @@
+---
+title: Spinner下拉选择框
+description: EasyClick 自动化脚本 android免root Spinner下拉选择框
+keywords: [EasyClick 自动化脚本 android免root Spinner下拉选择框]
+---
+
 ## 说明
 下拉选框
 ## 使用示例

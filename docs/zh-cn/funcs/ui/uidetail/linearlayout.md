@@ -1,3 +1,9 @@
+---
+title: LinearLayout线性布局
+description: EasyClick 自动化脚本 android免root LinearLayout线性布局
+keywords: [EasyClick 自动化脚本 android免root LinearLayout线性布局]
+---
+
 ## 说明
 LinearLayout，中文意思就是线性布局，
 在实际开发中比较常用的布局，它主要以水平和垂直的方式来显示界面中的控件。

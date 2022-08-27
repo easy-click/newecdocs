@@ -5,9 +5,7 @@
 * [更改记录](/zh-cn/changelog.md)
 
 * [工具&教程](/zh-cn/tools/)
-    * [学习教程](/zh-cn/jiaocheng.md)
     * [第一个Demo](/zh-cn/getting-start.md)
-    * [资源下载](/zh-cn/download_resources.md)
     * [开发工具介绍](/zh-cn/funcs/devtools/dev-tools.md)
         * [安装](/zh-cn/funcs/devtools/dev-tools-install.md)
         * [工程相关](/zh-cn/funcs/devtools/dev-tools-project.md)
@@ -54,7 +52,6 @@
       
 
 * [UI编写](/zh-cn/funcs/ui/)
-
     * [原生UI定制](/zh-cn/funcs/ui/ui-custom.md)
         * [JS编写UI](/zh-cn/funcs/ui/ui-js-inter.md)
         * [模板式UI](/zh-cn/funcs/ui/ui-js-template.md)

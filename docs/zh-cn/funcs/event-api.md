@@ -1,3 +1,9 @@
+---
+title: 代理事件
+description: EasyClick 自动化脚本 android免root 代理事件
+keywords: [EasyClick 自动化脚本 android免root 代理事件  ]
+---
+
 ## 说明
 - 代理事件模块运行的所有函数，是需要使用电脑激活才能使用的，免root
 - 代理事件模块的对象前缀是agentEvent，例如 agentEvent.clickPoint这样调用

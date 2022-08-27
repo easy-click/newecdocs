@@ -1,3 +1,9 @@
+---
+title: 原生UI定制
+description: EasyClick 自动化脚本 android免root 原生UI定制
+keywords: [EasyClick 自动化脚本 android免root 原生UI定制]
+---
+
 ## 说明
 - EasyClick 使用WebView支撑HTML的UI方式，并且扩展了JS方法，用于控制EC程序。
 - 新建工程时候可以对应的模板，推荐使用Materialize模板，文档网址 [http://www.materializecss.cn](http://www.materializecss.cn)

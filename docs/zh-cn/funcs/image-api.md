@@ -1,3 +1,8 @@
+---
+title: 图色函数
+description: EasyClick 自动化脚本 android免root 图色函数
+keywords: [EasyClick 自动化脚本 android免root 代理事件  ]
+---
 
 ## 说明
 

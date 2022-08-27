@@ -1,3 +1,9 @@
+---
+title: CardView卡片布局
+description: EasyClick 自动化脚本 android免root CardView卡片布局
+keywords: [EasyClick 自动化脚本 android免root CardView卡片布局]
+---
+
 ## 说明
 CardView 卡片布局
 

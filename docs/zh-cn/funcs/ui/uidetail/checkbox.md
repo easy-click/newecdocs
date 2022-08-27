@@ -1,3 +1,9 @@
+---
+title: CheckBox复选框
+description: EasyClick 自动化脚本 android免root CheckBox复选框
+keywords: [EasyClick 自动化脚本 android免root CheckBox复选框]
+---
+
 ## 说明
 复选框
 ## 使用示例

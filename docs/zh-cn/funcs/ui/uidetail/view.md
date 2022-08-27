@@ -1,3 +1,10 @@
+---
+title: View视图
+description: EasyClick 自动化脚本 android免root View视图
+keywords: [EasyClick 自动化脚本 android免root View视图]
+---
+
+
 ## 说明
 View，最基础的视图
 ## 使用示例

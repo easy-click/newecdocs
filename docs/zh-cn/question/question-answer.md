@@ -1,3 +1,10 @@
+---
+title: 常见问题
+description: EasyClick 自动化脚本 android免root 常见问题
+keywords: [EasyClick 自动化脚本 android免root 常见问题]
+---
+
+
 ## 为什么选择JavaScript语言?
 * 简单易上手，资料多
 * 会基本语法和函数调用就可以编程

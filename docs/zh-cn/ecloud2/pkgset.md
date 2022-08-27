@@ -1,3 +1,9 @@
+---
+title: 云控打包配置
+description: EasyClick 自动化脚本 android免root 云控打包配置
+keywords: [EasyClick 自动化脚本 android免root 云控打包配置]
+---
+
 ### 云控配置说明
 
 1、从 EC 7.8.0 开始，非调试版本的域名只能从开发工具打企业版本包的时候输入，其他无输入途径

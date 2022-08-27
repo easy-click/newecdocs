@@ -1,3 +1,9 @@
+---
+title: 网络函数
+description: EasyClick 自动化脚本 android免root 网络函数
+keywords: [EasyClick 自动化脚本 android免root 网络函数  ]
+---
+
 ## 说明
 - 网络模块函数主要是跟网络请求信息相关联
 - 网络模块的对象前缀是http，例如 http.downloadFile()这样调用

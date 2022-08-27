@@ -1,4 +1,8 @@
-
+---
+title: 云控安装
+description: EasyClick 自动化脚本 android免root 云控安装
+keywords: [EasyClick 自动化脚本 android免root 云控安装]
+---
 
 ## 安装
 

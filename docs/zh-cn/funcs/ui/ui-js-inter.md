@@ -1,3 +1,9 @@
+---
+title: JS与UI交互
+description: EasyClick 自动化脚本 android免root JS与UI交互
+keywords: [EasyClick 自动化脚本 android免root JS与UI交互]
+---
+
 ## 说明
 - 本章节主要讲述JS与UI元素进行交互
 - 和UI交互的的js模块对象统一以 ui开头，例如 ui.toast("msg")

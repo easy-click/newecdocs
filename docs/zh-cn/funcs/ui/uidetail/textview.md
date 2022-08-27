@@ -1,3 +1,10 @@
+---
+title: TextView文本
+description: EasyClick 自动化脚本 android免root TextView文本
+keywords: [EasyClick 自动化脚本 android免root TextView文本]
+---
+
+
 ## 说明
 文本
 ## 使用示例

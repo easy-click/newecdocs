@@ -1,3 +1,9 @@
+---
+title: FlexboxLayout弹性盒子布局
+description: EasyClick 自动化脚本 android免root FlexboxLayout弹性盒子布局
+keywords: [EasyClick 自动化脚本 android免root FlexboxLayout弹性盒子布局]
+---
+
 ## 说明
 Flex是Flexible Box的缩写，意为「弹性布局」，在前端css样式中应用甚为广泛，之前做过React-Native和微信小程序，页面布局大多使用flex弹性布局，可以在不同屏幕尺寸上提供一致的布局结构，可以简便、完整、响应式地实现各种页面布局，今天为大家打开Android移动端的flex布局大门--FlexboxLayout，在android中我们经常所见的标签、流式布局等都可以用FlexboxLayout来实现。
 

@@ -1,3 +1,10 @@
+---
+title: 悬浮窗函数
+description: EasyClick 自动化脚本 android免root 悬浮窗函数
+keywords: [EasyClick 自动化脚本 android免root 悬浮窗函数  ]
+---
+
+
 ## 说明
 - 悬浮窗模块函数主要是跟悬浮窗相关联
 - 悬浮窗模块的对象前缀是floaty，例如 floaty.requestFloatViewPermission()这样调用

@@ -1,3 +1,10 @@
+---
+title: 全局模块
+description: EasyClick 自动化脚本 android免root 全局模块
+keywords: [EasyClick 自动化脚本 android免root 全局模块  ]
+---
+
+
 ## 说明
 
 全局模块是指直接调用方法就可以使用的模块，无需使用前缀对象名称

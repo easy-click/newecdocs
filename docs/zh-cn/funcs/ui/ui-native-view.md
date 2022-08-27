@@ -1,3 +1,9 @@
+---
+title: 原生UI控件
+description: EasyClick 自动化脚本 android免root 原生UI控件
+keywords: [EasyClick 自动化脚本 android免root 原生UI控件]
+---
+
 
 ## 支持以下视图
 - [LinearLayout线性布局](/zh-cn/funcs/ui/uidetail/linearlayout.md)
@@ -5,7 +11,6 @@
 - [RelativeLayout绝对布局](/zh-cn/funcs/ui/uidetail/relativelayout.md)
 - [ScrollView滚动框](/zh-cn/funcs/ui/uidetail/scrollview.md)
 - [HorizontalScrollView滚动框](/zh-cn/funcs/ui/uidetail/h_scrollview.md)
-
 - [View视图](/zh-cn/funcs/ui/uidetail/view.md)
 - [Button按钮](/zh-cn/funcs/ui/uidetail/button.md)
 - [TextView文本](/zh-cn/funcs/ui/uidetail/textview.md)
@@ -17,7 +22,7 @@
 - [WebView内嵌浏览器](/zh-cn/funcs/ui/uidetail/webview.md)
 - [ImageView图像](/zh-cn/funcs/ui/uidetail/imageview.md)
 - [CardView卡片布局](/zh-cn/funcs/ui/uidetail/cardview.md)
-- [Swtich开关按钮](/zh-cn/funcs/ui/uidetail/switch.md)
+- [Switch开关按钮](/zh-cn/funcs/ui/uidetail/switch.md)
 - [FlexboxLayout弹性盒子布局](/zh-cn/funcs/ui/uidetail/flexboxlayout.md)
 - [include标签](/zh-cn/funcs/ui/uidetail/includetag.md)
 - [Canvas标签](/zh-cn/funcs/ui/uidetail/canvas.md)

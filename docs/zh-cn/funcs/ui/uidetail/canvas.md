@@ -1,3 +1,10 @@
+---
+title: Canvas标签
+description: EasyClick 自动化脚本 android免root Canvas标签
+keywords: [EasyClick 自动化脚本 android免root Canvas标签]
+---
+
+
 ## 说明
 Canvas画布组件,可以自己画出很多想要的效果
 

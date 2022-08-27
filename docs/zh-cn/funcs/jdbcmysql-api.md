@@ -1,3 +1,9 @@
+---
+title: JDBC MySQL函数
+description: EasyClick 自动化脚本 android免root JDBC MYSQL 命令函数
+keywords: [EasyClick 自动化脚本 android免root JDBC MYSQL 命令函数]
+---
+
 ## 说明
 - jdbc模块函数主要是用于操作MYSQL或者ORACLE等数据库
 - jdbc模块的对象前缀是jdbc，例如 jdbc.init()这样调用

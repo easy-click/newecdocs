@@ -1,3 +1,10 @@
+---
+title: 全局快捷事件
+description: EasyClick 自动化脚本 android免root 全局快捷事件
+keywords: [EasyClick 自动化脚本 android免root 全局快捷事件  ]
+---
+
+
 ## 说明
 
 全局模块中封装的快捷事件，不用区分是无障碍模式还是代理模式

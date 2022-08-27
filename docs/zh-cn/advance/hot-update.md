@@ -1,3 +1,10 @@
+---
+title: 代码热更新
+description: EasyClick 自动化脚本 android免root 代码热更新
+keywords: [EasyClick 自动化脚本 android免root 代码热更新]
+---
+
+
 ## 什么是热更新
 - 热更新一般用于不用安装程序即可将关键的代码进行更新
 - EC的热更新主要用于更新打包后的自动化测试脚本

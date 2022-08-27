@@ -1,9 +1,15 @@
-# 说明
+---
+title: 插件开发
+description: EasyClick 自动化脚本 android免root 插件开发
+keywords: [EasyClick 自动化脚本 android免root 插件开发]
+---
+
+## 说明
 - 插件本身是一个apk包，和普通的android开发无任何区别
 - 开发的时候可以使用Android Studio进行开发，打包成apk即可
 - 本章节主要介绍使用EasyClick开发开发插件
 
-# 新建插件工程
+## 新建插件工程
 - 使用IDEA创建项目选择'EasyClick 插件工程'
 - 点击下一步并完成，会自动生成对应的java类和配置信息
 <br/>

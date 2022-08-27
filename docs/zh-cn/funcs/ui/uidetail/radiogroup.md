@@ -1,3 +1,9 @@
+---
+title: RadioGroup布局
+description: EasyClick 自动化脚本 android免root RadioGroup布局
+keywords: [EasyClick 自动化脚本 android免root RadioGroup布局]
+---
+
 ## 说明
 RadioGroup用于包裹RadioButton实现只选中一个的效果，继承LinearLayout，包含线性布局的属性
 

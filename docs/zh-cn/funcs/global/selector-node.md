@@ -1,3 +1,8 @@
+---
+title: 选择器&节点
+description: EasyClick 自动化脚本 android免root 选择器&节点
+keywords: [EasyClick 自动化脚本 android免root 选择器&节点  ]
+---
 
 ## 说明
 这个章节主要讲解选择器类使用和节点信息类

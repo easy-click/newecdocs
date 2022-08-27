@@ -1,3 +1,9 @@
+---
+title: 云控函数
+description: EasyClick 自动化脚本 android免root 云控函数
+keywords: [EasyClick 自动化脚本 android免root 云控函数]
+---
+
 ## EC的实例代码
 
 - 以下是云控实例代码

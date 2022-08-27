@@ -1,3 +1,9 @@
+---
+title: Java-JS混合开发
+description: EasyClick 自动化脚本 android免root Java-JS混合开发
+keywords: [EasyClick 自动化脚本 android免root Java-JS混合开发]
+---
+
 ## 说明
 - 混合开发是把java和js放在一起编写，js调用java的方法
 - 编译后java代码和jar包会变成一个defaultplugin.apk文件作为插件使用

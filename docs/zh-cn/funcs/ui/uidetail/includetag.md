@@ -1,3 +1,9 @@
+---
+title: include标签
+description: EasyClick 自动化脚本 android免root include标签
+keywords: [EasyClick 自动化脚本 android免root include标签]
+---
+
 ## 说明
 包含其他布局
 ## 使用示例

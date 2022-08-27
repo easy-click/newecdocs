@@ -1,3 +1,10 @@
+---
+title: FrameLayout帧布局
+description: EasyClick 自动化脚本 android免root FrameLayout帧布局
+keywords: [EasyClick 自动化脚本 android免root FrameLayout帧布局]
+---
+
+
 ## 说明
 FrameLayout，帧布局是最为简单的一种布局，该布局为每个加入其中的控件创建一个空白区域，称为一帧，每个控件占据一帧。采用帧布局时，所有控件都默认显示在屏幕左上角，并按照先后放入的顺序重叠摆放，先放入的将会在最底层，后放入的控件显示在最顶层。帧布局使用于图层设计。
 

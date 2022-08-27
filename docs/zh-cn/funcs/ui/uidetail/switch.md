@@ -1,3 +1,9 @@
+---
+title: Switch开关按钮
+description: EasyClick 自动化脚本 android免root Switch开关按钮
+keywords: [EasyClick 自动化脚本 android免root Switch开关按钮]
+---
+
 ## 说明
 开关按钮
 ## 使用示例

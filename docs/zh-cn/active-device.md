@@ -1,5 +1,10 @@
-- 本章节讲述如何激活设备
+---
+title: 激活设备
+description: EasyClick 自动化脚本 android免root 激活设备
+keywords: [EasyClick 自动化脚本 android免root 激活设备]
+---
 
+- 本章节讲述如何激活设备
 
 
 ## IDEA开发工具激活

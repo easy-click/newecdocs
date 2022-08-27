@@ -1,3 +1,10 @@
+---
+title: 模板式UI
+description: EasyClick 自动化脚本 android免root 模板式UI
+keywords: [EasyClick 自动化脚本 android免root 模板式UI]
+---
+
+
 ## 模板创建
 - 如果不需要和JS进行交互的情况下，可以直接使用模板进行创建
 - 模板创建只需要在项目工程的layout文件夹下创建xml 文件，并编写对应的XML代码即可

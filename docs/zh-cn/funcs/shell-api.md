@@ -1,4 +1,8 @@
-
+---
+title: Shell命令函数
+description: EasyClick 自动化脚本 android免root Shell命令函数
+keywords: [EasyClick 自动化脚本 android免root Shell命令函数]
+---
 ## 说明
 - 代理模式下才能使用该函数，用户执行shell命令
 - shell模块的对象前缀是shell，例如 shell.installApp()这样调用

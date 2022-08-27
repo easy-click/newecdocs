@@ -1,3 +1,9 @@
+---
+title: HorizontalScrollView滚动框
+description: EasyClick 自动化脚本 android免root HorizontalScrollView滚动框
+keywords: [EasyClick 自动化脚本 android免root HorizontalScrollView滚动框]
+---
+
 ## 说明
 可以横向滚动的布局控件，子元素只能有一个
 ## 使用示例

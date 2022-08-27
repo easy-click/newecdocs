@@ -1,3 +1,10 @@
+---
+title: 工具函数
+description: EasyClick 自动化脚本 android免root 工具函数
+keywords: [EasyClick 自动化脚本 android免root 工具函数]
+---
+
+
 ## 说明
 - 工具类模块函数主要是跟Android常用的信息相关联
 - 工具类模块的对象前缀是utils，例如 utils.requestShowLogPermission()这样调用

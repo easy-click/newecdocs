@@ -1,3 +1,10 @@
+---
+title: 线程函数
+description: EasyClick 自动化脚本 android免root 线程函数
+keywords: [EasyClick 自动化脚本 android免root 线程函数]
+---
+
+
 ## 说明
 - 线程模块函数主要是跟线程信息相关联
 - 线程模块的对象前缀是thread，例如 thread.execFuncSync()这样调用

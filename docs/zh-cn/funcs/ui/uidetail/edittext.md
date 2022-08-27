@@ -1,3 +1,9 @@
+---
+title: EditText输入框
+description: EasyClick 自动化脚本 android免root EditText输入框
+keywords: [EasyClick 自动化脚本 android免root EditText输入框]
+---
+
 ## 说明
 文本输入框
 ## 使用示例
