@@ -8,7 +8,7 @@ const ArchivedVersionsDropdownItems = Object.entries(VersionsArchived)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '易点新媒 - 自动化脚本专家',
+  title: 'EasyClick - 自动化脚本专家',
   tagline: '自动化脚本专家',
   url: 'https://ieasyclick.com',
   baseUrl: '/',

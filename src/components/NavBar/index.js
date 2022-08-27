@@ -1,5 +1,5 @@
 import Translate from '@docusaurus/Translate';
-import React, { useEffect, useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from './index.module.scss';
 import NavbarColorModeToggle from '@theme/Navbar/ColorModeToggle';
 import LocaleDropdownNavbarItem from '@site/src/theme/NavbarItem/LocaleDropdownNavbarItem';
@@ -33,7 +33,7 @@ export default function Index(props) {
         <nav className={`${styles.nav_bar} ${styles.width}`}>
           {/* 左侧logo */}
           <a href='/'>
-            <h2>易点新媒 - EasyClick </h2>
+            <h2>EasyClick - 自动化脚本专家</h2>
           </a>
           {/* 右侧列表 */}
           <div className={styles.nav_container}>
@@ -43,23 +43,32 @@ export default function Index(props) {
                   <Translate id='navbar.enterprise'>企业版</Translate>
                 </a>
               </li>
-             
+
               <li>
                 <div className="dropdown dropdown--hoverable">
                   <Translate id='navbar.learn'>产品</Translate>
-                  <img className={styles.iconDropDown} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABUUlEQVRoge3Wr0tdcRzH4WfeKcpwCCIMBAXBIlgWFpYMppUVLUs2i9F/4SbXtrBmsmhZWVpYWrhhRVgZCBMGggiiyIZjTsO9XyZ3XO65P86P8HngE88571c7hBBCCCGEEEIYujpuK371rDE7FRjb6d5kjYAHeFeB0e23i5FeQrQe2KvA+HQHqPUakdSwX4GI9xjtNyIZw4cSIz5ifNCIZAKfSoj4jEfDikgeo1FgRAOTw45IpvClgIhDTOcVkczga44R3/Ak74hkFkc5RBxjvqiIZA7fBxx+/35godCCexZx0mVgljvFUsHb/7OMM/1HnONp4as7eIZLvUdctJ6tlOe4kj3iJ1ZKWZrBKn7pHnGNFyVtzOwlfusc8Qfrpa3r0Zrm4PaIG7wqcVdfNjSHp4i/2Cx10QC2/AvZzvNDD/N8Od5q/jXD65y/FUIIIYRQNXfPaMyAru8lkAAAAABJRU5ErkJggg=="/>
+                  <img className={styles.iconDropDown}
+                       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABUUlEQVRoge3Wr0tdcRzH4WfeKcpwCCIMBAXBIlgWFpYMppUVLUs2i9F/4SbXtrBmsmhZWVpYWrhhRVgZCBMGggiiyIZjTsO9XyZ3XO65P86P8HngE88571c7hBBCCCGEEEIYujpuK371rDE7FRjb6d5kjYAHeFeB0e23i5FeQrQe2KvA+HQHqPUakdSwX4GI9xjtNyIZw4cSIz5ifNCIZAKfSoj4jEfDikgeo1FgRAOTw45IpvClgIhDTOcVkczga44R3/Ak74hkFkc5RBxjvqiIZA7fBxx+/35godCCexZx0mVgljvFUsHb/7OMM/1HnONp4as7eIZLvUdctJ6tlOe4kj3iJ1ZKWZrBKn7pHnGNFyVtzOwlfusc8Qfrpa3r0Zrm4PaIG7wqcVdfNjSHp4i/2Cx10QC2/AvZzvNDD/N8Od5q/jXD65y/FUIIIYRQNXfPaMyAru8lkAAAAABJRU5ErkJggg=="/>
                   <ul className="dropdown__menu">
                     <li>
-                      <a className={`${styles.DropDownFont} dropdown__link`} href="/usescene"><Translate id='navbar.usescene'>易点云测安卓版本</Translate></a>
+                      <a className={`${styles.DropDownFont} dropdown__link`} href="/usescene"><Translate
+                        id='navbar.usescene'>易点云测安卓版本</Translate></a>
                     </li>
                     <li>
-                      <a className={`${styles.DropDownFont} dropdown__link`} href="/case"><Translate id='navbar.case'>易点云测iOS版本</Translate></a>
+                      <a className={`${styles.DropDownFont} dropdown__link`} href="/case"><Translate
+                        id='navbar.case'>易点云测iOS版本</Translate></a>
                     </li>
                     <li>
-                      <a className={`${styles.DropDownFont} dropdown__link`} href="/blog"><Translate id='navbar.blog'>易点云控</Translate></a>
+                      <a className={`${styles.DropDownFont} dropdown__link`} href="/case"><Translate
+                        id='navbar.case'>易点云测PC版本</Translate></a>
                     </li>
                     <li>
-                      <a className={`${styles.DropDownFont} dropdown__link`} href="/blog"><Translate id='navbar.blog'>易点群控</Translate></a>
+                      <a className={`${styles.DropDownFont} dropdown__link`} href="/blog"><Translate
+                        id='navbar.blog'>易点云控</Translate></a>
+                    </li>
+                    <li>
+                      <a className={`${styles.DropDownFont} dropdown__link`} href="/blog"><Translate
+                        id='navbar.blog'>易点群控</Translate></a>
                     </li>
                   </ul>
                 </div>
@@ -82,20 +91,20 @@ export default function Index(props) {
                 <a className={`button button--primary ${styles.buttonQuick}`} href="/docs/">
                   <Translate id='navbar.quickstart'>快速开始</Translate></a>
               </li>
-              <LocaleDropdownNavbarItem dropdownItemsBefore={[]} dropdownItemsAfter={[]} items={[]} />
+              <LocaleDropdownNavbarItem dropdownItemsBefore={[]} dropdownItemsAfter={[]} items={[]}/>
             </ul>
           </div>
           {/* 移动端导航栏 */}
           <div
             className={styles.isMobieNav}
-            style={{ display: 'none' }}
+            style={{display: 'none'}}
             onClick={() => {
               setMenu_Config(!menu_Config);
               setMenu_Config_Drop(!menu_Config_Drop);
             }}
           >
-            {(menu_Config && <img src='/img/menu.svg' alt='' />) || (
-              <img src='/img/close.svg' alt='' />
+            {(menu_Config && <img src='/img/menu.svg' alt=''/>) || (
+              <img src='/img/close.svg' alt=''/>
             )}
           </div>
         </nav>
@@ -111,7 +120,8 @@ export default function Index(props) {
             <li>
               <div className="dropdown dropdown--hoverable">
                 <Translate>产品22</Translate>
-                <img className={styles.iconDropDown} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABUUlEQVRoge3Wr0tdcRzH4WfeKcpwCCIMBAXBIlgWFpYMppUVLUs2i9F/4SbXtrBmsmhZWVpYWrhhRVgZCBMGggiiyIZjTsO9XyZ3XO65P86P8HngE88571c7hBBCCCGEEEIYujpuK371rDE7FRjb6d5kjYAHeFeB0e23i5FeQrQe2KvA+HQHqPUakdSwX4GI9xjtNyIZw4cSIz5ifNCIZAKfSoj4jEfDikgeo1FgRAOTw45IpvClgIhDTOcVkczga44R3/Ak74hkFkc5RBxjvqiIZA7fBxx+/35godCCexZx0mVgljvFUsHb/7OMM/1HnONp4as7eIZLvUdctJ6tlOe4kj3iJ1ZKWZrBKn7pHnGNFyVtzOwlfusc8Qfrpa3r0Zrm4PaIG7wqcVdfNjSHp4i/2Cx10QC2/AvZzvNDD/N8Od5q/jXD65y/FUIIIYRQNXfPaMyAru8lkAAAAABJRU5ErkJggg=="/>
+                <img className={styles.iconDropDown}
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABUUlEQVRoge3Wr0tdcRzH4WfeKcpwCCIMBAXBIlgWFpYMppUVLUs2i9F/4SbXtrBmsmhZWVpYWrhhRVgZCBMGggiiyIZjTsO9XyZ3XO65P86P8HngE88571c7hBBCCCGEEEIYujpuK371rDE7FRjb6d5kjYAHeFeB0e23i5FeQrQe2KvA+HQHqPUakdSwX4GI9xjtNyIZw4cSIz5ifNCIZAKfSoj4jEfDikgeo1FgRAOTw45IpvClgIhDTOcVkczga44R3/Ak74hkFkc5RBxjvqiIZA7fBxx+/35godCCexZx0mVgljvFUsHb/7OMM/1HnONp4as7eIZLvUdctJ6tlOe4kj3iJ1ZKWZrBKn7pHnGNFyVtzOwlfusc8Qfrpa3r0Zrm4PaIG7wqcVdfNjSHp4i/2Cx10QC2/AvZzvNDD/N8Od5q/jXD65y/FUIIIYRQNXfPaMyAru8lkAAAAABJRU5ErkJggg=="/>
                 <ul className="dropdown__menu">
                   <li>
                     <a className={`${styles.DropDownFont} dropdown__link`} href="/usescene">易点云测安卓版本</a>
@@ -133,7 +143,7 @@ export default function Index(props) {
                 <Translate id='navbar.doc'>文档</Translate>
               </a>
             </li>
-          
+
           </ul>
         </div>
       )}

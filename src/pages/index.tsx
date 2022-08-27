@@ -81,7 +81,7 @@ export default function Home() {
                         <animated.div style={animatedTexts[0]} className={styles.rainbond_description}>
                             <Translate id='first.description'>
                                 易点新媒旗下EasyClick自动化产品,
-                                安卓&iOS自动化脚本，自动化测试专业工具，支持多个平台快速构建自动化测试脚本.
+                                安卓&iOS&PC自动化脚本，自动化测试专业工具，支持多个平台快速构建自动化测试脚本.
                                 新媒体云控专业营销平台，多端控制设备，实时远程投屏控制.
                             </Translate>
                         </animated.div>
