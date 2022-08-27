@@ -20,7 +20,7 @@
 
 预览(不同按钮颜色为了找色方便): 
 
-<img src="zh-cn/images/image-20220711100908095.png" alt="image-20220711100908095" style="zoom: 33%;" />
+<img src="/iosimg/image-20220711100908095.png" alt="image-20220711100908095" style={{zoom:'50%'}} />
 
 ### 服务器部署模式
 

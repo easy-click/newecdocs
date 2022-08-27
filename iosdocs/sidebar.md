@@ -19,9 +19,7 @@
 
     * [全局模块](/zh-cn/funcs/global/global.md)
     * [全局快捷事件](/zh-cn/funcs/global/global-shortcut.md)
-
     - [节点函数](/zh-cn/funcs/node-api.md)
-
     * [图色函数](/zh-cn/funcs/image-api.md)
     * [OCR识别](/zh-cn/funcs/ocr-api.md)
     * [设备函数](/zh-cn/funcs/device-api.md)

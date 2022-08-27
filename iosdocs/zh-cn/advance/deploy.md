@@ -39,11 +39,11 @@
 
 - 点击**分布式地址设置**,输入桥接所在的ip地址，点击 **开始设置**, 默认会将设备自动绑定到查找的IP上
 
-  <img src="zh-cn/images/image-20220725135157165.png" alt="image-20220725135157165" style="zoom:50%;" />
+  <img src="/iosimg/image-20220725135157165.png" alt="image-20220725135157165" style={{zoom:'50%'}} />
 
 - 查看设置结果
 
-<img src="zh-cn/images/image-20220725135342443.png" alt="image-20220725135342443" style="zoom:50%;" />
+<img src="/iosimg/image-20220725135342443.png" alt="image-20220725135342443" style={{zoom:'50%'}} />
 
 
 

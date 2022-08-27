@@ -8,16 +8,16 @@
 
 - ios的开发和安卓的开发采用的是多模块方式
 - 先打开一个空文件夹
-  - <img src="zh-cn/images/image-20220105095538754.png" alt="image-20220105095538754" style="zoom:25%;" />
+  - <img src="/iosimg/image-20220105095538754.png" alt="image-20220105095538754" style={{zoom:'50%'}} />
 - 右键选择新建module
-  - <img src="zh-cn/images/image-20220105095622057.png" alt="image-20220105095622057" style="zoom:25%;" />
+  - <img src="/iosimg/image-20220105095622057.png" alt="image-20220105095622057" style={{zoom:'50%'}} />
 
 
 
 - 选择ios项目，输入项目名称，选择next
-  - <img src="zh-cn/images/image-20220105095702169.png" alt="image-20220105095702169" style="zoom:25%;" />
+  - <img src="/iosimg/image-20220105095702169.png" alt="image-20220105095702169" style={{zoom:'50%'}} />
 - 选择链接设备，注意，链接设备前，请启动中控，用于中转链接
-  - <img src="zh-cn/images/image-20220105095753431.png" alt="image-20220105095753431" style="zoom:25%;" />
+  - <img src="/iosimg/image-20220105095753431.png" alt="image-20220105095753431" style={{zoom:'50%'}} />
 
 
 
@@ -31,10 +31,10 @@
 
 - 链接
 
-<img src="zh-cn/images/image-20220105095753431.png" alt="image-20220105095753431" style="zoom:25%;" />
+<img src="/iosimg/image-20220105095753431.png" alt="image-20220105095753431" style={{zoom:'50%'}} />
 
 - 默认地址无需修改，除非你修改了中控的端口
 
-<img src="zh-cn/images/image-20220105101413477.png" alt="image-20220105101413477" style="zoom:25%;" />
+<img src="/iosimg/image-20220105101413477.png" alt="image-20220105101413477" style={{zoom:'50%'}} />
 
 - 点击确定，就能看到链接状态了
