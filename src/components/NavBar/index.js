@@ -56,16 +56,13 @@ export default function Index(props) {
                   <ul className="dropdown__menu">
                     <li>
                       <a className={`${styles.DropDownFont} dropdown__link`} href="/usescene"><Translate
-                        id='navbar.usescene'>易点云测安卓版本</Translate></a>
+                        id='navbar.usescene'>易点云测安卓版</Translate></a>
                     </li>
                     <li>
                       <a className={`${styles.DropDownFont} dropdown__link`} href="/case"><Translate
-                        id='navbar.case'>易点云测iOS版本</Translate></a>
+                        id='navbar.case'>易点云测iOS版</Translate></a>
                     </li>
-                    <li>
-                      <a className={`${styles.DropDownFont} dropdown__link`} href="/case"><Translate
-                        id='navbar.case'>易点云测PC版本</Translate></a>
-                    </li>
+
                   </ul>
                 </div>
               </li>
