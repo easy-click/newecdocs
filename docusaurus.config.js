@@ -15,7 +15,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/rainbond.png',
-  organizationName: 'goodrain', // Usually your GitHub org/user name.
+  organizationName: 'easyclick', // Usually your GitHub org/user name.
   projectName: 'easyclick-docs', // Usually your repo name.
   i18n: {
     defaultLocale: 'zh',
@@ -303,9 +303,8 @@ const config = {
         path: 'iosdocs',
         routeBasePath: 'iosdocs',
         sidebarPath: require.resolve('./sidebarsIos.js'),
-        showLastUpdateAuthor: true,
-        showLastUpdateTime: true,
-        editUrl: 'https://github.com/goodrain/rainbond-docs/tree/main/community',
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
       }
     ],
     [
