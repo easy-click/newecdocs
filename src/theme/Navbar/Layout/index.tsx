@@ -16,7 +16,6 @@ import {
 } from '@docusaurus/theme-common';
 
 import styles from './styles.module.css';
-import DiaLog from '../../../components/DiaLog';
 
 function NavbarBackdrop(props: ComponentProps<'div'>) {
     return (
@@ -54,7 +53,6 @@ export default function NavbarLayout({children}: Props): JSX.Element {
             {children}
             <NavbarBackdrop onClick={mobileSidebar.toggle}/>
             <NavbarMobileSidebar/>
-            <DiaLog/>
         </nav>
     );
 }
