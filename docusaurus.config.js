@@ -37,22 +37,13 @@ const config = {
         docs: {
           // routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true,
-          editUrl: 'https://github.com/goodrain/rainbond-docs/tree/main',
-          includeCurrentVersion: false,
-          lastVersion: 'current',
-          versions: {
-            current: {
-              label: 'Current'
-            }
-          }
+          showLastUpdateAuthor: false,
+          showLastUpdateTime: false,
         },
         blog: {
           routeBasePath: '/blog',
           path: 'blog',
           blogTitle: '博客',
-          editUrl: 'https://github.com/goodrain/rainbond-docs/tree/main/blog',
           postsPerPage: 10,
           blogSidebarCount: 'ALL',
           blogSidebarTitle: '所有文章',
@@ -102,16 +93,14 @@ const config = {
         // navbar的选项卡
         items: [
           {
-            type: 'docSidebar',
             position: 'left',
-            sidebarId: 'docs',
+            to: '/docs',
             label: '安卓文档',
           },
           {
-            type: 'docSidebar',
             position: 'left',
-            sidebarId: 'api',
-            label: 'OpenAPI',
+            to: '/iosdocs',
+            label: 'iOS文档',
           },
           {
             type: 'dropdown',
@@ -138,32 +127,6 @@ const config = {
             to: '/community/support',
           },
           {
-            type: 'docsVersionDropdown',
-            position: 'right',
-            dropdownItemsAfter: [
-              {
-                type: 'html',
-                value: '<hr class="dropdown-separator">',
-              },
-              {
-                type: 'html',
-                className: 'dropdown-archived-versions',
-                value: '<b>Archived versions</b>',
-              },
-              ...ArchivedVersionsDropdownItems.map(
-                ([versionName, versionUrl]) => ({
-                  label: versionName,
-                  href: versionUrl,
-                }),
-              ),
-            ]
-          },
-          {
-            position: 'right',
-            label: '产品',
-            href: '/enterprise_server'
-          },
-          {
             type: 'localeDropdown',
             position: 'right',
           },
@@ -187,8 +150,8 @@ const config = {
         respectPrefersColorScheme: false
       },
       algolia: {
-        appId: '4EFG0MCBR2',
-        apiKey: '449c9313e5dfd0ebb2c330a105b302b9',
+        appId: 'dd',
+        apiKey: 'dd',
         indexName: 'easyclick'
       },
       footer: {
