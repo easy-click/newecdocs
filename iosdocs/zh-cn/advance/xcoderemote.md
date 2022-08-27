@@ -23,7 +23,7 @@
 
 ### XCode调试
 
-- 以上动作都完成后，进入[安装代理IPA](zh-cn/tools/signagent)流程，就可以看到远程的手机了，按照正常的安装流程即可远程安装IPA
+- 以上动作都完成后，进入[安装代理IPA](/iosdocs/zh-cn/tools/signagent)流程，就可以看到远程的手机了，按照正常的安装流程即可远程安装IPA
 
 
 
@@ -48,7 +48,7 @@
 - <img src="/iosimg/image-20220416100705989.png" alt="image-20220416100705989" style={{zoom:'50%'}} />
 - -mode=xc 代表是xcode client，xcode端， -p代表运行端口，-address代表设备端的地址
 - 如果远程连接不上会有链接失败字样
-- 所有端启动后，正常进入[安装代理IPA](zh-cn/tools/signagent)流程，就可以看到远程的手机了，按照正常的安装流程即可远程安装IPA
+- 所有端启动后，正常进入[安装代理IPA](/iosdocs/zh-cn/tools/signagent)流程，就可以看到远程的手机了，按照正常的安装流程即可远程安装IPA
 
 
 

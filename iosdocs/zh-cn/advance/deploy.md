@@ -23,7 +23,7 @@
 
 ### 修改桥接链接
 
-- 修改链接到中控的地址，请看 [中控配置](/zh-cn/advance/centerconfig) **[site.remote]** 属性，用于中控知道设备链接上来了
+- 修改链接到中控的地址，请看 [中控配置](iosdocs/zh-cn/advance/centerconfig) **[site.remote]** 属性，用于中控知道设备链接上来了
 
 ### 启动桥接
 

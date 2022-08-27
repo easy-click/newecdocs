@@ -1,22 +1,11 @@
-* [简介](README.md)
-
 * [**技术服务**](/zh-cn/device_solution.md) 
 
 * [更改记录](/zh-cn/changelog.md)
 
-* [工具和教程](/zh-cn/tools/)
-    * [安装必要软件](/zh-cn/tools/installreadme)
-        * [1、安装代理ipa](/zh-cn/tools/signagent.md)
-        * [2、安装桥接程序](/zh-cn/tools/installbridge.md)
-        * [3、安装中控程序](/zh-cn/tools/installcenter.md)
-        * [4、安装开发插件](/zh-cn/tools/installdevtools.md)
-        
+* [工具和教程](/)
     * [第一个工程](/zh-cn/first.md)
-    * [学习教程](/zh-cn/jiaocheng.md)
-    * [资源下载](/zh-cn/download_resources.md)
     
 * [脚本函数](/zh-cn/funcs.md)
-
     * [全局模块](/zh-cn/funcs/global/global.md)
     * [全局快捷事件](/zh-cn/funcs/global/global-shortcut.md)
     - [节点函数](/zh-cn/funcs/node-api.md)
@@ -32,8 +21,7 @@
 
     
 
-* [高级功能](/zh-cn/advance/)
-
+* [高级功能](/)
     * [系统配置](/zh-cn/advance/centerconfig.md)
     * [企业版开放接口说明](/zh-cn/advance/openapiintro.md)
     * [企业版开放接口文档](/zh-cn/advance/openapi.md)
