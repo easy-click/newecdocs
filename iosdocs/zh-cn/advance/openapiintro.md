@@ -1,4 +1,8 @@
-
+---
+title: 企业版开放接口文档
+description: EasyClick 自动化脚本 iOS免越狱 企业版开放接口文档
+keywords: [EasyClick 自动化脚本 iOS免越狱 企业版开放接口文档  ]
+---
 
 
 
@@ -17,7 +21,12 @@
 
 在线apifox 接口  
 
-链接: https://www.apifox.cn/apidoc/shared-de0cb92e-6f29-49c1-8386-7982b3b1e051  访问密码 : ZwzKf51B 
+链接: https://www.apifox.cn/apidoc/shared-de0cb92e-6f29-49c1-8386-7982b3b1e051  
 
-请查看 :  [企业版开放接口文档](/zh-cn/advance/openapi.md)
+访问密码 : ZwzKf51B 
+
+
+
+
+
 

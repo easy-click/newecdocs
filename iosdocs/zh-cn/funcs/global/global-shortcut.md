@@ -1,3 +1,9 @@
+---
+title: 全局快捷事件
+description: EasyClick 自动化脚本 iOS免越狱 全局快捷事件 资源下载
+keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下载 ]
+---
+
 ## 说明
 
 全局模块中封装的快捷事件

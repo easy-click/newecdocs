@@ -1,3 +1,9 @@
+---
+title: 文件函数
+description: EasyClick 自动化脚本 iOS免越狱 文件函数 
+keywords: [EasyClick 自动化脚本 iOS免越狱 文件函数 ]
+---
+
 ## 说明
 - 文件模块函数主要是跟文件信息相关联
 - 文件模块的对象前缀是file，例如 file.readFile()这样调用

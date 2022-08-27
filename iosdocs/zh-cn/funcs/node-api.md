@@ -1,3 +1,10 @@
+---
+title: 节点函数
+description: EasyClick 自动化脚本 iOS免越狱  节点函数 
+keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
+---
+
+
 ## 说明
 - 节点模块函数主要是跟节点操作相关联
 - 该模块没有模块前缀，可以直接调用函数

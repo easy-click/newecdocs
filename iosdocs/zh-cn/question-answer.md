@@ -1,4 +1,12 @@
-## 其他常见问题查阅 http://home.laoleng.top:3001/web/#/271?page_id=1931
+---
+title: 常见问题
+description: EasyClick 自动化脚本 iOS免越狱  常见问题 
+keywords: [EasyClick 自动化脚本 iOS免越狱  常见问题 ]
+---
+
+
+## 其他常见问题查阅 
+- http://home.laoleng.top:3001/web/#/271?page_id=1931
 
 ## iPhone重启后无法启动代理程序
 
@@ -15,7 +23,7 @@
 - 检查中控，桥接程序存放的路径，禁止使用中文，空格等特殊字符，只能使用字母或者数字，Windows的毛病
 - 检查脚本文件、路径是否包含中文
 
-### 获取屏幕高度宽度不准确
+## 获取屏幕高度宽度不准确
 
 - 历史遗留原因，可以使用device.getDeviceInfo进行获取实时的屏幕高度和宽度
 

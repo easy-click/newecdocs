@@ -1,3 +1,9 @@
+---
+title: 存储函数
+description: EasyClick 自动化脚本 iOS免越狱 存储函数 
+keywords: [EasyClick 自动化脚本 iOS免越狱 存储函数 ]
+---
+
 ## 说明
 - 存储模块函数主要是存储相关数据，key-value结构
 - 工具类模块的对象前缀是 storages，例如 storages.create()这样调用

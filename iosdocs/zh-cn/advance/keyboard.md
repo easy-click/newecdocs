@@ -1,3 +1,10 @@
+---
+title: 键盘输入码表
+description: EasyClick 自动化脚本 iOS免越狱 键盘输入码表
+keywords: [EasyClick 自动化脚本 iOS免越狱 键盘输入码表  ]
+---
+
+
 ### 说明
 
 这个都是模拟键盘输入的，参数分为 eventPageID 和 eventUsageID。两个参数没具体什么意思别问，用就可以了。

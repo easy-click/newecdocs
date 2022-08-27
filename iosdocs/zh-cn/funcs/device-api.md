@@ -1,3 +1,10 @@
+---
+title: 设备函数
+description: EasyClick 自动化脚本 iOS免越狱 设备函数 
+keywords: [EasyClick 自动化脚本 iOS免越狱 设备函数 ]
+---
+
+
 ## 说明
 - 设备模块函数主要是跟设备信息相关联
 - 设备模块的对象前缀是device，

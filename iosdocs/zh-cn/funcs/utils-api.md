@@ -1,5 +1,10 @@
-## 说明
+---
+title: 工具函数
+description: EasyClick 自动化脚本 iOS免越狱 工具函数 
+keywords: [EasyClick 自动化脚本 iOS免越狱 工具函数 ]
+---
 
+## 说明
 
 
 ## 解压缩

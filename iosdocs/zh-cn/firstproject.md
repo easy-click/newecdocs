@@ -1,3 +1,10 @@
+---
+title: 第一个工程
+description: EasyClick 自动化脚本 iOS免越狱 教程 第一个工程
+keywords: [EasyClick 自动化脚本 iOS免越狱 教程  第一个工程 ]
+---
+
+
 ## 1、安装插件
 
 - 到资源区 或者群文件下载 iOS-EasyClickDev-idea 开头的开发插件

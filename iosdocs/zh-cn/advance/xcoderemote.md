@@ -1,3 +1,10 @@
+---
+title: 远程安装IPA
+description: EasyClick 自动化脚本 iOS免越狱 远程安装IPA
+keywords: [EasyClick 自动化脚本 iOS免越狱 远程安装IPA  ]
+---
+
+
 ## 界面环境
 
 ### 设备端启动
