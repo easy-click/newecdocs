@@ -1,3 +1,10 @@
+---
+title: 脚本函数
+description: EasyClick 自动化脚本 android免root 脚本函数
+keywords: [EasyClick 自动化脚本 android免root 脚本函数]
+---
+
+
 - [全局模块](/zh-cn/funcs/global/global.md)
 - [全局快捷事件](/zh-cn/funcs/global/global-shortcut.md)
 - [选择器&节点](/zh-cn/funcs/global/selector-node.md)

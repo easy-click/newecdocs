@@ -27,7 +27,7 @@ const sidebars = {
       label: '脚本函数',
       link: {
         type: 'doc',
-        id: 'zh-cn/funcs/',
+        id: 'zh-cn/funcs',
       },
       items: [
         'zh-cn/funcs/global/global',

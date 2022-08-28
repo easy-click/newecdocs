@@ -161,21 +161,21 @@ const config = {
             title: '文档',
             items: [
               {
-                label: '快速开始',
-                to: 'docs/quick-start/quick-install'
+                label: '安卓开发文档',
+                to: 'docs/'
               },
               {
-                label: '部署组件',
-                to: 'docs/use-manual/component-create'
+                label: 'iOS开发文档',
+                to: 'iosdocs/'
               },
               {
-                label: '最佳实践',
-                to: 'docs/expand/practices'
+                label: '企业版云控',
+                to: 'docs/zh-cn/ecloud2/installcloud'
               }
             ]
           },
           {
-            title: '开源社区',
+            title: '产品服务',
             items: [
               {
                 label: '微信',
@@ -185,18 +185,10 @@ const config = {
                 label: '钉钉(31096419)',
                 to: '#'
               },
-              {
-                label: '用户论坛',
-                to: 'https://t.goodrain.com'
-              },
-              {
-                label: '参与贡献',
-                to: '/community/contribution/'
-              }
             ]
           },
           {
-            title: '学习xxxx',
+            title: '合作案例',
             items: [
               {
                 label: '使用场景',
@@ -216,20 +208,9 @@ const config = {
             title: '更多',
             items: [
               {
-                label: '产品',
-                to: 'enterprise_server'
-              },
-              {
-                label: '应用商店11',
-                to: 'https://store.goodrain.com/markets/rainbond'
-              },
-              {
                 label: '联系我们',
                 to: 'https://p5yh4rek1e.feishu.cn/share/base/shrcn4dG9z5zvbZZWd1MFf6ILBg'
               },
-              {
-                html: `<a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-color-accent.svg" alt="Deploys by Netlify" /> </a>`
-              }
             ]
           }
         ],

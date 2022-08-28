@@ -68,21 +68,13 @@ export default function Index(props) {
               </li>
               <li>
                 <a href='/docs/'>
-                  <Translate id='navbar.doc'>安卓文档</Translate>
+                  <Translate id='navbar.doc'>安卓开发文档</Translate>
                 </a>
               </li>
               <li>
                 <a href='/iosdocs/'>
-                  <Translate id='navbar.doc'>iOS文档</Translate>
+                  <Translate id='navbar.doc'>iOS开发文档</Translate>
                 </a>
-              </li>
-
-              {/* <li>
-                <NavbarColorModeToggle/>
-              </li> */}
-              <li>
-                <a className={`button button--primary ${styles.buttonQuick}`} href="/docs/">
-                  <Translate id='navbar.quickstart'>快速开始</Translate></a>
               </li>
               <LocaleDropdownNavbarItem dropdownItemsBefore={[]} dropdownItemsAfter={[]} items={[]}/>
             </ul>

@@ -36,9 +36,6 @@ export default function Home() {
         },
     })
 
-    const handleJumpDemo = e => {
-        axios('https://cloud.goodrain.com/enterprise-server/onlineTrial');
-    };
     const handleWhyRainbondFirst = useCallback(() => {
         setOpen('first');
     }, []);
@@ -81,7 +78,7 @@ export default function Home() {
                         <animated.div style={animatedTexts[0]} className={styles.rainbond_description}>
                             <Translate id='first.description'>
                                 易点新媒旗下EasyClick自动化产品,
-                                安卓&iOS&PC自动化脚本，自动化测试专业工具，支持多个平台快速构建自动化测试脚本.
+                                安卓&iOS&PC&Web自动化脚本，自动化测试专业工具，支持多个平台快速构建自动化测试脚本.
                                 新媒体云控专业营销平台，多端控制设备，实时远程投屏控制.
                             </Translate>
                         </animated.div>
@@ -92,7 +89,7 @@ export default function Home() {
                                 href='docs/quick-start/quick-install/'
                                 style={{marginRight: '16px'}}
                             >
-                                <Translate id='first.install'>安装使用</Translate>
+                                <Translate id='first.install'>开始安卓开发</Translate>
                             </a>
                             {/* <a
                 className={`${styles.btns} animate__animated animate__fadeInDown`}
@@ -105,25 +102,9 @@ export default function Home() {
                             {<a
                                 className={styles.right_btns}
                                 href='#'
-                                onMouseMove={() => {
-                                    setHoverImg(true);
-                                }}
-                                onMouseLeave={() => {
-                                    setHoverImg(false);
-                                }}
                             >
-                                <Translate id='first.follow'>关注 EasyClick</Translate>
+                                <Translate id='first.follow'>开始iOS开发</Translate>
                             </a>}
-                            {hoverImg && (
-                                <div className={styles.join_logos}>
-                                    <span style={{fontSize: '12px'}}>微信扫一扫</span>
-                                    <img
-                                        src='/wechat/wechat-public.jpg'
-                                        alt='WeChat 979885495'
-                                        className={styles.hover_imgs}
-                                    />
-                                </div>
-                            )}
                         </animated.div>
                     </div>
                     <animated.div
