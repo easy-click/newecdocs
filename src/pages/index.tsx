@@ -167,163 +167,6 @@ export default function Home() {
                         </div>
                     </animated.div>
                 </section>
-                {/* 第二屏 */}
-                <section className={styles.second}>
-                    <animated.div id={styles.section_experience} className={styles.width} style={animatedTexts[1]}>
-                        <h1 className={styles.dosc_logo}>
-                            <img src='/img/kuberneteslanding/kuberneteslanding.png' alt=''/>
-                        </h1>
-                        {/* 标题 */}
-                        <h1
-                            style={{
-                                textAlign: 'center',
-                                marginBottom: '56px',
-                                position: 'relative'
-                            }}
-                        >
-                            <Translate id='second.title1'>云原生体验，</Translate>
-                            <span className={styles.how_rainbond}>Kubernetes</span>
-                            &nbsp; <Translate id='second.title2'>快速落地</Translate>
-                        </h1>
-                        {/* 分类 */}
-                        <div className={styles.experience_sort}>
-                            <div>
-                                {/* 图片 */}
-                                <div className={styles.imgContainer}>
-                                    <img src='/img/kuberneteslanding/java.svg'/>
-                                </div>
-                                {/* 标题 */}
-                                <p className={styles.experience_sort_title}>
-                                    <Translate id='second.sourceCode'>源码一键部署</Translate>
-                                </p>
-                                {/* 描述 */}
-                                <div className={styles.experience_sort_desc}>
-                                    <ul>
-                                        <li>
-                                            <b>
-                                                {'>'}
-                                            </b>
-                                            &nbsp;<Translate id='second.sourceCode1'>支持6种常见的开发语言</Translate>
-                                        </li>
-                                        <li>
-                                            <b>
-                                                {'>'}
-                                            </b>
-                                            &nbsp;<Translate id='second.sourceCode2'>无需编写Dockerfile</Translate>
-                                        </li>
-                                        <li>
-                                            <b>
-                                                {'>'}
-                                            </b>
-                                            &nbsp;<Translate id='second.sourceCode3'>集成Git仓库</Translate>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div>
-                                {/* 图片 */}
-                                <div className={styles.imgContainer}>
-                                    <img src='/img/kuberneteslanding/manage.svg'/>
-                                </div>
-                                {/* 标题 */}
-                                <p className={styles.experience_sort_title}>
-                                    <Translate id='second.kubernetes'>Kubernetes管理面板</Translate>
-                                </p>
-                                {/* 描述 */}
-                                <div className={styles.experience_sort_desc}>
-                                    <ul>
-                                        <li>
-                                            <b>
-                                                {'>'}
-                                            </b>
-                                            &nbsp;<Translate id='second.kubernetes1'>零门槛落地Kubernetes</Translate>
-                                        </li>
-                                        <li>
-                                            <b>
-                                                {'>'}
-                                            </b>
-                                            &nbsp;<Translate id='second.kubernetes2'>无需编写YAML</Translate>
-                                        </li>
-                                        <li>
-                                            <b>
-                                                {'>'}
-                                            </b>
-                                            &nbsp;<Translate id='second.kubernetes3'>管理多个集群</Translate>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div>
-                                {/* 图片 */}
-                                <div className={styles.imgContainer}>
-                                    <img src='/img/kuberneteslanding/service.svg'/>
-                                </div>
-                                {/* 标题 */}
-                                <p className={styles.experience_sort_title}>
-                                    <Translate id='second.microservice'>微服务实战</Translate>
-                                </p>
-                                {/* 描述 */}
-                                <div className={styles.experience_sort_desc}>
-                                    <ul>
-                                        <li>
-                                            <b>
-                                                {'>'}
-                                            </b>
-                                            &nbsp;<Translate id='second.microservice1'>Spring Cloud项目一步构建</Translate>
-                                        </li>
-                                        <li>
-                                            <b>
-                                                {'>'}
-                                            </b>
-                                            &nbsp;<Translate id='second.microservice2'>服务编排和拓扑图展示</Translate>
-                                        </li>
-                                        <li>
-                                            <b>
-                                                {'>'}
-                                            </b>
-                                            &nbsp;<Translate id='second.microservice3'>支持Service Mesh</Translate>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div>
-                                {/* 图片 */}
-                                <div className={styles.imgContainer}>
-                                    <img src='/img/kuberneteslanding/store.svg'/>
-                                </div>
-                                {/* 标题 */}
-                                <p className={styles.experience_sort_title}>
-                                    <Translate id='second.openapp'>
-                                        80款开源软件即点即用
-                                    </Translate>
-                                </p>
-                                {/* 描述 */}
-                                <div className={styles.experience_sort_desc}>
-                                    <ul>
-                                        <li>
-                                            <b>
-                                                {'>'}
-                                            </b>
-                                            &nbsp;<Translate id='second.openapp1'>一键安装和升级</Translate>
-                                        </li>
-                                        <li>
-                                            <b>
-                                                {'>'}
-                                            </b>
-                                            &nbsp;<Translate id='second.openapp2'>建立自己的应用市场</Translate>
-                                        </li>
-                                        <li>
-                                            <b>
-                                                {'>'}
-                                            </b>
-                                            &nbsp;<Translate id='second.openapp3'>对接Helm应用市场</Translate>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </animated.div>
-                </section>
                 {/* 为什么选择Rainbond */}
                 <OverPack style={{overflow: 'hidden'}} playScale={0.15}>
                     <section id={styles.section_why_rainbond} className={styles.width}>
@@ -778,9 +621,8 @@ export default function Home() {
             <footer className={`${styles.footer_container} `}>
                 <h1><Translate id='participate'>参与其中</Translate></h1>
                 <div className={`${styles.join_type} ${styles.width}`}>
-                    <a href='https://t.goodrain.com' target='_blank'>
+                    <a href='#' target='_blank'>
                         <div className={styles.join_logo}>
-                            <img src='/img/discourse.png' alt=''/>
                         </div>
                         <div className={styles.join_detali}>
                             <h4 style={{fontSize: '20px'}}>
@@ -791,48 +633,32 @@ export default function Home() {
                             </p>
                         </div>
                     </a>
-                    <a
-                        href='#'
-                        onMouseMove={() => {
-                            setHover_Img(true);
-                        }}
-                        onMouseLeave={() => {
-                            setHover_Img(false);
-                        }}
-                    >
+                    <a href='#' target='_blank'>
                         <div className={styles.join_logo}>
-                            {hover_img && (
-                                <img
-                                    src='/img/wechart.jpeg'
-                                    alt='WeChat 979885495'
-                                    className={styles.hover_img}
-                                />
-                            )}
-                            <img src='/img/we-chat.png' alt=''/>
-                        </div>
-                        <div className={styles.join_detali}>
-                            <h4 style={{fontSize: '20px'}}>WeChat</h4>
-                            <p>
-                                <Translate id='participate.wechat'>添加微信助手,加入微信技术交流群 (18800156151)</Translate>
-                            </p>
-                        </div>
-                    </a>
-                    <a href='#'>
-                        <div className={styles.join_logo}>
-                            <img src='/img/dingding.png' alt=''/>
                         </div>
                         <div className={styles.join_detali}>
                             <h4 style={{fontSize: '20px'}}>
-                                <Translate id='participate.dingtalk.title'>钉钉群</Translate>
+                                <Translate id='participate.community.title'>社区</Translate>
                             </h4>
                             <p>
-                                <Translate id='participate.dingtalk.description'>搜索钉钉群号进群(31096419)</Translate>
+                                <Translate id='participate.community.description'>参考社区,学习或贡献更多Rainbond用例用法</Translate>
+                            </p>
+                        </div>
+                    </a>
+                    <a href='#' target='_blank'>
+                        <div className={styles.join_logo}>
+                        </div>
+                        <div className={styles.join_detali}>
+                            <h4 style={{fontSize: '20px'}}>
+                                <Translate id='participate.community.title'>社区</Translate>
+                            </h4>
+                            <p>
+                                <Translate id='participate.community.description'>参考社区,学习或贡献更多Rainbond用例用法</Translate>
                             </p>
                         </div>
                     </a>
                     <a href='/community/contribution/'>
                         <div className={styles.join_logo}>
-                            <img src='/img/GitHub.png' alt=''/>
                         </div>
                         <div className={styles.join_detali}>
                             <h4 style={{fontSize: '20px'}}>

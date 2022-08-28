@@ -214,7 +214,7 @@ const config = {
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 合肥易点新媒网络科技有限公司, Inc. All Rights Reserved. 京ICP备15028663号-4`
+        copyright: `Copyright © ${new Date().getFullYear()} 易点新媒, Inc. All Rights Reserved. `
       },
       // prism: {
       //   darkTheme: darkCodeTheme
