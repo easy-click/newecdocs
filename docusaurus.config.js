@@ -171,41 +171,21 @@ const config = {
             ]
           },
           {
-            title: '产品服务',
+            title: '联系客服',
             items: [
               {
-                label: '微信',
-                to: '/community/support#微信群'
-              },
-              {
-                label: '钉钉(31096419)',
-                to: '#'
+                label: '加客服联系',
+                to: '/community/support'
               },
             ]
           },
-          {
-            title: '合作案例',
-            items: [
-              {
-                label: '使用场景',
-                to: 'usescene'
-              },
-              {
-                label: '用户案例',
-                to: 'case'
-              },
-              {
-                label: '博客',
-                to: 'blog'
-              },
-            ]
-          },
+
           {
             title: '更多',
             items: [
               {
                 label: '联系我们',
-                to: 'https://p5yh4rek1e.feishu.cn/share/base/shrcn4dG9z5zvbZZWd1MFf6ILBg'
+                to: '/docs/zh-cn/joinus'
               },
             ]
           }
