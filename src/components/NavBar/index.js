@@ -32,8 +32,10 @@ export default function Index(props) {
         {/* 导航栏 */}
         <nav className={`${styles.nav_bar} ${styles.width}`}>
           {/* 左侧logo */}
-          <a href='/'>
-            <h2>EasyClick - 自动化脚本专家</h2>
+
+          <a href='/' className={`${styles.mytitle}`}>
+            <img className={`${styles.mylogo}`} src='/img/easyclick.png'/>
+            <span className={`${styles.mytitle2}`}>EasyClick - 自动化脚本专家</span>
           </a>
           {/* 右侧列表 */}
           <div className={styles.nav_container}>
