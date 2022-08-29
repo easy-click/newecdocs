@@ -80,33 +80,33 @@ export default function swiper() {
         <div className="swiper swiper-3d">
           <div className="swiper-wrapper">
             <div className="swiper-slide">
-              <a href='https://www.bilibili.com/video/BV1Vq4y1w7FQ' target='_blank'>
-                <img src='/img/video/install.png'/>
+              <a href='https://www.bilibili.com/video/BV1Ng411o7ds' target='_blank'>
+                <img src='/img/video/c1-1.png'/>
               </a>
             </div>
             <div className="swiper-slide">
-              <a href='https://www.bilibili.com/video/BV1ou411B7ix' target='_blank'>
-                <img src='/img/video/quick.png'/>
+              <a href='https://www.bilibili.com/video/BV1ES4y1f7qV' target='_blank'>
+                <img src='/img/video/c2-1.png'/>
               </a>
             </div>
             <div className="swiper-slide">
-              <a href='https://www.bilibili.com/video/BV1vS4y1w7ps' target='_blank'>
-                <img src='/img/video/gitlab+rainbond.png'/>
+              <a href='https://www.bilibili.com/video/BV1F34y147Ky' target='_blank'>
+                <img src='/img/video/c3-1.png'/>
               </a>
             </div>
             <div className="swiper-slide">
-              <a href='https://www.bilibili.com/video/BV1rB4y197X4' target='_blank'>
-                <img src='/img/video/enterprise-app-manage.png'/>
+              <a href='https://www.bilibili.com/video/BV12v41187MB' target='_blank'>
+                <img src='/img/video/c4-1.png'/>
               </a>
             </div>
             <div className="swiper-slide">
-              <a href='https://www.bilibili.com/video/BV1MZ4y1b7wW' target='_blank'>
-                <img src='/img/video/pig.png'/>
+              <a href='https://www.bilibili.com/video/BV1X44y1L7tJ' target='_blank'>
+                <img src='/img/video/c5-1.png'/>
               </a>
             </div>
             <div className="swiper-slide">
-              <a href='https://www.bilibili.com/video/BV1XY4y1W7ox' target='_blank'>
-                <img src='/img/video/rainstore.png'/>
+              <a href='https://www.bilibili.com/video/BV1QK4y1J7vF' target='_blank'>
+                <img src='/img/video/c6-1.png'/>
               </a>
             </div>
           </div>

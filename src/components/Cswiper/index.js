@@ -21,32 +21,32 @@ export default function Index() {
         className={styles.swiperDisplay}
       >
         <SwiperSlide>
-          <a href='https://www.bilibili.com/video/BV1Vq4y1w7FQ' target='_blank'>
+          <a href='https://www.bilibili.com/video/BV1Ng411o7ds/?spm_id_from=333.788' target='_blank'>
             <img src='/img/video/install.png' alt=''/>
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href='https://www.bilibili.com/video/BV1ou411B7ix' target='_blank'>
+          <a href='#' target='_blank'>
             <img src='/img/video/quick.png' alt=''/>
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href='https://www.bilibili.com/video/BV1vS4y1w7ps' target='_blank'>
+          <a href='#' target='_blank'>
             <img src='/img/video/gitlab+rainbond.png' alt=''/>
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href='https://www.bilibili.com/video/BV1rB4y197X4' target='_blank'>
+          <a href='#' target='_blank'>
             <img src='/img/video/enterprise-app-manage.png' alt=''/>
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href='https://www.bilibili.com/video/BV1MZ4y1b7wW' target='_blank'>
+          <a href='#' target='_blank'>
             <img src='/img/video/pig.png' alt=''/>
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href='https://www.bilibili.com/video/BV1XY4y1W7ox' target='_blank'>
+          <a href='#' target='_blank'>
             <img src='/img/video/rainstore.png' alt=''/>
           </a>
         </SwiperSlide>
