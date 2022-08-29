@@ -1,17 +1,15 @@
 
 - 开始编写UI
 
-
-
-* [JS编写UI](/zh-cn/funcs/ui-js-inter.md)
-* [模板式UI](/zh-cn/funcs/ui-js-template.md)
-* [原生UI控件](/zh-cn/funcs/ui-native-view.md)
-* [LinearLayout线性布局](/zh-cn/funcs/ui/uidetail/linearlayout.md)
-* [FrameLayout帧布局](/zh-cn/funcs/ui/uidetail/framelayout.md)
+* [JS编写UI](zh-cn/funcs/ui/ui-js-inter.md)
+* [模板式UI](zh-cn/funcs/ui/ui-js-template.md)
+* [原生UI控件](zh-cn/funcs/ui/ui-native-view.md)
+* [LinearLayout线性布局](zh-cn/funcs/ui/uidetail/linearlayout.md)
+* [FrameLayout帧布局](zh-cn/funcs/ui/uidetail/framelayout.md)
 * [RelativeLayout绝对布局](/zh-cn/funcs/ui/uidetail/relativelayout.md)
-* [ScrollView滚动框](/zh-cn/funcs/ui/uidetail/scrollview.md)
-* [HorizontalScrollView滚动框](/zh-cn/funcs/ui/uidetail/h_scrollview.md)
-* [View视图](/zh-cn/funcs/ui/uidetail/view.md)
+* [ScrollView滚动框](zh-cn/funcs/ui/uidetail/scrollview.md)
+* [HorizontalScrollView滚动框](zh-cn/funcs/ui/uidetail/h_scrollview.md)
+* [View视图](zh-cn/funcs/ui/uidetail/view.md)
 * [Button按钮](/zh-cn/funcs/ui/uidetail/button.md)
 * [TextView文本](/zh-cn/funcs/ui/uidetail/textview.md)
 * [EditText输入框](/zh-cn/funcs/ui/uidetail/edittext.md)

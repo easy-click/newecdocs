@@ -28,9 +28,9 @@ export default function FooterLayout({
                     <div className='col'>
                         <div className="footer__bottom">
                             <img
-                                alt="Rainbond logo"
+                                alt="easyclick logo"
                                 className={footSytles.footer__logo}
-                                src="/img/rainbond.png"
+                                src="/img/easyclick.png"
                                 title="QuestDB - Fastest open source database for time series and analytics"
                             />
                             <b className={footSytles.rainbondtext}>EasyClick</b>

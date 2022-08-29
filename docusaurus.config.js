@@ -14,7 +14,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/rainbond.png',
+  favicon: 'img/easyclick.png',
   organizationName: 'easyclick', // Usually your GitHub org/user name.
   projectName: 'easyclick-docs', // Usually your repo name.
   i18n: {
@@ -86,7 +86,7 @@ const config = {
         title: 'EasyClick',
         logo: {
           alt: 'EasyClick Logo',
-          src: 'img/rainbond.png',
+          src: 'img/easyclick.png',
           href: '/'
         },
         hideOnScroll: false,

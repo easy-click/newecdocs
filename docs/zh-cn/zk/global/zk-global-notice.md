@@ -61,7 +61,7 @@
 * 获取最近通知栏对象
 * @param pkg 指定包名
 * @param size 指定获取的条数
-* @return JSON数组字符串，请参考[获取通知](/zh-cn/funcs/global/global-shortcut.html#getlastnotification)
+* @return JSON数组字符串，请参考[获取通知]
 
 > ```javascript
 >     var request = require('request');
@@ -180,7 +180,7 @@
 
 * @param pkg 指定包名
 * @param size 指定获取的条数
-* @return JSON数组字符串，请参考[获取Toast](/zh-cn/funcs/global/global-shortcut.html#getlasttoast)
+* @return JSON数组字符串，请参考[获取Toast]
 
 > ```javascript
 >     var request = require('request');

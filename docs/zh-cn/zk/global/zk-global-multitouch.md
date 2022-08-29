@@ -3,7 +3,7 @@
 
 
 ## multiTouch 多点触摸
-* 多点触摸，用法和[全局快捷事件-多点触摸](/zh-cn/funcs/global/global-shortcut.html#multitouch-多点触摸)相同
+* 多点触摸，用法和全局快捷事件-多点触摸相同
 * @param  arrays 多点触摸的数组，请看实例
 * @param  timeout 超时时间，单位毫秒
 * @return 布尔型，true代表成功 false代表失败

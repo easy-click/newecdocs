@@ -33,7 +33,7 @@ function DiaLog() {
                 maskClosable={false}
                 style={{width: "600px", fontSize: "17px"}}
                 icon={
-                    <img src="/img/rainbond.png" alt="logo"/>
+                    <img src="/img/easyclick.png" alt="logo"/>
                 }
                 footer={
                     <div>
