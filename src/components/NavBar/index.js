@@ -99,12 +99,17 @@ export default function Index(props) {
           <ul className={styles.mobile_nav_lists}>
             <li>
               <a href='/enterprise_server'>
-                <Translate>产品1</Translate>
+                <Translate>企业版云控</Translate>
+              </a>
+            </li>
+            <li>
+              <a href='/enterprise_server'>
+                <Translate>企业版群控</Translate>
               </a>
             </li>
             <li>
               <div className="dropdown dropdown--hoverable">
-                <Translate>产品22</Translate>
+                <Translate>自动化产品</Translate>
                 <img className={styles.iconDropDown}
                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABUUlEQVRoge3Wr0tdcRzH4WfeKcpwCCIMBAXBIlgWFpYMppUVLUs2i9F/4SbXtrBmsmhZWVpYWrhhRVgZCBMGggiiyIZjTsO9XyZ3XO65P86P8HngE88571c7hBBCCCGEEEIYujpuK371rDE7FRjb6d5kjYAHeFeB0e23i5FeQrQe2KvA+HQHqPUakdSwX4GI9xjtNyIZw4cSIz5ifNCIZAKfSoj4jEfDikgeo1FgRAOTw45IpvClgIhDTOcVkczga44R3/Ak74hkFkc5RBxjvqiIZA7fBxx+/35godCCexZx0mVgljvFUsHb/7OMM/1HnONp4as7eIZLvUdctJ6tlOe4kj3iJ1ZKWZrBKn7pHnGNFyVtzOwlfusc8Qfrpa3r0Zrm4PaIG7wqcVdfNjSHp4i/2Cx10QC2/AvZzvNDD/N8Od5q/jXD65y/FUIIIYRQNXfPaMyAru8lkAAAAABJRU5ErkJggg=="/>
                 <ul className="dropdown__menu">
@@ -114,21 +119,19 @@ export default function Index(props) {
                   <li>
                     <a className={`${styles.DropDownFont} dropdown__link`} href="/case">易点云测iOS版本</a>
                   </li>
-                  <li>
-                    <a className={`${styles.DropDownFont} dropdown__link`} href="/blog">易点云控</a>
-                  </li>
-                  <li>
-                    <a className={`${styles.DropDownFont} dropdown__link`} href="/blog">易点群控</a>
-                  </li>
                 </ul>
               </div>
             </li>
             <li>
               <a href='/docs/'>
-                <Translate id='navbar.doc'>文档</Translate>
+                <Translate id='navbar.doc'>安卓开发文档</Translate>
               </a>
             </li>
-
+            <li>
+              <a href='/iosdocs/'>
+                <Translate id='navbar.doc'>iOS开发文档</Translate>
+              </a>
+            </li>
           </ul>
         </div>
       )}

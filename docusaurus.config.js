@@ -89,36 +89,32 @@ const config = {
           src: 'img/rainbond.png',
           href: '/'
         },
-        hideOnScroll: true,
+        hideOnScroll: false,
         // navbar的选项卡
         items: [
           {
             position: 'left',
             to: '/docs',
-            label: '安卓文档',
+            label: '安卓开发文档',
           },
           {
             position: 'left',
             to: '/iosdocs',
-            label: 'iOS文档',
+            label: 'iOS开发文档',
           },
           {
             type: 'dropdown',
-            label: '学习111',
+            label: '企业版产品',
             position: 'left',
             items: [
               {
-                label: '使用场景',
+                label: '企业版云控',
                 href: '/usescene',
               },
               {
-                label: '用户案例',
+                label: '企业版群控',
                 href: '/case',
-              },
-              {
-                label: '博客',
-                href: '/blog',
-              },
+              }
             ],
           },
           {
@@ -131,7 +127,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/goodrain/rainbond',
+            href: 'https://github.com/easy-click/easyclick-libs',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub repository'
@@ -221,7 +217,7 @@ const config = {
       // },
       announcementBar: {
         id: 'start',
-        content: "⭐️ 如果你喜欢 EasyClick，请为这个产品点赞",
+        content: '⭐️ 如果你喜欢 EasyClick，<a target="_blank" href="https://github.com/easy-click/easyclick-libs"> 请在GitHub为这个产品点赞</a>',
         // '⭐️ If you like Rainbond,<a target="_blank" href="https://github.com/goodrain/rainbond"> give it a star on GitHub</a> !',
         isCloseable: false,
       }
@@ -240,7 +236,6 @@ const config = {
         sidebarPath: require.resolve('./sidebarsCommunity.js'),
         showLastUpdateAuthor: true,
         showLastUpdateTime: true,
-        editUrl: 'https://github.com/goodrain/rainbond-docs/tree/main/community',
       }
     ],
     [
@@ -261,7 +256,6 @@ const config = {
         routeBasePath: 'case',
         path: './case',
         blogTitle: '案例',
-        editUrl: 'https://github.com/goodrain/rainbond-docs/tree/main/case',
         postsPerPage: 10,
         blogSidebarCount: 'ALL',
         blogSidebarTitle: '案例',
@@ -275,7 +269,6 @@ const config = {
         routeBasePath: 'usescene',
         path: './usescene',
         blogTitle: '使用场景',
-        editUrl: 'https://github.com/goodrain/rainbond-docs/tree/main/usescene',
         postsPerPage: 10,
         blogSidebarCount: 'ALL',
         blogSidebarTitle: '使用场景',
