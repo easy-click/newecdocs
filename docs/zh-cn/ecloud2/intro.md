@@ -1,3 +1,11 @@
+---
+title: 云控说明
+description: EasyClick 自动化脚本 android免root 云控说明
+keywords: [EasyClick 自动化脚本 android免root 云控说明]
+---
+:::tip
+云控是运行在服务器端的，优势是可以链接很多设备，通过网页进行管理设备，和群控有很大的区别
+:::
 
 ## 云控平台
 - 云控在EC产品序列中属于 云测试平台 ，用于管理多设备多资源协同工作

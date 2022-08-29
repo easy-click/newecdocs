@@ -11,19 +11,19 @@ keywords: [EasyClick 自动化脚本 android免root 激活设备]
 - 进入IDEA，选择EasyClick开发工具 - 激活设备 - 激活模式1或者激活模式2 点击即可
 - 打开EasyClick运行日志，如果提示激活成功就可以了
 <br/>
-<img src='zh-cn/images/idea-active.png' width='400' />
+<img src='/androidimg/idea-active.png' width='400' />
 <br/>
-<img src='zh-cn/images/idea-active-ok.png' width='400' />
+<img src='/androidimg/idea-active-ok.png' width='400' />
 
 ## APP激活自己
 - 开启设备的USB 调试
 - 开启设备的ADB WIFI 调试
 - 进入EC APK的系统设置页面，点击激活自己
 - 进入后会自动激活，如果弹出USB授权，请勾选 一律允许，点击同意<br/>
-<img src='zh-cn/images/active-usb-debug.png' width='200' />
+<img src='/androidimg/active-usb-debug.png' width='200' />
 <br/>
 - 激活成功<br/>
-<img src='zh-cn/images/active-self-ok.png' width='200' />
+<img src='/androidimg/active-self-ok.png' width='200' />
 <br/>
 - 当1，2条件满足了，可以调用脚本activeSelf函数激活自己
 - 手动开启ADB WIFI: [https://www.jianshu.com/p/a9543f2e89de](https://www.jianshu.com/p/a9543f2e89de)
@@ -35,7 +35,7 @@ keywords: [EasyClick 自动化脚本 android免root 激活设备]
 
 - 到下载EasyClick开发插件的网盘，下载批量激活工具，解压后，直接运行对应的exe程序即可
 <br/>
-<img src='zh-cn/images/pc-active.png' width='400' />
+<img src='/androidimg/pc-active.png' width='400' />
 
 ## 设备激活其他设备
 
@@ -48,30 +48,30 @@ keywords: [EasyClick 自动化脚本 android免root 激活设备]
 
 - 打开OTG
 <br/>
-<img src='zh-cn/images/otg-open.jpg' width='400' />
+<img src='/androidimg/otg-open.jpg' width='400' />
 
 - 认识OTG数据线
 <br/>
-<img src='zh-cn/images/otg-usb.png' width='400' />
+<img src='/androidimg/otg-usb.png' width='400' />
 
 
 - 链接设备
 <br/>
-<img src='zh-cn/images/otg-con.png' width='400' />
+<img src='/androidimg/otg-con.png' width='400' />
 
 
 
 - 如有USB调试框弹出，请运行
 <br/>
-<img src='zh-cn/images/otg-usb-dev.png' width='400' />
+<img src='/androidimg/otg-usb-dev.png' width='400' />
 
 - 激活传输文件
 <br/>
-<img src='zh-cn/images/otg-file.png' width='400' />
+<img src='/androidimg/otg-file.png' width='400' />
 
 - 激活成功
 <br/>
-<img src='zh-cn/images/ot-acive-ok.png' width='400' />
+<img src='/androidimg/ot-acive-ok.png' width='400' />
 
 - 如果中间连接不上设备，可以拔插数据线多试一次
 

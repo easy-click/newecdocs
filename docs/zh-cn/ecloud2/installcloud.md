@@ -20,7 +20,7 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 
 > 1、进入宝塔,如果弹出以下窗口选择myql5.7，点击安装
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203144143477.png" alt="image-20211203144143477" style="zoom: 33%;" />
+<img src="/ecloudimages/image-20211203144143477.png" alt="image-20211203144143477" style={{zoom:'33%'}} />
 
 > 2、如果没就到软件管理，搜索nginx，mysql，phpmyadmin进行安装
 >
@@ -30,13 +30,13 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 >
 > 
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203144321514.png" alt="image-20211203144321514" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203144321514.png" alt="image-20211203144321514" style={{zoom:'33%'}} />
 
 > 安装成功后点击在首页显示
 
 
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203144420239.png" alt="image-20211203144420239" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203144420239.png" alt="image-20211203144420239" style={{zoom:'33%'}} />
 
 ###
 
@@ -48,7 +48,7 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 
 > 1、先在宝塔的文件管理新建文件夹ecloudgo
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203144601138.png" alt="image-20211203144601138" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203144601138.png" alt="image-20211203144601138" style={{zoom:'33%'}} />
 
 
 
@@ -56,15 +56,15 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 
 > 2、通过宝塔的文件管理上传zip包
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203144634238.png" alt="image-20211203144634238" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203144634238.png" alt="image-20211203144634238" style={{zoom:'33%'}} />
 
 
 
 > 3、解压二进制文件
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203145105395.png" alt="image-20211203145105395" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203145105395.png" alt="image-20211203145105395" style={{zoom:'33%'}} />
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203145114564.png" alt="image-20211203145114564" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203145114564.png" alt="image-20211203145114564" style={{zoom:'33%'}} />
 
 
 
@@ -74,7 +74,7 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 前提是mysql redis都安装好了！！！宝塔左上角 橙色中的为 0  代表都安装完成了
 ```
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203145436463.png" alt="image-20211203145436463" style="zoom:25%;" />
+<img src="/ecloudimages/image-20211203145436463.png" alt="image-20211203145436463" style={{zoom:'25%'}} />
 
 
 
@@ -82,7 +82,7 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 
 
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203145825106.png" alt="image-20211203145825106" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203145825106.png" alt="image-20211203145825106" style={{zoom:'33%'}} />
 
 
 
@@ -92,30 +92,33 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 
 
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203151414051.png" alt="image-20211203151414051" style="zoom:33%;" />
+<img src="/ecloudimages//image-20211203151414051.png" alt="image-20211203151414051" style={{zoom:'33%'}} />
 
 
 
 > 选择phpmyadmin的用户一栏
-<img src="/docs/zh-cn/ecloud2/images/image-20211203151451822.png" alt="image-20211203151451822" style="zoom:33%;" />
+
+<img src="/ecloudimages/image-20211203151451822.png" alt="image-20211203151451822" style={{zoom:'33%'}} />
 
 
 
 > 点击红色框中的编辑权限，然后选择全选
 
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203151534953.png" alt="image-20211203151534953" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203151534953.png" alt="image-20211203151534953" style={{zoom:'33%'}} />
 
 
 
 > 点击执行
-<img src="/docs/zh-cn/ecloud2/images/image-20211203151554359.png" alt="image-20211203151554359" style="zoom:33%;" />
+
+<img src="/ecloudimages/image-20211203151554359.png" alt="image-20211203151554359" style={{zoom:'33%'}} />
 
 
 
 
 > 变为以下状态就是权限分配成功
-<img src="/docs/zh-cn/ecloud2/images/image-20211203151718322.png" alt="image-20211203151718322" style="zoom:33%;" />
+
+<img src="/ecloudimages/image-20211203151718322.png" alt="image-20211203151718322" style={{zoom:'33%'}} />
 
 
 
@@ -125,12 +128,12 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 
 
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203145911611.png" alt="image-20211203145911611" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203145911611.png" alt="image-20211203145911611" style={{zoom:'33%'}} />
 
 
 > 看到下面三个选项，全部更改为ecloudgo
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203150103562.png" alt="image-20211203150103562" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203150103562.png" alt="image-20211203150103562" style={{zoom:'33%'}} />
 
 
 
@@ -140,27 +143,27 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 
 
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203150553998.png" alt="image-20211203150553998" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203150553998.png" alt="image-20211203150553998" style={{zoom:'33%'}} />
 
 > 点击添加进程守护
 
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203150616509.png" alt="image-20211203150616509" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203150616509.png" alt="image-20211203150616509" style={{zoom:'33%'}} />
 
 
 > 选择目录和执行文件
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203150723547.png" alt="image-20211203150723547" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203150723547.png" alt="image-20211203150723547" style={{zoom:'33%'}} />
 
 > 启动成功
 
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203150742524.png" alt="image-20211203150742524" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203150742524.png" alt="image-20211203150742524" style={{zoom:'33%'}} />
 
 > 日志查看是否成功
-<img src="/docs/zh-cn/ecloud2/images/image-20211203150820652.png" alt="image-20211203150820652" style="zoom:33%;" />
+<img src="/ecloudimages//image-20211203150820652.png" alt="image-20211203150820652" style={{zoom:'33%'}} />
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203150827519.png" alt="image-20211203150827519" style="zoom:33%;" />
+<img src="/ecloudimages//image-20211203150827519.png" alt="image-20211203150827519" style={{zoom:'33%'}} />
 
 
 
@@ -173,9 +176,9 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 
 如果遇到提示nginx防火墙升级，就进入软件商店进行安装nginx防火墙
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203151152772.png" alt="image-20211203151152772" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203151152772.png" alt="image-20211203151152772" style={{zoom:'33%'}} />
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203151226538.png" alt="image-20211203151226538" style="zoom:33%;" />
+<img src="/ecloudimages/image-20211203151226538.png" alt="image-20211203151226538" style={{zoom:'33%'}} />
 
 
 
@@ -207,7 +210,7 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 
 > 使用调试版本的apk的时候，进入企业云设置，输入远程IP或者域名，点击测试链路
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203153342198.png" alt="image-20211203153342198" style="zoom:33%;" />
+<img src="/ecloudimages//image-20211203153342198.png" alt="image-20211203153342198" style={{zoom:'33%'}} />
 
 > 使用开发工具打包，无需在apk填写域名
 >
@@ -218,7 +221,7 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 >  进入设备管理-设备列表-未授权设备按钮点击下，再点击分配即可
 
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203153609841.png" alt="image-20211203153609841" style="zoom:33%;" />
+<img src="/ecloudimages//image-20211203153609841.png" alt="image-20211203153609841" style={{zoom:'33%'}} />
 
 
 
@@ -230,7 +233,7 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 
 1、上传单独的ecloudgo二进制文件到网站根目录
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203152131132.png" alt="image-20211203152131132" style="zoom:33%;" />
+<img src="/ecloudimages//image-20211203152131132.png" alt="image-20211203152131132" style={{zoom:'33%'}} />
 
 2、上传config中的内容到网站的config文件夹下
 
@@ -239,7 +242,7 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 4、配置supervisor，修改为对应的二进制执行文件即可
 
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203152321572.png" alt="image-20211203152321572" style="zoom:33%;" />
+<img src="/ecloudimages//image-20211203152321572.png" alt="image-20211203152321572" style={{zoom:'33%'}} />
 
 
 
@@ -247,7 +250,7 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 
 
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203152346117.png" alt="image-20211203152346117" style="zoom:33%;" />
+<img src="/ecloudimages//image-20211203152346117.png" alt="image-20211203152346117" style={{zoom:'33%'}} />
 
 
 
@@ -263,6 +266,6 @@ keywords: [EasyClick 自动化脚本 android免root 云控安装]
 >
 > 2、supervisor的配置中新增 一行 minfds=65535 ，主配置和子配置都新增，然后重启云控即可
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203152851539.png" alt="image-20211203152851539" style="zoom:33%;" />
+<img src="/ecloudimages//image-20211203152851539.png" alt="image-20211203152851539" style={{zoom:'33%'}} />
 
-<img src="/docs/zh-cn/ecloud2/images/image-20211203152918388.png" alt="image-20211203152918388" style="zoom:33%;" />
+<img src="/ecloudimages//image-20211203152918388.png" alt="image-20211203152918388" style={{zoom:'33%'}} />

@@ -151,7 +151,7 @@ vivo 省电管理：
 - 安卓10无法后台预览或者打开应用，可以给EC调试版本赋予悬浮窗权限，或者在脚本中调用requestFloatViewPermission(10);方法请求并赋予权限
 - 荣耀系列打开允许关联启动 
 <br/>
-<img src='zh-cn/images/ry-open-activity.png' width='300' />
+<img src='/androidimg/ry-open-activity.png' width='300' />
 
 ## 打开三方APP函数不生效
 - 小米系统请允许 "后台弹出界面"，其他的如果有限制也可以自行百度解决
@@ -236,7 +236,7 @@ vivo 省电管理：
 
 - 请在手机上设置允许自启动、允许关联启动、允许后台活动
 
-  <img src='zh-cn/images/ry-open-activity.png' width='300' />
+  <img src='/androidimg/ry-open-activity.png' width='300' />
 
 
 

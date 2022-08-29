@@ -14,7 +14,7 @@ keywords: [EasyClick 自动化脚本 android免root Java-JS混合开发]
 - 点击下一步并完成，会自动生成对应的java类和配置信息
 <br/>
 <br/>
-<img src='zh-cn/images/javajs.png' width='400' />
+<img src='/androidimg/javajs.png' width='400' />
 
 ## 目录结构
 - src/js/main.js 这个文件是js调用插件相关方法的测试入口
@@ -29,25 +29,25 @@ keywords: [EasyClick 自动化脚本 android免root Java-JS混合开发]
 
 
 <br/><br/>
-<img src='zh-cn/images/javajs-2.png' width='400' />
+<img src='/androidimg/javajs-2.png' width='400' />
 
 ## 配置JDK和输出class目录
 - 在项目上点击右键
 <br/>
-<img src='zh-cn/images/minx-1.png' width='400' />
+<img src='/androidimg/minx-1.png' width='400' />
 <br/>
-<img src='zh-cn/images/minx-2.png' width='400' />
+<img src='/androidimg/minx-2.png' width='400' />
 <br/>
-<img src='zh-cn/images/minx-3.png' width='400' />
+<img src='/androidimg/minx-3.png' width='400' />
 
 
 ## 引用android.jar
 - 找到android.jar点击右键,选择加入lib
 <br/>
-<img src='zh-cn/images/addlib-1.png' width='300' /><br/><br/>
+<img src='/androidimg/addlib-1.png' width='300' /><br/><br/>
 - 选择确定
 <br/><br/>
-<img src='zh-cn/images/addlib-2.png' width='300' /><br/>
+<img src='/androidimg/addlib-2.png' width='300' /><br/>
 
 
 ## 默认java类 PluginClz
