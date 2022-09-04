@@ -37,8 +37,8 @@ export default function BlogLayout(props: Props): JSX.Element {
             )}>
                 {title === '使用场景' && location_url == '/usescene' || location_url == '/en/usescene' ? (
                     <h1 className={styles.title}>使用场景</h1>
-                ) : title === '案例' && location_url == '/case' || location_url == '/en/case' ? (
-                    <h1 className={styles.title}>案例</h1>
+                ) : title === '合作伙伴' && location_url == '/case' || location_url == '/en/case' ? (
+                    <h1 className={styles.title}>合作伙伴</h1>
                 ) : (
                     ''
                 )}

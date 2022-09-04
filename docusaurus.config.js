@@ -109,13 +109,18 @@ const config = {
             items: [
               {
                 label: '企业版云控',
-                href: '/usescene',
+                href: '/enterprise_server',
               },
               {
                 label: '企业版群控',
-                href: '/case',
+                href: '/local_ctrl_server',
               }
             ],
+          },
+          {
+            position: 'left',
+            label: '合作伙伴',
+            to: '/docs/zh-cn/partner',
           },
           {
             position: 'left',
@@ -187,6 +192,10 @@ const config = {
                 label: '联系我们',
                 to: '/docs/zh-cn/joinus'
               },
+              {
+                label: '合作伙伴',
+                to: '/docs/zh-cn/partner'
+              },
             ]
           }
         ],
@@ -235,10 +244,10 @@ const config = {
         id: 'case',
         routeBasePath: 'case',
         path: './case',
-        blogTitle: '案例',
+        blogTitle: '合作伙伴',
         postsPerPage: 10,
         blogSidebarCount: 'ALL',
-        blogSidebarTitle: '案例',
+        blogSidebarTitle: '合作伙伴',
         sortPosts: 'descending'
       }
     ],

@@ -28,6 +28,8 @@ keywords: [EasyClick 自动化脚本 android免root  ]
 ## EasyClick 安卓版能做什么
 * App爬虫等
 * 自动化测试App
+* 数据提取
+* 营销软件开发
 * ...
 
 ## 适合人群

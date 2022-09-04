@@ -46,7 +46,7 @@ export default function Index(props) {
                 </a>
               </li>
               <li>
-                <a href='/enterprise_server'>
+                <a href='/local_ctrl_server'>
                   <Translate id='navbar.enterprise'>企业版群控</Translate>
                 </a>
               </li>
@@ -57,11 +57,11 @@ export default function Index(props) {
                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABUUlEQVRoge3Wr0tdcRzH4WfeKcpwCCIMBAXBIlgWFpYMppUVLUs2i9F/4SbXtrBmsmhZWVpYWrhhRVgZCBMGggiiyIZjTsO9XyZ3XO65P86P8HngE88571c7hBBCCCGEEEIYujpuK371rDE7FRjb6d5kjYAHeFeB0e23i5FeQrQe2KvA+HQHqPUakdSwX4GI9xjtNyIZw4cSIz5ifNCIZAKfSoj4jEfDikgeo1FgRAOTw45IpvClgIhDTOcVkczga44R3/Ak74hkFkc5RBxjvqiIZA7fBxx+/35godCCexZx0mVgljvFUsHb/7OMM/1HnONp4as7eIZLvUdctJ6tlOe4kj3iJ1ZKWZrBKn7pHnGNFyVtzOwlfusc8Qfrpa3r0Zrm4PaIG7wqcVdfNjSHp4i/2Cx10QC2/AvZzvNDD/N8Od5q/jXD65y/FUIIIYRQNXfPaMyAru8lkAAAAABJRU5ErkJggg=="/>
                   <ul className="dropdown__menu">
                     <li>
-                      <a className={`${styles.DropDownFont} dropdown__link`} href="/usescene"><Translate
+                      <a className={`${styles.DropDownFont} dropdown__link`} href="/docs"><Translate
                         id='navbar.usescene'>易点云测安卓版</Translate></a>
                     </li>
                     <li>
-                      <a className={`${styles.DropDownFont} dropdown__link`} href="/case"><Translate
+                      <a className={`${styles.DropDownFont} dropdown__link`} href="/iosdocs"><Translate
                         id='navbar.case'>易点云测iOS版</Translate></a>
                     </li>
 
@@ -69,13 +69,18 @@ export default function Index(props) {
                 </div>
               </li>
               <li>
-                <a href='/docs/'>
+                <a href='/docs'>
                   <Translate id='navbar.doc'>安卓开发文档</Translate>
                 </a>
               </li>
               <li>
-                <a href='/iosdocs/'>
+                <a href='/iosdocs'>
                   <Translate id='navbar.doc'>iOS开发文档</Translate>
+                </a>
+              </li>
+              <li>
+                <a href='/docs/zh-cn/partner'>
+                  <Translate id='navbar.case'>合作伙伴</Translate>
                 </a>
               </li>
               <LocaleDropdownNavbarItem dropdownItemsBefore={[]} dropdownItemsAfter={[]} items={[]}/>
@@ -105,7 +110,7 @@ export default function Index(props) {
               </a>
             </li>
             <li>
-              <a href='/enterprise_server'>
+              <a href='/local_ctrl_server'>
                 <Translate>企业版群控</Translate>
               </a>
             </li>
@@ -116,22 +121,27 @@ export default function Index(props) {
                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABUUlEQVRoge3Wr0tdcRzH4WfeKcpwCCIMBAXBIlgWFpYMppUVLUs2i9F/4SbXtrBmsmhZWVpYWrhhRVgZCBMGggiiyIZjTsO9XyZ3XO65P86P8HngE88571c7hBBCCCGEEEIYujpuK371rDE7FRjb6d5kjYAHeFeB0e23i5FeQrQe2KvA+HQHqPUakdSwX4GI9xjtNyIZw4cSIz5ifNCIZAKfSoj4jEfDikgeo1FgRAOTw45IpvClgIhDTOcVkczga44R3/Ak74hkFkc5RBxjvqiIZA7fBxx+/35godCCexZx0mVgljvFUsHb/7OMM/1HnONp4as7eIZLvUdctJ6tlOe4kj3iJ1ZKWZrBKn7pHnGNFyVtzOwlfusc8Qfrpa3r0Zrm4PaIG7wqcVdfNjSHp4i/2Cx10QC2/AvZzvNDD/N8Od5q/jXD65y/FUIIIYRQNXfPaMyAru8lkAAAAABJRU5ErkJggg=="/>
                 <ul className="dropdown__menu">
                   <li>
-                    <a className={`${styles.DropDownFont} dropdown__link`} href="/usescene">易点云测安卓版本</a>
+                    <a className={`${styles.DropDownFont} dropdown__link`} href="/docs">易点云测安卓版本</a>
                   </li>
                   <li>
-                    <a className={`${styles.DropDownFont} dropdown__link`} href="/case">易点云测iOS版本</a>
+                    <a className={`${styles.DropDownFont} dropdown__link`} href="/iosdocs">易点云测iOS版本</a>
                   </li>
                 </ul>
               </div>
             </li>
             <li>
-              <a href='/docs/'>
+              <a href='/docs'>
                 <Translate id='navbar.doc'>安卓开发文档</Translate>
               </a>
             </li>
             <li>
-              <a href='/iosdocs/'>
+              <a href='/iosdocs'>
                 <Translate id='navbar.doc'>iOS开发文档</Translate>
+              </a>
+            </li>
+            <li>
+              <a href='/docs/zh-cn/partner'>
+                <Translate id='navbar.case'>合作伙伴</Translate>
               </a>
             </li>
           </ul>
