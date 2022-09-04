@@ -21,33 +21,33 @@ export default function Index() {
         className={styles.swiperDisplay}
       >
         <SwiperSlide>
-          <a href='https://www.bilibili.com/video/BV1Ng411o7ds/?spm_id_from=333.788' target='_blank'>
-            <img src='/img/video/install.png' alt=''/>
+          <a href='/' target='_blank'>
+            <img src='#' alt=''/>
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href='#' target='_blank'>
-            <img src='/img/video/quick.png' alt=''/>
+            <img src='#' alt=''/>
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href='#' target='_blank'>
-            <img src='/img/video/gitlab+rainbond.png' alt=''/>
+            <img src='#' alt=''/>
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href='#' target='_blank'>
-            <img src='/img/video/enterprise-app-manage.png' alt=''/>
+            <img src='#' alt=''/>
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href='#' target='_blank'>
-            <img src='/img/video/pig.png' alt=''/>
+            <img src='#' alt=''/>
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a href='#' target='_blank'>
-            <img src='/img/video/rainstore.png' alt=''/>
+            <img src='#' alt=''/>
           </a>
         </SwiperSlide>
       </Swiper>

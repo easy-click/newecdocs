@@ -14,20 +14,19 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 图色函数  资源下载 ]
 * @param params 超时时间，单位是毫秒
 
 
-> ```javascript
-> 
-> function main() {
->  //action_timeout 找图找色动作的最大时间，超时后会自动返回避免阻塞
->    image.setInitParam({"action_timeout":1000});
->    image.setInitParam(
->      {
->        "action_timeout":1000,
->        "auto_click_request_dialog":false
->      }
->    );
-> }
-> main();
-> ```
+```javascript
+ function main() {
+  //action_timeout 找图找色动作的最大时间，超时后会自动返回避免阻塞
+    image.setInitParam({"action_timeout":1000});
+    image.setInitParam(
+      {
+        "action_timeout":1000,
+        "auto_click_request_dialog":false
+      }
+    );
+ }
+ main();
+ ```
 
 
 

@@ -352,20 +352,22 @@ keywords: [EasyClick 自动化脚本 android免root 代理事件  ]
 
 
 
-
-
 ## ocr.ocrBitmap 识别文字
- * 对Bitmap进行OCR，返回的是JSON数据，其中数据类似于与：
- * 适用版本(EC 5.17.0+)
- * [{
- * 	"label": "奇趣装扮三阶盘化",
- *	"confidence": 0.48334712,
- *	"x": 11,
- *	"y": 25,
- *	"width": 100,
- *	"height": 100
- * }]
- *  <br/>
+* 对Bitmap进行OCR，返回的是JSON数据，其中数据类似于与：
+* 适用版本(EC 5.17.0+)
+```json
+
+
+   [{
+  	"label": "奇趣装扮三阶盘化",
+ 	"confidence": 0.48334712,
+ 	"x": 11,
+ 	"y": 25,
+ 	"width": 100,
+ 	"height": 100
+  }]
+
+```
  *  label: 代表是识别的文字
  *  confidence：代表识别的准确度
  *  x: 代表X开始坐标
@@ -378,7 +380,6 @@ keywords: [EasyClick 自动化脚本 android免root 代理事件  ]
  * @return {JSON} JSON对象 
 
 
-
 ```javascript
 代码例子常见 OCR初始化
 ```
@@ -388,15 +389,20 @@ keywords: [EasyClick 自动化脚本 android免root 代理事件  ]
 ## ocr.ocrImage 识别文字
  * 对 AutoImage 进行OCR，返回的是JSON数据，其中数据类似于与：
  * 适用版本(EC 8.2.0+)
- * [{
- * 	"label": "奇趣装扮三阶盘化",
- *	"confidence": 0.48334712,
- *	"x": 11,
- *	"y": 25,
- *	"width": 100,
- *	"height": 100
- * }]
- *  <br/>
+
+```json
+  [{
+  	"label": "奇趣装扮三阶盘化",
+ 	"confidence": 0.48334712,
+ 	"x": 11,
+ 	"y": 25,
+ 	"width": 100,
+ 	"height": 100
+  }]
+
+```
+
+
  *  label: 代表是识别的文字
  *  confidence：代表识别的准确度
  *  x: 代表X开始坐标
