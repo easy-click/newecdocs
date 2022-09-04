@@ -114,7 +114,7 @@ export default function Home() {
                         <div
                             className={clsx('mask_video', styles.know_rainbond_video_div)}
                         >
-                            <img src='/img/video/222.gif' alt=''
+                            <img src='/img/video/sss.jpg' alt=''
                                  className={styles.know_rainbond_video_div_img}/>
                         </div>
                     </animated.div>
