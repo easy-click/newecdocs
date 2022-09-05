@@ -100,6 +100,7 @@ const sidebars = {
         id: 'zh-cn/ecloud2/intro',
       },
       items: [
+        'zh-cn/ecloud2/cloudchangelog',
         'zh-cn/ecloud2/installcloud',
         'zh-cn/ecloud2/pkgset',
         'zh-cn/ecloud2/ecloud-func',

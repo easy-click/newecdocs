@@ -212,7 +212,7 @@ const config = {
       }
     }),
   scripts: [
-    //'https://static.goodrain.com/docusaurus/baidu-statistics.js',
+    '/js/baidu.js',
     //'https://static.goodrain.com/docusaurus/posthog.js'
   ],
   plugins: [
