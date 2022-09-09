@@ -23,7 +23,7 @@ keywords: [EasyClick 自动化脚本 android免root  ]
 * 不局限地域，任意地方部署设备
 * 定时/非定时执行任务
 * ...
-* [查看企业版本如何接入](zh-cn/ecloud/intro)
+* [查看企业版本如何接入](zh-cn/ecloud2/intro)
 
 ## EasyClick 安卓版能做什么
 * App爬虫等
