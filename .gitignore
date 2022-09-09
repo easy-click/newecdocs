@@ -3,3 +3,5 @@ node_modules/
 webserver
 build.sh
 build.sh
+builddoc.sh
+builddoc的副本.sh
