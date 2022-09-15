@@ -25,6 +25,11 @@ keywords: [EasyClick 自动化脚本 android免root 插件生态圈]
   - 地址: [http://www.xinxingheipingguo.top/docs](http://www.xinxingheipingguo.top/docs)
   - 作者清&风，QQ: 2968576127
 
+
+- 代理模式截图插件
+    - 地址: [http://www.fywluokj.com:3000/](http://www.fywluokj.com:3000/)
+    - QQ: 2968576127
+
 - 全分辨率找图插件 -3 
 
   - 地址: [https://www.showdoc.com.cn/1820857786166340/8402531131533081](https://www.showdoc.com.cn/1820857786166340/8402531131533081)
