@@ -1222,7 +1222,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 图色函数  资源下载 ]
 >              if (d) {
 >                  var saved =image.saveTo(d,"D:/testb.png");
 >                  var s = new Date().getTime();
->                  var bd = image.binaryzationExx(d,{
+>                  var bd = image.binaryzationEx(d,{
 >                                                      "diameter":20,
 >                                                       "adaptiveMethod":1,
 >                                                      "c":9,"blockSize":51});
