@@ -1290,22 +1290,20 @@ function main() {
        toast("申请权限失败");
        return;
    }
-  var  d= image.initOpenCV();
+    let  d= image.initOpenCV();
    logd(d)
     //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
     sleep(1000)
-   for (var i = 0; i < 1000; i++) {
+   for (let i = 0; i < 1000; i++) {
           sleep(1000);
-          var s = new Date().getTime();
-          var d = image.captureFullScreenEx();
+          let d = image.captureFullScreenEx();
           if (d) {
-              var saved =image.saveTo(d,"/sdcard/testb.png");
-              var s = new Date().getTime();
-              var bd = image.binaryzation(d,1,200);
+              let s = new Date().getTime();
+              let bd = image.binaryzation(d,1,200);
               logd("time "+(new Date().getTime()-s))
               logd(bd.uuid);
               if (bd) {
-                  var saved =image.saveTo(bd,"/sdcard/testb2.png");
+                  let saved =image.saveTo(bd,"/sdcard/testb2.png");
                   logd("saved "+saved)
                   exit()
               }
@@ -1363,6 +1361,103 @@ function main() {
                  }
               //图片要回收
               image.recycle(d)
+             }
+         }
+
+}
+main();
+```
+
+
+### image.binaryzationBitmapEx 二值化 Bitmap
+ * 自适应二值化，使用了opencv的adaptiveThreshold函数实现
+ * @param bitmap Bitmap 图片对象
+ * @param map MAP 参数
+    *  diameter : 去噪直径 参考opencv的bilateralFilter函数
+    *  adaptiveMethod：自适应二值化方式分别是0和1 ，ADAPTIVE_THRESH_MEAN_C=0，ADAPTIVE_THRESH_GAUSSIAN_C = 1
+    *  blockSize：计算单位是像素的邻域块，邻域块取多大，就由这个值作决定，3，5，7这样的奇数
+    *  c: 偏移值调整量，
+    *   {"diameter":20,
+    *   "adaptiveMethod":1,
+    *   "c":9,"blockSize":51}
+ * @return Bitmap 对象或者null
+
+ ```javascript
+
+ function main() {
+       let req = startEnv();
+       if (!req) {
+          logd("申请权限失败");
+           return;
+       }
+        //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
+        sleep(1000)
+       for (let i = 0; i < 1000; i++) {
+              sleep(1000);
+              let d = image.captureScreenBitmapEx();
+              if (d) {
+                  let s = new Date().getTime();
+                  let bd = image.binaryzationBitmapEx(d,
+                                                      {
+                                                      "diameter":20,
+                                                       "adaptiveMethod":1,
+                                                      "c":9,"blockSize":51});
+                  logd("time "+(new Date().getTime()-s))
+                  logd(bd);
+                  if (bd) {
+                      exit()
+                  }
+               //图片要回收
+               image.recycle(d)
+              }
+          }
+ }
+ main();
+
+ ```
+
+
+### image.binaryzationEx 二值化 
+ * 自适应二值化，使用了opencv的adaptiveThreshold函数实现
+ * @param img AutoImage图片对象
+ * @param map MAP 参数
+    *  diameter : 去噪直径 参考opencv的bilateralFilter函数
+    *  adaptiveMethod：自适应二值化方式分别是0和1 ，ADAPTIVE_THRESH_MEAN_C=0，ADAPTIVE_THRESH_GAUSSIAN_C = 1
+    *  blockSize：计算单位是像素的邻域块，邻域块取多大，就由这个值作决定，3，5，7这样的奇数
+    *  c: 偏移值调整量，
+    *   {"diameter":20,
+    *   "adaptiveMethod":1,
+    *   "c":9,"blockSize":51}
+ * @return {null|AutoImage}
+
+```javascript
+
+function main() {
+      let req = startEnv();
+      if (!req) {
+          logd("申请权限失败");
+          return;
+      }
+       //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
+       sleep(1000)
+      for (let i = 0; i < 1000; i++) {
+             sleep(1000);
+             let d = image.captureFullScreenEx();
+             if (d) {
+                 let s = new Date().getTime();
+                 let bd = image.binaryzationEx(d,{
+                                                     "diameter":20,
+                                                      "adaptiveMethod":1,
+                                                     "c":9,"blockSize":51});
+                 logd("time "+(new Date().getTime()-s))
+                 logd(bd.uuid);
+                 if (bd) {
+                     let saved =image.saveTo(bd,"/sdcard/testb2.png");
+                     logd("saved "+saved)
+                     exit()
+                 }
+                  //图片要回收
+                  image.recycle(d)
              }
          }
 

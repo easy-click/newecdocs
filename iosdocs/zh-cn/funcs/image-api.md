@@ -1163,7 +1163,7 @@ main();
  * 8    大津法自动寻求全局阈值
  * 16    三角形法自动寻求全局阈值
  * @param threshold 二值化系数，0 ~ 255
- * @return Bitmap 对象或者null
+ * @return BufferedImage 对象或者null
 
 ```javascript
 
@@ -1201,16 +1201,14 @@ main();
  * 自适应二值化，使用了opencv的adaptiveThreshold函数实现
  * @param bitmap BufferedImage 图片对象
  * @param map MAP 参数
- *  diameter : 去噪直径 参考opencv的bilateralFilter函数
- *  adaptiveMethod：自适应二值化方式分别是0和1 ，ADAPTIVE_THRESH_MEAN_C=0，ADAPTIVE_THRESH_GAUSSIAN_C = 1
- *  blockSize：计算单位是像素的邻域块，邻域块取多大，就由这个值作决定，3，5，7这样的奇数
- *  c: 偏移值调整量，
- *  {
- *   "diameter":20,
- *   "adaptiveMethod":1,
- *   "c":9,"blockSize":51}
- * @return {null|AutoImage}
- * @return Bitmap 对象或者null
+    *  diameter : 去噪直径 参考opencv的bilateralFilter函数
+    *  adaptiveMethod：自适应二值化方式分别是0和1 ，ADAPTIVE_THRESH_MEAN_C=0，ADAPTIVE_THRESH_GAUSSIAN_C = 1
+    *  blockSize：计算单位是像素的邻域块，邻域块取多大，就由这个值作决定，3，5，7这样的奇数
+    *  c: 偏移值调整量，
+    *   {"diameter":20,
+    *   "adaptiveMethod":1,
+    *   "c":9,"blockSize":51}
+ * @return BufferedImage 对象或者null
 
  ```javascript
  function main() {
@@ -1250,14 +1248,13 @@ main();
  * 自适应二值化，使用了opencv的adaptiveThreshold函数实现
  * @param img AutoImage图片对象
  * @param map MAP 参数
- *  diameter : 去噪直径 参考opencv的bilateralFilter函数
- *  adaptiveMethod：自适应二值化方式分别是0和1 ，ADAPTIVE_THRESH_MEAN_C=0，ADAPTIVE_THRESH_GAUSSIAN_C = 1
- *  blockSize：计算单位是像素的邻域块，邻域块取多大，就由这个值作决定，3，5，7这样的奇数
- *  c: 偏移值调整量，
- *  {
- *   "diameter":20,
- *   "adaptiveMethod":1,
- *   "c":9,"blockSize":51}
+    *  diameter : 去噪直径 参考opencv的bilateralFilter函数
+    *  adaptiveMethod：自适应二值化方式分别是0和1 ，ADAPTIVE_THRESH_MEAN_C=0，ADAPTIVE_THRESH_GAUSSIAN_C = 1
+    *  blockSize：计算单位是像素的邻域块，邻域块取多大，就由这个值作决定，3，5，7这样的奇数
+    *  c: 偏移值调整量，
+    *   {"diameter":20,
+    *   "adaptiveMethod":1,
+    *   "c":9,"blockSize":51}
  * @return {null|AutoImage}
 
 ```javascript
