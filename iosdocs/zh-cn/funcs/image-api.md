@@ -45,7 +45,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 图色函数  资源下载 ]
       startEnv()
       logd("isServiceOk "+isServiceOk());
 
-           var cap = image.startScreenStream()
+           let  cap = image.startScreenStream()
            logd("截图: " +cap)
         
   }
@@ -67,7 +67,7 @@ main();
       startEnv()
       logd("isServiceOk "+isServiceOk());
 
-           var cap = image.stopScreenStream()
+           let  cap = image.stopScreenStream()
            logd("截图: " +cap)
         
   }
@@ -162,7 +162,7 @@ main();
       startEnv()
       logd("isServiceOk "+isServiceOk());
        for (let i = 0; i < 10; i++) {
-           var cap = image.captureScreenStream()
+           let  cap = image.captureScreenStream()
            logd("截图数据: " +cap)
            sleep(1000)
            //图片要回收
@@ -197,7 +197,7 @@ function main() {
     logd("isServiceOk " + isServiceOk());
     for (let i = 0; i < 10; i++) {
         console.time(1)
-        var cap = image.captureFullScreenEx({"type": "1", "quality": 50})
+        let  cap = image.captureFullScreenEx({"type": "1", "quality": 50})
         logd("截图数据: " + cap + "  耗时: " + console.timeEnd(1))
         image.saveTo(cap, "b.jpg");
         sleep(1000)
@@ -227,7 +227,7 @@ function main() {
       startEnv()
       logd("isServiceOk "+isServiceOk());
        for (let i = 0; i < 10; i++) {
-           var cap = image.captureFullScreen()
+           let  cap = image.captureFullScreen()
            logd("截图数据: " +cap)
            sleep(1000)
            //图片要回收
@@ -257,7 +257,7 @@ function main() {
    startEnv()
    logd("isServiceOk "+isServiceOk());
     for (let i = 0; i < 10; i++) {
-        var cap = image.captureFullScreenPng()
+        let  cap = image.captureFullScreenPng()
         logd("截图数据: " +cap)
         sleep(1000)
         //图片要回收
@@ -480,9 +480,9 @@ function main() {
       }
        //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
-      var aimage = image.captureFullScreen();
+      let  aimage = image.captureFullScreen();
       if (aimage != null) {
-          var points = image.findColorJ(aimage,"金币");
+          let  points = image.findColorJ(aimage,"金币");
           logd("points "+JSON.stringify(points));
            //这玩意是个数组
            if(points && points.length 0){
@@ -523,7 +523,7 @@ function main() {
       }
        //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
-      var points = image.findColorEx("0xCDD7E9-0x101010,0xCDD7E9-0x101010", 0.9, 0, 0, 0, 0, 10,1);
+      let  points = image.findColorEx("0xCDD7E9-0x101010,0xCDD7E9-0x101010", 0.9, 0, 0, 0, 0, 10,1);
       logd("points " + JSON.stringify(points));
        //这玩意是个数组
        if(points && points.length 0){
@@ -554,7 +554,7 @@ function main() {
       }
        //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
-      var points = image.findColorExJ("金币");
+      let  points = image.findColorExJ("金币");
       logd("points " + JSON.stringify(points));
        //这玩意是个数组
        if(points && points.length 0){
@@ -596,9 +596,9 @@ function main() {
       }
        //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
-      var aimage = image.captureFullScreen();
+      let  aimage = image.captureFullScreen();
       if (aimage != null) {
-          var points = image.findMultiColor(aimage,"0xDD7A5F-0x101010", "29|25|0xBB454B-0x101010,58|44|0xA6363A-0x101010", 0.9, 0, 0, 0, 0, 10,1);
+          let  points = image.findMultiColor(aimage,"0xDD7A5F-0x101010", "29|25|0xBB454B-0x101010,58|44|0xA6363A-0x101010", 0.9, 0, 0, 0, 0, 10,1);
           logd("points " + JSON.stringify(points));
            //这玩意是个数组
            if(points && points.length 0){
@@ -636,9 +636,9 @@ function main() {
       }
        //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
-      var aimage = image.captureFullScreen();
+      let  aimage = image.captureFullScreen();
       if (aimage != null) {
-          var points = image.findMultiColorJ(aimage,"金币");
+          let  points = image.findMultiColorJ(aimage,"金币");
           logd("points " + JSON.stringify(points));
            //这玩意是个数组
            if(points && points.length 0){
@@ -681,7 +681,7 @@ function main() {
       
        //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
-      var points = image.findMultiColorEx("0xDD7A5F-0x101010", "29|25|0xBB454B-0x101010,58|44|0xA6363A-0x101010", 0.9, 0, 0, 0, 0, 10,1);
+      let  points = image.findMultiColorEx("0xDD7A5F-0x101010", "29|25|0xBB454B-0x101010,58|44|0xA6363A-0x101010", 0.9, 0, 0, 0, 0, 10,1);
       logd("points " + JSON.stringify(points));
        //这玩意是个数组
        if(points && points.length 0){
@@ -713,7 +713,7 @@ function main() {
       }
        //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
-      var points = image.findMultiColorExJ("金币");
+      let  points = image.findMultiColorExJ("金币");
       logd("points " + JSON.stringify(points));
        //这玩意是个数组
        if(points && points.length 0){
@@ -872,7 +872,7 @@ function main() {
           return;
       }
        sleep(1000)
-      var  d= image.initOpenCV();
+      let   d= image.initOpenCV();
       logd(d)
 }
 main();
@@ -905,7 +905,7 @@ function main() {
           logd("申请权限失败");
           return;
       }
-   var  d= image.initOpenCV();
+   let   d= image.initOpenCV();
       logd(d)
    //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
    sleep(1000)
@@ -960,14 +960,14 @@ function main() {
           logd("申请权限失败");
           return;
       }
-   var  d= image.initOpenCV();
+   let   d= image.initOpenCV();
       logd(d)
        //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
     //从工程目录下res文件夹下读取sms.png文件
-   var sms=readResAutoImage("sms.png");
+   let  sms=readResAutoImage("sms.png");
     //在当前屏幕中查找，并且限制只查找一个
-    var points = image.findImageEx(sms,0,0,0,0,0.7, 0.9, 21, 5);
+    let  points = image.findImageEx(sms,0,0,0,0,0.7, 0.9, 21, 5);
     logd("points " + JSON.stringify(points));
    //这玩意是个数组
    if(points && points.length 0){
@@ -1017,13 +1017,13 @@ function main() {
           logd("申请权限失败");
           return;
       }
-   var  d= image.initOpenCV();
+   let   d= image.initOpenCV();
       logd(d)
        //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
-     var aimage = image.captureFullScreen();
+     let  aimage = image.captureFullScreen();
      if (aimage != null) {
-        var temp = readResAutoImage("tmp.png");
+        let  temp = readResAutoImage("tmp.png");
         let rectp= new Rect();
         rectp.left=0;
         rectp.top=0;
@@ -1070,12 +1070,12 @@ function main() {
           logd("申请权限失败");
           return;
       }
-   var  d= image.initOpenCV();
+   let   d= image.initOpenCV();
       logd(d)
        //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)   
-       var temp = readResAutoImage("tmp.png");
-       var rectp= new Rect();
+       let  temp = readResAutoImage("tmp.png");
+       let  rectp= new Rect();
        rectp.left=0;
        rectp.top=0;
        rectp.right=device.getScreenWidth();
@@ -1125,18 +1125,18 @@ function main() {
       }
        //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
-      for (var i = 0; i < 1000; i++) {
+      for (let  i = 0; i < 1000; i++) {
              sleep(1000);
-             var s = new Date().getTime();
-             var d = image.captureFullScreenEx();
+             let  s = new Date().getTime();
+             let  d = image.captureFullScreenEx();
              if (d) {
-                 var saved =image.saveTo(d,"D:/testb.png");
-                 var s = new Date().getTime();
-                 var bd = image.binaryzation(d,1,200);
+                 let  saved =image.saveTo(d,"D:/testb.png");
+                 let  s = new Date().getTime();
+                 let  bd = image.binaryzation(d,1,200);
                  logd("time "+(new Date().getTime()-s))
                  logd(bd.uuid);
                  if (bd) {
-                     var saved =image.saveTo(bd,"D:/testb2.png");
+                     let  saved =image.saveTo(bd,"D:/testb2.png");
                      logd("saved "+saved)
                      exit()
                  }
@@ -1175,13 +1175,13 @@ function main() {
       }
        //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
-      for (var i = 0; i < 1000; i++) {
+      for (let  i = 0; i < 1000; i++) {
              sleep(1000);
-             var s = new Date().getTime();
-             var d = image.captureFullScreen();
+             let  s = new Date().getTime();
+             let  d = image.captureFullScreen();
              if (d) {
-                 var s = new Date().getTime();
-                 var bd = image.binaryzationBitmap(image.imageToBitmap(d),1,200);
+                 let  s = new Date().getTime();
+                 let  bd = image.binaryzationBitmap(image.imageToBitmap(d),1,200);
                  logd("time "+(new Date().getTime()-s))
                  logd(bd);
                  if (bd) {
@@ -1211,6 +1211,7 @@ main();
  * @return BufferedImage 对象或者null
 
  ```javascript
+
  function main() {
        let req = startEnv();
        if (!req) {
@@ -1267,21 +1268,21 @@ function main() {
       }
        //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
-      for (var i = 0; i < 1000; i++) {
+      for (let  i = 0; i < 1000; i++) {
              sleep(1000);
-             var s = new Date().getTime();
-             var d = image.captureFullScreenEx();
+             let  s = new Date().getTime();
+             let  d = image.captureFullScreenEx();
              if (d) {
-                 var saved =image.saveTo(d,"D:/testb.png");
-                 var s = new Date().getTime();
-                 var bd = image.binaryzationEx(d,{
+                 let  saved =image.saveTo(d,"D:/testb.png");
+                 let  s = new Date().getTime();
+                 let  bd = image.binaryzationEx(d,{
                                                      "diameter":20,
                                                       "adaptiveMethod":1,
                                                      "c":9,"blockSize":51});
                  logd("time "+(new Date().getTime()-s))
                  logd(bd.uuid);
                  if (bd) {
-                     var saved =image.saveTo(bd,"D:/testb2.png");
+                     let  saved =image.saveTo(bd,"D:/testb2.png");
                      logd("saved "+saved)
                      exit()
                  }
@@ -1292,6 +1293,7 @@ function main() {
 
 }
 main();
+
 ```
 
 
@@ -1305,7 +1307,7 @@ main();
 ```javascript
 
 function main() {
-    var autoimg = image.readImage("F:/a.png");
+    let  autoimg = image.readImage("F:/a.png");
     //图片要回收
     image.recycle(autoimg)
 }
@@ -1321,7 +1323,7 @@ main();
 ```javascript
 
 function main() {
-    var autoimg = image.readBitmap("F:/a.png");
+    let  autoimg = image.readBitmap("F:/a.png");
     //图片要回收
     image.recycle(autoimg)
 }
@@ -1341,15 +1343,15 @@ main();
 ```javascript
 
 function main() {
-   var request = image.requestScreenCapture(10000,0);
+   let  request = image.requestScreenCapture(10000,0);
    if (!request) {
        request = image.requestScreenCapture(10000,0);
    }
    logd("申请截图结果... "+request)
    //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
    sleep(1000)
-    var imageX = image.captureFullScreen();
-    var color = image.pixelInImage(imageX,100,100);
+    let  imageX = image.captureFullScreen();
+    let  color = image.pixelInImage(imageX,100,100);
     //图片要回收
     image.recycle(imageX)
 }
@@ -1372,11 +1374,11 @@ function main() {
       }
      //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
      sleep(1000)
-     var aimage = image.captureFullScreen();
+     let  aimage = image.captureFullScreen();
      if (aimage != null) {
-         var points3 ="765|22|0x1296DB";
+         let  points3 ="765|22|0x1296DB";
          logd("=="+image.argb(image.pixel(aimage,765,22)));
-         var points = image.cmpColor(aimage,points3, 0.5, 0, 0, 0, 0);
+         let  points = image.cmpColor(aimage,points3, 0.5, 0, 0, 0, 0);
          logd("points "+points);
          //图片要回收
          image.recycle(aimage)
@@ -1402,8 +1404,8 @@ function main() {
    logd("申请截图结果... "+request)
    //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
    sleep(1000)
-    var imageX = image.captureFullScreen();
-    var color = image.pixel(imageX,100,100);
+    let  imageX = image.captureFullScreen();
+    let  color = image.pixel(imageX,100,100);
     logd(image.argb(color))
     //图片要回收
     image.recycle(imageX)
@@ -1432,8 +1434,8 @@ function main() {
    logd("申请截图结果... "+request)
    ///申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
    sleep(1000)
-   var bitmap = image.captureFullScreen("jpg",800,800,100,100,100);
-   var color = image.getPixelBitmap(image.imageToBitmap(bitmap),100,100);
+   let  bitmap = image.captureFullScreen("jpg",800,800,100,100,100);
+   let  color = image.getPixelBitmap(image.imageToBitmap(bitmap),100,100);
    //图片要回收
    image.recycle(bitmap)
 }
@@ -1466,10 +1468,10 @@ function main() {
    logd("申请截图结果... "+request)
    //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
    sleep(1000)
-   var bitmap = image.captureFullScreen();
-   var w = bitmap.getWidth();
-   var h =bitmap.getHeight();
-   var mPixels =  image.getPixelsBitmap(image.imageToBitmap(bitmap),w*h, 0, w, 0, 0,w, h);
+   let  bitmap = image.captureFullScreen();
+   let  w = bitmap.getWidth();
+   let  h =bitmap.getHeight();
+   let  mPixels =  image.getPixelsBitmap(image.imageToBitmap(bitmap),w*h, 0, w, 0, 0,w, h);
    //图片要回收
    image.recycle(bitmap)
 }
@@ -1495,8 +1497,8 @@ function main() {
    logd("申请截图结果... "+request)
    //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
    sleep(1000)
-    var imageX = image.captureFullScreen();
-    var r = image.saveTo(imageX,"D:/a.png");
+    let  imageX = image.captureFullScreen();
+    let  r = image.saveTo(imageX,"D:/a.png");
     toast("result "+r);
     //图片要回收
     image.recycle(imageX )
@@ -1554,8 +1556,8 @@ function main() {
    logd("申请截图结果... "+request)
    //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
    sleep(1000)
-    var imageX = image.captureFullScreen();
-    var r = image.toBase64Format(imageX,"jpg",50);
+    let  imageX = image.captureFullScreen();
+    let  r = image.toBase64Format(imageX,"jpg",50);
     toast("result "+r);
     //图片要回收
     image.recycle(imageX )
@@ -1584,8 +1586,8 @@ function main() {
    logd("申请截图结果... "+request)
   //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
    sleep(1000)
-    var imageX = image.captureFullScreen();
-    var r = image.clip(imageX,100,100,300,400);
+    let  imageX = image.captureFullScreen();
+    let  r = image.clip(imageX,100,100,300,400);
     toast("result "+r);
     //图片要回收
     image.recycle(imageX )
@@ -1612,8 +1614,8 @@ function main() {
       }
    //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
    sleep(1000)
-    var imageX = image.captureFullScreen();
-    var r = image.pixel(imageX,100,100);
+    let  imageX = image.captureFullScreen();
+    let  r = image.pixel(imageX,100,100);
     toast("result "+r);
     //图片要回收
     image.recycle(imageX )
@@ -1632,8 +1634,8 @@ main();
 ```javascript
 
 function main() {
-    var imageX = image.captureFullScreen();
-    var r = image.isRecycled(imageX);
+    let  imageX = image.captureFullScreen();
+    let  r = image.isRecycled(imageX);
     logd("result "+r);
     //图片要回收
     image.recycle(imageX )
@@ -1649,7 +1651,7 @@ main();
 ```javascript
 
 function main() {
-   var imageX = image.captureFullScreen();
+   let  imageX = image.captureFullScreen();
     //图片要回收
     image.recycle(imageX )
   
@@ -1678,14 +1680,14 @@ function main() {
    logd("申请截图结果... "+request)
      //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
-   for (var i = 0; i < 100; i++) {
-       var d =image.captureFullScreen();
+   for (let  i = 0; i < 100; i++) {
+       let  d =image.captureFullScreen();
        logd(d)
        sleep(1000);
        if (d) {
            d = image.imageToBitmap(d)
            d= image.clipBitmap(d,100,100,200,200);
-           var ds = image.bitmapBase64(d,"jpg",100);
+           let  ds = image.bitmapBase64(d,"jpg",100);
            logd(ds)
            loge(image.base64Bitmap(ds,0))
             //图片要回收
@@ -1719,13 +1721,13 @@ function main() {
    logd("申请截图结果... "+request)
      //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
-   for (var i = 0; i < 100; i++) {
-       var d =image.captureFullScreen();
+   for (let  i = 0; i < 100; i++) {
+       let  d =image.captureFullScreen();
        logd(d)
        sleep(1000);
        if (d) {
            d= image.clipBitmap(d,100,100,200,200);
-           var ds = image.bitmapBase64(d,"jpg",100);
+           let  ds = image.bitmapBase64(d,"jpg",100);
            logd(ds)
            loge(image.base64Bitmap(ds,0))
             //图片要回收
@@ -1758,14 +1760,14 @@ function main() {
    logd("申请截图结果... "+request)
     //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
-   for (var i = 0; i < 100; i++) {
-       var d =image.captureFullScreen();
+   for (let  i = 0; i < 100; i++) {
+       let  d =image.captureFullScreen();
        logd(d)
        sleep(1000);
        if (d) {
            d = image.imageToBitmap(d)    
            d= image.clipBitmap(d,100,100,200,200);
-           var ds = image.bitmapBase64(d,"jpg",100);
+           let  ds = image.bitmapBase64(d,"jpg",100);
            logd(ds)
            loge(image.base64Bitmap(ds,0))
             //图片要回收
@@ -1799,12 +1801,12 @@ function main() {
    logd("申请截图结果... "+request)
       //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
        sleep(1000)
-   for (var i = 0; i < 100; i++) {
-       var d =image.captureFullScreen();
+   for (let  i = 0; i < 100; i++) {
+       let  d =image.captureFullScreen();
        logd(d)
        sleep(1000);
        if (d) {
-           var ds= image.imageToBitmap(d);
+           let  ds= image.imageToBitmap(d);
            logd(ds)
            image.recyle(d);
        }
@@ -1833,12 +1835,12 @@ function main() {
     logd("申请截图结果... "+request)
    //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
     sleep(1000)
-    for (var i = 0; i < 100; i++) {
-        var d =image.captureFullScreen();
+    for (let  i = 0; i < 100; i++) {
+        let  d =image.captureFullScreen();
         logd(d)
         sleep(1000);
         if (d) {
-            var ds= image.imageToBitmap(d);
+            let  ds= image.imageToBitmap(d);
             logd(ds)
             //再次转换为autoimage对象
             let sy= image.bitmapToImage(ds);
