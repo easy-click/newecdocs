@@ -1371,6 +1371,7 @@ main();
 
 ### image.binaryzationBitmapEx 二值化 Bitmap
  * 自适应二值化，使用了opencv的adaptiveThreshold函数实现
+ * 适合版本 EC 8.3.0+
  * @param bitmap Bitmap 图片对象
  * @param map MAP 参数
     *  diameter : 去噪直径 参考opencv的bilateralFilter函数
@@ -1419,6 +1420,7 @@ main();
 
 ### image.binaryzationEx 二值化 
  * 自适应二值化，使用了opencv的adaptiveThreshold函数实现
+ * 适合版本 EC 8.3.0+
  * @param img AutoImage图片对象
  * @param map MAP 参数
     *  diameter : 去噪直径 参考opencv的bilateralFilter函数

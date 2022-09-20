@@ -6,20 +6,24 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 
 ## 最新发布版本
 
+
+
 ### 8.3.0
 
 
 ```text
 # 8.3.0
 
-- 修改日志文件存储路径并且可以导出 -- 已完成
-- TCP 调试功能，本地测试成功 --- 花生壳待测试
-- 修复IDEA打包权限多了换行符问题 -- 已完成
-- 新增sqlite支持带版本的函数，支持blob的查询 -- 已完成
-- 修复findImageByColor坐标负数情况下找图问题 -- 已完成
-- 新增findImageByColorEx函数 -- 已完成
-- 新增IDEA找图找色后做红色标记 -- 已完成
-- 修复代理模式下readResAutoImage某些情况读图失败问题 -- 已完成
+- 修改日志文件存储路径并且可以导出
+- 更改HTTP远程调试为TCP协议，支持花生壳TCP模式，不在支持HTTP/HTTPS
+- 修复IDEA打包权限多了换行符问题
+- 新增sqlite支持带版本的函数，支持blob的查询
+- 修复findImageByColor坐标负数情况下找图问题
+- 新增findImageByColorEx函数
+- 新增IDEA找图找色后做红色标记
+- 修复代理模式下readResAutoImage某些情况读图失败问题
+- 新增captureScreenBitmapEx函数提高代理模式截图速度
+- 新增自适应二值化 binaryzationBitmapEx,binaryzationEx
 
 ```
 
