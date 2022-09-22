@@ -13,6 +13,7 @@ keywords: [EasyClick 社区支持]
     - QQ群2: 620028786
     - QQ群3: 647082990
     - QQ群4: 772810035
+    - QQ群5: 484379843
     - QQ群6: 435253761
 ## Github issues
 
