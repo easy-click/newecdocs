@@ -383,6 +383,26 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下�
 > ```
 
 
+### reboot 重启设备
+
+* 重启设备
+* 适合 EC iOS 3.5.0+
+* @return {null|布尔型}
+
+> ```javascript
+> 
+> function main(){
+>     var result = reboot();
+>     if (result){
+>         logd("成功");
+>     } else {
+>         logd("失败");
+>     }
+> }
+> main();
+> ```
+
+
 
 ### homeScreen 强制进入主页
 
