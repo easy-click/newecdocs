@@ -6,6 +6,20 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 
 ## 最新发布版本
 
+### 8.3.5
+```text
+# 8.3.5
+- 修复findColor方向7找不到颜色问题
+- 修复findColor返回的索引问题
+
+```
+
+
+
+
+## 历史版本
+
+
 ### 8.3.3
 ```text
 # 8.3.3
@@ -17,9 +31,6 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 
-
-
-## 历史版本
 ### 8.3.0
 
 
