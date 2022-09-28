@@ -612,7 +612,7 @@ function main() {
           let  points = image.findColorJ(aimage,"金币");
           logd("points "+JSON.stringify(points));
            //这玩意是个数组
-           if(points && points.length 0){
+           if(points && points.length> 0){
                for(let i=0;i<points.length;i++){
                    logd(JSON.stringify(points[i]), points[i].x, points[i].y)
                    //点击坐标
@@ -656,7 +656,7 @@ function main() {
       let  points = image.findColorEx("0xCDD7E9-0x101010,0xCDD7E9-0x101010", 0.9, 0, 0, 0, 0, 10,1);
       logd("points " + JSON.stringify(points));
        //这玩意是个数组
-       if(points && points.length 0){
+       if(points && points.length>0){
            for(let i=0;i<points.length;i++){
                logd(JSON.stringify(points[i]), points[i].x, points[i].y)
                //点击坐标
@@ -690,7 +690,7 @@ function main() {
       let  points = image.findColorExJ("金币");
       logd("points " + JSON.stringify(points));
        //这玩意是个数组
-       if(points && points.length 0){
+       if(points && points.length>0){
            for(let i=0;i<points.length;i++){
                logd(points[i],points[i].x,points[i].y)
                 //点击坐标
@@ -741,7 +741,7 @@ function main() {
           let  points = image.findMultiColor(aimage,"0xDD7A5F-0x101010", "29|25|0xBB454B-0x101010,58|44|0xA6363A-0x101010", 0.9, 0, 0, 0, 0, 10,1);
           logd("points " + JSON.stringify(points));
            //这玩意是个数组
-           if(points && points.length 0){
+           if(points && points.length> 0){
                for(let i=0;i<points.length;i++){
                    logd(points[i],points[i].x,points[i].y)
                    //点击坐标
@@ -784,7 +784,7 @@ function main() {
           let  points = image.findMultiColorJ(aimage,"金币");
           logd("points " + JSON.stringify(points));
            //这玩意是个数组
-           if(points && points.length 0){
+           if(points && points.length>0){
                for(let i=0;i<points.length;i++){
                    logd(points[i],points[i].x,points[i].y)
                    //点击坐标
@@ -830,7 +830,7 @@ function main() {
       let  points = image.findMultiColorEx("0xDD7A5F-0x101010", "29|25|0xBB454B-0x101010,58|44|0xA6363A-0x101010", 0.9, 0, 0, 0, 0, 10,1);
       logd("points " + JSON.stringify(points));
        //这玩意是个数组
-       if(points && points.length 0){
+       if(points && points.length> 0){
            for(let i=0;i<points.length;i++){
                    logd(points[i],points[i].x,points[i].y)
                    //点击坐标
@@ -865,7 +865,7 @@ function main() {
       let  points = image.findMultiColorExJ("金币");
       logd("points " + JSON.stringify(points));
        //这玩意是个数组
-       if(points && points.length 0){
+       if(points && points.length> 0){
            for(let i=0;i<points.length;i++){
                    logd(points[i],points[i].x,points[i].y)
                    //点击坐标
@@ -940,7 +940,7 @@ if (aimage != null) {
  let points = image.findImageByColor(aimage, sms,0, 0, 0, 0, 0.8, 5);
  logd("points " + JSON.stringify(points));
  //这玩意是个数组
- if(points && points.length 0){
+ if(points && points.length> 0){
      for(let i=0;i<points.length;i++){
              logd(points[i])
              let x = points[i].x
@@ -1071,7 +1071,7 @@ if (aimage != null) {
     let points = image.findImage(aimage, sms,0, 0, 0, 0,0.7, 0.9, 21, 5);
     logd("points " + JSON.stringify(points));
     //这玩意是个数组
-    if(points && points.length 0){
+    if(points && points.length> 0){
         for(let i=0;i<points.length;i++){
                 logd(points[i])
                 let x = parseInt((points[i].left + points[i].right)/2)
@@ -1128,7 +1128,7 @@ let  sms=readResAutoImage("sms.png");
  let  points = image.findImageEx(sms,0,0,0,0,0.7, 0.9, 21, 5);
  logd("points " + JSON.stringify(points));
 //这玩意是个数组
-if(points && points.length 0){
+if(points && points.length> 0){
     for(let i=0;i<points.length;i++){
                 logd(points[i])
                 let x = parseInt((points[i].left + points[i].right)/2)
