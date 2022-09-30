@@ -8,6 +8,20 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  常见问题 ]
 ## 其他常见问题查阅 
 - http://home.laoleng.top:3001/web/#/271?page_id=1931
 
+## 桥接内存CPU异常
+- 抓取桥接内存占用：
+- http://127.0.0.1:8020/debug/pprof/heap
+- 内存不正常的时候使用，这样会下载一个内存文件
+- 抓取桥接CPU占用：
+- http://127.0.0.1:8020/debug/pprof/profile
+- CPU不正常的时候使用，这样会下载一个CPU文件
+- 手动回收内存:
+- http://127.0.0.1:8020/devapi/gc
+
+## 桥接链接设备数量查看
+- 查看桥接设备数量:
+- http://127.0.0.1:8020/devapi/devicenum 
+
 ## iPhone重启后无法启动代理程序
 
 - 由于iPhone需要挂载开发者镜像文件，请到网盘下载DeveloperDiskImage.zip文件
