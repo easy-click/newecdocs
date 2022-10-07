@@ -6,6 +6,18 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 
 ## 最新发布版本
 
+### 9.0.0
+```text
+# 9.0.0
+- 升级IEC安全机制
+- 修改execScript函数实现
+- 优化apk与云控的通信协议
+- 注意：该版本不兼容老的iec，请自行保证apk版本与iec版本一致
+```
+
+
+## 历史版本
+
 ### 8.3.5
 ```text
 # 8.3.5
@@ -13,13 +25,6 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 - 修复findColor返回的索引问题
 
 ```
-
-
-
-
-## 历史版本
-
-
 ### 8.3.3
 ```text
 # 8.3.3
