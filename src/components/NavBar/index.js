@@ -41,14 +41,22 @@ export default function Index(props) {
           <div className={styles.nav_container}>
             <ul className={styles.nav_lists}>
               <li>
-                <a href='/enterprise_server'>
-                  <Translate id='navbar.enterprise'>企业版云控</Translate>
-                </a>
-              </li>
-              <li>
-                <a href='/local_ctrl_server'>
-                  <Translate id='navbar.enterprise'>企业版群控</Translate>
-                </a>
+                <div className="dropdown dropdown--hoverable">
+                  <Translate id='navbar.learn'>云控/群控产品</Translate>
+                  <img className={styles.iconDropDown}
+                       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABUUlEQVRoge3Wr0tdcRzH4WfeKcpwCCIMBAXBIlgWFpYMppUVLUs2i9F/4SbXtrBmsmhZWVpYWrhhRVgZCBMGggiiyIZjTsO9XyZ3XO65P86P8HngE88571c7hBBCCCGEEEIYujpuK371rDE7FRjb6d5kjYAHeFeB0e23i5FeQrQe2KvA+HQHqPUakdSwX4GI9xjtNyIZw4cSIz5ifNCIZAKfSoj4jEfDikgeo1FgRAOTw45IpvClgIhDTOcVkczga44R3/Ak74hkFkc5RBxjvqiIZA7fBxx+/35godCCexZx0mVgljvFUsHb/7OMM/1HnONp4as7eIZLvUdctJ6tlOe4kj3iJ1ZKWZrBKn7pHnGNFyVtzOwlfusc8Qfrpa3r0Zrm4PaIG7wqcVdfNjSHp4i/2Cx10QC2/AvZzvNDD/N8Od5q/jXD65y/FUIIIYRQNXfPaMyAru8lkAAAAABJRU5ErkJggg=="/>
+                  <ul className="dropdown__menu">
+                    <li>
+                      <a className={`${styles.DropDownFont} dropdown__link`} href="/enterprise_server"><Translate
+                        id='navbar.usescene'>企业版云控</Translate></a>
+                    </li>
+                    <li>
+                      <a className={`${styles.DropDownFont} dropdown__link`} href="/local_ctrl_server"><Translate
+                        id='navbar.case'>企业版群控</Translate></a>
+                    </li>
+
+                  </ul>
+                </div>
               </li>
               <li>
                 <div className="dropdown dropdown--hoverable">
@@ -64,18 +72,29 @@ export default function Index(props) {
                       <a className={`${styles.DropDownFont} dropdown__link`} href="/iosdocs"><Translate
                         id='navbar.case'>易点云测iOS版</Translate></a>
                     </li>
-
                   </ul>
                 </div>
               </li>
               <li>
-                <a href='/docs'>
-                  <Translate id='navbar.doc'>安卓开发文档</Translate>
-                </a>
+                <div className="dropdown dropdown--hoverable">
+                  <Translate id='navbar.learn'>开发文档</Translate>
+                  <img className={styles.iconDropDown}
+                       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABUUlEQVRoge3Wr0tdcRzH4WfeKcpwCCIMBAXBIlgWFpYMppUVLUs2i9F/4SbXtrBmsmhZWVpYWrhhRVgZCBMGggiiyIZjTsO9XyZ3XO65P86P8HngE88571c7hBBCCCGEEEIYujpuK371rDE7FRjb6d5kjYAHeFeB0e23i5FeQrQe2KvA+HQHqPUakdSwX4GI9xjtNyIZw4cSIz5ifNCIZAKfSoj4jEfDikgeo1FgRAOTw45IpvClgIhDTOcVkczga44R3/Ak74hkFkc5RBxjvqiIZA7fBxx+/35godCCexZx0mVgljvFUsHb/7OMM/1HnONp4as7eIZLvUdctJ6tlOe4kj3iJ1ZKWZrBKn7pHnGNFyVtzOwlfusc8Qfrpa3r0Zrm4PaIG7wqcVdfNjSHp4i/2Cx10QC2/AvZzvNDD/N8Od5q/jXD65y/FUIIIYRQNXfPaMyAru8lkAAAAABJRU5ErkJggg=="/>
+                  <ul className="dropdown__menu">
+                    <li>
+                      <a className={`${styles.DropDownFont} dropdown__link`} href="/docs"><Translate
+                        id='navbar.doc'>安卓开发文档</Translate></a>
+                    </li>
+                    <li>
+                      <a className={`${styles.DropDownFont} dropdown__link`} href="/iosdocs"><Translate
+                        id='navbar.doc'>iOS开发文档</Translate></a>
+                    </li>
+                  </ul>
+                </div>
               </li>
               <li>
-                <a href='/iosdocs'>
-                  <Translate id='navbar.doc'>iOS开发文档</Translate>
+                <a href='http://bbs.ieasyclick.com'>
+                  <Translate id='navbar.case'>技术交流</Translate>
                 </a>
               </li>
               <li>
@@ -137,6 +156,11 @@ export default function Index(props) {
             <li>
               <a href='/iosdocs'>
                 <Translate id='navbar.doc'>iOS开发文档</Translate>
+              </a>
+            </li>
+            <li>
+              <a href='http://bbs.ieasyclick.com'>
+                <Translate id='navbar.case'>技术交流</Translate>
               </a>
             </li>
             <li>

@@ -15,6 +15,8 @@ keywords: [EasyClick 社区支持]
     - QQ群4: 772810035
     - QQ群5: 484379843
     - QQ群6: 435253761
+- 技术交流:
+    [http://bbs.ieasyclick.com](http://bbs.ieasyclick.com)    
 ## Github issues
 
 [Github issues](https://github.com/easy-click/easyclick-libs) 你都可以搜索你的问题或提出新的问题。

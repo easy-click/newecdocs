@@ -119,6 +119,11 @@ const config = {
           },
           {
             position: 'left',
+            label: '技术交流',
+            to: 'http://bbs.ieasyclick.com',
+          },
+          {
+            position: 'left',
             label: '合作伙伴',
             to: '/docs/zh-cn/partner',
           },
@@ -191,6 +196,10 @@ const config = {
               {
                 label: '联系我们',
                 to: '/docs/zh-cn/joinus'
+              },
+              {
+                label: '技术交流',
+                to: 'http://bbs.ieasyclick.com'
               },
               {
                 label: '合作伙伴',
