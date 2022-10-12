@@ -8,7 +8,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 
 ### 9.1.0
 ```text
-# 9.0.0
+# 9.1.0
 - 新增checkApkVersion9函数，检测主版本是否是9
 - 修复资源文件中文名读取不了的问题
 - 修复开屏工作室名称乱码问题
