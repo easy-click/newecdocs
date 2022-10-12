@@ -24,6 +24,19 @@ keywords: [EasyClick 自动化脚本 android免root 全局模块  ]
 > main();
 > ```
 
+### checkApkVersion9
+
+* 检查apk主版本是否是9版本，如果不是会有异常发生
+* 该函数可以在程序中调用，防止iec和apk版本不一致
+* 适合版本 EC 9.1.0+
+
+> ```javascript
+> function main(){
+>     checkApkVersion9();
+> }
+> main();
+> ```
+
 ## 插件模块加载
 
 ### loadDex 载入dex或者apk

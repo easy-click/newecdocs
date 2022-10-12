@@ -6,6 +6,19 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 
 ## 最新发布版本
 
+### 9.1.0
+```text
+# 9.0.0
+- 新增checkApkVersion9函数，检测主版本是否是9
+- 修复资源文件中文名读取不了的问题
+- 修复开屏工作室名称乱码问题
+- 修论坛反馈的bug
+    - http://bbs.ieasyclick.com/thread-60-1-1.html
+- 注意：该版本不兼容9以下开发插件打包的iec，请自行保证apk版本与iec版本一致
+```
+
+## 历史版本
+
 ### 9.0.0
 ```text
 # 9.0.0
@@ -14,10 +27,6 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 - 优化apk与云控的通信协议
 - 注意：该版本不兼容老的iec，请自行保证apk版本与iec版本一致
 ```
-
-
-## 历史版本
-
 ### 8.3.5
 ```text
 # 8.3.5
