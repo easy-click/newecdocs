@@ -243,7 +243,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 文件函数 ]
 
 ## file.readExcelRow 读取Excel的一行数据
  * 读取Excel的一行数据
- * 适合版本 EC iOS 3.6.0+
+ * 适合版本 EC iOS 4.0.0+
  * @param path Excel文件的路径
  * @param sheetIndex 表格索引，从0开始
  * @param row 行号 从0开始
@@ -267,7 +267,7 @@ testexcel();
 ## file.readExcelAllRow 读取Excel的所有数据
  * 读取Excel的所有数据
  * 这个读出来第一行是表头，剩下的都是数据，返回的值是 类似[{"名称":2,"性别":222}]这样的数据，组装好的map格式
- * 适合版本 EC iOS 3.6.0+
+ * 适合版本 EC iOS 4.0.0+
  * @param path Excel文件的路径
  * @param sheetIndex 表格索引，从0开始
  * @return JSON JSON 对象
