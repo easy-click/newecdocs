@@ -11,7 +11,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 ```text
 - 重构iec的安全机制
 - 重构中控界面，替代web
-- 新增file模块readExcelRow、readExcelRow函数 
+- 新增file模块 readExcelAllRow、readExcelRow函数 
     - 可使用excel文件配合这两个函数做UI数据
 - 优化部分功能
 [已经安装了3.1的IPA，不用更新IPA了]
