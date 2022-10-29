@@ -6,6 +6,20 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 
 ## 最新发布版本
 
+### 9.2.0
+```text
+# 9.2.0
+- 新增TCP远程调试保存端口号
+- 修复sqlite查询日期为负数的问题
+- 远程调试断开打印提示信息
+- 优化部分功能
+- 注意：该版本不兼容9以下开发插件打包的iec，请自行保证apk版本与iec版本一致
+```
+
+
+
+## 历史版本
+
 ### 9.1.0
 ```text
 # 9.1.0
@@ -16,8 +30,6 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
     - http://bbs.ieasyclick.com/thread-60-1-1.html
 - 注意：该版本不兼容9以下开发插件打包的iec，请自行保证apk版本与iec版本一致
 ```
-
-## 历史版本
 
 ### 9.0.0
 ```text
