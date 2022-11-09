@@ -1,12 +1,13 @@
 ---
-title: 版本记录
-description: EasyClick 自动化脚本 android免root 版本记录
+title: 版本记录 
+description: EasyClick 自动化脚本 android免root 版本记录 
 keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ---
 
 ## 最新发布版本
 
 ### 9.2.0
+
 ```text
 # 9.2.0
 - 新增TCP远程调试保存端口号
@@ -16,11 +17,10 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 - 注意：该版本不兼容9以下开发插件打包的iec，请自行保证apk版本与iec版本一致
 ```
 
-
-
 ## 历史版本
 
 ### 9.1.0
+
 ```text
 # 9.1.0
 - 新增checkApkVersion9函数，检测主版本是否是9
@@ -32,6 +32,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 9.0.0
+
 ```text
 # 9.0.0
 - 升级IEC安全机制
@@ -39,14 +40,18 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 - 优化apk与云控的通信协议
 - 注意：该版本不兼容老的iec，请自行保证apk版本与iec版本一致
 ```
+
 ### 8.3.5
+
 ```text
 # 8.3.5
 - 修复findColor方向7找不到颜色问题
 - 修复findColor返回的索引问题
 
 ```
+
 ### 8.3.3
+
 ```text
 # 8.3.3
 - 修复安卓5、6崩溃的问题
@@ -56,9 +61,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 
 ```
 
-
 ### 8.3.0
-
 
 ```text
 # 8.3.0
@@ -76,9 +79,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 
 ```
 
-
 ### 8.2.0
-
 
 ```text
 # 8.2.0
@@ -112,7 +113,6 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 
 ### 8.1.0
 
-
 ```text
 # 8.1.0
 
@@ -142,8 +142,8 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 
 ```
 
-
 ### 7.21.1
+
 ```text
 # 7.21.1
 - 修复无法停止脚本的问题
@@ -163,7 +163,6 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 - 优化findImageByColor速度
 
 ```
-
 
 ### 7.20.0
 
@@ -552,8 +551,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
   
   ```
 
-
-### 6.6.0 
+### 6.6.0
 
   ```text
   1、新增更新悬浮窗图标 updateCtrlView函数
@@ -564,8 +562,8 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
   
   ```
 
-
 ### 6.5.0 :
+
 ```text
     1、新增云控任务列表加入批量删除 
     2、新增云控单次执行清空设备 
@@ -575,8 +573,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
     6、修复云控部分页面选择框数据不同步问题 
 ```
 
-
-### 6.4.0 
+### 6.4.0
 
   ```text
   1、新增2.0.0版本云控版本的功能
@@ -585,8 +582,8 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
   4、优化和修复其他问题
   ```
 
+### 6.3.0
 
-### 6.3.0 
   ```text
         1、新增启停悬浮窗终止程序按钮
         2、强制file中的write和read文件函数为utf-8编码
@@ -594,13 +591,16 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
         4、修复IDEA插件和混合工程模板乱码问题
 ```
 
-### 6.2.0 
+### 6.2.0
+
 ```text
         1、修复logd打印null对象不显示行号问题
         2、修复电池优化功能在6.0以下机器问题
         3、新增isScriptExit函数，用于判断脚本是否退出
 ```
-### 6.1.0 
+
+### 6.1.0
+
 ```text
         1、修复clickCenter的问题
         2、优化节点锁定
@@ -608,7 +608,8 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
         4、修复线程函数isCancelled返回不正确的问题
 ```
 
-### 6.0.0 
+### 6.0.0
+
 ```text
         1、新增设置app为壁纸功能
         2、新增代理模式下监听acc-event事件监听等
@@ -620,13 +621,17 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
         9、更新iec加密机制(可配合v6加密+dex模式增加破解难度) 
         10、去除NodeInfo等对象的toString函数，请使用JSON.stringify转字符串打印
 ```
+
 ### 5.25.0
+
 ```text
         1、优化websocket链接方式
         2、新增websocket同步链接、重连等函数
         3、修复部分bug
 ```
+
 ### 5.24.0
+
 ```text
         1、修复toast的行号展示问题
         2、优化argb函数
@@ -635,13 +640,16 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.23.0
+
 ```text
         1、优化toast拖动点击的问题
         2、新增运行代码片段
         3、改善节点截图功能防止黑屏
         4、修复httppost设置content-type无效的问题
 ```
+
 ### 5.22.0
+
 ```text
         1、修复5.21版本占用CPU资源高的问题
         2、新增UI下拉选择框的 defaultText 默认选中属性
@@ -650,6 +658,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.21.0
+
 ```text
         1、toast函数增加位置和时间等参数(有悬浮窗权限)
         2、修复log函数最后一行日志问题
@@ -658,7 +667,9 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
         5、应用重启运行脚本和弹出电池优化提示打包时开关
         6、修复单项目卡编译的问题
 ```
+
 ### 5.20.0
+
 ```text
         1、新增热更新hotupdater模块，常见高级功能热更新文档
         2、优化部分功能
@@ -666,19 +677,24 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.19.0
+
 ```text
         1、优化toast函数,有悬浮窗权限下可悬停
         2、新增sqlite模块getErrorMsg函数
         3、新增utils模块下aes、des、3des加解密
 ```
+
 ### 5.18.0
+
 ```text
         1、新增PaddleOCR模块
         2、新增EasyEdge OCR模块
         3、修复比色函数cmpColor的问题，新增argb颜色转16进制字符串函数
         4、优化日志多线程异步改为队列模式
 ```
+
 ### 5.17.0
+
 ```text
   1、新增Tesseract和百度在线的OCR模块
   2、新增压缩zip和解压unzip函数
@@ -686,8 +702,8 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
   4、修复 ui.js 调用setStopCallback，setExceptionCallback无效的问题
 ```
 
-
 ### 5.16.0
+
 ```text
   1、新增storage.keys()函数 
   2、新增storage.all()函数 
@@ -699,7 +715,9 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
   8、优化混合工程工程创建新增java-js,js-java互相调用实例
   9、新增云控多租户功能,新增任务暂停,远程同时暂停功能
 ```
+
 ### 5.15.5
+
 ```text
   1、修复IDEA图色模式的取图问题 
   2、修复保存节点图片问题 
@@ -707,12 +725,14 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.15.2
+
 ```text
   1、修复多工程造成远程调试的问题 
   2、新增右键编译IEC文件
 ```
 
 ### 5.15.0
+
 ```text
        1、新增Storage数据存储的模块
        2、修复mac下面的隐藏文件导致脚本出错的问题
@@ -725,7 +745,9 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
        9、新增激活自己的功能,activeSelf和activeDevice函数
        10、新增splitScreen函数
 ```
+
 ### 5.14.0
+
 ```text
        1、优化截图工具 范围自动为当前截图范围
        2、新增自动点击截图的对话框
@@ -739,6 +761,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.13.0
+
 ```text
        1、新增EC播放MP3 
        2、优化云控任务，按照设备选择
@@ -749,6 +772,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.12.0
+
 ```text
        1、新增取得IEC包任何文件内容的函数,readIECFileAsByte和readIECFileAsString
        2、新增将logd,logw等日志同步发送云端的设置,快捷方便代替ecloud.log
@@ -760,6 +784,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.11.0
+
 ```text
        1、优化bsf,dsf节点查找
        2、新增直连MySql模块
@@ -772,6 +797,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.10.0
+
 ```text
   1、修复启停悬浮窗控制 日志悬浮窗，更改为非贴边模式 
   2、修复exit函数部分设备不生效问题 
@@ -781,8 +807,8 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
   6、优化节点查找，新增bsf,dsf,nsf查找算法，请参考setFetchNodeMode函数 7、优化系统设置界面，增加自动化服务状态和启停自动化服务按钮
 ```
 
-
 ### 5.9.0
+
 ```text
   1、新增删除文件一行函数 
   2、修复7.0以下H5网页内部跳转问题 
@@ -790,11 +816,13 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.8.1
+
 ```text
        1、修复加密的时候打包出错的问题
 ```
 
 ### 5.8.0
+
 ```text
        1、新增事件监听，用于监听通知栏、界面变化、服务变化等(无障碍模式下)
        2、优化云控的WS连接
@@ -808,6 +836,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.7.0
+
 ```text
         1、新增三击HOME启停
         2、修复WebSocket重连问题
@@ -819,6 +848,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.6.0
+
 ```text
         1、新增require导入js模块支持
         2、修复模拟器无法启动代理的问题
@@ -826,6 +856,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.5.0
+
 ```text
         1、修复部分问题
         2、新增云控支持上传JS文件,优化脚本缓存问题
@@ -835,20 +866,22 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.4.0
+
 ```text
   1、新增云端下发执行shell命令功能 
   2、优化IDEA投屏，增加暂停和映射通道
 ```
 
 ### 5.3.0
+
 ```text
   1、新增云端召唤设备、安装软件、重启等命令 
   2、优化keepAwake函数文档 
   3、优化代理模式下节点抓取
 ```
 
-
 ### 5.2.0
+
 ```text
   1、新增设备的保持屏幕唤醒方法 
   2、新增开发工具云控模板工程 
@@ -858,6 +891,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0
+
 ```text
   1、修改保存的日志文件名csv为txt 
   2、修改节点缓存回收减少资源消耗 
@@ -866,6 +900,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC27
+
 ```text
   1、修复HTTP下载文件使用append模式导致的问题 
   2、优化无障碍保活，移动到激活设备-无障碍保活 菜单 
@@ -874,11 +909,13 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC26
+
 ```text
   1、修复部分机型打包后无法进行页面问题
 ```
 
 ### 5.0.0.RC25
+
 ```text
         1、新增开发插件可以引用OpenCV类库进行开发 
         2、新增row、column等选择器属性  
@@ -889,6 +926,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC24
+
 ```text
         1、统一全局的Context
         2、修复截屏base64有换行问题
@@ -897,6 +935,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC23
+
 ```text
         1、修复随机数函数最后一位不随机的问题 
         2、修复代理模式下读取res资源问题
@@ -907,12 +946,14 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC22
+
 ```text
         1、优化截图转换base64的异常
         2、优化代理模式captureFullScreenEx截屏
 ```
 
 ### 5.0.0.RC21
+
 ```text
         1、优化脚本工作线程异常捕捉打印 
         2、优化部分机型截屏内存溢出问题
@@ -921,6 +962,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC20
+
 ```text
         1、新增sudo和execAgentCommand函数，用于执行命令
         2、新增requestEx 网络请求函数，代替request函数
@@ -928,11 +970,13 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC19
+
 ```text
         1、修复部分设备不预览工程，直接运行报错问题
 ```
 
 ### 5.0.0.RC18
+
 ```text
         1、修复无障碍横屏竖屏切换截图问题
         2、修复图色对话框的问题
@@ -941,6 +985,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC17
+
 ```text
         1、新增单点、多点比色函数
         2、新增多点多数组比色函数
@@ -950,6 +995,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC16
+
 ```text
         1、优化日志悬浮窗，美化关闭按钮
         2、优化UI和脚本交互，脚本中可以访问UI模块的方法和变量等
@@ -957,6 +1003,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC15
+
 ```text
           1、新增addNodeFlag和removeNodeFlag可用于强制刷新节点信息
           2、新增execScript执行脚本函数，动态执行js文件或者内容
@@ -965,6 +1012,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC14
+
 ```text 
     1、优化部分模拟器无法激活的问题 
     2、修复找色精度的问题 
@@ -972,14 +1020,15 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC13
+
 ```text
          1、优化openApp和openAppByName函数
          2、优化保活
          3、优化激活程序
 ```
 
-
 ### 5.0.0.RC12
+
 ```text
          1、新增热更新对整型版本的兼容
          2、日志是否显示行号，新增setFloatDisplayLineNumber函数
@@ -988,6 +1037,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC11
+
 ```text
         1、远程调试默认不重连
         2、IDEA新增踢下线功能
@@ -996,6 +1046,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC10
+
 ```text
         1、新增IDEA java与js混合开发
         2、去除音量键控制
@@ -1007,6 +1058,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC9
+
 ```text
         1、修复某些情况停止线程的问题
         2、修复dex打包问题
@@ -1014,18 +1066,21 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC8
+
 ```text
         1、修复代理模式下ui中iServiceOk读取的问题
         2、修复IDEA编译IEC的加密读取问题
 ```
 
 ### 5.0.0.RC7
+
 ```text
         1、修复远程调试连接部分问题
         2、修复直接启动脚本偶尔服务环境判断异常问题
 ```
 
 ### 5.0.0.RC6
+
 ```text
         1、优化日志打印
         2、开启新的输入法进程
@@ -1036,12 +1091,15 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
         7、新增clearLog函数，用于清除日志框的日志
         8、新增远程调试
 ```
+
 ### 5.0.0.RC5
+
 ```text
         1、还原代理模式和无障碍模式，同422版本
 ```
 
 ### 5.0.0.RC4
+
 ```text
         1、修复特殊情况下脚本无法停止问题
         2、修复启停悬浮窗按钮和日志框状态同步问题
@@ -1049,12 +1107,14 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 5.0.0.RC3
+
 ```text
          1、优化热更新新增含有对话框的更新方式
          2、优化其他功能
 ```
 
 ### 5.0.0.RC2
+
 ```text
         1、无障碍截图修改不带缓存模式
         2、修复ui预览的可能出现多个tab问题
@@ -1062,8 +1122,8 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
         4、补充并完善文档，补充脚本与原生UI，H5 UI交互文档
 ```
 
-
 ### 5.0.0.RC1
+
 ```text
         1、新增UI和脚本交互
         2、新增线程停止全部 stopAll方法
@@ -1080,16 +1140,16 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
         13、拆分之前运行模式为 节点服务，底层代理服务，手势服务            
 ```
 
-
 ### 4.22.0
+
 ```text
         1、优化线程遇到异常的日志打印
         2、新增日志的可变参数
         3、新增IDEA更新后，覆盖老的libs文件中的js文件
 ```
 
-
 ### 4.20.0
+
 ```text
         1、新增WIFI连接历史记录
         2、优化IDEA日志打印代码跳转，错误日志也可以跳转
@@ -1107,6 +1167,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 4.15.0
+
 ```text
         1、新增jslog行号，IDEA点击行号可以直接链接过去 
         2、新增打包时候更改无障碍服务名称和更改输入法名称  
@@ -1120,6 +1181,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 4.7.0
+
 ```text
         1、新增在有权限的情况下支持开机自启动脚本
         2、新增锁定节点缓存和释放节点缓存方法，不使用最新的节点数据 
@@ -1127,6 +1189,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 4.5.0
+
 ```text
         1、新增保存当前截图的图片，给取色取图使用
         2、新增JS scrollForward、scrollBackward、scrollLeft、scrollRight、scrollUp、scrollDown 方法
@@ -1140,6 +1203,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 4.2.7
+
 ```text
          1、新增js的power电源键方法
          2、js类库根据字母排序
@@ -1151,6 +1215,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 4.2.0
+
 ```text
         1、新增自动保存代码
         2、新增插件菜单，一键jar转换和打包插件工程
@@ -1159,8 +1224,8 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
         5、修复代理模式在部分设备无法启动
 ```
 
-
 ### 4.0.8
+
 ```text
         1、修复截屏部分异常问题
         2、优化设备激活
@@ -1169,6 +1234,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 4.0.5
+
 ```text
         1、修复取色器取色不正确的问题
         2、优化随机函数
@@ -1177,7 +1243,8 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
         5、优化ADB和ADB路径的选择
 ```
 
-### 4.0.0 
+### 4.0.0
+
 ```text
         1、新增悬浮窗启停脚本
         2、新增异步线程的停止等方法
@@ -1199,6 +1266,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 3.6.6
+
 ```text
         1、还原单个截取全屏函数
         2、新增获取截图Bitmap的函数
@@ -1206,6 +1274,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 3.6.4
+
 ```text
         1、修复openActivity的部分问题
         2、升级opencv为最新版本
@@ -1214,8 +1283,8 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
         5、新增子节点的级联搜索
 ```
 
-
 ### 3.6.0
+
 ```text
         1、新增定时任务函数
         2、新增打开App即运行脚本开关功能
@@ -1230,8 +1299,8 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
         11、修复图色模块toBase64方法
 ```
 
+### 3.5.3
 
-### 3.5.3 
 ```text
         1、新增MetreUI模板
         2、新增节点、activity等待和超时函数
@@ -1240,8 +1309,8 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
         5、优化activity-class 获取
 ```
 
-
 ### 3.5.0
+
 ```text
        1、新增IDE插件的编写
        2、新增HTML模板支持和js控制窗口方法
@@ -1256,8 +1325,8 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
        11、优化图色截图速度30ms以下，区域找色找图100ms以下
 ```
 
-
 ### 3.4.5
+
 ```text
       1、新增读取IEC文件包的资源方法
       2、新增Http请求的万能方法
@@ -1271,6 +1340,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 3.4.2
+
 ```text
       1、优化新增悬浮窗字体设置
       3、增加抓取节点模式setFetchNodeMode
@@ -1279,6 +1349,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 3.4.0
+
 ```text
   1、新增NodeInfo节点直接操作的方法,例如parent、click等方法 
   2、新增JavaScript根据获取所有节点的属性方法 
@@ -1288,6 +1359,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 3.3.0
+
 ```text
       1、新增JavaScript loaddex载入dex/apk方法
       2、新增JavaScript loadjar载入jar包的方法
@@ -1301,18 +1373,22 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 ```
 
 ### 3.2.0
+
 ```text
       1、新增depth选择器
       2、新增drawingOrder选择器
       3、修复日志浮窗问题
       4、优化代理模式选择器效率
 ```
+
 ### 3.0.1
+
 ```text
   1、修复脚本暂停问题
 ```
 
 ### 3.0.0
+
 ```text
       1、新增设备连接
       2、新增预览、运行、打包工程

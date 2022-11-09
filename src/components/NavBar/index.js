@@ -94,7 +94,7 @@ export default function Index(props) {
               </li>
               <li>
                 <a href='http://bbs.ieasyclick.com'>
-                  <Translate id='navbar.case'>技术交流</Translate>
+                  <Translate id='navbar.case'>论坛交流</Translate>
                 </a>
               </li>
               <li>
@@ -160,7 +160,7 @@ export default function Index(props) {
             </li>
             <li>
               <a href='http://bbs.ieasyclick.com'>
-                <Translate id='navbar.case'>技术交流</Translate>
+                <Translate id='navbar.case'>论坛交流</Translate>
               </a>
             </li>
             <li>

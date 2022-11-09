@@ -4,7 +4,7 @@ description: EasyClick 自动化脚本 android免root
 keywords: [EasyClick 自动化脚本 android免root  ]
 ---
 
-- 技术交流  
+- 技术交流群  
     - Q群1: 777164022 Q群2: 922739785 Q群3：647082990   
     - Q群4：772810035  Q群5: 484379843 Q群6：435253761 
     

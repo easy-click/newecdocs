@@ -119,7 +119,7 @@ const config = {
           },
           {
             position: 'left',
-            label: '技术交流',
+            label: '论坛交流',
             to: 'http://bbs.ieasyclick.com',
           },
           {
@@ -198,7 +198,7 @@ const config = {
                 to: '/docs/zh-cn/joinus'
               },
               {
-                label: '技术交流',
+                label: '论坛交流',
                 to: 'http://bbs.ieasyclick.com'
               },
               {
