@@ -13,6 +13,7 @@ keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
 - 修复雷电9 64位opencv代理模式初始化报错问题
 - 修复夜神 64位opencv代理模式初始化报错问题
 - 修复雷电5 32位运行报错的问题
+- 新增打包区分32位和64位手机、模拟器
 - 启用新的icon和logo和slogan
 - 优化部分功能
 ```
