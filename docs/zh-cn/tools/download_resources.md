@@ -7,7 +7,7 @@ description: EasyClick手机自动化脚本,教程和资源,下载idea并且进�
 keywords: [EasyClick,EasyClick视频教程,idea下载,idea试用,安卓免root源码,安卓无障碍游戏脚本源码]
 ---
 # 教程和资源
-## 开发工具
+## Idea开发工具
 - [百度网盘下载](https://pan.baidu.com/s/124sTYQAZkedgfnTv3iFTZg) 提取码：7bhy
 - [天翼云下载](https://cloud.189.cn/t/UbAjqanEzeMz) 密码：nup3
 - QQ群下载：777164022 QQ群2: 922739785 QQ群3: 647082990
