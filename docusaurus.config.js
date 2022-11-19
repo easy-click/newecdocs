@@ -71,7 +71,7 @@ const config = {
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         docsRouteBasePath: ["/docs", "/iosdocs", "/iostjdoc"],
-        docsDir: ["docs", "iosdocs", "iostjdoc"]
+        docsDir: ["docs", "iosdocs", "iostjdocs"]
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
         // language: ["en", "zh"],
