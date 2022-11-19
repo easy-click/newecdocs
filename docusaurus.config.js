@@ -8,9 +8,9 @@ const ArchivedVersionsDropdownItems = Object.entries(VersionsArchived)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'EasyClick - 自动化脚本专家',
+  title: 'EasyClick_自动化脚本编写_自动化测试_自动化开发',
   tagline: '自动化脚本专家',
-  url: 'https://ieasyclick.com',
+  url: 'http://ieasyclick.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -70,8 +70,8 @@ const config = {
         language: ["en", "zh"],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
-        docsRouteBasePath: ["/docs", "/iosdocs","/iostjdoc"],
-        docsDir: ["docs", "iosdocs"]
+        docsRouteBasePath: ["/docs", "/iosdocs", "/iostjdoc"],
+        docsDir: ["docs", "iosdocs", "iostjdoc"]
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
         // language: ["en", "zh"],
@@ -81,7 +81,11 @@ const config = {
   ],
   themeConfig:
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    {
+      metadata: [
+        {name: 'keywords', content: '自动化脚本编写软件,自动化测试,自动化办公,自动化脚本开发'},
+        {name: 'description', content: 'EasyClick 是专门用于安卓免root,iOS免越狱的自动化脚本编写软件，可以轻松做出比按键精灵、触动精灵强大的软件，还有生态圈中的云控、群控产品搭配组合，让自动化脚本开发更容易'}
+      ],
       navbar: {
         title: 'EasyClick',
         logo: {
@@ -227,13 +231,13 @@ const config = {
       // prism: {
       //   darkTheme: darkCodeTheme
       // },
-      announcementBar: {
-        id: 'start',
-        content: '⭐️ 如果你喜欢 EasyClick，<a target="_blank" href="https://github.com/easy-click/easyclick-libs"> 请在GitHub为这个产品点赞</a>',
-        // '⭐️ If you like Rainbond,<a target="_blank" href="https://github.com/goodrain/rainbond"> give it a star on GitHub</a> !',
-        isCloseable: false,
-      }
-    }),
+      // announcementBar: {
+      //   id: 'start',
+      //   content: '⭐️ 如果你喜欢 EasyClick，<a target="_blank" href="https://github.com/easy-click/easyclick-libs"> 请在GitHub为这个产品点赞</a>',
+      //   // '⭐️ If you like Rainbond,<a target="_blank" href="https://github.com/goodrain/rainbond"> give it a star on GitHub</a> !',
+      //   isCloseable: false,
+      // }
+    },
   scripts: [
     '/js/baidu.js',
     //'https://static.goodrain.com/docusaurus/posthog.js'

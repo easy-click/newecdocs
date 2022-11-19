@@ -35,7 +35,6 @@ export default function Home() {
             tension: 460,
         },
     })
-
     const handleWhyRainbondFirst = useCallback(() => {
         setOpen('first');
     }, []);
@@ -82,7 +81,6 @@ export default function Home() {
                                 新媒体云控专业营销平台，多端控制设备，实时远程投屏控制.
                             </Translate>
                         </animated.div>
-
                         <animated.div style={animatedTexts[1]} className={styles.btnBox}>
                             <a
                                 className={styles.btns}
