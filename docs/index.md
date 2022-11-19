@@ -1,8 +1,12 @@
 ---
-title: 产品介绍
-description: EasyClick 自动化脚本 android免root 
-keywords: [EasyClick 自动化脚本 android免root  ]
+title: EasyClick_安卓手机自动化软件_产品介绍_EasyClick自动化脚本编写
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 安卓自动化产品介绍
+description: EasyClick安卓手机自动化脚本软件,编写脚本产品介绍,EasyClick自动化优势,对比按键精灵、触动精灵、Autojs
+keywords: [EasyClick手机自动化脚本,安卓免root,无障碍自动化,群控投屏,云控投屏,按键精灵]
 ---
+# 产品介绍
 
 - 技术交流群  
     - Q群1: 777164022 Q群2: 922739785 Q群3：647082990   

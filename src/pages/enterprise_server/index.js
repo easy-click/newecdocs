@@ -38,7 +38,7 @@ export default function Index() {
                 <h1>设备管理</h1>
               </div>
               <div className={styles.type_sort_details}>
-                <img src="/index/ecloud/ecloud-1.jpg"/>
+                <img alt="EasyClick手机自动化云控-设备管理" src="/index/ecloud/ecloud-1.jpg"/>
                 <ul
                   style={{
                     listStyle: 'none',
@@ -64,7 +64,7 @@ export default function Index() {
                 <h1>投屏操作</h1>
               </div>
               <div className={styles.type_sort_details}>
-                <img src="/index/ecloud/ecloud-2.jpg"/>
+                <img alt="EasyClick手机自动化云控-投屏操作" src="/index/ecloud/ecloud-2.jpg"/>
                 <ul
                   className={styles.enterprise}
                   style={{
@@ -93,7 +93,7 @@ export default function Index() {
                 <h1>批量任务</h1>
               </div>
               <div className={styles.type_sort_details}>
-                <img src="/index/ecloud/ecloud-3.jpg"/>
+                <img alt="EasyClick手机自动化云控-批量任务" src="/index/ecloud/ecloud-3.jpg"/>
                 <ul
                   className={styles.cloud}
                   style={{
@@ -119,7 +119,7 @@ export default function Index() {
                 <h1>租户管理</h1>
               </div>
               <div className={styles.type_sort_details}>
-                <img src="/index/ecloud/ecloud-4.jpg"/>
+                <img alt="EasyClick手机自动化云控-租户管理" src="/index/ecloud/ecloud-4.jpg"/>
                 <ul
                   className={styles.cloud}
                   style={{
@@ -145,7 +145,7 @@ export default function Index() {
                 <h1>动态数据</h1>
               </div>
               <div className={styles.type_sort_details}>
-                <img src="/index/ecloud/ecloud-5.jpg"/>
+                <img alt="EasyClick手机自动化云控-动态数据" src="/index/ecloud/ecloud-5.jpg"/>
                 <ul
                   className={styles.cloud}
                   style={{
@@ -172,7 +172,7 @@ export default function Index() {
                 <h1>高并发监控</h1>
               </div>
               <div className={styles.type_sort_details}>
-                <img src="/index/ecloud/ecloud-6.jpg"/>
+                <img  alt="EasyClick手机自动化云控-高并发监控" src="/index/ecloud/ecloud-6.jpg"/>
                 <ul
                   className={styles.enterprise}
                   style={{

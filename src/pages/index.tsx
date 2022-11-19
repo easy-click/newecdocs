@@ -63,17 +63,17 @@ export default function Home() {
                 {/* 第一屏 */}
                 <section id={styles.section_first} className={styles.width}>
                     <div className={styles.rainbond_desc}>
-                        <animated.div
+                        <animated.h2
                             className={clsx({
                                 [styles.rainbond_title]: !LocalUrlEn,
                                 [styles.rainbond_title_en]: LocalUrlEn,
                             })}
                             style={animatedTexts[0]}
                         >
-                            <Translate id='first.title'>
-                                自动化脚本技术专家,新媒体营销平台
-                            </Translate>
-                        </animated.div>
+                                手机自动化脚本专家
+                            <br/>
+                            专业游戏、营销自动化解决方案
+                        </animated.h2>
                         <animated.div style={animatedTexts[0]} className={styles.rainbond_description}>
                             <Translate id='first.description'>
                                 易点新媒旗下EasyClick自动化产品,

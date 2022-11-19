@@ -1,11 +1,14 @@
 ---
-title: 版本记录 
-description: EasyClick 自动化脚本 android免root 版本记录 
-keywords: [EasyClick 自动化脚本 android免root 版本记录  ]
+title: EasyClick_安卓手机自动化软件_版本更新记录
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 版本更新记录
+description: EasyClick手机自动化脚本更新记录,记录EasyClick软件更新的每个版本功能特性
+keywords: [EasyClick,手机自动化脚本,自动化软件,更新记录,安卓免root更新,安卓无障碍点击]
 ---
+# 更新记录
 
 ## 最新发布版本
-
 
 ### 9.4.0
 ```text
