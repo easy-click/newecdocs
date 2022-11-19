@@ -1,10 +1,12 @@
 ---
-title: 教程资源
-description: EasyClick 自动化脚本 android免root 教程 资源下载
-keywords: [EasyClick 自动化脚本 android免root 教程  资源下载 ]
+title: EasyClick_安卓手机自动化软件_教程资源_EasyClick视频教程_开发资料_idea下载_idea破解_idea试用
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 教程和资源
+description: EasyClick手机自动化脚本,教程和资源,下载idea并且进行试用破解,安装EasyClick安卓开发插件,新建脚本,运行工程,比其他软件简单实用
+keywords: [EasyClick,EasyClick视频教程,idea下载,idea试用,安卓免root源码,安卓无障碍游戏脚本源码]
 ---
-
-
+# 教程和资源
 ## 开发工具
 - [百度网盘下载](https://pan.baidu.com/s/124sTYQAZkedgfnTv3iFTZg) 提取码：7bhy
 - [天翼云下载](https://cloud.189.cn/t/UbAjqanEzeMz) 密码：nup3
@@ -29,6 +31,3 @@ keywords: [EasyClick 自动化脚本 android免root 教程  资源下载 ]
 ##  源码类库区
 
 - [Github仓库](https://github.com/easy-click/easyclick-libs)
-
-  ​      
-
