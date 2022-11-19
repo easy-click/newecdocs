@@ -70,7 +70,11 @@ export default function Index(props) {
                     </li>
                     <li>
                       <a className={`${styles.DropDownFont} dropdown__link`} href="/iosdocs"><Translate
-                        id='navbar.case'>易点云测iOS版</Translate></a>
+                        id='navbar.case'>易点云测iOS USB版</Translate></a>
+                    </li>
+                    <li>
+                      <a className={`${styles.DropDownFont} dropdown__link`} href="/iostjdocs"><Translate
+                        id='navbar.case'>易点云测iOS 脱机版</Translate></a>
                     </li>
                   </ul>
                 </div>
@@ -87,7 +91,11 @@ export default function Index(props) {
                     </li>
                     <li>
                       <a className={`${styles.DropDownFont} dropdown__link`} href="/iosdocs"><Translate
-                        id='navbar.doc'>iOS开发文档</Translate></a>
+                        id='navbar.doc'>iOS USB版开发文档</Translate></a>
+                    </li>
+                    <li>
+                      <a className={`${styles.DropDownFont} dropdown__link`} href="/iostjdocs"><Translate
+                        id='navbar.doc'>iOS 脱机版开发文档</Translate></a>
                     </li>
                   </ul>
                 </div>

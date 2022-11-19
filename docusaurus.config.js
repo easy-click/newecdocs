@@ -70,7 +70,7 @@ const config = {
         language: ["en", "zh"],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
-        docsRouteBasePath: ["/docs", "/iosdocs"],
+        docsRouteBasePath: ["/docs", "/iosdocs","/iostjdoc"],
         docsDir: ["docs", "iosdocs"]
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
@@ -95,12 +95,22 @@ const config = {
           {
             position: 'left',
             to: '/docs',
-            label: '安卓开发文档',
+            label: '安卓文档',
           },
           {
             position: 'left',
-            to: '/iosdocs',
-            label: 'iOS开发文档',
+            type: 'dropdown',
+            label: 'iOS文档',
+            items: [
+              {
+                label: 'iOS USB版',
+                href: '/iosdocs',
+              },
+              {
+                label: 'iOS 脱机版',
+                href: '/iostjdocs',
+              }
+            ],
           },
           {
             type: 'dropdown',
@@ -171,8 +181,12 @@ const config = {
                 to: 'docs/'
               },
               {
-                label: 'iOS开发文档',
+                label: 'iOS USB版开发文档',
                 to: 'iosdocs/'
+              },
+              {
+                label: 'iOS 脱机版开发文档',
+                to: 'iostjdocs/index'
               },
               {
                 label: '企业版云控',
@@ -243,6 +257,17 @@ const config = {
         path: 'iosdocs',
         routeBasePath: 'iosdocs',
         sidebarPath: require.resolve('./sidebarsIos.js'),
+        showLastUpdateAuthor: false,
+        showLastUpdateTime: false,
+      }
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'iostjdocs',
+        path: 'iostjdocs',
+        routeBasePath: 'iostjdocs',
+        sidebarPath: require.resolve('./sidebarsIostj.js'),
         showLastUpdateAuthor: false,
         showLastUpdateTime: false,
       }

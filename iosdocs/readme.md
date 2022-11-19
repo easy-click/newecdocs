@@ -8,7 +8,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  ]
     - Q群1: 777164022 Q群2: 922739785 Q群3：647082990   
     - Q群4: 772810035 Q群5: 484379843 Q群6：435253761 
 
-## EasyClick iOS版
+## EasyClick iOS USB版
 - 一个免越狱功能强大的自动化测试软件
 - 产品理念: 解放双手，可编程式、智能化自动点击iOS程序；只要会敲键盘就能进行编程！
 - 产品特性:
@@ -31,7 +31,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  ]
     * ......
 
 
-## EasyClick iOS版能做什么
+## EasyClick USB版 能做什么
 * App爬虫等
 * 自动化测试App
 * 数据提取

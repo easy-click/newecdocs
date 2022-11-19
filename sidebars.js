@@ -115,6 +115,7 @@ const sidebars = {
       },
       items: [
         'zh-cn/advance/hot-update',
+        'zh-cn/advance/jsobfuscator',
         'zh-cn/advance/plugin/plugins',
         'zh-cn/advance/plugin/javajs',
       ]
