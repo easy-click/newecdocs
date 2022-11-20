@@ -110,7 +110,7 @@ export default function Home() {
                         <div
                             className={clsx('mask_video', styles.know_rainbond_video_div)}
                         >
-                            <img src='/img/video/sss.jpg' alt=''
+                            <img src='/img/video/sss.jpg' alt='EasyClick开发工具预览'
                                  className={styles.know_rainbond_video_div_img}/>
                         </div>
                     </animated.div>
@@ -166,8 +166,8 @@ export default function Home() {
                 {/* 为什么选择Rainbond */}
                 <OverPack style={{overflow: 'hidden'}} playScale={0.15}>
                     <section id={styles.section_why_rainbond} className={styles.width}>
-                        <h1 className={styles.dosc_logo}>
-                        </h1>
+                        <div className={styles.dosc_logo}>
+                        </div>
                         <h1
                             style={{
                                 textAlign: 'center',
@@ -223,25 +223,25 @@ export default function Home() {
                             {open === 'first' && (
                                 <div className={styles.how_rainbond_desc}>
                                     <div>
-                                        <img src='/img/pass.svg' alt=''/>
+                                        <img src='/img/pass.svg' alt='安装IDEA插件即可体验'/>
                                         <span>&nbsp;&nbsp;
                                                 安装IDEA插件即可体验
                   </span>
                                     </div>
                                     <div>
-                                        <img src='/img/pass.svg' alt=''/>
+                                        <img src='/img/pass.svg' alt='兼顾 “简单易用” 和 “功能强大”'/>
                                         <span>&nbsp;&nbsp;
                                             兼顾 “简单易用” 和 “功能强大”
                   </span>
                                     </div>
                                     <div>
-                                        <img src='/img/pass.svg' alt=''/>
+                                        <img src='/img/pass.svg' alt='自带模板功能，多模板兼顾'/>
                                         <span>&nbsp;&nbsp;
                                                 自带模板功能，多模板兼顾
                   </span>
                                     </div>
                                     <div>
-                                        <img src='/img/pass.svg' alt=''/>
+                                        <img src='/img/pass.svg' alt='“以自动化为中心”的设计理念'/>
                                         <span>&nbsp;&nbsp;
                                             “以自动化为中心”的设计理念
                   </span>
@@ -251,25 +251,25 @@ export default function Home() {
                             {open === 'second' && (
                                 <div className={styles.how_rainbond_desc}>
                                     <div>
-                                        <img src='/img/pass.svg' alt=''/>
+                                        <img src='/img/pass.svg' alt='优秀的代码提示功能'/>
                                         <span>&nbsp;&nbsp;
                                             优秀的代码提示功能
                   </span>
                                     </div>
                                     <div>
-                                        <img src='/img/pass.svg' alt=''/>
+                                        <img src='/img/pass.svg' alt='智能的代码纠错能力'/>
                                         <span>&nbsp;&nbsp;
                                                 智能的代码纠错能力
                   </span>
                                     </div>
                                     <div>
-                                        <img src='/img/pass.svg' alt=''/>
+                                        <img src='/img/pass.svg' alt='完备的日志调试'/>
                                         <span>&nbsp;&nbsp;
                                             完备的日志调试
                   </span>
                                     </div>
                                     <div>
-                                        <img src='/img/pass.svg' alt=''/>
+                                        <img src='/img/pass.svg' alt='完善的打包定制功能'/>
                                         <span>&nbsp;&nbsp;
                                            完善的打包定制功能
                   </span>
@@ -279,25 +279,25 @@ export default function Home() {
                             {open === 'third' && (
                                 <div className={styles.how_rainbond_desc}>
                                     <div>
-                                        <img src='/img/pass.svg' alt=''/>
+                                        <img src='/img/pass.svg' alt='安卓、iOS多端支持'/>
                                         <span>&nbsp;&nbsp;
                                             安卓、iOS多端支持
                   </span>
                                     </div>
                                     <div>
-                                        <img src='/img/pass.svg' alt=''/>
+                                        <img src='/img/pass.svg' alt='H5、原生UI支持'/>
                                         <span>&nbsp;&nbsp;
                                             H5、原生UI支持
                   </span>
                                     </div>
                                     <div>
-                                        <img src='/img/pass.svg' alt=''/>
+                                        <img src='/img/pass.svg' alt='开发工具多端支持'/>
                                         <span>&nbsp;&nbsp;
                                             开发工具多端支持
                   </span>
                                     </div>
                                     <div>
-                                        <img src='/img/pass.svg' alt=''/>
+                                        <img src='/img/pass.svg' alt=' js java 互相操作支持'/>
                                         <span>&nbsp;&nbsp;
                                           js java 互相操作支持
                   </span>
@@ -341,9 +341,10 @@ export default function Home() {
                 {/* 第四屏 */}
                 <section className={styles.fouthBg}>
                     <div id={styles.section_fouth} className={styles.width}>
-                        <h1 className={styles.dosc_logo}>
-                            <img src='/img/smallimages/RainbondStudy.png' alt=''/>
-                        </h1>
+                        <p className={styles.dosc_logo}>
+                            <img src='/img/smallimages/RainbondStudy.png' alt='观看视频学习'/>
+                        </p>
+                        <br/>
                         <h1
                             style={{
                                 textAlign: 'center',
@@ -361,9 +362,10 @@ export default function Home() {
                 {/* 第三屏 */}
                 <section className={styles.third}>
                     <div id={styles.section_third} className={styles.width}>
-                        <h1 className={styles.dosc_logo}>
-                            <img src='/img/smallimages/RainbondDoWhat.png' alt=''/>
-                        </h1>
+                        <p className={styles.dosc_logo}>
+                            <img src='/img/smallimages/RainbondDoWhat.png' alt='EasyClick有哪些能力'/>
+                        </p>
+                        <br/>
                         <h1
                             style={{
                                 textAlign: 'center',
