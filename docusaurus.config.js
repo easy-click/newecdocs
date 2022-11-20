@@ -66,10 +66,11 @@ const config = {
         // ... Your options.
         // `hashed` is recommended as long-term-cache of index file is possible.
         indexDocs: true,
-        hashed: true,
-        language: ["zh","en"],
+        hashed: 'filename',
+        language: ["zh", "en"],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
+        searchContextByPaths: ["docs","iosdocs","iostjdoc"],
         docsRouteBasePath: ["/docs", "/iosdocs", "/iostjdoc"],
         docsDir: ["docs", "iosdocs", "iostjdocs"]
         // For Docs using Chinese, The `language` is recommended to set to:
