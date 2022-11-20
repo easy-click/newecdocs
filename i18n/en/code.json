@@ -1,6 +1,6 @@
 {
   "navbar.why": {
-    "message": "What's Rainbond?"
+    "message": "What's EasyClick?"
   },
   "navbar.enterprise": {
     "message": "Enterprise"
@@ -36,13 +36,13 @@
     "message": "Cloud Native Multi Cloud Application Management Platform"
   },
   "first.description": {
-    "message": "Rainbond core 100% open source, Use easy, Don't need to understand Containers and Kubernetes, Support the management of multiple Kubernetes, Provide whole lifecycle management for enterprise application."
+    "message": "EasyClick core 100% open source, Use easy, Don't need to understand Containers and Kubernetes, Support the management of multiple Kubernetes, Provide whole lifecycle management for enterprise application."
   },
   "first.install": {
-    "message": "Install Rainbond"
+    "message": "Install EasyClick"
   },
   "first.follow": {
-    "message": "Follow Rainbond"
+    "message": "Follow EasyClick"
   },
   "second.title1": {
     "message": "Cloud Native, "
