@@ -70,16 +70,14 @@ export default function Home() {
                             })}
                             style={animatedTexts[0]}
                         >
-                                手机自动化脚本专家
+                            手机自动化脚本专家
                             <br/>
                             专业游戏、营销自动化解决方案
                         </animated.h2>
                         <animated.div style={animatedTexts[0]} className={styles.rainbond_description}>
-                            <Translate id='first.description'>
                                 易点新媒旗下EasyClick自动化产品,
                                 安卓&iOS&PC&Web自动化脚本，自动化测试专业工具，支持多个平台快速构建自动化测试脚本.
                                 新媒体云控专业营销平台，多端控制设备，实时远程投屏控制.
-                            </Translate>
                         </animated.div>
                         <animated.div style={animatedTexts[1]} className={styles.btnBox}>
                             <a
@@ -87,7 +85,7 @@ export default function Home() {
                                 href='docs/'
                                 style={{marginRight: '16px'}}
                             >
-                                <Translate id='first.install'>开始安卓开发</Translate>
+                                开始安卓开发
                             </a>
                             {/* <a
                 className={`${styles.btns} animate__animated animate__fadeInDown`}
@@ -101,7 +99,7 @@ export default function Home() {
                                 className={styles.right_btns}
                                 href='iosdocs/'
                             >
-                                <Translate id='first.follow'>开始iOS开发</Translate>
+                                开始iOS开发
                             </a>}
                         </animated.div>
                     </div>
@@ -175,12 +173,11 @@ export default function Home() {
                                 textAlign: 'center',
                                 marginBottom: '70px',
                                 position: 'relative'
-                            }}
-                        >
-                            <Translate id='third.chooseRainbond.title1'>为什么选择</Translate>
+                            }}>
+                            为什么选择
                             <span className={styles.how_rainbond}>
-            <Translate id='third.chooseRainbond.title2'>EasyClick ？</Translate>
-            </span>
+                               EasyClick ？
+                            </span>
                         </h1>
                         <div className={styles.how_rainbond_desc_container} key="why_rainbond_desc">
                             <div className={styles.how_rainbond_btn}>
@@ -192,7 +189,7 @@ export default function Home() {
                                     }
                                     onClick={handleWhyRainbondFirst}
                                 >
-                                    <Translate id='third.chooseRainbond.useEasy'>使用简单</Translate>
+                                        使用简单
                                 </motion.button>
                                 <motion.button
                                     whileHover={{scale: 1.1}}
@@ -202,7 +199,7 @@ export default function Home() {
                                     }
                                     onClick={handleWhyRainbondSecond}
                                 >
-                                    <Translate id='third.chooseRainbond.appDelivery'>开发智能</Translate>
+                                        开发智能
                                 </motion.button>
                                 <motion.button
                                     whileHover={{scale: 1.1}}
@@ -212,7 +209,7 @@ export default function Home() {
                                     }
                                     onClick={handleWhyRainbondThird}
                                 >
-                                    <Translate id='third.chooseRainbond.cloudNative'>多端兼容</Translate>
+                                        多端兼容
                                 </motion.button>
                                 {/* <button
                 className={
@@ -228,26 +225,25 @@ export default function Home() {
                                     <div>
                                         <img src='/img/pass.svg' alt=''/>
                                         <span>&nbsp;&nbsp;
-                                            <Translate id='third.chooseRainbond.useEasy1'>安装IDEA插件即可体验</Translate>
+                                                安装IDEA插件即可体验
                   </span>
                                     </div>
                                     <div>
                                         <img src='/img/pass.svg' alt=''/>
                                         <span>&nbsp;&nbsp;
-                                            <Translate id='third.chooseRainbond.useEasy2'>兼顾 “简单易用” 和 “功能强大”</Translate>
+                                            兼顾 “简单易用” 和 “功能强大”
                   </span>
                                     </div>
                                     <div>
                                         <img src='/img/pass.svg' alt=''/>
                                         <span>&nbsp;&nbsp;
-                                            <Translate
-                                                id='third.chooseRainbond.useEasy3'>自带模板功能，多模板兼顾</Translate>
+                                                自带模板功能，多模板兼顾
                   </span>
                                     </div>
                                     <div>
                                         <img src='/img/pass.svg' alt=''/>
                                         <span>&nbsp;&nbsp;
-                                            <Translate id='third.chooseRainbond.useEasy4'>“以自动化为中心”的设计理念</Translate>
+                                            “以自动化为中心”的设计理念
                   </span>
                                     </div>
                                 </div>
@@ -257,26 +253,25 @@ export default function Home() {
                                     <div>
                                         <img src='/img/pass.svg' alt=''/>
                                         <span>&nbsp;&nbsp;
-                                            <Translate id='third.chooseRainbond.appDelivery1'>优秀的代码提示功能</Translate>
+                                            优秀的代码提示功能
                   </span>
                                     </div>
                                     <div>
                                         <img src='/img/pass.svg' alt=''/>
                                         <span>&nbsp;&nbsp;
-                                            <Translate
-                                                id='third.chooseRainbond.appDelivery2'>智能的代码纠错能力</Translate>
+                                                智能的代码纠错能力
                   </span>
                                     </div>
                                     <div>
                                         <img src='/img/pass.svg' alt=''/>
                                         <span>&nbsp;&nbsp;
-                                            <Translate id='third.chooseRainbond.appDelivery3'>完备的日志调试</Translate>
+                                            完备的日志调试
                   </span>
                                     </div>
                                     <div>
                                         <img src='/img/pass.svg' alt=''/>
                                         <span>&nbsp;&nbsp;
-                                            <Translate id='third.chooseRainbond.appDelivery4'>完善的打包定制功能</Translate>
+                                           完善的打包定制功能
                   </span>
                                     </div>
                                 </div>
@@ -286,25 +281,25 @@ export default function Home() {
                                     <div>
                                         <img src='/img/pass.svg' alt=''/>
                                         <span>&nbsp;&nbsp;
-                                            <Translate id='third.chooseRainbond.cloudNative1'>安卓、iOS多端支持</Translate>
+                                            安卓、iOS多端支持
                   </span>
                                     </div>
                                     <div>
                                         <img src='/img/pass.svg' alt=''/>
                                         <span>&nbsp;&nbsp;
-                                            <Translate id='third.chooseRainbond.cloudNative2'>H5、原生UI支持</Translate>
+                                            H5、原生UI支持
                   </span>
                                     </div>
                                     <div>
                                         <img src='/img/pass.svg' alt=''/>
                                         <span>&nbsp;&nbsp;
-                                            <Translate id='third.chooseRainbond.cloudNative3'>开发工具多端支持</Translate>
+                                            开发工具多端支持
                   </span>
                                     </div>
                                     <div>
                                         <img src='/img/pass.svg' alt=''/>
                                         <span>&nbsp;&nbsp;
-                                            <Translate id='third.chooseRainbond.cloudNative4'>js java 互相操作支持</Translate>
+                                          js java 互相操作支持
                   </span>
                                     </div>
                                 </div>
@@ -336,7 +331,7 @@ export default function Home() {
                                 className={`${styles.how_rainbond_desc_container_start} ${styles.active_btn}`}
                             >
                                 <a href='/docs/'>
-                                    <Translate id='third.chooseRainbond.quickstart'>开始安卓开发 </Translate>
+                                   开始安卓开发
                                     &nbsp; {'>'}
                                 </a>
                             </motion.button>
@@ -356,7 +351,7 @@ export default function Home() {
                                 position: 'relative'
                             }}
                         >
-                            <Translate id='fourth.video'>观看视频学习</Translate> &nbsp;
+                            观看视频学习 &nbsp;
                             <span className={styles.how_rainbond}>EasyClick</span>
                         </h1>
                         <Cswiper/>
@@ -378,7 +373,7 @@ export default function Home() {
                         >
                             <span className={styles.how_rainbond}>EasyClick</span>
                             &nbsp;
-                            <Translate id='fifth.title'>有哪些能力?</Translate>
+                            有哪些能力?
                         </h1>
 
                         <div
@@ -387,19 +382,18 @@ export default function Home() {
                             <a href='/docs' style={{position: 'relative'}}>
                                 <div className={styles.left_logo}>
                                     {/* <img src='/img/cursor.svg' /> */}
-                                    <Translate id='fifth.details'>详情</Translate>
+                                    详情
                                 </div>
                                 <div className={styles.desc}>
                                     <div className={styles.desc_title}>
                                         <h4>
                                             {/* <a href='usescene/IntegrationDev'>一体化开发测试环境</a> */}
-                                            <Translate id='fifth.integratedDev.title'>一体化安卓开发环境</Translate>
+                                                一体化安卓开发环境
                                         </h4>
                                     </div>
                                     <div className={styles.desc_detail}>
                                         <p>
-                                            <Translate
-                                                id='fifth.integratedDev.description'>集成化的安卓免root脚本开发和测试环境，提供开箱即用的体验</Translate>
+                                                集成化的安卓免root脚本开发和测试环境，提供开箱即用的体验
                                         </p>
                                     </div>
                                     {/* <i className={styles.angle}></i> */}
@@ -408,19 +402,18 @@ export default function Home() {
                             <a href='/iosdocs' style={{position: 'relative'}}>
                                 <div className={styles.left_logo}>
                                     {/* <img src='/img/cursor.svg' /> */}
-                                    <Translate id='fifth.details'>详情</Translate>
+                                    详情
                                 </div>
                                 <div className={styles.desc}>
                                     <div className={styles.desc_title}>
                                         <h4>
                                             {/* <a href='usescene/AppManagement'>企业级应用统一管理</a> */}
-                                            <Translate id='fifth.appUnifiedManage.title'>一体化iOS开发环境</Translate>
+                                                一体化iOS开发环境
                                         </h4>
                                     </div>
                                     <div className={styles.desc_detail}>
                                         <p>
-                                            <Translate
-                                                id='fifth.appUnifiedManage.description'>集成iOS免越狱开发环境和中控功能</Translate>
+                                              集成iOS免越狱开发环境和中控功能
                                         </p>
                                     </div>
                                 </div>
@@ -429,19 +422,18 @@ export default function Home() {
                             <a href='/docs/zh-cn/funcs/global/selector-node' style={{position: 'relative'}}>
                                 <div className={styles.left_logo}>
                                     {/* <img src='/img/cursor.svg' /> */}
-                                    <Translate id='fifth.details'>详情</Translate>
+                                    详情
                                 </div>
                                 <div className={styles.desc}>
                                     <div className={styles.desc_title}>
                                         <h4>
                                             {/* <a href='usescene/MultiCloudManagement'>应用级多云管理</a> */}
-                                            <Translate id='fifth.multiCloud.title'>节点查找功能</Translate>
+                                            节点查找功能
                                         </h4>
                                     </div>
                                     <div className={styles.desc_detail}>
                                         <p>
-                                            <Translate
-                                                id='fifth.multiCloud.description'>支持安卓和iOS双端的节点查找，自动化测试更丝滑</Translate>
+                                          支持安卓和iOS双端的节点查找，自动化测试更丝滑
                                         </p>
                                     </div>
                                 </div>
@@ -450,19 +442,18 @@ export default function Home() {
                             <a href='/docs/zh-cn/funcs/image-api' style={{position: 'relative'}}>
                                 <div className={styles.left_logo}>
                                     {/* <img src='/img/cursor.svg' /> */}
-                                    <Translate id='fifth.details'>详情</Translate>
+                                   详情
                                 </div>
                                 <div className={styles.desc}>
                                     <div className={styles.desc_title}>
                                         <h4>
                                             {/* <a href='usescene/offlineDelivery'>离线环境软件交付</a> */}
-                                            <Translate id='fifth.offlineDelivery.title'>图色OCR功能</Translate>
+                                            图色OCR功能
                                         </h4>
                                     </div>
                                     <div className={styles.desc_detail}>
                                         <p>
-                                            <Translate
-                                                id='fifth.offlineDelivery.description'>集成opencv，paddleocr，orclite等，支持找图、找色、ocr多重模式</Translate>
+                                          集成opencv，paddleocr，orclite等，支持找图、找色、ocr多重模式
                                         </p>
                                     </div>
                                 </div>
@@ -471,19 +462,18 @@ export default function Home() {
                             <a href='/docs/zh-cn/funcs/ui/' style={{position: 'relative'}}>
                                 <div className={styles.left_logo}>
                                     {/* <img src='/img/cursor.svg' /> */}
-                                    <Translate id='fifth.details'>详情</Translate>
+                                    详情
                                 </div>
                                 <div className={styles.desc}>
                                     <div className={styles.desc_title}>
                                         <h4>
                                             {/* <a href='usescene/componentReuse'>业务积木式拼装</a> */}
-                                            <Translate id='fifth.assemble.title'>多模板支持</Translate>
+                                          多模板支持
                                         </h4>
                                     </div>
                                     <div className={styles.desc_detail}>
                                         <p>
-                                            <Translate
-                                                id='fifth.assemble.description'>支持HTML5,原生的UI，多模板融合，UI视觉效果更好</Translate>
+                                           支持HTML5,原生的UI，多模板融合，UI视觉效果更好
                                         </p>
                                     </div>
                                 </div>
@@ -492,19 +482,18 @@ export default function Home() {
                             <a href='/docs/zh-cn/ecloud2/intro' style={{position: 'relative'}}>
                                 <div className={styles.left_logo}>
                                     {/* <img src='/img/cursor.svg' /> */}
-                                    <Translate id='fifth.details'>详情</Translate>
+                                    详情
                                 </div>
                                 <div className={styles.desc}>
                                     <div className={styles.desc_title}>
                                         <h4>
                                             {/* <a href='usescene/x86ToArm'>国产化和信创支撑</a> */}
-                                            <Translate id='fifth.localization.title'>原生云控支持</Translate>
+                                          原生云控支持
                                         </h4>
                                     </div>
                                     <div className={styles.desc_detail}>
                                         <p>
-                                            <Translate
-                                                id='fifth.localization.description'>自带原生云控，无缝支持，随时下发任务，投屏操作</Translate>
+                                          自带原生云控，无缝支持，随时下发任务，投屏操作
                                         </p>
                                     </div>
                                 </div>
@@ -517,17 +506,17 @@ export default function Home() {
             </div>
             {/* 底部 */}
             <footer className={`${styles.footer_container} `}>
-                <h1><Translate id='participate'>参与其中</Translate></h1>
+                <h1>参与其中</h1>
                 <div className={`${styles.join_type} ${styles.width}`}>
                     <a href='/docs/zh-cn/joinus' target='_blank'>
                         <div className={styles.join_logo}>
                         </div>
                         <div className={styles.join_detali}>
                             <h4 style={{fontSize: '20px'}}>
-                                <Translate id='participate.community.title'>社区</Translate>
+                               社区
                             </h4>
                             <p>
-                                <Translate id='participate.community.description'>加入我们的QQ群，一起交流学习技术</Translate>
+                                加入我们的QQ群，一起交流学习技术
                             </p>
                         </div>
                     </a>
@@ -536,10 +525,10 @@ export default function Home() {
                         </div>
                         <div className={styles.join_detali}>
                             <h4 style={{fontSize: '20px'}}>
-                                <Translate id='participate.community.title'>客服</Translate>
+                                客服
                             </h4>
                             <p>
-                                <Translate id='participate.community.description'>客服QQ: 2050858539</Translate>
+                               客服QQ: 2050858539
                             </p>
                         </div>
                     </a>
@@ -548,11 +537,10 @@ export default function Home() {
                         </div>
                         <div className={styles.join_detali}>
                             <h4 style={{fontSize: '20px'}}>
-                                <Translate id='participate.contribution.title'>贡献</Translate>
+                                贡献
                             </h4>
                             <p>
-                                <Translate
-                                    id='participate.contribution.description'>欢迎参与贡献,你可以提出Issues和解决Issues开始</Translate>
+                             欢迎参与贡献,你可以提出Issues和解决Issues开始
                             </p>
                         </div>
                     </a>

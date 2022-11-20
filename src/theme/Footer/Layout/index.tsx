@@ -37,9 +37,9 @@ export default function FooterLayout({
                         </div>
                         <div className={clsx("footer__bottom", footSytles.slogan)}>
                             <p>
-                                <Translate id='Footer.intro.p1'>EasyClick 是一个自动化脚本技术平台，简单易学</Translate>
+                                EasyClick 是一个自动化脚本技术平台，简单易学
                                 <br/>
-                                <Translate id='Footer.intro.p2'>功能强大，使用简单，支持安卓，iOS，PC，WEB等平台</Translate>
+                                功能强大，使用简单，支持安卓，iOS，PC，WEB等平台
                             </p>
                         </div>
                         <div className={clsx("footer__bottom", footSytles.slogan)}>

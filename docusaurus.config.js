@@ -67,7 +67,7 @@ const config = {
         // `hashed` is recommended as long-term-cache of index file is possible.
         indexDocs: true,
         hashed: true,
-        language: ["en", "zh"],
+        language: ["zh","en"],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
         docsRouteBasePath: ["/docs", "/iosdocs", "/iostjdoc"],
@@ -83,7 +83,7 @@ const config = {
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
-        {name: 'keywords', content: '自动化脚本编写软件,自动化测试,自动化办公,自动化脚本开发'},
+        {name: 'keywords', content: '手机自动化,自动化脚本编写软件,按键精灵,触动精灵,autojs,自动化测试,自动化办公,自动化脚本开发'},
         {
           name: 'description',
           content: 'EasyClick 是专门用于安卓免root,iOS免越狱的自动化脚本编写软件，可以轻松做出比按键精灵、触动精灵强大的软件，还有生态圈中的云控、群控产品搭配组合，让自动化脚本开发更容易'
@@ -136,17 +136,12 @@ const config = {
           },
           {
             position: 'left',
-            label: '论坛交流',
+            label: '技术论坛交流',
             to: 'http://bbs.ieasyclick.com',
           },
           {
             position: 'left',
-            label: '合作伙伴',
-            to: '/docs/zh-cn/partner',
-          },
-          {
-            position: 'left',
-            label: '社区',
+            label: '社区交流',
             to: '/community/support',
           },
           {

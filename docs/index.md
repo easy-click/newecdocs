@@ -1,5 +1,5 @@
 ---
-title: EasyClick_安卓手机自动化软件_产品介绍_EasyClick自动化脚本编写
+title: EasyClick_安卓手机自动化脚本_产品介绍_EasyClick自动化脚本编写
 hide_title: false
 hide_table_of_contents: false
 sidebar_label: 安卓自动化产品介绍
