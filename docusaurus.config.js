@@ -188,7 +188,7 @@ const config = {
               },
               {
                 label: 'iOS 脱机版开发文档',
-                to: 'iostjdocs/index'
+                to: 'iostjdocs/'
               },
               {
                 label: '企业版云控',
