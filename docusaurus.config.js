@@ -84,10 +84,10 @@ const config = {
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
-        {name: 'keywords', content: '手机自动化,自动化脚本编写软件,按键精灵,触动精灵,autojs,自动化测试,自动化办公,自动化脚本开发'},
+        {name: 'keywords', content: '手机自动化,自动化脚本编写软件,EasyClick破解,按键精灵,触动精灵,autojs,EasyClick官网,自动化测试,自动化办公,自动化脚本开发'},
         {
           name: 'description',
-          content: 'EasyClick 是专门用于安卓免root,iOS免越狱的自动化脚本编写软件，可以轻松做出比按键精灵、触动精灵强大的软件，还有生态圈中的云控、群控产品搭配组合，让自动化脚本开发更容易'
+          content: 'EasyClick 是专门用于安卓免root,iOS免越狱、免硬件驱动的自动化脚本编写软件，轻松做出比按键精灵、触动精灵强大的软件，与生态圈中的云控、群控产品搭配组合，让自动化脚本开发更容易,相对于市面上其他的产品，EasyClick编写代码更加智能，函数功能更丰富，兼容性更高，同时更新的速度以及问题解决能力更强'
         }
       ],
       navbar: {
@@ -204,16 +204,24 @@ const config = {
                 label: '加客服联系',
                 to: '/community/support'
               },
-            ]
-          },
-
-          {
-            title: '更多',
-            items: [
               {
                 label: '联系我们',
                 to: '/docs/zh-cn/joinus'
               },
+              {
+                label: '用户协议',
+                to: '/docs/zh-cn/agreement'
+              },
+              {
+                label: '免责声明',
+                to: '/docs/zh-cn/declare'
+              },
+            ]
+          },
+          {
+            title: '更多',
+            items: [
+
               {
                 label: '论坛交流',
                 to: 'http://bbs.ieasyclick.com'

@@ -1,5 +1,13 @@
+---
+title: EasyClick_安卓手机自动化脚本_节点图色抓取
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 节点图色抓取
+description: EasyClick手机自动化脚本,使用idea设置EasyClick的节点抓取，手机截图，图色生成
+keywords: [EasyClick,手机自动化脚本,自动化软件,EasyClick脚本节点抓取,图色生成,图色生成]
+---
 
-# 屏幕相关
+# 节点图色抓取
 - 菜单栏-EasyClick开发工具-节点抓取
 ## 节点抓取
 - 点击节点抓取按钮，可以获取当前的屏幕元素

@@ -1,3 +1,12 @@
+---
+title: EasyClick_安卓手机自动化脚本_远程调试
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 远程调试
+description: EasyClick手机自动化脚本,使用idea远程调试EasyClick的项目，只要设备能联网，就可以远程调试脚本
+keywords: [EasyClick,手机自动化脚本,自动化软件,IDEA远程调试,安卓免root远程调试,脚本远程调试]
+---
+
 
 # 远程调试
 ## 花生壳版教程

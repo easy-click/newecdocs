@@ -1,3 +1,11 @@
+---
+title: EasyClick_安卓手机自动化脚本_设置相关
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 设置相关
+description: EasyClick手机自动化脚本,使用idea设置EasyClick的节点抓取，远程投屏属性
+keywords: [EasyClick,手机自动化脚本,自动化软件,EasyClick脚本节点抓取,安卓手机投屏]
+---
 
 # 设置相关
 ## 设置

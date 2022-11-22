@@ -10,9 +10,8 @@ keywords: [EasyClick 自动化脚本 android免root 合作伙伴]
 
 ## 老冷学院
  - 主营业务: EasyClick等安卓/IOS脚本培训及脚本开发,云控开发
- - 官网地址: http://home.laoleng.top:3001/web/#/9?page_id=167
+ - 官网地址: http://bbs.laoleng.vip/
  - 联系方式: QQ:1920712147
- 
  
 ## D-test 签名工作室
 - 主营业务：iPA签名封包、设备供应、各类脚本开发

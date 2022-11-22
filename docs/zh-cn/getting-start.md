@@ -1,8 +1,12 @@
 ---
-title: 第一个工程
-description: EasyClick 自动化脚本 android免root 第一个工程
-keywords: [EasyClick 自动化脚本 android免root 第一个工程  ]
+title: EasyClick_安卓手机自动化脚本_第一个工程
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 第一个工程
+description: EasyClick手机自动化脚本,使用idea创建第一个EasyClick的脚本工程，进行激活设备，运行脚本
+keywords: [EasyClick,手机自动化脚本,自动化软件,EasyClick脚本激活,idea下载,idea破解试用]
 ---
+# 第一个脚本工程创建
 
 ## 下载开发工具
 - 下载开发工具 : [点我下载](zh-cn/tools/download_resources.md)    

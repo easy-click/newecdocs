@@ -1,11 +1,13 @@
 ---
-title: 激活设备
-description: EasyClick 自动化脚本 android免root 激活设备
-keywords: [EasyClick 自动化脚本 android免root 激活设备]
+title: EasyClick_安卓手机自动化脚本_激活设备
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 激活安卓设备
+description: EasyClick手机自动化脚本,激活安卓设备的方式，包括OTG激活、电脑激活、USB激活、IDEA激活
+keywords: [EasyClick,手机自动化脚本,自动化软件,EasyClick脚本激活,otg激活设备,USB激活代理]
 ---
 
-- 本章节讲述如何激活设备
-
+# 激活安卓设备
 
 ## IDEA开发工具激活
 - 进入IDEA，选择EasyClick开发工具 - 激活设备 - 激活模式1或者激活模式2 点击即可

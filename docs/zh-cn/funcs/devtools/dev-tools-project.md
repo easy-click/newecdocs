@@ -1,5 +1,14 @@
+---
+title: EasyClick_安卓手机自动化脚本_工程创建与运行
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 工程创建
+description: EasyClick手机自动化脚本,使用idea创建EasyClick的工程，进行预览，运行，调试，打包apk，查看日志等
+keywords: [EasyClick,手机自动化脚本,自动化软件,游戏自动化,IDEA开发工具下载,IDEA下载,安卓免root,创建工程,预览工程,运行工程,打包工程]
+---
 
-# 工程相关
+
+# 工程创建
 ## 创建工程
 <img src='/androidimg/project-1.jpg' width='300'/>
 <br/>

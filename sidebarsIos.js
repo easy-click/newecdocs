@@ -62,8 +62,6 @@ module.exports = {
     },
     "zh-cn/allplugin",
     "zh-cn/question-answer",
-    "zh-cn/agreement",
-    "zh-cn/declare",
     "zh-cn/joinus",
   ]
 };

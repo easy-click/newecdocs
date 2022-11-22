@@ -122,8 +122,6 @@ const sidebars = {
     "zh-cn/question/question-answer",
     "zh-cn/allplugin",
     "zh-cn/active-device",
-    "zh-cn/agreement",
-    "zh-cn/declare",
     "zh-cn/joinus"
   ],
 };

@@ -1,3 +1,12 @@
+---
+title: EasyClick_安卓手机自动化脚本_设备相关介绍
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 设备相关
+description: EasyClick手机自动化脚本,游戏自动化脚本,本章节介绍如何链接安卓设备，如何安装EasyClick的apk，如何激活安卓设备
+keywords: [EasyClick,手机自动化脚本,游戏自动化,IDEA开发工具下载,EasyClick激活设备,IDEA下载,安卓免root,安卓无障碍点击]
+---
+
 
 # 设备相关
 

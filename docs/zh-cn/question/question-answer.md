@@ -1,16 +1,12 @@
 ---
-title: 常见问题
-description: EasyClick 自动化脚本 android免root 常见问题
-keywords: [EasyClick 自动化脚本 android免root 常见问题]
+title: EasyClick_安卓手机自动化脚本_常见问题
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 常见问题
+description: EasyClick手机自动化脚本,EasyClick开发中常见的问题和解决方案，包括安卓手机无法链接、如何进行脚本保活、如何进行脚本的激活等
+keywords: [EasyClick,手机自动化脚本,自动化软件,EasyClick常见问题,安卓进程保活,adb链接问题]
 ---
-
-
-## 为什么选择JavaScript语言?
-* 简单易上手，资料多
-* 会基本语法和函数调用就可以编程
-* 开发工具成熟易上手
-* JS教程：https://www.runoob.com/js/js-tutorial.html
-* 简单易学
+# 常见问题
 
 ## 常见踩坑解决方案
 - 1.热更新失败 https://www.bilibili.com/video/BV1Pt4y1B75R?p=1
