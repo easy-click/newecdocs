@@ -1,5 +1,5 @@
 ---
-title: EasyClick_安卓手机自动化脚本_设置相关
+title: EasyClick安卓文档_安卓手机自动化脚本_设置相关
 hide_title: false
 hide_table_of_contents: false
 sidebar_label: 设置相关

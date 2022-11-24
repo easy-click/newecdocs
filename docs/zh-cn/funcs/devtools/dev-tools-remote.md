@@ -1,5 +1,5 @@
 ---
-title: EasyClick_安卓手机自动化脚本_远程调试
+title: EasyClick安卓文档_安卓手机自动化脚本_远程调试
 hide_title: false
 hide_table_of_contents: false
 sidebar_label: 远程调试

@@ -1,8 +1,13 @@
 ---
-title: 云控版本记录
-description: EasyClick 自动化脚本 android免root 云控版本记录
-keywords: [EasyClick 自动化脚本 android免root 云控版本记录]
+title: EasyClick安卓文档_安卓手机自动化脚本_云控版本更新记录
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 云控版本更新记录
+description: EasyClick 云控平台专门用于用于管理脚本、任务、数据的web平台,可以进行远程投屏设备，异地组网，远程操作设备
+keywords: [EasyClick,手机自动化脚本,自动化软件,云控平台,抖音云控,快手云控,游戏云控]
 ---
+
+# 版本更新记录
 
 ## 最新发布版本
 

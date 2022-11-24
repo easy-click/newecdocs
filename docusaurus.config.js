@@ -8,7 +8,7 @@ const ArchivedVersionsDropdownItems = Object.entries(VersionsArchived)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'EasyClick官网_手机自动化脚本编写_游戏自动化_营销自动化_自动化测试_自动化脚本开发_自动化办公',
+  title: 'EasyClick官网_安卓_苹果_iOS手机自动化脚本编写_安卓免root_iOS免越狱_游戏自动化_营销自动化_自动化测试_自动化脚本开发_自动化办公',
   tagline: '自动化脚本专家',
   url: 'https://ieasyclick.com',
   baseUrl: '/',
@@ -84,7 +84,7 @@ const config = {
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
-        {name: 'keywords', content: '手机自动化,自动化脚本编写软件,EasyClick破解,按键精灵,触动精灵,autojs,EasyClick官网,自动化测试,自动化办公,自动化脚本开发'},
+        {name: 'keywords', content: '安卓免root手机自动化,苹果免越狱手机自动化脚本,自动化脚本编写软件,EasyClick破解,按键精灵,触动精灵,autojs,EasyClick官网,自动化测试,自动化办公,自动化脚本开发'},
         {
           name: 'description',
           content: 'EasyClick 是专门用于安卓免root,iOS免越狱、免硬件驱动的自动化脚本编写软件，轻松做出比按键精灵、触动精灵强大的软件，与生态圈中的云控、群控产品搭配组合，让自动化脚本开发更容易,相对于市面上其他的产品，EasyClick编写代码更加智能，函数功能更丰富，兼容性更高，同时更新的速度以及问题解决能力更强'

@@ -1,8 +1,14 @@
 ---
-title: 云控说明
-description: EasyClick 自动化脚本 android免root 云控说明
-keywords: [EasyClick 自动化脚本 android免root 云控说明]
+title: EasyClick安卓文档_安卓手机自动化脚本_云控平台说明
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 云控平台说明
+description: EasyClick 云控平台专门用于用于管理脚本、任务、数据的web平台,可以进行远程投屏设备，异地组网，远程操作设备
+keywords: [EasyClick,手机自动化脚本,自动化软件,云控平台,抖音云控,快手云控,游戏云控]
 ---
+
+# 云控平台说明
+
 :::tip
 云控是运行在服务器端的，优势是可以链接很多设备，通过网页进行管理设备，和群控有很大的区别
 :::
@@ -10,7 +16,7 @@ keywords: [EasyClick 自动化脚本 android免root 云控说明]
 ## 云控平台
 - 云控在EC产品序列中属于 云测试平台 ，用于管理多设备多资源协同工作
 - EC中内置了和云端通信的能力，直接调用接口即可
-- 该文档对应的云控版本为2.0+,EC 客户端6.4.0+
+- 该文档对应的云控版本为3.11.0+,EC 客户端9.4.0+
 
 ## 核心概念
 

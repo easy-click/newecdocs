@@ -1,9 +1,14 @@
 ---
-title: 代码热更新
-description: EasyClick 自动化脚本 android免root 代码热更新
-keywords: [EasyClick 自动化脚本 android免root 代码热更新]
+title: EasyClick安卓文档_安卓手机自动化脚本_代码热更新
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 代码热更新
+description: EasyClick 代码热更新,不需要更新apk，直接热更新代码，免去安卓apk的的繁琐步骤，简单的配置即可实现热更新
+keywords: [EasyClick,手机自动化脚本,自动化软件,脚本热更新,代码热更新,免root热更新]
 ---
 
+
+# 代码热更新
 
 ## 什么是热更新
 :::tip

@@ -1,5 +1,5 @@
 ---
-title: EasyClick_安卓手机自动化脚本_版本更新记录
+title: EasyClick安卓文档_安卓手机自动化脚本_版本更新记录
 hide_title: false
 hide_table_of_contents: false
 sidebar_label: 版本更新记录

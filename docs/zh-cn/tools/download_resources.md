@@ -1,5 +1,5 @@
 ---
-title: EasyClick_安卓手机自动化脚本_教程资源_EasyClick视频教程_开发资料_idea下载_idea破解_idea试用
+title: EasyClick安卓文档_安卓手机自动化脚本_教程资源_EasyClick视频教程_开发资料_idea下载_idea破解_idea试用
 hide_title: false
 hide_table_of_contents: false
 sidebar_label: 教程和资源

@@ -1,8 +1,13 @@
 ---
-title: 云控函数
-description: EasyClick 自动化脚本 android免root 云控函数
-keywords: [EasyClick 自动化脚本 android免root 云控函数]
+title: EasyClick安卓文档_安卓手机自动化脚本_云控脚本函数
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 云控脚本函数
+description: EasyClick云控平台对应的脚本函数模块，无需对接，直接调用函数即可与云控进行交互，获取云控的数据等
+keywords: [EasyClick,手机自动化脚本,自动化软件打包,云控平台对接,云控数据获取,抖音云控,快手云控,游戏云控]
 ---
+
+# 云控脚本函数
 
 ## EC的实例代码
 

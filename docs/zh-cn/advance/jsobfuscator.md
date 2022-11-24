@@ -1,8 +1,13 @@
 ---
-title: 代码混淆
-description: EasyClick 自动化脚本 android免root 代码混淆
-keywords: [EasyClick 自动化脚本 android免root 代码混淆]
+title: EasyClick安卓文档_安卓手机自动化脚本_代码混淆
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 代码混淆
+description: EasyClick 代码混淆,使用nodejs对js代码进行混淆后，在进行二次编译，大大在增加安全性，防止破解卡密等
+keywords: [EasyClick,手机自动化脚本,nodejs混淆,js代码混淆,防破解,免root脚本防破解]
 ---
+
+# 代码混淆
 
 ## 什么是混淆
 - 混淆是指在js编译期间，对代码进行花指令、流程更改等转换，目的是为了保护代码

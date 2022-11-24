@@ -1,8 +1,13 @@
 ---
-title: 插件开发
-description: EasyClick 自动化脚本 android免root 插件开发
-keywords: [EasyClick 自动化脚本 android免root 插件开发]
+title: EasyClick安卓文档_安卓手机自动化脚本_插件开发
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 插件开发
+description: EasyClick 安卓脚本自动化，支持插件开发，可以使用java对脚本功能进行扩展，方便快捷，实现想要的功能，本章节讲述如何进行插件开发
+keywords: [EasyClick,手机自动化脚本,安卓插件开发,java插件开发,防破解,免root脚本防破解]
 ---
+
+# 插件开发
 
 ## 说明
 - 插件本身是一个apk包，和普通的android开发无任何区别

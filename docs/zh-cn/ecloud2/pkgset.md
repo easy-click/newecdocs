@@ -1,8 +1,15 @@
 ---
-title: 云控打包配置
-description: EasyClick 自动化脚本 android免root 云控打包配置
-keywords: [EasyClick 自动化脚本 android免root 云控打包配置]
+title: EasyClick安卓文档_安卓手机自动化脚本_云控打包配置
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 云控打包配置
+description: EasyClick 云控平台对应的apk打包，可以动态域名打包，也可以静态域名打包，一定要打企业版本的apk
+keywords: [EasyClick,手机自动化脚本,自动化软件打包,云控平台,抖音云控,快手云控,游戏云控]
 ---
+
+
+
+# 云控打包配置
 
 ## 云控配置说明
 

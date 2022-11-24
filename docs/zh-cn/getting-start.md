@@ -1,5 +1,5 @@
 ---
-title: EasyClick_安卓手机自动化脚本_第一个工程
+title: EasyClick安卓文档_安卓手机自动化脚本_第一个工程
 hide_title: false
 hide_table_of_contents: false
 sidebar_label: 第一个工程

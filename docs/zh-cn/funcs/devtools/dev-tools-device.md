@@ -1,5 +1,5 @@
 ---
-title: EasyClick_安卓手机自动化脚本_设备相关介绍
+title: EasyClick安卓文档_安卓手机自动化脚本_设备相关介绍
 hide_title: false
 hide_table_of_contents: false
 sidebar_label: 设备相关
