@@ -2,7 +2,6 @@ module.exports = {
   // But you can create a sidebar manually
   iosdocs: [
     'readme',
-    "zh-cn/device_solution",
     "zh-cn/changelog",
     "zh-cn/tools/download_resources",
     {
