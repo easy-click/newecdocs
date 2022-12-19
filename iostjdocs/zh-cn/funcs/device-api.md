@@ -1,43 +1,22 @@
 ---
-title: 设备函数
-description: EasyClick 自动化脚本 iOS免越狱 设备函数 
-keywords: [EasyClick 自动化脚本 iOS免越狱 设备函数 ]
+title: EasyClick自动化脚本_iOS脚本_iOS免越狱_iOS免硬件_设备函数
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 设备函数
+description: EasyClick 自动化脚本 iOS免越狱 设备函数
+keywords: [EasyClick自动化脚本,iOS脚本,iOS免越狱,iOS免硬件,设备函数 ]
 ---
 
+# 设备函数
 
 ## 说明
 - 设备模块函数主要是跟设备信息相关联
 - 设备模块的对象前缀是device，
 
-##  device.getDeviceInfo 获取设备的信息
-
-* 获取设备的信息
-* 适配版本EC iOS 3.2.0+
-* 返回的是JSON
-* orientation：:方向 1 竖屏 2 横屏
-*  screenWidth：:屏幕宽度
-*  screenHeight：:屏幕高度
-*  orientationClick：当前坐标系方向，1竖屏 2横屏
-* deviceId：设备ID
-* serialNo：设备序列号
-* deviceName：设备名称
-* productVersion：设备版本
-* model：设备型号
-* @return JSON字符串
-
-
-> ```javascript
-> function main(){
->  var xx = device.getDeviceInfo();
->  logd(xx);
-> }
-> 
-> main();
-> ```
 
 
 
-##  device.getDeviceId 获取id
+##  device.getDeviceId 获取id - 未实现
 * 获取手机的id
 * @return 字符串
 
@@ -51,39 +30,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 设备函数 ]
 > main();
 > ```
 
-
-
-
-
-##  device.getDeviceAlias 获取设备中控别名
-
-* 获取中控设备号别名
-* @return string
-
-
-> ```javascript
-> function main(){
->  var xx = device.getDeviceAlias();
->  logd(xx);
-> }
-> main();
-> ```
-
-
-
-##  device.getSerialNo 获取设备序列号
-
-*  获取设备序列号，在手机的设置中可以查询到
-* @return string
-
-
-> ```javascript
-> function main(){
->  var xx = device.getSerialNo();
->  logd(xx);
-> }
-> main();
-> ```
 
 
 
@@ -103,25 +49,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 设备函数 ]
 
 
 
-
-
-
-
-
-
-##  device.applist 获取程序列表
-
-* 获取当前设备的安装的程序列表
-* @return {string} json 字符串
-
-
-> ```javascript
-> function main(){
->  var applistx = device.applist();
->  logd(applistx);
-> }
-> main();
-> ```
 
 
 
@@ -198,10 +125,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 设备函数 ]
 
 
 ##  device.getOSVersion 取得手机版本号
-
 * @return 字符串
-
-
 > ```javascript
 >     
 > function main(){
@@ -212,11 +136,9 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 设备函数 ]
 > ```
 
 
-
 ## device.getBattery 取得电量
 * 取得电量
 * @return int型
-
 
 > ```javascript
 >     
@@ -228,17 +150,10 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 设备函数 ]
 > ```
 
 
-> ```
-> 
-> ```
-
-
-
 
 ## device.isCharging 是否正在充电
 * 是否正在充电
 * @return 布尔型
-
 
 > ```javascript
 >     

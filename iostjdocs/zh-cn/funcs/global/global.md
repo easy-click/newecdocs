@@ -1,5 +1,5 @@
 ---
-title: EasyClick自动化脚本_iOS脚本_iOS免越狱_iOS免硬件_全局模块 
+title: EasyClick自动化脚本_iOS脚本_iOS免越狱_iOS免硬件_全局模块
 hide_title: false 
 hide_table_of_contents: false 
 sidebar_label: 全局模块
@@ -20,58 +20,61 @@ keywords: [EasyClick自动化脚本,iOS脚本,iOS免越狱,iOS免硬件,全局�
 * 获取应用程序版本
 * @return 字符串 例如 2.9.0
 
-> ```javascript
-> function main(){
-> 	logd(version())
-> }
-> main();
-> ```
+```javascript
+ function main() {
+  logd(version())
+}
+
+main();
+```
 
 ## 脚本启停
 
 ### exit 退出脚本
 
-> ```javascript
-> exit();
-> ```
+```javascript
+  exit();
+```
 
 ### isScriptExit 是否已退出脚本
 
 * 判断EC运行的当前线程是否处于退出状态，可用判断脚本是否退出，或者子线程是否退出
 * @return true 已退出
 
-> ```javascript
-> function main(){
->      try{
->                while(true){
->                        sleep(1000)
->                        logd("222")
->                        if (isScriptExit()) {
->                            break
->                        }
->                    }
->                  logd("222")
->            }catch(e){
->                logd(e)
->               if (isScriptExit()) {
->                   return
->                }
->            }
-> }
-> main();
-> ```
+```javascript
+function main() {
+  try {
+    while (true) {
+      sleep(1000)
+      logd("222")
+      if (isScriptExit()) {
+        break
+      }
+    }
+    logd("222")
+  } catch (e) {
+    logd(e)
+    if (isScriptExit()) {
+      return
+    }
+  }
+}
+
+main();
+```
 
 ### sleep 暂停执行
 
 * 休眠
 * @param miSecond 毫秒
 
-> ```javascript
-> function main(){
->     sleep(1000);
-> }
-> main();
-> ```
+```javascript
+function main() {
+  sleep(1000);
+}
+
+main();
+```
 
 ### execScript 载入JS
 
@@ -81,17 +84,18 @@ keywords: [EasyClick自动化脚本,iOS脚本,iOS免越狱,iOS免硬件,全局�
 * @param content 路径例如/var/a.js或者js的内容，这个是手机上的路径
 * @return 布尔型，true代表执行成功， false代表失败
 
-> ```javascript
-> function main(){
->       let d = "logd(1)"
->        let dx = execScript(2,d);
->        while(true){
->            sleep(2000);
->            loge("fsadffsad")
->        }
-> }
-> main();
-> ```
+```javascript
+function main() {
+  let d = "logd(1)"
+  let dx = execScript(2, d);
+  while (true) {
+    sleep(2000);
+    loge("fsadffsad")
+  }
+}
+
+main();
+```
 
 ### restartScript 重启脚本 - [未实现]
 
@@ -102,23 +106,24 @@ keywords: [EasyClick自动化脚本,iOS脚本,iOS免越狱,iOS免硬件,全局�
 * @param delay 延迟多少秒后执行
 * @return bool true 代表成功 false 代表失败
 
-> ```javascript
-> function main(){
-> logd("我是在脚本运行的");
-> setStopCallback(function(){
->   restartScript(null,false,3)
-> });
-> 
-> //setExceptionCallback(function (){
-> //    restartScript(null,true,3)
-> //});
->    sleep(1000);
->  logd("脚本结束") 
-> }
-> main();
-> ```
+```javascript
+function main() {
+  logd("我是在脚本运行的");
+  setStopCallback(function () {
+    restartScript(null, false, 3)
+  });
 
-##   
+//setExceptionCallback(function (){
+//    restartScript(null,true,3)
+//});
+  sleep(1000);
+  logd("脚本结束")
+}
+
+main();
+ ```
+
+##         
 
 ## JSON处理
 
@@ -293,8 +298,8 @@ keywords: [EasyClick自动化脚本,iOS脚本,iOS免越狱,iOS免硬件,全局�
 > 
 > ```
 
-
 ### readResString 读取字符串资源
+
 * 读取res文件夹中的资源文件,并返回字符串
 * @param fileName 文件名称，不要加res前缀
 * @return string 如果是null代表没内容
@@ -307,8 +312,8 @@ keywords: [EasyClick自动化脚本,iOS脚本,iOS免越狱,iOS免硬件,全局�
 > 
 > ```
 
-
 ### readResAutoImage 读取Image资源
+
 * 读取res文件夹中的资源文件，并返 AutoImage 图片对象
 * @param fileName 文件名称，不要加res前缀
 * @return string 如果是null代表没内容
@@ -380,7 +385,6 @@ keywords: [EasyClick自动化脚本,iOS脚本,iOS免越狱,iOS免硬件,全局�
  > }
  > main();
  > ```
-
 
 ## 时间相关
 

@@ -1,13 +1,16 @@
 ---
-title: 全局快捷事件
-description: EasyClick 自动化脚本 iOS免越狱 全局快捷事件 资源下载
-keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下载 ]
+title: EasyClick自动化脚本_iOS脚本_iOS免越狱_iOS免硬件_全局快捷事件
+hide_title: false
+hide_table_of_contents: false
+sidebar_label: 全局快捷事件
+description: EasyClick 自动化脚本 iOS免越狱 全局快捷事件 
+keywords: [EasyClick自动化脚本,iOS脚本,iOS免越狱,iOS免硬件,全局快捷事件 ]
 ---
 
+# 全局快捷事件
 ## 说明
 
 全局模块中封装的快捷事件
-
 
 
 ## 点击函数
@@ -29,10 +32,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下�
 > }
 > main();
 > ```
-
-
-
-
 
 
 ### longClickPoint 坐标长点击
@@ -106,7 +105,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下�
 
 ### multiTouch 多点触摸
 * 多点触摸<br/>
-* 触摸参数: action :一般情况下 按下为0，弹起为1，移动为2
+* 触摸参数: action :一般情况下 按下为0，弹起为1，移动为2，暂停为3
 * x: X坐标
 * y: Y坐标
 * pointer：设置第几个手指触摸点，分别是 1，2，3等，代表第n个手指
@@ -184,16 +183,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下�
 
 
 
-
-
-
-
-
-
-
-
-
-
 ## 滑动函数
 
 
@@ -233,29 +222,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下�
 
 
 
-
-## 拖动函数
-### drag 拖动坐标
- * 从一个坐标到另一个坐标的拖动
- * @param startX 起始坐标的X轴值
- * @param startY 起始坐标的Y轴值
- * @param endX   结束坐标的X轴值
- * @param endY   结束坐标的Y轴值
- * @param duration 持续时长 单位毫秒
- * @return 布尔型 true 拖动成功, false 拖动失败
-
-> ```javascript
-> 
-> function main(){
->     var result = drag(10,10,100,100,200);
->     if (result){
->         logd("拖动成功");
->     } else {
->         logd("拖动失败");
->     }
-> }
-> main();
-> ```
 
 
 ## 输入数据
@@ -303,10 +269,9 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下�
 
 ## 屏幕方向
 
-### setOrientation  设置屏幕方向
+### setOrientation  设置屏幕方向 - 未实现
 
 * 设置屏幕方向，横屏只支持向右旋转90度
-* 适配版本 EC iOS 中控 3.0.0+
  * @param orientation 1 正常的竖屏，2 向右旋转90度(顺时针)
  * @return boolean|布尔型
 
@@ -321,10 +286,9 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下�
 
 
 
-### getOrientation  获取屏幕方向
+### getOrientation  获取屏幕方向 - 未实现
 
 * 获取屏幕方向
-* 适配版本 EC iOS 中控 3.0.0+
  * @return int| 0 竖屏，1 横屏 （向右旋转90度(顺时针)）
 
 > ```javascript
@@ -336,28 +300,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下�
 > ```
 
 
-
-### adjustScreenOrientation  校正屏幕方向
-
-* 校正屏幕方向，适配坐标系
-
-* 适配版本 EC iOS 中控 3.0.0+
-
-* @param orientation 0 自动校正坐标系 1 强制竖屏坐标系，2 强制向右旋转90度(顺时针)坐标系
-
-* @return JSON字符串，里面的key分别是  orientation, screenWidth, screenHeight
-
-  
-
-> ```javascript
-> function main(){
-> 	logd(setOrientation(1))
-> 	sleep(1000)
-> 	logd(getOrientation())
-> 	logd("adjustScreenOrientation {}", adjustScreenOrientation(0))
-> }
-> main();
-> ```
 
 
 
@@ -383,31 +325,12 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下�
 > ```
 
 
-### reboot 重启设备
-
-* 重启设备
-* 适合 EC iOS 3.5.0+
-* @return {null|布尔型}
-
-> ```javascript
-> 
-> function main(){
->     var result = reboot();
->     if (result){
->         logd("成功");
->     } else {
->         logd("失败");
->     }
-> }
-> main();
-> ```
 
 
 
 ### homeScreen 强制进入主页
 
 * 强制进入主页
-* 适配 EC iOS 中控 3.0.0+
 * @return {null|布尔型}
 
 > ```javascript
@@ -427,7 +350,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下�
 ### isLocked 屏幕是否是锁定状态
 
 * 屏幕是否是锁定状态
-* 适配 EC iOS 中控 3.0.0+
 * @return {null|布尔型}
 
 > ```javascript
@@ -445,9 +367,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下�
 
 
 ### lockScreen 锁定屏幕
-
 * 锁定屏幕
-* 适配 EC iOS 中控 3.0.0+
 * @return {null|布尔型}
 
 > ```javascript
@@ -467,7 +387,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下�
 ### unlockScreen 解锁屏幕
 
 * 解锁屏幕，屏幕不能有密码等
-* 适配 EC iOS 中控 3.0.0+
 * @return {null|布尔型}
 
 > ```javascript
@@ -482,49 +401,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下�
 > main();
 > ```
 
-
-
-
-
-
-
-### openApp 使用bundleID 打开App
-
-* 使用bundleID 打开App, 这个不同于appLaunch函数，这个通过命令进行的
-* @param bundleId app的 bundleID
-* @return {boolean} true 成功，false 失败成功
-
-> ```javascript
-> function main(){
->  var result = openApp("com.tencent.xin");
->  if (result){
->      logd("成功");
->  } else {
->      logd("失败");
->  }
-> }
-> main();
-> ```
-
-
-
-### stopApp 使用bundleID 停止App
-
-* 使用bundleID 停止App, 这个不同于 appKillByBundleId 函数，这个通过命令进行的
-* @param bundleId app的 bundleID
-* @return {boolean} true 成功，false 失败成功
-
-> ```javascript
-> function main(){
->  var result = stopApp("com.tencent.xin");
->  if (result){
->      logd("成功");
->  } else {
->      logd("失败");
->  }
-> }
-> main();
-> ```
 
 
 
@@ -573,89 +449,11 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下�
 
 
 
-### installApp 使用 路径 安装app
-
-* 使用 路径 安装app (无需启动自动化)
-* @param bundleId app的 bundleID
-* @param path ipa的路径 和桥接在同一个电脑上
-* @return {string} ok 代表 成功，其他字符串 失败
-
-> ```javascript
-> function main(){
-> var result = installApp("com.test.xin","c:/a.ipa");
->    logd("result "+result);
-> if (result=="ok"){
->   logd("成功");
-> } else {
->   logd("失败");
-> }
-> }
-> main();
-> ```
-
-
-
-### uninstallApp 使用bundleID 卸载app
-
-* 使用bundleID 卸载app (无需启动自动化)
-* @param bundleId app的 bundleID
-* @return {string} ok 代表 成功，其他字符串 失败
-
-> ```javascript
-> function main(){
-> var result = uninstallApp("com.test.xin");
-> logd("result "+result);
-> if (result=="ok"){
->   logd("成功");
-> } else {
->   logd("失败");
-> }
-> }
-> main();
-> ```
 
 
 
 
 
-
-## 其他函数
-
-
-
-### resetUsbConn 重置usb链接 
-
-* 重置USB链接，如果开起来自动化可以使用这个尝试
-* @return {boolean} true 成功，false 失败
-
-> ```javascript
-> function main(){
->  var result = resetUsbConn();
->  logd(result);
-> }
-> main();
-> ```
-
-
-
-
-
-### setAgentSetting 设置代理程序的配置
-
-* 设置代理程序的配置
- * @param ext 是一个map，例如 {"screenStreamQuality":100}
- *  screenStreamQuality 代表投屏质量 1 - 100
- *  screenStreamFramerate 代表投屏帧率 10 - 60
- * @return {bool} true 成功，false 失败
-
-> ```javascript
-> function main(){
->   // 如果不想设置某个属性，可以不在map填写
-> 	var result = setAgentSetting({"screenStreamQuality":60,"screenStreamFramerate":20});
-> 	logd(result);
-> }
-> main();
-> ```
 
 
 
@@ -671,23 +469,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件  资源下�
 > ```javascript
 > function main(){
 > 	setAgentTimeout(10000,3000);
-> }
-> main();
-> 
-> ```
-
-
-
-### activeAppInfo 当前运行的程序 bundleId
-
-* @param 当前运行的程序 bundleId
-* @return {string} 当前运行的程序 bundleId
-
-
-> ```javascript
-> function main(){
-> 	let d=	activeAppInfo();
-> logd(d);
 > }
 > main();
 > 

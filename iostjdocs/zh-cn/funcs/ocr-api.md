@@ -4,6 +4,10 @@ description: EasyClick 自动化脚本 iOS免越狱 OCR识别 资源下载
 keywords: [EasyClick 自动化脚本 iOS免越狱 OCR识别  资源下载 ]
 ---
 
+:::tip
+OCR还未实现，暂时不可用，文档先放着，后期改进
+:::
+
 ## 说明
 
 - OCR模块是属于对图像进行识别

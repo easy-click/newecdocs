@@ -17,7 +17,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## setFetchNodeParam 设置节点参数
 
 * 设置获取节点的基础参数，这个参数可以有效减少获取节点的数量和消耗的时间
-* 支持版本: EC iOS 中控 3.0.0+
 * @param ext 是一个map，例如 {"visibleFilter":1}
 * visibleFilter 1 代表不管visible是true还是false都获取，2 代表只获取 visible=true的节点
 * labelFilter 1 代表不管label是否有值都获取，2 代表只获取label有值的节点
@@ -38,7 +37,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## getNodeInfo 获取节点集合
 
 * timeout 超时时间，单位毫秒
-* 支持版本: EC iOS 中控 3.0.0+
 * @return {array} 节点对象集合
 
 > ```javascript
@@ -54,7 +52,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## getOneNodeInfo 获取单节点
 
 * timeout 超时时间，单位毫秒
-* 支持版本: EC iOS 中控 3.0.0+
 * @return {NodeInfo} 节点对象
 
 > ```javascript
@@ -78,9 +75,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 
 
 ## id id 属性全匹配
-
 * id 属性全匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -145,7 +140,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## idMatch id 属性正则匹配
 
 * id 属性正则匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -208,7 +202,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## label label属性全匹配
 
 * label属性全匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -273,11 +266,9 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 
 
 
-
 ## labelMatch label属性正则匹配
 
 * label属性正则匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -342,7 +333,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## name name属性全匹配
 
 * name 属性全匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -405,7 +395,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## nameMatch name属性正则匹配
 
 * name 属性正则匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -468,7 +457,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## type type属性全匹配
 
 * type 属性全匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -531,7 +519,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## typeMatch type属性正则匹配
 
 * type 属性正则匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -594,7 +581,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## value value属性全匹配
 
 * value 属性全匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -659,7 +645,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## valueMatch value属性正则匹配
 
 * value 属性正则匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -725,10 +710,9 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 
 
 
-## enabl enable属性全匹配
+## enable enable属性全匹配
 
 * enable 属性全匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -845,7 +829,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## visible visible属性全匹配
 
 * visible 属性全匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -901,7 +884,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## index index属性全匹配
 
 * index 属性全匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -955,7 +937,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## depth depth 属性全匹配
 
 * depth 属性全匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -1013,7 +994,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## selected selected 属性全匹配
 
 * selected 属性全匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -1130,7 +1110,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## bounds bounds属性范围匹配
 
 * bounds 属性范围匹配
-* 支持版本: EC iOS 中控 3.0.0+
 
 > ```javascript
 > function main() {
@@ -1190,12 +1169,11 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  节点函数 ]
 ## clickCenter 点击节点中心点
 
 * 点击节点中心点
-* 支持版本: EC iOS 中控 3.0.0+
 * @return {bool} true 成功，false 失败
 
-```json
-function main(){
-      setFetchNodeParam({"labelFilter":"2","maxDepth":"70","visibleFilter":"2","excludedAttributes":"visible,2"})
+```javascript
+ function main(){
+     setFetchNodeParam({"labelFilter":"2","maxDepth":"70","visibleFilter":"2","excludedAttributes":"visible,2"})
     let node = name("地图").getOneNodeInfo(10000)
     logd(JSON.stringify(node))
     if(node){
@@ -1203,8 +1181,7 @@ function main(){
     }
 
 }
-
-main()
+ main()
 ```
 
 
@@ -1212,10 +1189,9 @@ main()
 ## clickRandom 随机点击节点
 
 * 随机点击节点的坐标
-* 支持版本: EC iOS 中控 3.0.0+
 * @return {bool} true 成功，false 失败
 
-```json
+```javascript
 function main(){
       setFetchNodeParam({"labelFilter":"2","maxDepth":"70","visibleFilter":"2","excludedAttributes":"visible,2"})
     let node = name("地图").getOneNodeInfo(10000)
@@ -1223,7 +1199,6 @@ function main(){
     if(node){
         logd(node.clickRandom())
     }
-
 }
 
 main()
@@ -1293,10 +1268,9 @@ main()
 ## parent 查询节点的父级
 
 * 查询节点的父级
-* 支持版本: EC iOS 中控 3.0.0+
 * @return {NodeInfo} 节点对象
 
-```json
+```javascript
 function main() {
 
     // 进入查找状态
@@ -1319,11 +1293,10 @@ main()
 ## child 取得单个子节点
 
 * 取得单个子节点
-* 支持版本: EC iOS 中控 3.0.0+
 * @param index – 子节点索引
 * @return {NodeInfo} NodeInfo 对象 或者null
 
-```json
+```javascript
 function main() {
 
     // 进入查找状态
@@ -1346,10 +1319,9 @@ main()
 ## allChildren 取得所有子节点
 
 * 取得所有子节点
-* 支持版本: EC iOS 中控 3.0.0+
 * @return {array} NodeInfo 节点集合
 
-```json
+```javascript
 function main() {
 
     // 进入查找状态
@@ -1372,10 +1344,9 @@ main()
 ## siblings 取得所有兄弟节点
 
 * 当前节点的所有兄弟节点
-* 支持版本: EC iOS 中控 3.0.0+
 * @return {array} NodeInfo 节点集合
 
-```json
+```javascript
 function main() {
 
     // 进入查找状态
@@ -1398,10 +1369,9 @@ main()
 ## previousSiblings 取得前面的兄弟节点
 
 * 在当前节点前面的兄弟节点
-* 支持版本: EC iOS 中控 3.0.0+
 * @return {array} NodeInfo 节点集合
 
-```json
+```javascript
 function main() {
 
     // 进入查找状态
@@ -1424,10 +1394,9 @@ main()
 ## nextSiblings 取得后面的兄弟节点
 
 * 在当前节点后面的兄弟节点
-* 支持版本: EC iOS 中控 3.0.0+
 * @return {array} NodeInfo 节点集合
 
-```json
+```javascript
 function main() {
 
     // 进入查找状态
@@ -1442,8 +1411,6 @@ function main() {
     // 先释放老的数据
     releaseNode();
 }
-
-
 main()
 ```
 
