@@ -4,7 +4,7 @@ hide_title: false
 hide_table_of_contents: false
 sidebar_label: iOS 脱机版产品介绍
 description: EasyClick iOS免越狱免硬件自动化脚本软件,EasyClick iOS版,最大特色就是iOS 免越狱免硬件，支持 iOS 14 - 16+的系统，使用EasyClick编写代码更加智能，函数功能更丰富，兼容性更高，同时更新的速度以及问题解决能力更强
-keywords: [EasyClick,iOS脚本,苹果手机脚本,iOS免越狱,苹果手机免越狱,苹果手机脚本,ios手机脚本编写,ios手机投屏]
+keywords: [EasyClick,iOS脚本,苹果手机脚本,iOS免越狱,iOS免硬件,苹果手机免越狱,苹果手机脚本,ios手机脚本编写,ios手机投屏]
 ---
 
 # iOS 脱机版本产品介绍
