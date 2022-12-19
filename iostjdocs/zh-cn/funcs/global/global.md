@@ -1,19 +1,24 @@
 ---
-title: 全局模块
-description: EasyClick 自动化脚本 iOS免越狱 全局模块 资源下载
-keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
+title: EasyClick自动化脚本_iOS脚本_iOS免越狱_iOS免硬件_全局模块 
+hide_title: false 
+hide_table_of_contents: false 
+sidebar_label: 全局模块
+description: EasyClick 自动化脚本 iOS免越狱 全局模块 资源下载 
+keywords: [EasyClick自动化脚本,iOS脚本,iOS免越狱,iOS免硬件,全局模块,资源下载 ]
 ---
 
+# 全局模块
 
 ## 说明
+
 全局模块是指直接调用方法就可以使用的模块，无需使用前缀对象名称
 
 ## 中控版本
 
-### version 获取中控版本
+### version 获取应用程序版本
 
- * 获取中控版本
- * @return 字符串 例如 2.9.0
+* 获取应用程序版本
+* @return 字符串 例如 2.9.0
 
 > ```javascript
 > function main(){
@@ -22,85 +27,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > main();
 > ```
 
-
-
-
-
-
-## 插件模块加载
-
-### loadDex 载入jar包
-
- * 载入dex文件
- * @param path 路径，加载顺序分别是插件目录(例如 ab.jar)或者是文件路径(例如 D:/ab.jar)加载
- * @return true 载入成功， false载入失败
-
-> ```javascript
-> function main(){
->    //类似这样会先从IEC文件的插件目录查找
->    //loadDex("ocr.apk");
->    //下面这个是
->     loadDex("D:/a.jar");
->     // a.apk中存在com.A这个这个类，可以直接使用
->     var obj = new com.A(); 
-> }
-> main();
-> ```
-
-
-
-
-
-### require 导入JS
-
- * 导入JS模块
- * @param path 路径，例如 本地D:/a.js或者 EC工程中的文件路径 slib/a.js
- * @return 模块对象
-
-> ```javascript
-> function main(){
->     //注意,js文件不要放在js目录或下级目录中
->     //注意,EC3.5版本不支持,EC已经6.15了兄弟
->     test = require("slib/a.js")
->     logd(test.c());
-> }
-> main();
-> //视频介绍:https://www.bilibili.com/video/BV1vz4y1S7gd?p=29&share_source=copy_web
-> ```
-
-
-
-
-### importClass 导入JAVA类
-
- * 导入java的class给js用
- * @param clz class的名称例如: com.A
-
-> ```javascript
-> function main(){
->     importClass(com.A);
->     var obj = new com.A(); 
-> }
-> main();
-> ```
-
-
-### importPackage 导入JAVA包
-
- * 导入java包下面所有类给js用
- * @param clz class的名称例如: com.b
-
-> ```javascript
-> function main(){
->     importPackage(com.b);
->     var obj = new com.b.A(); 
-> }
-> main();
-> ```
-
 ## 脚本启停
-
-
 
 ### exit 退出脚本
 
@@ -110,10 +37,10 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 
 ### isScriptExit 是否已退出脚本
 
- * 判断EC运行的当前线程是否处于退出状态，可用判断脚本是否退出，或者子线程是否退出
- * @return true 已退出
+* 判断EC运行的当前线程是否处于退出状态，可用判断脚本是否退出，或者子线程是否退出
+* @return true 已退出
 
->```javascript
+> ```javascript
 > function main(){
 >      try{
 >                while(true){
@@ -134,13 +61,11 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > main();
 > ```
 
+### sleep 暂停执行
 
-
-
-
-### sleep  暂停执行
 * 休眠
 * @param miSecond 毫秒
+
 > ```javascript
 > function main(){
 >     sleep(1000);
@@ -149,33 +74,26 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > ```
 
 ### execScript 载入JS
-* 执行JS文件或者内容, [如果出现illegalStateException，可以尝试修改**eval**函数执行js脚本]
+
+* 执行JS文件或者内容
 * eval函数是js自带的，直接传入js内容就行
 * @param type 1=文件，2=直接是JS内容
-* @param content 路径例如D:/a.js或者js的内容
+* @param content 路径例如/var/a.js或者js的内容，这个是手机上的路径
 * @return 布尔型，true代表执行成功， false代表失败
 
 > ```javascript
 > function main(){
->     var d ='while(true){sleep(1000);logd(111111);}';
->        
->        thread.execAsync(function() {
->            //execScript(1,"D:/ad.js")
->            execScript(2,d);
->        });
->        
+>       let d = "logd(1)"
+>        let dx = execScript(2,d);
 >        while(true){
 >            sleep(2000);
 >            loge("fsadffsad")
 >        }
->        
 > }
 > main();
 > ```
 
-
-
-### restartScript  重启脚本
+### restartScript 重启脚本 - [未实现]
 
 * 重启脚本，适合无限循环，或者有异常的情况可以再次执行，
 * 注意: 该方法威力巨大，请自行控制好是否自动重启，否则只能强杀进程才能停止
@@ -200,18 +118,16 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > main();
 > ```
 
-
-## 
-
-
+##   
 
 ## JSON处理
 
 ### JSON.stringify 格式化为JSON字符串
 
- * 格式化对象为JSON字符串
- * @param 对象
- * @return 字符串
+* 格式化对象为JSON字符串
+* @param 对象
+* @return 字符串
+
 > ```javascript
 > function main(){
 >     var m ={"sss":"a"};
@@ -223,9 +139,10 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 
 ### JSON.parse 转换为JSON对象
 
- * 格式化JSON字符串为对象
- * @param 字符串
- * @return 对象
+* 格式化JSON字符串为对象
+* @param 字符串
+* @return 对象
+
 > ```javascript
 > function main(){
 >     var m ={"sss":"a"};
@@ -236,9 +153,10 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > main();
 > ```
 
-
 ## 监听脚本和服务
-### setStopCallback 脚本停止监听
+
+### setStopCallback 脚本停止监听 [未实现]
+
 > ```javascript
 > function main(){
 >     setStopCallback(function (){
@@ -254,8 +172,8 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > main();
 > ```
 
+### setExceptionCallback 脚本异常停止监听 [未实现]
 
-### setExceptionCallback 脚本异常停止监听
 > ```javascript
 > function main(){
 >     setExceptionCallback(function (msg){
@@ -273,27 +191,14 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > main();
 > ```
 
-
-
-
-
 ## 日志消息方法
 
-
-
-
-
-
-
-
-
-
-
 ### setLogLevel 设置日志的等级
+
 * 设置日志的等级,可以根据情况关闭或开启日志
 * @param level 日志等级，值分别是 debug,info,warn,error,off，排序分别是debug < info < warn < error < off，
 * 例如 off代表关闭所有级别日志，debug代表打印包含logd,logi,logw,loge的日志，info代表打印包含logi,logw,loge的日志，warn 代表打印包含logw,loge的日志
-* @param displayToast 是否展示toast消息
+* @param displayToast 是否展示toast消息，这个参数未实现
 * @return {bool} 布尔型 true代表成功 false代表失败
 
 > ```javascript
@@ -312,11 +217,10 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 >   main();
 > ```
 
-
 ### logd 调试日志
- * 调试日志
- * @param msg 消息字符串
 
+* 调试日志
+* @param msg 消息字符串
 
 > ```javascript
 > 
@@ -330,9 +234,9 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > ```
 
 ### loge 错误日志
- * 错误日志
- * @param msg 消息字符串
 
+* 错误日志
+* @param msg 消息字符串
 
 > ```javascript
 > function main(){
@@ -344,9 +248,9 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > ```
 
 ### logw 警告日志
- * 警告日志
- * @param msg 消息字符串
 
+* 警告日志
+* @param msg 消息字符串
 
 > ```javascript
 > function main(){
@@ -358,9 +262,9 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > ```
 
 ### logi 信息日志
- * 信息日志
- * @param msg 消息字符串
 
+* 信息日志
+* @param msg 消息字符串
 
 > ```javascript
 > function main(){
@@ -372,18 +276,13 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > 
 > ```
 
-
-
-
-
 ## 读取IEC包资源
 
-
 ### readIECFileAsString 读取IEC内部文件为字符串
- * 读取IEC文件中的资源文件，并返回字符串
- * @param fileName 文件名称，如果放在某个文件夹下 需要加上文件名称
- * @return {string} 如果是null代表没内容
 
+* 读取IEC文件中的资源文件，并返回字符串
+* @param fileName 文件名称，如果放在某个文件夹下 需要加上文件名称
+* @return {string} 如果是null代表没内容
 
 > ```javascript
 > function main(){
@@ -395,31 +294,10 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > ```
 
 
-### readIECFileAsByte 读取IEC内部文件为数组资源
-* 读取IEC文件中的资源文件，并返回java的直接数组
-* @param fileName 文件名称，如果放在某个文件夹下 需要加上文件名称
-* @return {字节数组} 如果是null代表没内容
-
-
-> ```javascript
-> function main(){
-> //这里已读取图片为例子
-> var d =readIECFileAsByte("res/a.png")
-> logd(d)
-> logd(d.length)
-> logd(ad);
-> }
-> main();
-> 
-> ```
-
-
-
 ### readResString 读取字符串资源
 * 读取res文件夹中的资源文件,并返回字符串
 * @param fileName 文件名称，不要加res前缀
 * @return string 如果是null代表没内容
-
 
 > ```javascript
 > function main(){
@@ -430,29 +308,10 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > ```
 
 
-
-
-
-### readResBitmap  读取Bitmap资源
-* 读取res文件夹中的资源文件，并返Bitmap图片对象
-* @param fileName 文件名称，不要加res前缀
-* @return BufferedImage 如果是null代表没内容
-
-
-> ```javascript
-> function main(){
->     var b = readResBitmap("a.txt");
-> }
-> main();
-> 
-> ```
-
-
-### readResAutoImage  读取Image资源
+### readResAutoImage 读取Image资源
 * 读取res文件夹中的资源文件，并返 AutoImage 图片对象
 * @param fileName 文件名称，不要加res前缀
 * @return string 如果是null代表没内容
-
 
 > ```javascript
 > function main(){
@@ -462,15 +321,12 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > 
 > ```
 
-
-
-
 ### saveResToFile 保存资源为文件
+
 * 保存res文件夹中的资源文件到指定的路径
 * @param fileName 文件名称，不要加res前缀
 * @param path 要保存到的路径地址，例如D:/aa.txt
 * @return boolean|布尔型 true代表保存成功
-
 
 > ```javascript
 > function main(){
@@ -480,17 +336,14 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > 
 > ```
 
-
-
 ### findIECFile 查找IEC的文件
 
 * 查找IEC的文件
-* @param dir       文件夹名称，null代表只读res/文件夹，没有默认是res文件夹，可以是类似 res/aaa/这样的文件夹
-* @param names     文件名称前缀,null代表不匹配， 例如aaa,多个前缀用|分割，例如 aaa|bb|cc
-* @param ext       文件扩展名 ,null代表不匹配，例如.png,多个扩展用|分割，例如 .png|.jpg|.bmp
+* @param dir 文件夹名称，null代表只读res/文件夹，没有默认是res文件夹，可以是类似 res/aaa/这样的文件夹
+* @param names 文件名称前缀,null代表不匹配， 例如aaa,多个前缀用|分割，例如 aaa|bb|cc
+* @param ext 文件扩展名 ,null代表不匹配，例如.png,多个扩展用|分割，例如 .png|.jpg|.bmp
 * @param recursion 是否递归子目录，true代表递归
 * @return {array} 文件名称JSON数组
-
 
 > ```javascript
 > function main(){
@@ -502,20 +355,12 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > 
 > ```
 
-
-
-
-
-
-
-
 ## 自动化服务相关
 
-
 ### isServiceOk 自动化服务状态
- * 自动化服务是否正常
- * @return true或者false
 
+* 自动化服务是否正常
+* @return true或者false
 
 > ```javascript
  > function main(){
@@ -525,9 +370,9 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
  > ```
 
 ### startEnv 启动自动化
- * 启动自动化服务环境，并自动纠正坐标系统，防止坐标漂移
- * @return true或者false
 
+* 启动自动化服务环境,这个没有实现，根据函数打印的实际日志操作
+* @return true或者false
 
 > ```javascript
  > function main(){
@@ -536,62 +381,15 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
  > main();
  > ```
 
-### getStartEnvMsg 获取自动化消息
-
- * 获取启动自动化消息
- * @return string
-
-
-> ```javascript
-> function main(){
->  var result = getStartEnvMsg();
->   logd(result)
-> }
-> main();
-> ```
-
-
-
-
-
-### daemonEnv 守护自动化环境
-
- * 守护自动化环境
- * 如果是激活或者无障碍保活的情况下，尽量保证自动服务不掉线
- * @param daemon 是否守护自动化环境 true 是，false 否
- * @return 布尔型  true代表启动成功，false代表启动失败
-
-
-> ```javascript
-> function main(){
->  !!![沙雕提醒]!!!脚本开头启动环境后,执行一次就行了,不要再问要不要一直执行了!!
->  var result = daemonEnv(true);
-> }
-> main();
-> ```
-
-
-
-### closeEnv 关闭自动化
- * 关闭自动化环境
- * @return 布尔型  true代表启动成功，false代表启动失败
-
-
-> ```javascript
- > function main(){
- >     var result = closeEnv();
- > }
- > main();
- > ```
 
 ## 时间相关
 
 ### time 毫秒级当前时间戳
- * !!!沙雕提醒!!!默认时间戳是秒,不要直接比较
 
- * 毫秒级当前时间戳
- * @return {long} 毫秒级别的long时间
+* !!!沙雕提醒!!!默认时间戳是秒,不要直接比较
 
+* 毫秒级当前时间戳
+* @return {long} 毫秒级别的long时间
 
 > ```javascript
 > function main(){
@@ -600,11 +398,10 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > main();
 > ```
 
-
 ### timeFormat 格式化时间
 
- * 格式化时间函数例如：```yyyy-MM-dd HH:mm:ss```
- * @return {string} 格式化之后的当前时间
+* 格式化时间函数例如：```yyyy-MM-dd HH:mm:ss```
+* @return {string} 格式化之后的当前时间
 
 > ```javascript
 > function main(){
@@ -613,12 +410,12 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > main();
 > ```
 
-
 ### console.time 计时开始
 
- * 计时开始,和timeEnd成对出现计算用时
- * @param label 标签
- * @return  {long} 当前时间
+* 计时开始,和timeEnd成对出现计算用时
+* @param label 标签
+* @return {long} 当前时间
+
 > ```javascript
 > function main(){
 >     console.time("1");
@@ -627,13 +424,13 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > }
 > main();
 > ```
-
 
 ### console.timeEnd 计时结束
 
- * 计时结束,和timeEnd成对出现计算用时
- * @param label 标签
- * @return {long} 与计时开始的差值
+* 计时结束,和timeEnd成对出现计算用时
+* @param label 标签
+* @return {long} 与计时开始的差值
+
 > ```javascript
 > function main(){
 >     console.time("1");
@@ -643,16 +440,14 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > main();
 > ```
 
-
-
 ## 其他
 
-### random 随机函数 
+### random 随机函数[未实现]
 
- * 取得某个范围的随机值
- * @param min 最小值
- * @param max 最大值
- * @return 整型 在min和max中间的值, 包含最大和最小值
+* 取得某个范围的随机值
+* @param min 最小值
+* @param max 最大值
+* @return 整型 在min和max中间的值, 包含最大和最小值
 
 > ```javascript
 > function main(){
@@ -661,4 +456,3 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局模块  资源下载 ]
 > }
 > main();
 > ```
-

@@ -31,7 +31,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 iOS免硬件 iOS脚本 安装�
   - <img src="/iosimg/image-20220105095753431.png" alt="image-20220105095753431" style={{zoom:'50%'}} />
 
 
-
 ## 3、链接中控开发
 
 1、开发插件安装完毕
