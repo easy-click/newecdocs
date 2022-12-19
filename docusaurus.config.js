@@ -8,7 +8,7 @@ const ArchivedVersionsDropdownItems = Object.entries(VersionsArchived)
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'EasyClick官网_安卓_苹果_iOS手机自动化脚本编写_安卓免root_iOS免越狱_游戏自动化_营销自动化_自动化测试_自动化脚本开发_自动化办公',
+  title: 'EasyClick官网_安卓_苹果_iOS脚本_iOS手机自动化脚本编写_安卓免root_iOS免越狱_游戏自动化_营销自动化_自动化测试_自动化脚本开发_自动化办公',
   tagline: '自动化脚本专家',
   url: 'https://ieasyclick.com',
   baseUrl: '/',
@@ -70,8 +70,8 @@ const config = {
         language: ["zh", "en"],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
-        searchContextByPaths: ["docs", "iosdocs", "iostjdoc"],
-        docsRouteBasePath: ["/docs", "/iosdocs", "/iostjdoc"],
+        searchContextByPaths: ["docs", "iosdocs", "iostjdocs"],
+        docsRouteBasePath: ["/docs", "/iosdocs", "/iostjdocs"],
         docsDir: ["docs", "iosdocs", "iostjdocs"]
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
