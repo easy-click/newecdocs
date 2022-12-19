@@ -1,5 +1,5 @@
 ---
-title: EasyClick自动化脚本_iOS脚本_iOS免越狱_iOS免硬件_全局模块
+title: EasyClick自动化脚本_iOS脚本_iOS免越狱_iOS免硬件_全局模块 
 hide_title: false 
 hide_table_of_contents: false 
 sidebar_label: 全局模块
@@ -123,8 +123,6 @@ function main() {
 main();
  ```
 
-##         
-
 ## JSON处理
 
 ### JSON.stringify 格式化为JSON字符串
@@ -133,14 +131,15 @@ main();
 * @param 对象
 * @return 字符串
 
-> ```javascript
-> function main(){
->     var m ={"sss":"a"};
->     var d =JSON.stringify(m);
->     logd(d);
-> }
-> main();
-> ```
+```javascript
+ function main() {
+  var m = {"sss": "a"};
+  var d = JSON.stringify(m);
+  logd(d);
+}
+
+main();
+ ```
 
 ### JSON.parse 转换为JSON对象
 
@@ -148,53 +147,56 @@ main();
 * @param 字符串
 * @return 对象
 
-> ```javascript
-> function main(){
->     var m ={"sss":"a"};
->     var d =JSON.stringify(m);
->     d =JSON.parse(d);
->     toast(d);
-> }
-> main();
-> ```
+ ```javascript
+ function main() {
+  var m = {"sss": "a"};
+  var d = JSON.stringify(m);
+  d = JSON.parse(d);
+  toast(d);
+}
+
+main();
+ ```
 
 ## 监听脚本和服务
 
 ### setStopCallback 脚本停止监听 [未实现]
 
-> ```javascript
-> function main(){
->     setStopCallback(function (){
->         logd("fdsafsad 我是停止回调")
->      });
->     var result = sleep(1000);
->     if (result){
->         logd("成功");
->     } else {
->         logd("失败");
->     }
-> }
-> main();
-> ```
+ ```javascript
+ function main() {
+  setStopCallback(function () {
+    logd("fdsafsad 我是停止回调")
+  });
+  var result = sleep(1000);
+  if (result) {
+    logd("成功");
+  } else {
+    logd("失败");
+  }
+}
+
+main();
+ ```
 
 ### setExceptionCallback 脚本异常停止监听 [未实现]
 
-> ```javascript
-> function main(){
->     setExceptionCallback(function (msg){
->         logd(" 异常停止消息: "+msg)
->      });
->     var result = sleep(1000);
->     if (result){
->         logd("成功");
->     } else {
->         logd("失败");
->     }
->     //这里有异常抛出
->     result.length();
-> }
-> main();
-> ```
+ ```javascript
+ function main() {
+  setExceptionCallback(function (msg) {
+    logd(" 异常停止消息: " + msg)
+  });
+  var result = sleep(1000);
+  if (result) {
+    logd("成功");
+  } else {
+    logd("失败");
+  }
+  //这里有异常抛出
+  result.length();
+}
+
+main();
+ ```
 
 ## 日志消息方法
 
@@ -206,80 +208,85 @@ main();
 * @param displayToast 是否展示toast消息，这个参数未实现
 * @return {bool} 布尔型 true代表成功 false代表失败
 
-> ```javascript
->   function main() {
->       setLogLevel("info",false)
->       for (var i = 0; i < 1; i++) {
->           sleep(10);
->           //logd(time()+" debug");
->           logi(time()+" info");
->           //logw(time()+" warn");
->          // loge(time()+" error");
->           logd("--- "+time());
->       }
->       //logd(time()+"  222");
->   }
->   main();
-> ```
+ ```javascript
+   function main() {
+  setLogLevel("info", false)
+  for (var i = 0; i < 1; i++) {
+    sleep(10);
+    //logd(time()+" debug");
+    logi(time() + " info");
+    //logw(time()+" warn");
+    // loge(time()+" error");
+    logd("--- " + time());
+  }
+  //logd(time()+"  222");
+}
+
+main();
+ ```
 
 ### logd 调试日志
 
 * 调试日志
 * @param msg 消息字符串
 
-> ```javascript
-> 
-> 
-> function main(){
->     logd("msg");
->     //可变参数写法
->     logd("我是消息{},{}","测试1",2)
-> }
-> main();
-> ```
+ ```javascript
+
+
+function main() {
+  logd("msg");
+  //可变参数写法
+  logd("我是消息{},{}", "测试1", 2)
+}
+
+main();
+ ```
 
 ### loge 错误日志
 
 * 错误日志
 * @param msg 消息字符串
 
-> ```javascript
-> function main(){
->     loge("msg");
->     //可变参数写法
->     loge("我是消息{},{}","测试1",2)
-> }
-> main();
-> ```
+ ```javascript
+ function main() {
+  loge("msg");
+  //可变参数写法
+  loge("我是消息{},{}", "测试1", 2)
+}
+
+main();
+ ```
 
 ### logw 警告日志
 
 * 警告日志
 * @param msg 消息字符串
 
-> ```javascript
-> function main(){
->     logw("msg");
->     //可变参数写法
->     logw("我是消息{},{}","测试1",2)
-> }
-> main();
-> ```
+ ```javascript
+ function main() {
+  logw("msg");
+  //可变参数写法
+  logw("我是消息{},{}", "测试1", 2)
+}
+
+main();
+ ```
 
 ### logi 信息日志
 
 * 信息日志
 * @param msg 消息字符串
 
-> ```javascript
-> function main(){
->     logi("msg");
->     //可变参数写法
->     logi("我是消息{},{}","测试1",2)
-> }
-> main();
-> 
-> ```
+ ```javascript
+ function main() {
+  logi("msg");
+  //可变参数写法
+  logi("我是消息{},{}", "测试1", 2)
+}
+
+main();
+
+```
 
 ## 读取IEC包资源
 
@@ -289,14 +296,15 @@ main();
 * @param fileName 文件名称，如果放在某个文件夹下 需要加上文件名称
 * @return {string} 如果是null代表没内容
 
-> ```javascript
-> function main(){
->     var testData = readIECFileAsString("res/a.txt");
->    logd(testData)
-> }
-> main();
-> 
-> ```
+ ```javascript
+ function main() {
+  var testData = readIECFileAsString("res/a.txt");
+  logd(testData)
+}
+
+main();
+
+```
 
 ### readResString 读取字符串资源
 
@@ -304,13 +312,14 @@ main();
 * @param fileName 文件名称，不要加res前缀
 * @return string 如果是null代表没内容
 
-> ```javascript
-> function main(){
->     var testData = readResString("a.txt");
-> }
-> main();
-> 
-> ```
+ ```javascript
+ function main() {
+  var testData = readResString("a.txt");
+}
+
+main();
+
+```
 
 ### readResAutoImage 读取Image资源
 
@@ -318,28 +327,30 @@ main();
 * @param fileName 文件名称，不要加res前缀
 * @return string 如果是null代表没内容
 
-> ```javascript
-> function main(){
->     var b = readResAutoImage("img/a.png");
-> }
-> main();
-> 
-> ```
+ ```javascript
+ function main() {
+  var b = readResAutoImage("img/a.png");
+}
+
+main();
+
+```
 
 ### saveResToFile 保存资源为文件
 
 * 保存res文件夹中的资源文件到指定的路径
 * @param fileName 文件名称，不要加res前缀
-* @param path 要保存到的路径地址，例如D:/aa.txt
+* @param path 要保存到的路径地址，例如/var/aa.txt
 * @return boolean|布尔型 true代表保存成功
 
-> ```javascript
-> function main(){
->     var b = saveResToFile("img/a.png","D:/a.png");
-> }
-> main();
-> 
-> ```
+ ```javascript
+ function main() {
+  var b = saveResToFile("img/a.png", "/var/a.png");
+}
+
+main();
+
+```
 
 ### findIECFile 查找IEC的文件
 
@@ -350,15 +361,16 @@ main();
 * @param recursion 是否递归子目录，true代表递归
 * @return {array} 文件名称JSON数组
 
-> ```javascript
-> function main(){
-> 	let res = findIECFile("res/","dd2",".png|.jpg",true)
-> 	logd("findIECFile {}",JSON.stringify(res));
-> 
-> }
-> main();
-> 
-> ```
+ ```javascript
+ function main() {
+  let res = findIECFile("res/", "dd2", ".png|.jpg", true)
+  logd("findIECFile {}", JSON.stringify(res));
+
+}
+
+main();
+
+```
 
 ## 自动化服务相关
 
@@ -367,24 +379,26 @@ main();
 * 自动化服务是否正常
 * @return true或者false
 
-> ```javascript
- > function main(){
- >     var result = isServiceOk();
- > }
- > main();
- > ```
+ ```javascript
+  function main() {
+  var result = isServiceOk();
+}
+
+main();
+  ```
 
 ### startEnv 启动自动化
 
 * 启动自动化服务环境,这个没有实现，根据函数打印的实际日志操作
 * @return true或者false
 
-> ```javascript
- > function main(){
- >     var result = startEnv();
- > }
- > main();
- > ```
+ ```javascript
+  function main() {
+  var result = startEnv();
+}
+
+main();
+ ```
 
 ## 时间相关
 
@@ -395,24 +409,26 @@ main();
 * 毫秒级当前时间戳
 * @return {long} 毫秒级别的long时间
 
-> ```javascript
-> function main(){
->    logd(time());
-> }
-> main();
-> ```
+ ```javascript
+ function main() {
+  logd(time());
+}
+
+main();
+ ```
 
 ### timeFormat 格式化时间
 
 * 格式化时间函数例如：```yyyy-MM-dd HH:mm:ss```
 * @return {string} 格式化之后的当前时间
 
-> ```javascript
-> function main(){
->    logd(timeFormat("yyyy-MM-dd HH:mm:ss"));
-> }
-> main();
-> ```
+ ```javascript
+ function main() {
+  logd(timeFormat("yyyy-MM-dd HH:mm:ss"));
+}
+
+main();
+ ```
 
 ### console.time 计时开始
 
@@ -420,14 +436,15 @@ main();
 * @param label 标签
 * @return {long} 当前时间
 
-> ```javascript
-> function main(){
->     console.time("1");
->     sleep(1000)
->     logd(console.timeEnd("1"))
-> }
-> main();
-> ```
+ ```javascript
+ function main() {
+  console.time("1");
+  sleep(1000)
+  logd(console.timeEnd("1"))
+}
+
+main();
+ ```
 
 ### console.timeEnd 计时结束
 
@@ -435,14 +452,15 @@ main();
 * @param label 标签
 * @return {long} 与计时开始的差值
 
-> ```javascript
-> function main(){
->     console.time("1");
->     sleep(1000)
->     logd(console.timeEnd("1"))
-> }
-> main();
-> ```
+ ```javascript
+ function main() {
+  console.time("1");
+  sleep(1000)
+  logd(console.timeEnd("1"))
+}
+
+main();
+```
 
 ## 其他
 
@@ -453,10 +471,11 @@ main();
 * @param max 最大值
 * @return 整型 在min和max中间的值, 包含最大和最小值
 
-> ```javascript
-> function main(){
->  var result = random(100,1000);
->  sleep(result);
-> }
-> main();
-> ```
+```javascript
+function main() {
+  var result = random(100, 1000);
+  sleep(result);
+}
+
+main();
+```
