@@ -19,7 +19,7 @@ const config = {
   projectName: 'easyclick-docs', // Usually your repo name.
   i18n: {
     defaultLocale: 'zh',
-    locales: ['en', 'zh'],
+    locales: ['zh', 'en'],
     localeConfigs: {
       zh: {
         label: '简体中文',
@@ -70,7 +70,7 @@ const config = {
         language: ["zh", "en"],
         highlightSearchTermsOnTargetPage: true,
         explicitSearchResultPath: true,
-        searchContextByPaths: ["docs","iosdocs","iostjdoc"],
+        searchContextByPaths: ["docs", "iosdocs", "iostjdoc"],
         docsRouteBasePath: ["/docs", "/iosdocs", "/iostjdoc"],
         docsDir: ["docs", "iosdocs", "iostjdocs"]
         // For Docs using Chinese, The `language` is recommended to set to:
@@ -84,7 +84,10 @@ const config = {
   /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
-        {name: 'keywords', content: '安卓免root手机自动化,苹果免越狱手机自动化脚本,自动化脚本编写软件,EasyClick破解,按键精灵,触动精灵,autojs,EasyClick官网,自动化测试,自动化办公,自动化脚本开发'},
+        {
+          name: 'keywords',
+          content: '安卓免root手机自动化,苹果免越狱手机自动化脚本,自动化脚本编写软件,EasyClick破解,按键精灵,触动精灵,autojs,EasyClick官网,自动化测试,自动化办公,自动化脚本开发'
+        },
         {
           name: 'description',
           content: 'EasyClick 是专门用于安卓免root,iOS免越狱、免硬件驱动的自动化脚本编写软件，轻松做出比按键精灵、触动精灵强大的软件，与生态圈中的云控、群控产品搭配组合，让自动化脚本开发更容易,相对于市面上其他的产品，EasyClick编写代码更加智能，函数功能更丰富，兼容性更高，同时更新的速度以及问题解决能力更强'
