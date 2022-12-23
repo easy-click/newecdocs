@@ -12,8 +12,9 @@ module.exports = {
         id: 'zh-cn/tools/installreadme',
       },
       items: [
-        'zh-cn/tools/installdevtools',
         'zh-cn/tools/signagent',
+        'zh-cn/tools/installdevtools',
+
       ]
     },
     "zh-cn/firstproject",

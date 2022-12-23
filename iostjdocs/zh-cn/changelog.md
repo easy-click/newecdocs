@@ -10,6 +10,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 iOS免硬件 iOS脚本 版本�
 
 ```text
 - 初始化版本
+- [不建议在实际生产中使用，该版本非稳定版本installdevtools]
 ```
 
 

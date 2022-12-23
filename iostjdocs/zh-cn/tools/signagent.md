@@ -3,217 +3,40 @@ title: 安装主程序和代理ipa
 description: EasyClick 自动化脚本 iOS免越狱 iOS免硬件 iOS脚本 安装代理ipa 资源下载
 keywords: [EasyClick 自动化脚本 iOS免越狱 iOS免硬件 iOS脚本 安装代理ipa  资源下载 ]
 ---
+:::tip
+脱机版本支持iOS 14.6+版本，低于这个版本不用尝试了,最好是15+
+:::
+## 下载主程序
+- 到资源区的网盘下载主程序压缩包 [资源区地址](zh-cn/tools/download_resources)
+- 找到网盘目录下载 **easyclick-ios-脱机版本安装包-源码.zip**，
+  里面包含了主程序、代理程序打好的ipa和代理的xcode工程源码,后缀的1.0.0代表是当前发布的版本号<br/>  
+  <img src="/iostjimg/download_main_zip.png" alt="download_main_zip" style={{zoom:'30%'}} />
+- 解压 **easyclick-ios-脱机版本安装包-源码.zip**,可以得到三个文件
+    - easyclick-tj-main-1.0.0.ipa
+      - 脱机版的主程序
+    - easyclick-tj-agent-1.0.0.ipa
+      - 脱机版代理程序
+    - easyclick-tj-agent-source-1.0.0.zip
+      - 脱机版代理程序源码xcode工程
+
+## 签名主程序并安装
+- 主程序是正常的应用，支持个人免费账户签名、开发者签名、企业签名等
+- 正常开发调试可以使用个人免费账户签名即可
+- 可以使用爱思签名，sideloadly签名,自行下载签名工具: sideloadly官网 [https://sideloadly.io/](https://sideloadly.io/)
+- 理论上主程序也是支持 TrollStore永久签名工具 进行免费签名的，具体可以自己百度，软件的用法
+- 签名主程序后，爱思或者其他工具安装ipa到手机后即可
+- 安装后手机上会有**易点云测**图标，打开app：<br/>  
+  <img src="/iostjimg/tj-index.jpg" alt="tj-index.jpg" style={{zoom:'30%'}} />
+### 主程序授权
+- 地理位置授权,首次运行会弹出请求你的位置，点击使用期间允许
+- 进入手机的设置，找到易点云测，点击进入<br/>
+  <img src="/iostjimg/tj-sys-setting.jpg" alt="tj-setting.jpg" style={{zoom:'30%'}} />
+- 如下图，位置选择始终允许，后台App刷新选择允许，无线数据选择 WLAN与蜂窝网络,Siri与搜索全部选择允许 <br/>
+<img src="/iostjimg/tj-ec-auth.jpg" alt="tj-setting.jpg" style={{zoom:'30%'}} />
+## 签名代理程序并安装
+- 代理程序IPA比较特殊，市面上的爱思等可能无法签名完成，可以到EC论坛搜索**签名**关键字，寻找在线签名方案
+- 如果是使用代理程序的源码，直接使用xcode运行到手机即可,具体可以参考 **EasyClick iOS USB版** 代理签名方案，链接地址: [/iosdocs/zh-cn/tools/signagent](/iosdocs/zh-cn/tools/signagent)
+- 把代理程序安装都手机上后,点击图标，手机系统上会出现 **Automation Running** 白色字样，只要出现了，说明代理程序是正常的
+
+- 下一步安装开发插件进行开发吧
 
-
-
-## 下载Agent源码
-
-> 编译Agent源码请使用 `mac系统`，为了节省成本，可以使用mac mini二手(淘宝一大堆)或者虚拟机安装黑苹果，百度一下一堆教程
->
-> 编译Agent源码需要使用`xcode`，建议使用xcode 13.1版本
->
-> 因为往往涉及到配置`Team`和`自动签名`等事宜。
-
->  请到资源区网盘最终找到这个压缩包，下载到本地并解压
-
-
-
-<img style={{zoom:'50%'}} src="/iosimg/image-20220320215238249.png" alt="image-20220320215238249" />
-
-
-
-> 双击 `easyclick.xcodeproj ` xcode会自动打开这个工程
-
-
-
-<img style={{zoom:'50%'}} src="/iosimg/image-20220208101050668.png" alt="image-20220208101050668"  />
-
-## 设置签名
-
-```json
-签名类型:
-普通的appleid签名:
-	- 免费
-	- 限制: 只能安装3台设备，bundleId只能允许十天更改三次，
-		证书7天就会过期，需要再次使用xcode运行代理ipa源码
-  - 地址: https://appleid.apple.com/account
-个人开发者签名:
-	- 费用688元，使用iPhone
-	- 限制: 安装100台设备，证书一年后过期，过期后需要再次使用xcode运行代理ipa源码
-	- 地址：https://developer.apple.com/cn/support/enrollment/
-	- https://www.jianshu.com/p/029167817dde
-	
-这里演示的是appleid免费的签名
-实际开发和调试脚本可以使用免费appleid
-正式使用超过3台设备，需要使用个人开发者签名或者申请大量的免费appleid签名
-
-```
-
-
-
-点击左上角的项目，进入项目属性，点击`TARGETS`中的`WebDriverAgentRunner`，切换到`Signing & Capabilities`：
-
-<img style={{zoom:'50%'}} src="/iosimg/image-20220208102448367.png" alt="image-20220208102448367"  />
-
-
-
-默认`Team`是`None`，需要去选择一个自己的苹果账号：
-
-或者点击add account新增一个苹果账号:
-
-<img style={{zoom:'50%'}} src="/iosimg/image-20220208102633928.png" alt="image-20220208102633928" />
-
-
-
-然后会触发自动修复，显示`Waiting to repair`：
-
-
-
-<img style={{zoom:'50%'}} src="/iosimg/image-20220208102745301.png" alt="image-20220208102745301"  />
-
-
-
-看到没有其他警告或错误，就表示自动创建签名和Profile等工作正常了：
-
-<img style={{zoom:'50%'}} src="/iosimg/image-20220208102821314.png" alt="image-20220208102821314"  />
-
-
-
-## 编译运行
-
-将iphone插入到电脑，xcode识别后，选择要运行的iphone:
-
-<img style={{zoom:'50%'}} src="/iosimg/image-20220208102322555.png" alt="image-20220208102322555"  />
-
-
-
-之后即可正常的`Product`->`Test`去测试，启动服务，供后续使用了。
-
-<img style={{zoom:'50%'}} src="/iosimg/image-20220208103037987.png" alt="image-20220208103037987"  />
-
-`控制台出现了ServerURLHere 代表正常启动了`
-
-
-
-如果出现这个弹窗，请到手机信任这个程序:
-
-<img style={{zoom:'50%'}} src="/iosimg/image-20220208105413446.png" alt="image-20220208105413446" />
-
-`进入手机的 设置 - 通用 - 设备管理 ，选择开发者应用, 点击信任 apple developement:xxxx`
-
-<img style={{zoom:'50%'}} src="/iosimg/image-20220105102213366.png" alt="image-20220105102213366"  />
-
-
-
-
-
-## 常见错误
-
-### Failed to register bundle identifier
-
-如果`Signing & Capablities`的自动修复后报错：
-
-```json
-No profiles for 'com.ieasyclick.auto.ios' were found
-Xcode couldn't find any iOS App Development provisioning profiles matching 'com.ieasyclick.auto.ios'.
-```
-
-
-
-<img style={{zoom:'50%'}} src="/iosimg/image-20220208103411663.png" alt="image-20220208103411663"  />
-
-**原因**：（很可能是）默认的ID：`com.ieasyclick.auto.ios` 已存在，重复了，导致无法继续。
-
-**解决办法**：修改为其他（独一无二的）值
-
-**操作步骤**：
-
-```json
-WebDriverAgentRunner`的属性 -> `Build Settings` -> `Packaging` -> `Product Bundle Identifier
-把值从默认的：com.ieasyclick.auto.ios 改为别的，确保不重复的值，比如我此处改为：com.ieasyclick.auto.ios.xxxx1
-```
-
-<img style={{zoom:'50%'}} src="/iosimg/image-20220208103815145.png" alt="image-20220208103815145" />
-
-> 别处调用到此处的Product Bundle Identifier
-
-后来注意到一个细节，别处会调用到此处的`Product Bundle Identifier`中的值
-
-比如：`Info`->`Key`->`Bundle Identifier`: `$(PRODUCT_BUNDLE_IDENTIFIER)`
-
-
-
-<img style={{zoom:'50%'}} src="/iosimg/image-20220208104031656.png" alt="image-20220208104031656"  />
-
-### XCode报错：A build only device cannot be used to run this target
-
-```json
-A build only device cannot be used to run this target.
-No supported iOS devices are available. Connect a device to run your application or choose a simulated device as the destination.
-```
-
-原因：XCode中没有选择正确的目标设备
-
-解决办法：插入iPhone，且选择对应的iPhone等iOS真机设备。
-
-
-
-### xcodebuild报错：Signing certificate is invalid
-
-**原因**：自己的Apple苹果（开发者）账号过期了。不可用，没法给代码code sign了。
-
-**解决办法**：花钱，给苹果开发者账号续费。价格：99美元/年。
-
-### XCode报错：The certificate used to sign has either expired or has been revoked
-
-```json
-Unable to install "WebDriverAgentRunner-Runner"
-The certificate used to sign "WebDriverAgentRunner-Runner" has either expired or has been revoked. An updated certificate is required to sign and install the application.
-
-```
-
-点击`Details`还可以看到详情：
-
-```bash
-Details
-
-Unable to install "WebDriverAgentRunner-Runner"
-Domain: com.apple.dt.MobileDeviceErrorDomain
-Code: -402620392
-Recovery Suggestion: The certificate used to sign "WebDriverAgentRunner-Runner" has either expired or has been revoked. An updated certificate is required to sign and install the application.
---
-The identity used to sign the executable is no longer valid.
-Domain: com.apple.dt.MobileDeviceErrorDomain
-Code: -402620392
-User Info: {
-    DVTRadarComponentKey = 487925;
-    MobileDeviceErrorCode = "(0xE8008018)";
-    "com.apple.dtdevicekit.stacktrace" = (
-     0   DTDeviceKitBase                     0x000000011d4bcc8f DTDKCreateNSErrorFromAMDErrorCode + 220
-     1   DTDeviceKitBase                     0x000000011d4fb241 __90-[DTDKMobileDeviceToken installApplicationBundleAtPath:withOptions:andError:withCallback:]_block_invoke + 155
-     2   DVTFoundation                       0x0000000101ba464b DVTInvokeWithStrongOwnership + 71
-     3   DTDeviceKitBase                     0x000000011d4faf82 -[DTDKMobileDeviceToken installApplicationBundleAtPath:withOptions:andError:withCallback:] + 1440
-     4   IDEiOSSupportCore                   0x000000011d36ba10 __118-[DVTiOSDevice(DVTiPhoneApplicationInstallation) processAppInstallSet:appUninstallSet:installOptions:completionBlock:]_block_invoke.292 + 3513
-     5   DVTFoundation                       0x0000000101cd317e __DVT_CALLING_CLIENT_BLOCK__ + 7
-     6   DVTFoundation                       0x0000000101cd4da0 __DVTDispatchAsync_block_invoke + 1191
-     7   libdispatch.dylib                   0x00007fff6db306c4 _dispatch_call_block_and_release + 12
-     8   libdispatch.dylib                   0x00007fff6db31658 _dispatch_client_callout + 8
-     9   libdispatch.dylib                   0x00007fff6db36c44 _dispatch_lane_serial_drain + 597
-     10  libdispatch.dylib                   0x00007fff6db375d6 _dispatch_lane_invoke + 363
-     11  libdispatch.dylib                   0x00007fff6db40c09 _dispatch_workloop_worker_thread + 596
-     12  libsystem_pthread.dylib             0x00007fff6dd8ba3d _pthread_wqthread + 290
-     13  libsystem_pthread.dylib             0x00007fff6dd8ab77 start_wqthread + 15
-);
-}
---
-
-System Information
-
-macOS Version 10.15.7 (Build 19H2)
-Xcode 12.4 (17801) (Build 12D4e)
-Timestamp: 2021-04-13T21:17:10+08:00
-```
-
-**原因**：苹果开发者账号过期了，没续费。导致证书不可用。
-
-**解决办法**：同上，续费即可。
