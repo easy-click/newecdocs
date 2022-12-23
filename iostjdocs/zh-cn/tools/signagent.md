@@ -7,7 +7,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 iOS免硬件 iOS脚本 安装�
 脱机版本支持iOS 14.6+版本，低于这个版本不用尝试了,最好是15+
 :::
 ## 下载主程序
-- 到资源区的网盘下载主程序压缩包 [资源区地址](zh-cn/tools/download_resources)
+- 到资源区的网盘下载主程序压缩包 [资源区地址](/iostjdocs/zh-cn/tools/download_resources)
 - 找到网盘目录下载 **easyclick-ios-脱机版本安装包-源码.zip**，
   里面包含了主程序、代理程序打好的ipa和代理的xcode工程源码,后缀的1.0.0代表是当前发布的版本号<br/>  
   <img src="/iostjimg/download_main_zip.png" alt="download_main_zip" style={{zoom:'30%'}} />

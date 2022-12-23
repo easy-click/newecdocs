@@ -8,7 +8,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 教程  第一个工程 ]
 ## 1、安装插件
 
 - 到资源区 或者群文件下载 **iOS-EasyClick-USB+脱机版** 开头的开发插件
-- 具体步骤已经在[安装开发工具](/zh-cn/tools/installreadme)章节说明
+- 具体步骤已经在[安装开发工具](/iostjdocs/zh-cn/tools/installdevtools)章节说明
 
 ## 2、新建工程
 
