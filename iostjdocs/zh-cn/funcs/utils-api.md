@@ -40,7 +40,7 @@ main();
 
 ## 打开URL
 ### openUrl 打开URL
-* 读取剪贴板文本，注意：需要重新在前台运行，先调用 takeMeToFront 函数，将本程序放前台
+* 打开url，注意：需要重新在前台运行，先调用 takeMeToFront 函数，将本程序放前台
 * @param url url地址
 * {boolean} true 代表成功 false 代表失败
 ```javascript
