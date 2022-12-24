@@ -1,4 +1,8 @@
-
+---
+title: 自定义UI
+description: EasyClick 自动化脚本 android免root 模板式UI
+keywords: [EasyClick 自动化脚本 android免root 模板式UI]
+---
 - 开始编写UI
 
 * [JS编写UI](zh-cn/funcs/ui/ui-js-inter.md)

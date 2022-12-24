@@ -1,3 +1,8 @@
+---
+title: UI编写
+description: EasyClick 自动化脚本 android免root 模板式UI
+keywords: [EasyClick 自动化脚本 android免root 模板式UI]
+---
 
 - EC支持H5和原生的方式编写UI
 - EasyClick 原生UI 遵循了Android的UI设计方式，相当于Android UI的简化版本

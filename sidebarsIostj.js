@@ -14,7 +14,6 @@ module.exports = {
       items: [
         'zh-cn/tools/signagent',
         'zh-cn/tools/installdevtools',
-
       ]
     },
     "zh-cn/firstproject",
@@ -36,6 +35,17 @@ module.exports = {
         'zh-cn/funcs/http-api',
         'zh-cn/funcs/worker-api',
         'zh-cn/funcs/utils-api',
+      ]
+    },
+    {
+      type: 'category',
+      label: 'UI编写',
+      link: {
+        type: 'doc',
+        id: 'zh-cn/funcs/ui/index',
+      },
+      items: [
+        'zh-cn/funcs/ui/ui-js-inter',
       ]
     },
     "zh-cn/question-answer",

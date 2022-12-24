@@ -386,6 +386,90 @@ main();
 
 ```
 
+
+## UI参数读取
+
+### deleteConfig 删除配置值
+
+* @param key 在UI界面中配置的key
+* @return {bool} true 代表成功 false 代表失败
+
+```javascript
+ function main(){
+  var testData = deleteConfig("test_key");
+ }
+ main();
+ 
+```
+
+### readConfigInt 读取整型配置
+
+* @description 读取UI界面中的参数,返回是整型
+* @param key 在UI界面中配置的key
+* @return 整型，找不到就返回0
+
+```javascript
+ function main(){
+     var testData = readConfigInt("test_key");
+ }
+ main();
+
+```
+
+### readConfigString 读取字符串配置
+
+* 读取UI界面中的参数,返回是字符串
+* @param key 在UI界面中配置的key
+* @return 字符串 找不到就返回空字符串
+
+```javascript
+ function main(){
+     var testData = readConfigString("test_key");
+ }
+ main();
+ 
+```
+
+### readConfigBoolean 读取布尔型配置
+
+* 读取UI界面中的参数,返回是布尔型
+* @param key 在UI界面中配置的key
+* @return true 或者 false
+
+```javascript
+  function main(){
+      var testData = readConfigBoolean("test_key");
+  }
+  main();
+```
+
+### getConfigJSON 取所有配置
+
+* 取得配置的JSON
+* @return JSON数据
+
+```javascript
+  function main(){
+      var testData = getConfigJSON();
+  }
+  main();
+```
+
+### updateConfig 更新配置
+
+* 更新配置
+* @param key 键
+* @param value 值
+* @return {boolean} true 成功，false失败
+
+```javascript
+ function main(){
+    updateConfig("a","sss");
+ }
+ main();
+```
+
+
 ## 自动化服务相关
 
 ### isServiceOk 自动化服务状态
