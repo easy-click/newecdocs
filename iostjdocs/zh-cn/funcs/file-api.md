@@ -8,8 +8,30 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 文件函数 ]
 
 - 文件模块函数主要是跟文件信息相关联
 - 文件模块的对象前缀是file，例如 file.readFile()这样调用
-- 注意: 中控是运行在电脑上的，所以file操作的是电脑上的路径，每个设备都有自己的沙盒文件夹，使用file.getSandBoxDir()获取
 - 如果想获取设备沙盒文件夹中文件路径 请使用 file.getSandBoxFilePath这个函数
+
+
+
+
+
+
+
+
+## file.getInternalDir 获取内部存储地址
+
+* 获取内部存储地址
+* @param type，documents,library,temp,libraryCaches，documents文件夹类型可以通过爱思导出
+* @return 字符串
+
+```javascript
+function main() {
+  var data = file.getInternalDir("documents");
+  logd(data);
+}
+
+main();
+```
+
 
 ## file.getSandBoxDir 获取沙盒的文件夹路径
 
@@ -48,7 +70,8 @@ main();
 ```javascript
 
 function main() {
-  var data = file.readFile("D:/test.txt");
+  let p = file.getSandBoxFilePath("a.txt");
+  var data = file.readFile(p);
   logd(data);
 }
 
@@ -59,22 +82,20 @@ main();
 
 * 删除文件某一行或者根据包含条件删除
 * 运行环境: 无限制
-* 兼容版本: Android 4.4 以上
-*
 * @param path 文件路径
 * @param line 行数，如果是-1 代表这个条件不生效
 * @param contains 包含某个字符串就删除，如果为null代表这个条件不生效
-*
 * @return {bool} true 成功 false 失败
 
 ```javascript
 
 function main() {
+  let p = file.getSandBoxFilePath("a.txt");
   //删除包含 时间 字符串的行
-  let r = file.deleteLine("D:/a.txt", -1, "时间");
+  let r = file.deleteLine(p, -1, "时间");
   logd("r " + r);
   //删除第3行
-  r = file.deleteLine("D:/a.txt", 3, null);
+  r = file.deleteLine(p, 3, null);
   logd("r " + r);
 }
 
@@ -90,7 +111,8 @@ main();
 ```javascript
 
 function main() {
-  var data = file.listDir("D:/");
+  let p = file.getSandBoxDir();
+  var data = file.listDir(p);
   for (var i = 0; i < data.length; i++) {
     logd("path " + data[i]);
   }
@@ -110,7 +132,8 @@ main();
 
 function main() {
   var data = "Test";
-  file.writeFile(data, "D:/test.txt");
+  let p = file.getSandBoxFilePath("a.txt");
+  file.writeFile(data, p);
 }
 
 main();
@@ -125,7 +148,8 @@ main();
 ```javascript
 
 function main() {
-  var create = file.create("D:/test.txt");
+  let p = file.getSandBoxFilePath("a.txt");
+  var create = file.create(p);
   logd(create);
 }
 
@@ -141,7 +165,9 @@ main();
 ```javascript
 
 function main() {
-  var t = file.mkdirs("D:/testdir/");
+  let p = file.getSandBoxDir();
+  p = p +"/ad"
+  var t = file.mkdirs(p);
   logd(t);
 }
 
@@ -156,7 +182,8 @@ main();
 ```javascript
 
 function main() {
-  file.deleteAllFile("D:/test.txt");
+  let p = file.getSandBoxFilePath("a.txt");
+  file.deleteAllFile(p);
 }
 
 main();
@@ -173,7 +200,8 @@ main();
 
 function main() {
   var data = "sss";
-  var t = file.appendLine(data, "D:/test.txt");
+  let p = file.getSandBoxFilePath("a.txt");
+  var t = file.appendLine(data, p);
   logd(t);
 }
 
@@ -190,7 +218,8 @@ main();
 ```javascript
 
 function main() {
-  var t = file.readLine("D:/test.txt", 1);
+  let p = file.getSandBoxFilePath("a.txt");
+  var t = file.readLine(p, 1);
   logd(t);
 }
 
@@ -206,7 +235,8 @@ main();
 ```javascript
 
 function main() {
-  var t = file.readAllLines("D:/test.txt");
+  let p = file.getSandBoxFilePath("a.txt");
+  var t = file.readAllLines(p);
   logd(t);
 }
 
@@ -222,7 +252,8 @@ main();
 ```javascript
 
 function main() {
-  var t = file.exists("D:/testdir/");
+  let p = file.getSandBoxFilePath("a.txt");
+  var t = file.exists(p);
   logd(t);
 }
 
@@ -240,7 +271,9 @@ main();
 ```javascript
 
 function main() {
-  var t = file.copy("D:/a.png", "D:/b.png");
+  let p1 = file.getSandBoxFilePath("a1.txt");
+  let p2 = file.getSandBoxFilePath("a2.txt");
+  var t = file.copy(p1, p2);
   logd(t);
 }
 

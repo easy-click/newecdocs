@@ -417,10 +417,53 @@ main();
 function main() {
   setAgentTimeout(10000, 3000);
 }
-
 main();
 
 ```
 
 
+### setAgentPort 设置代理运行的端口
 
+* @param port 端口 整型数据，必须大于1024
+* @return {bool} true 代表成功，false代表失败
+
+```javascript
+function main() {
+  setAgentPort(12008);
+}
+main();
+
+```
+
+### setComputeMode 设置算力模式
+* 设置计算算力运行模式，默认值是2
+* @param type: 1代表在 agent 中计算， 2 代表在 app中计算
+
+```javascript
+function main() {
+  setComputeMode(2);
+}
+main();
+
+```
+
+
+## 坐标系转换
+
+### convertPointToClickable 横屏坐标转竖屏点击坐标
+
+* 将横屏的坐标转换为可以点击的竖屏坐标
+* 具体需要用到转换的情况请看常见问题的描述
+* @param x 横屏坐标
+* @param y 竖屏坐标
+* @returns {json} x代表转换的x坐标，y代表转换的y坐标
+
+```javascript
+function main() {
+  let d = convertPointToClickable(100,300);
+  logd("x {} y {}",d.x,d.y)
+}
+
+main();
+
+```

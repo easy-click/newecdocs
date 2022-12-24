@@ -13,7 +13,7 @@ websocket还未实现，暂时不可用，文档先放着，后期改进
 - 网络模块函数主要是跟网络请求信息相关联
 - 网络模块的对象前缀是http，例如 http.downloadFile()这样调用
 
-## http.request 万能请求函数
+## http.request 万能请求函数 [未实现]
 * HTTP万能请求
 * @param param map参数，包含的参数有<Br/>
     * url:字符串 请求的地址<Br/>
@@ -265,44 +265,8 @@ function main() {
 main();
 ```
 
-## http.downloadFileDefault 下载文件
 
-* 下载远程文件到本地,支持断点续传，默认超时时间为30秒
-* @param remoteUrl 远程文件URL
-* @param file 要保存到本地的文件对象
-* @param headers – 头标志例如{“a”:“11”}
-* @return true 代表成功 false代表失败
 
-```javascript
-
-function main() {
-  var url = "https://imtt.dd.qq.com/16891/apk/DF4FD15AF9A9B51BA74D2710CF738EEF.apk?fsname=com.ishugui_3.9.2.3068_3923068.apk&csr=1bbd";
-  var x = http.downloadFileDefault(url, "D:/ss.apk", {"User-Agent": "test"});
-  toast("download result-    " + x);
-}
-
-main();
-```
-
-## http.httpGetDefault GET请求
-
-* Http GET 请求
-* @param url 请求的URL
-* @param timeout 超时时间 单位毫秒
-* @param headers – 头标志例如{“a”:“11”}
-* @return 字符串 请求后返回的字符串
-
-```javascript
-
-function main() {
-  var url = "http://192.168.0.5:8081/api/httpGet?a=1";
-  var x = http.httpGetDefault(url, 10 * 1000, {"User-Agent": "test"});
-  logd(" result-    " + x);
-  loge("result -    " + x);
-}
-
-main();
-```
 
 ## http.httpGet GET请求
 
@@ -387,7 +351,7 @@ function main() {
 main();
 ```
 
-## http.newWebsocket websocket通信
+## http.newWebsocket websocket通信 [未实现]
 
 * 创建一个websocket
 * @param url 要连接的地址

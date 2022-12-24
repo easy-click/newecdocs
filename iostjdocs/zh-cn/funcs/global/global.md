@@ -139,7 +139,7 @@ main();
 }
 
 main();
- ```
+```
 
 ### JSON.parse 转换为JSON对象
 
@@ -147,7 +147,7 @@ main();
 * @param 字符串
 * @return 对象
 
- ```javascript
+```javascript
  function main() {
   var m = {"sss": "a"};
   var d = JSON.stringify(m);
@@ -156,13 +156,13 @@ main();
 }
 
 main();
- ```
+```
 
 ## 监听脚本和服务
 
 ### setStopCallback 脚本停止监听 [未实现]
 
- ```javascript
+```javascript
  function main() {
   setStopCallback(function () {
     logd("fdsafsad 我是停止回调")
@@ -176,11 +176,11 @@ main();
 }
 
 main();
- ```
+```
 
 ### setExceptionCallback 脚本异常停止监听 [未实现]
 
- ```javascript
+```javascript
  function main() {
   setExceptionCallback(function (msg) {
     logd(" 异常停止消息: " + msg)
@@ -196,7 +196,7 @@ main();
 }
 
 main();
- ```
+```
 
 ## 日志消息方法
 
@@ -208,7 +208,7 @@ main();
 * @param displayToast 是否展示toast消息，这个参数未实现
 * @return {bool} 布尔型 true代表成功 false代表失败
 
- ```javascript
+```javascript
    function main() {
   setLogLevel("info", false)
   for (var i = 0; i < 1; i++) {
@@ -223,16 +223,14 @@ main();
 }
 
 main();
- ```
+```
 
 ### logd 调试日志
 
 * 调试日志
 * @param msg 消息字符串
 
- ```javascript
-
-
+```javascript
 function main() {
   logd("msg");
   //可变参数写法
@@ -240,14 +238,14 @@ function main() {
 }
 
 main();
- ```
+```
 
 ### loge 错误日志
 
 * 错误日志
 * @param msg 消息字符串
 
- ```javascript
+```javascript
  function main() {
   loge("msg");
   //可变参数写法
@@ -255,14 +253,14 @@ main();
 }
 
 main();
- ```
+```
 
 ### logw 警告日志
 
 * 警告日志
 * @param msg 消息字符串
 
- ```javascript
+```javascript
  function main() {
   logw("msg");
   //可变参数写法
@@ -270,18 +268,34 @@ main();
 }
 
 main();
- ```
+```
 
 ### logi 信息日志
 
 * 信息日志
 * @param msg 消息字符串
 
- ```javascript
+```javascript
  function main() {
   logi("msg");
   //可变参数写法
   logi("我是消息{},{}", "测试1", 2)
+}
+
+main();
+
+```
+
+### setSaveLogEx 保存日志
+
+* 设置保存日志信息到文件中，可以使用爱思软件导出日志
+* @param save 是否保存
+* @param {string} 保存日志文件的目录
+
+```javascript
+ function main() {
+  let d = setSaveLogEx(true)
+  logd(d)
 }
 
 main();
@@ -296,7 +310,7 @@ main();
 * @param fileName 文件名称，如果放在某个文件夹下 需要加上文件名称
 * @return {string} 如果是null代表没内容
 
- ```javascript
+```javascript
  function main() {
   var testData = readIECFileAsString("res/a.txt");
   logd(testData)
@@ -312,7 +326,7 @@ main();
 * @param fileName 文件名称，不要加res前缀
 * @return string 如果是null代表没内容
 
- ```javascript
+```javascript
  function main() {
   var testData = readResString("a.txt");
 }
@@ -327,7 +341,7 @@ main();
 * @param fileName 文件名称，不要加res前缀
 * @return string 如果是null代表没内容
 
- ```javascript
+```javascript
  function main() {
   var b = readResAutoImage("img/a.png");
 }
@@ -343,7 +357,7 @@ main();
 * @param path 要保存到的路径地址，例如/var/aa.txt
 * @return boolean|布尔型 true代表保存成功
 
- ```javascript
+```javascript
  function main() {
   var b = saveResToFile("img/a.png", "/var/a.png");
 }
@@ -361,7 +375,7 @@ main();
 * @param recursion 是否递归子目录，true代表递归
 * @return {array} 文件名称JSON数组
 
- ```javascript
+```javascript
  function main() {
   let res = findIECFile("res/", "dd2", ".png|.jpg", true)
   logd("findIECFile {}", JSON.stringify(res));
@@ -379,7 +393,7 @@ main();
 * 自动化服务是否正常
 * @return true或者false
 
- ```javascript
+```javascript
   function main() {
   var result = isServiceOk();
 }
@@ -392,7 +406,7 @@ main();
 * 启动自动化服务环境,这个没有实现，根据函数打印的实际日志操作
 * @return true或者false
 
- ```javascript
+```javascript
   function main() {
   var result = startEnv();
 }
@@ -409,7 +423,7 @@ main();
 * 毫秒级当前时间戳
 * @return {long} 毫秒级别的long时间
 
- ```javascript
+```javascript
  function main() {
   logd(time());
 }
@@ -422,7 +436,7 @@ main();
 * 格式化时间函数例如：```yyyy-MM-dd HH:mm:ss```
 * @return {string} 格式化之后的当前时间
 
- ```javascript
+```javascript
  function main() {
   logd(timeFormat("yyyy-MM-dd HH:mm:ss"));
 }
@@ -436,7 +450,7 @@ main();
 * @param label 标签
 * @return {long} 当前时间
 
- ```javascript
+```javascript
  function main() {
   console.time("1");
   sleep(1000)
@@ -444,7 +458,7 @@ main();
 }
 
 main();
- ```
+```
 
 ### console.timeEnd 计时结束
 
@@ -452,7 +466,7 @@ main();
 * @param label 标签
 * @return {long} 与计时开始的差值
 
- ```javascript
+```javascript
  function main() {
   console.time("1");
   sleep(1000)
@@ -479,3 +493,18 @@ function main() {
 
 main();
 ```
+
+### takeMeToFront 本程序带到前台运行
+
+* 把本程序带到前台运行
+* @return {boolean|*} true 代表成功 false代表失败
+
+```javascript
+function main() {
+  var result = takeMeToFront();
+  logd(result);
+}
+main();
+```
+
+
