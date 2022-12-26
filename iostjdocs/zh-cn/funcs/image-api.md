@@ -949,36 +949,10 @@ function main() {
 main();
 ```
 
-### image.pixelInImage 图像坐标点颜色 [未实现]
 
-* 返回图片image在点(x, y)处的像素的ARGB值。
-* 该值的格式为0xAARRGGBB，是一个"32位整数"
-* 坐标系以图片左上角为原点。以图片左侧边为y轴，上侧边为x轴。
-* @param image 图片
-* @param x 要获取的像素的横坐标。
-* @param y 要获取的像素的纵坐标。
-* @return 整型
 
-```javascript
 
-function main() {
-  let request = image.requestScreenCapture(10000, 0);
-  if (!request) {
-    request = image.requestScreenCapture(10000, 0);
-  }
-  logd("申请截图结果... " + request)
-  //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
-  sleep(1000)
-  let imageX = image.captureFullScreen();
-  let color = image.pixelInImage(imageX, 100, 100);
-  //图片要回收
-  image.recycle(imageX)
-}
-
-main();
-```
-
-### image.argb 颜色转16进制字符串 [未实现]
+### image.argb 颜色转16进制字符串 
 
 * 将整型的颜色值转成16进制RGB字符串
 * @param color 整型值
@@ -1008,64 +982,9 @@ function main() {
 main();
 ```
 
-### image.argb RGB字符串 [未实现]
-
-* 将整型的颜色值转成16进制RGB字符串
-* @param color 整型值
-* @return {string} 颜色字符串
-
-```javascript
-
-function main() {
-  let req = startEnv();
-  if (!req) {
-    toast("申请权限失败");
-    return;
-  }
-  logd("申请截图结果... " + request)
-  //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
-  sleep(1000)
-  let imageX = image.captureFullScreen();
-  let color = image.pixel(imageX, 100, 100);
-  logd(image.argb(color))
-  //图片要回收
-  image.recycle(imageX)
-}
-
-main();
-```
-
-### image.getPixelBitmap 取得Bitmap单点颜色 [未实现]
-
-* 取得Bitmap图片的某个点的颜色值
-* @param bitmap 图片对象
-* @param x x坐标点
-* @param y y坐标点
-* @return int 颜色值
-
-```javascript
-
-function main() {
-  let req = startEnv();
-  if (!req) {
-    logd("申请权限失败");
-    return;
-  }
-  logd("申请截图结果... " + request)
-  ///申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
-  sleep(1000)
-  let bitmap = image.captureFullScreen("jpg", 800, 800, 100, 100, 100);
-  let color = image.getPixelBitmap(image.imageToBitmap(bitmap), 100, 100);
-  //图片要回收
-  image.recycle(bitmap)
-}
-
-main();
-```
-
 ## 图片转换
 
-### image.saveTo 保存到文件 [未实现]
+### image.saveTo 保存到文件 
 
 * 保存到文件中
 * @param img 图片对象
@@ -1093,7 +1012,7 @@ function main() {
 main();
 ```
 
-### image.toBase64Format Image转base64  [未实现]
+### image.toBase64Format Image转base64 clip
 
 * 转成base64的字符串, jpg格式较小，可以减少内存
 * @param img 图片对象
@@ -1122,7 +1041,7 @@ function main() {
 main();
 ```
 
-### image.clip 剪切图片  [未实现]
+### image.clip 剪切图片 
 
 * 剪切图片
 * @param img 图片对象
@@ -1154,7 +1073,7 @@ function main() {
 main();
 ```
 
-### image.pixel 图片某点颜色值  [未实现]
+### image.pixel 图片某点颜色值 
 
 * 取得图片的某个点的颜色值
 * @param img 图片对象
@@ -1182,7 +1101,7 @@ function main() {
 main();
 ```
 
-### image.isRecycled 图片回收判断  [未实现]
+### image.isRecycled 图片回收判断 
 
 * 是否被回收了
 * @param img 图片对象

@@ -13,7 +13,7 @@ websocket还未实现，暂时不可用，文档先放着，后期改进
 - 网络模块函数主要是跟网络请求信息相关联
 - 网络模块的对象前缀是http，例如 http.downloadFile()这样调用
 
-## http.request 万能请求函数 [未实现]
+## http.request 万能请求函数 
 * HTTP万能请求
 * @param param map参数，包含的参数有<Br/>
     * url:字符串 请求的地址<Br/>
