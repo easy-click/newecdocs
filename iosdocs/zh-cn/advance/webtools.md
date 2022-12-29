@@ -4,6 +4,10 @@ description: EasyClick 自动化脚本 iOS免越狱 网页工具
 keywords: [EasyClick 自动化脚本 iOS免越狱 网页工具  ]
 ---
 
+:::tip
+如果不想使用网页工具，可以直接使用EC iOS的脱机版本的开放接口，完成读写剪切板、操作相册、打开url等功能
+具体请看地址: [/iostjdocs/zh-cn/advance/openapi](/iostjdocs/zh-cn/advance/openapi)
+:::
 
 
 ## 使用说明

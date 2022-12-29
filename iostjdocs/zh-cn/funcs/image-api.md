@@ -727,19 +727,10 @@ main();
 
 ## 二值化
 
-### image.binaryzation 二值化Image [未实现]
+### image.binaryzation 二值化Image 
 
 * 对AutoImage图片进行二值化
 * @param img AutoImage图片对象
-* @param type 二值化类型，一般写1即可
-* 0 灰度值大于阈值为最大值，其他值为0
-* 1 灰度值大于阈值为0，其他值为最大值
-* 2 灰度值大于阈值的为阈值，其他值不变
-* 3 灰度值大于阈值的不变，其他值为0
-* 4 灰度值大于阈值的为零，其他值不变
-* 7 暂不支持
-* 8 大津法自动寻求全局阈值
-* 16 三角形法自动寻求全局阈值
 * @param threshold 二值化系数，0 ~ 255
 * @return AutoImage 对象或者null
 
@@ -756,169 +747,12 @@ function main() {
   for (let i = 0; i < 1000; i++) {
     sleep(1000);
     let s = new Date().getTime();
-    let d = image.captureFullScreenEx();
-    if (d) {
-      let saved = image.saveTo(d, "D:/testb.png");
-      let s = new Date().getTime();
-      let bd = image.binaryzation(d, 1, 200);
-      logd("time " + (new Date().getTime() - s))
-      logd(bd.uuid);
-      if (bd) {
-        let saved = image.saveTo(bd, "D:/testb2.png");
-        logd("saved " + saved)
-        exit()
-      }
-      //图片要回收
-      image.recycle(d)
-    }
-  }
-
-}
-
-main();
-```
-
-### image.binaryzationBitmap 二值化 [未实现]
-
-* 对JAVA BufferedImage 图片进行二值化
-* @param bitmap BufferedImage 图片对象
-* @param type 二值化类型，一般写1即可
-* 0 灰度值大于阈值为最大值，其他值为0
-* 1 灰度值大于阈值为0，其他值为最大值
-* 2 灰度值大于阈值的为阈值，其他值不变
-* 3 灰度值大于阈值的不变，其他值为0
-* 4 灰度值大于阈值的为零，其他值不变
-* 7 暂不支持
-* 8 大津法自动寻求全局阈值
-* 16 三角形法自动寻求全局阈值
-* @param threshold 二值化系数，0 ~ 255
-* @return BufferedImage 对象或者null
-
-```javascript
-
-function main() {
-  let req = startEnv();
-  if (!req) {
-    logd("申请权限失败");
-    return;
-  }
-  //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
-  sleep(1000)
-  for (let i = 0; i < 1000; i++) {
-    sleep(1000);
-    let s = new Date().getTime();
     let d = image.captureFullScreen();
     if (d) {
       let s = new Date().getTime();
-      let bd = image.binaryzationBitmap(image.imageToBitmap(d), 1, 200);
-      logd("time " + (new Date().getTime() - s))
-      logd(bd);
-      if (bd) {
-        exit()
-      }
-      //图片要回收
-      image.recycle(d)
-    }
-  }
-
-}
-
-main();
-```
-
-### image.binaryzationBitmapEx 二值化 [未实现]
-
-* 自适应二值化，使用了opencv的adaptiveThreshold函数实现
-* @param bitmap BufferedImage 图片对象
-* @param map MAP 参数
-    * diameter : 去噪直径 参考opencv的bilateralFilter函数
-    * adaptiveMethod：自适应二值化方式分别是0和1 ，ADAPTIVE_THRESH_MEAN_C=0，ADAPTIVE_THRESH_GAUSSIAN_C = 1
-    * blockSize：计算单位是像素的邻域块，邻域块取多大，就由这个值作决定，3，5，7这样的奇数
-    * c: 偏移值调整量，
-    * {"diameter":20,
-    * "adaptiveMethod":1,
-    * "c":9,"blockSize":51}
-* @return BufferedImage 对象或者null
-
- ```javascript
-
-function main() {
-  let req = startEnv();
-  if (!req) {
-    logd("申请权限失败");
-    return;
-  }
-  //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
-  sleep(1000)
-  for (let i = 0; i < 1000; i++) {
-    sleep(1000);
-    let d = image.captureFullScreen();
-    if (d) {
-      let s = new Date().getTime();
-      let bd = image.binaryzationBitmapEx(image.imageToBitmap(d),
-        {
-          "diameter": 20,
-          "adaptiveMethod": 1,
-          "c": 9, "blockSize": 51
-        });
-      logd("time " + (new Date().getTime() - s))
-      logd(bd);
-      if (bd) {
-        exit()
-      }
-      //图片要回收
-      image.recycle(d)
-    }
-  }
-}
-
-main();
-
- ```
-
-### image.binaryzationEx 二值化Image [未实现]
-
-* 自适应二值化，使用了opencv的adaptiveThreshold函数实现
-* @param img AutoImage图片对象
-* @param map MAP 参数
-    * diameter : 去噪直径 参考opencv的bilateralFilter函数
-    * adaptiveMethod：自适应二值化方式分别是0和1 ，ADAPTIVE_THRESH_MEAN_C=0，ADAPTIVE_THRESH_GAUSSIAN_C = 1
-    * blockSize：计算单位是像素的邻域块，邻域块取多大，就由这个值作决定，3，5，7这样的奇数
-    * c: 偏移值调整量，
-    * {"diameter":20,
-    * "adaptiveMethod":1,
-    * "c":9,"blockSize":51}
-* @return {null|AutoImage}
-
-```javascript
-
-function main() {
-  let req = startEnv();
-  if (!req) {
-    logd("申请权限失败");
-    return;
-  }
-  //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
-  sleep(1000)
-  for (let i = 0; i < 1000; i++) {
-    sleep(1000);
-    let s = new Date().getTime();
-    let d = image.captureFullScreenEx();
-    if (d) {
-      let saved = image.saveTo(d, "D:/testb.png");
-      let s = new Date().getTime();
-      let bd = image.binaryzationEx(d, {
-        "diameter": 20,
-        "adaptiveMethod": 1,
-        "c": 9, "blockSize": 51
-      });
+      let bd = image.binaryzation(d, 200);
       logd("time " + (new Date().getTime() - s))
       logd(bd.uuid);
-      if (bd) {
-        let saved = image.saveTo(bd, "D:/testb2.png");
-        logd("saved " + saved)
-        exit()
-      }
       //图片要回收
       image.recycle(d)
     }
@@ -927,8 +761,12 @@ function main() {
 }
 
 main();
-
 ```
+
+
+
+
+
 
 ## 其他
 

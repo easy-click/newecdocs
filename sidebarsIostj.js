@@ -48,6 +48,19 @@ module.exports = {
         'zh-cn/funcs/ui/ui-js-inter',
       ]
     },
+    {
+      type: 'category',
+      label: '高级功能',
+      link: {
+        type: 'doc',
+        id: 'zh-cn/advance/index',
+      },
+      items: [
+        'zh-cn/advance/hotupdate',
+        'zh-cn/advance/openapi',
+
+      ]
+    },
     "zh-cn/question-answer",
     "zh-cn/joinus",
   ]
