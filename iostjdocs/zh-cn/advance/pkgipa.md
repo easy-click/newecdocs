@@ -15,7 +15,7 @@ keywords: [EasyClick,iOS脚本,自动化脚本,iOS免越狱,iOS脚本教程,iOS�
   <img src="/iostjimg/tj-pkg-ipa-3.png" alt="基础打包参数" style={{zoom:'30%'}} />
 - 云控版本配置(打包可以链接EasyClick的云控情况下使用，普通版本可以不管这个选项)
   <img src="/iostjimg/tj-pkg-ipa-4.png" alt="基础打包参数" style={{zoom:'30%'}} />
-
+- 配置完成，点击打包按钮
 ## 打包完成
 - 打包完成后会在EasyClick iOS运行日志展示打包结果<br/>
   <img src="/iostjimg/tj-pkg-ipa-5.png" alt="打包结果" style={{zoom:'30%'}} />
