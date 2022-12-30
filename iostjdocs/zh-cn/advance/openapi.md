@@ -1,7 +1,7 @@
 ---
 title: 开放接口
-description: EasyClick 自动化脚本 iOS免越狱 教程 第一个工程
-keywords: [EasyClick 自动化脚本 iOS免越狱 教程  第一个工程 ]
+description: EasyClick iOS脚本免越狱免硬件，开放接口介绍
+keywords: [EasyClick,iOS脚本,自动化脚本,iOS免越狱,iOS脚本教程,iOS免硬件脚本,iOS脚本开放接口]
 ---
 
 ## 调试模式开放接口

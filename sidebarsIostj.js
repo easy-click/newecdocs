@@ -56,9 +56,9 @@ module.exports = {
         id: 'zh-cn/advance/index',
       },
       items: [
+        'zh-cn/advance/pkgipa',
         'zh-cn/advance/hotupdate',
         'zh-cn/advance/openapi',
-
       ]
     },
     "zh-cn/question-answer",
