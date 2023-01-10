@@ -20,13 +20,14 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 节点函数 ]
 * @param ext 是一个map，例如 {"visibleFilter":1}
 * visibleFilter 1 代表不管visible是true还是false都获取，2 代表只获取 visible=true的节点
 * labelFilter 1 代表不管label是否有值都获取，2 代表只获取label有值的节点
-* maxDepth 代表要获取节点的层级，越少速度越快，建议 1 - 500
+* boundsFilter 1 代表不过滤 2 bounds 区域属性x,y,w,h都小于0就被过滤
+* maxDepth 代表要获取节点的层级，越少速度越快，建议 1 - 50
 * excludedAttributes 代表要过滤的属性，用英文逗号分割，可以增加抓取速度，例如 visible,selected,enable
 * @return {bool} true 成功，false 失败
 
 ```javascript
 function main() {
-  var data = setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2", "excludedAttributes": ""})
+  var data = setFetchNodeParam({"labelFilter": "2","boundsFilter":"1", "maxDepth": "20", "visibleFilter": "2", "excludedAttributes": ""})
   logd(data);
 }
 

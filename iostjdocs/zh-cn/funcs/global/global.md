@@ -79,9 +79,8 @@ main();
 ### execScript 载入JS
 
 * 执行JS文件或者内容
-* eval函数是js自带的，直接传入js内容就行
-* @param type 1=文件，2=直接是JS内容
-* @param content 路径例如/var/a.js或者js的内容，这个是手机上的路径
+* @param a_execType 1=文件，2=直接是JS内容
+* @param _acontent 路径[参考file模块]例如/var/a.js或者js的内容
 * @return 布尔型，true代表执行成功， false代表失败
 
 ```javascript
@@ -123,6 +122,48 @@ function main() {
 main();
  ```
 
+## js导入
+### require 导入JS
+
+* 导入JS模块
+* @param path 路径，例如 本地js文件或者 EC工程中的文件路径 slib/a.js
+* @return 模块对象
+
+```javascript
+function main(){
+  //注意,js文件不要放在js目录或下级目录中
+  //注意,EC iOS 脱机版本 1.3.+
+  let lib1 = require("res/lib.js")
+  new lib1(1,2,3).say()
+  let lib2 = require("res/lib2")
+  logd(lib2.add(1,2))
+}
+main();
+//视频介绍:https://www.bilibili.com/video/BV1vz4y1S7gd?p=29&share_source=copy_web
+```
+
+```javascript
+// res/lib2.js 内容
+function add(a,b) {
+    return a+b;
+}
+var a1 = 1
+module.exports = {add,a1};
+```
+
+```javascript
+// res/lib2js 内容
+module.exports = function(name,age,money) {
+  this.name = name;
+  this.age = age;
+  this.money = money;
+  this.say = function() {
+    console.log('我的名字叫：'+this.name+'，我今年'+this.age+'岁，月薪为：'+this.money+'元；')
+  }
+};
+
+```
+
 ## JSON处理
 
 ### JSON.stringify 格式化为JSON字符串
@@ -137,7 +178,6 @@ main();
   var d = JSON.stringify(m);
   logd(d);
 }
-
 main();
 ```
 

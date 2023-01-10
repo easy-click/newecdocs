@@ -126,6 +126,23 @@ main();
 ```
 
 
+## 其他
+
+### utils.fileMd5 文件的MD5
+* 文件的MD5
+* @param file 文件路径
+* @returns {string|*} 文件MD5字符串或者null
+```javascript
+function main() {
+    let docs = file.getInternalDir("documents")
+    var md5 = utils.fileMd5(docs+"/aaa.png");
+    logd(md5)
+}
+
+main();
+```
+
+
 ## 随机
 
 ### utils.randomInt 随机整型数据

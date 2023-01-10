@@ -4,16 +4,13 @@ description: EasyClick 自动化脚本 iOS免越狱 网络函数
 keywords: [EasyClick 自动化脚本 iOS免越狱 网络函数 ]
 ---
 
-:::tip
-websocket还未实现，暂时不可用，文档先放着，后期改进
-:::
-
 ## 说明
 
 - 网络模块函数主要是跟网络请求信息相关联
 - 网络模块的对象前缀是http，例如 http.downloadFile()这样调用
 
-## http.request 万能请求函数 
+## http.request 万能请求函数
+
 * HTTP万能请求
 * @param param map参数，包含的参数有<Br/>
     * url:字符串 请求的地址<Br/>
@@ -265,9 +262,6 @@ function main() {
 main();
 ```
 
-
-
-
 ## http.httpGet GET请求
 
 * Http GET 请求
@@ -351,75 +345,74 @@ function main() {
 main();
 ```
 
-## http.newWebsocket websocket通信 [未实现]
+## http.newWebsocket websocket通信
 
 * 创建一个websocket
 * @param url 要连接的地址
 * @param header 参数头
-* @param type 类库类型，1 = okhttp3, 2 = javawebsocket
 * @return {@link WebSocket } WebSocket对象
 
 ```javascript
 
-function main() {
+function testwebsocket() {
   let result = [];
   //新建一个ws连接
-  var ws = http.newWebsocket("ws://192.168.1.76:8081/websocket/device/call?deviceNo=111", null, 2);
-  // 设置type=1的时候链接参数
-  ws.setCallTimeout(5);
-  ws.setReadTimeout(5);
+  var ws = http.newWebsocket("ws://192.168.2.13:8120/api/ws/device?deviceId=111", {"t1": "100"});
   ws.setWriteTimeout(5);
   //心跳检测
   ws.setPingInterval(1)
-
-  //设置type=2的时候心跳检测时间
-  ws.setConnectionLostTimeout(5)
+  ws.setConnectionTimeout(5)
   //设置连接打开的时候监听器
-  ws.onOpen(function (ws1, code, msg) {
-    logi("onOpen code " + code + "  msg:" + msg);
+  ws.onOpen(function (ws1) {
+    logi("onOpen  ");
   })
   //设置有文本信息监听器
   ws.onText(function (ws1, text) {
     logi(" onText " + text);
   })
   //设置关闭时候的监听器
-  ws.onClose(function (ws1, code, reason) {
-    logi(" onClose  " + code + "  reason : " + reason + " remote:");
+  ws.onClose(function (ws1, reason) {
+    logi(" onClose  " + "  reason : " + reason);
   })
   ws.onError(function (ws1, msg) {
     logi(" onError  " + msg);
     result[0] = "error";
   })
-  // bytes 是 java的bytes数组 对象
   ws.onBinary(function (ws1, bytes) {
-    //转成java的
-    logi(" onBinary  " + new java.lang.String(bytes));
+    logi(" onBinary  " + (bytes));
   })
 
-  //开始连接   阻塞的
-  let r = ws.connect(10000);
+  //开始连接
+  let r = ws.connect();
   //设置自动重连
   ws.setAutoReconnect(true);
   logd("connect {} rr = {}", result[0], r);
+  // 设置自定义心跳数据，发送时间是5秒一次
+  ws.startHeartbeatInterval(5, function () {
+    return "我是心跳数据"
+  })
+  // 停止心跳
+  //ws.stopHeartbeatInterval()
 
   while (true) {
+    if (isScriptExit()) {
+      return
+    }
     logd("isconnect " + ws.isConnected());
     sleep(1000)
     if (ws.isConnected()) {
-      b = ws.sendText("new Date-" + new Date())
-      logd("send =" + b);
+      b = ws.sendText("new Date-> " + new Date())
+      logd("send => " + b);
       sleep(1000)
-      // java的字符串转字节
-      ws.sendBinary(new java.lang.String("test").getBytes());
     } else {
       //重置链接
-      //                let reset = ws.reset();
-      //                logd("reset {}",reset)
-      //                if (reset) {
-      //                    logd("开始重连...");
-      //                    let rc = ws.connect(10000);
-      //                    logd("重连--"+rc);
-      //                }
+      let reset = ws.reset();
+      logd("reset {}", reset)
+      if (reset) {
+        logd("开始重连...");
+        let rc = ws.connect();
+        logd("重连--> " + rc);
+      }
     }
   }
   logd("isClosed " + ws.isClosed())
@@ -428,12 +421,13 @@ function main() {
   ws.close();
 }
 
-main();
+testwebsocket()
+
 ```
 
 ### WebSocket 对象函数
 
-#### connect 同步连接
+#### connect 开始异步连接
 
 * 开始异步连接
 * 详细代码看[例子](/zh-cn/funcs/http-api.md#httpnewwebsocket-websocket通信)
@@ -470,7 +464,7 @@ main();
 #### sendBinary 发送字节
 
 * 发送字节信息
-* @param bin java byte 数组对象
+* @param bin swift data对象
 * 详细代码看[例子](/zh-cn/funcs/http-api.md#httpnewwebsocket-websocket通信)
 
 #### onOpen 打开回调
@@ -503,16 +497,14 @@ main();
 * @param callback 回调函数
 * 详细代码看[例子](/zh-cn/funcs/http-api.md#httpnewwebsocket-websocket通信)
 
-#### setReadTimeout 设置读数据超时时间
+#### setConnectionTimeout 设置链接超时时间
 
-* 在创建websocket链接类型=1的时候使用
-* 设置读数据超时时间
+* 设置链接超时时间,在创建websocket链接时候使用
 * @param timeout 单位是秒
 * 详细代码看[例子](/zh-cn/funcs/http-api.md#httpnewwebsocket-websocket通信)
 
 #### setWriteTimeout 设置写数据超时时间
 
-* 在创建websocket链接类型=1的时候使用
 * 设置写数据超时时间
 * @param timeout 单位是秒
 * 详细代码看[例子](/zh-cn/funcs/http-api.md#httpnewwebsocket-websocket通信)
@@ -521,16 +513,20 @@ main();
 
 #### setPingInterval 设置心跳超时时间
 
-* 在创建websocket链接类型=1的时候使用
-* 设置心跳超时时间
+* 设置心跳超时时间,暂时无用
 * @param timeout 单位是秒
 * 详细代码看[例子](/zh-cn/funcs/http-api.md#httpnewwebsocket-websocket通信)
 
-#### setConnectionLostTimeout 设置心跳超时时间
+#### startHeartbeatInterval 开始心跳指令
 
-* 在创建websocket链接类型=2的时候使用
-* 设置心跳超时时间
-* @param timeout 单位是秒
+* 链接成功后会发送固定的心跳指令
+* @param timeInterval 时间周期 单位是秒，
+* @param callback 回调函数，提供心跳数据的函数
+* 详细代码看[例子](/zh-cn/funcs/http-api.md#httpnewwebsocket-websocket通信)
+
+#### stopHeartbeatInterval 停止心跳计时器
+
+* 停止固定的心跳计时器
 * 详细代码看[例子](/zh-cn/funcs/http-api.md#httpnewwebsocket-websocket通信)
 
 #### setAutoReconnect 设置自动重连

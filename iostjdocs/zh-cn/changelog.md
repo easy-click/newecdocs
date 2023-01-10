@@ -6,6 +6,33 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 iOS免硬件 iOS脚本 版本�
 
 ## 最新发布版本
 
+### 1.3.0
+```text
+- 脱机版本支持12.0+以上版本，均可安装,12 ~ 15范围使用[激活器或中控-年后开发]加持启动代理，15以上可以点击图标启动
+    - 注意函数使用:
+        - 1、使用apple vision的ocr需要13.0+
+        - 2、使用日志悬浮窗需要15.0+
+- 新增 require 函数
+- 新增boundsFilter节点过滤条件
+- 新增worker模块代替多线程
+- 新增getCurrentWorkerName函数
+- 新增idea抓节点设置boundsFilter属性
+- 新增热更新功能
+- 新增websocket功能
+- 新增设置界面恢复默认脚本、清除所有UI配置功能
+- 新增utils.fileMd5函数
+- 修复idea找图代码生成的method不对问题
+- 修复打包脚本覆盖升级问题
+- 修复image.clip函数问题
+- 修复lockNode函数问题
+- 修复 window.ec.call 报错问题 
+- 修复execScript动态执行脚本type函数问题
+- 移动ui参数配置到Documents中，可爱思读取备份
+- [建议使用idea配置代码编译期间混淆后，少量在实际生产中使用，该版本非稳定版本]
+```
+
+## 历史版本
+
 ### 1.2.0
 ```text
 - 完善ocr功能
@@ -16,7 +43,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 iOS免硬件 iOS脚本 版本�
 ```
 
 
-## 历史版本
+
 ### 1.1.0
 
 ```text

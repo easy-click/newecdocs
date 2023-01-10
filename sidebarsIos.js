@@ -13,8 +13,8 @@ module.exports = {
       },
       items: [
         'zh-cn/tools/signagent',
-        'zh-cn/tools/installbridge',
         'zh-cn/tools/installcenter',
+        'zh-cn/tools/installbridge',
         'zh-cn/tools/installdevtools',
       ]
     },
