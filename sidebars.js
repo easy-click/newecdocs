@@ -103,6 +103,7 @@ const sidebars = {
         'zh-cn/ecloud2/installcloud',
         'zh-cn/ecloud2/pkgset',
         'zh-cn/ecloud2/ecloud-func',
+        'zh-cn/ecloud2/openapi',
       ]
     },
     {
