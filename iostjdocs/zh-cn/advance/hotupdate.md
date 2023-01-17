@@ -47,26 +47,27 @@ keywords: [EasyClick自动化脚本,iOS脚本,iOS免越狱,iOS免硬件,高级�
 - 普通更新
 
 ```json
-{
-"download_url": "http://baidu.com/aaa.iec",
-"version": "101",
-"dialog":true,
-"msg": "优化部分问题",
-"force": false
-}
+  {
+    "download_url": "http://baidu.com/aaa.iec",
+    "version": "101",
+    "dialog":true,
+    "msg": "优化部分问题",
+    "force": false
+  }
 ```
 - 严格方法,校验md5,防止更新失败
 
 ```json
-{
-  "download_url": "http://baidu.com/aaa.iec",
-  "version": "101",
-  "dialog":true,
-  "msg": "优化部分问题",
-  "force": false,
-  "md5":"服务器自行校验的iec文件的md5值"
-}
+  {
+    "download_url": "http://baidu.com/aaa.iec",
+    "version": "101",
+    "dialog":true,
+    "msg": "优化部分问题",
+    "force": false,
+    "md5":"服务器自行校验的iec文件的md5值"
+  }
 ```
+
 - download_url： 代表新包的下载地址
 - version：代表新包的版本号
 - md5: iec文件的MD5，如果有这个值会强制校验文件的准确性，保证文件一定是完整的

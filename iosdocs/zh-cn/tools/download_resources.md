@@ -5,11 +5,13 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 教程  资源下载 ]
 ---
 
 
-## 开发工具下载
 
-- [百度网盘下载](https://pan.baidu.com/s/124sTYQAZkedgfnTv3iFTZg) 提取码：7bhy
-- [天翼云下载](https://cloud.189.cn/t/UbAjqanEzeMz) 密码：nup3
-- 下载idea开发工具，文件以idea-xxx开头的，也可以自行到idea官网下载
+## 开发插件下载
+- **[开发插件、IPA包、签名工具都在网盘一起下载即可]**
+  - [百度网盘下载](https://pan.baidu.com/s/124sTYQAZkedgfnTv3iFTZg) 提取码：7bhy
+
+## Idea开发工具
+- 下载idea开发工具，文件以idea-xxx开头的，也可以自行到idea官网下载，下载并安装idea到电脑，然后安卓开发插件到idea中
 - IDEA官网下载地址
   - 网页地址：https://www.jetbrains.com/idea/download/other.html
     - 商业版本JS智能提示：2019.3.4 for Windows (exe) https://download.jetbrains.com/idea/ideaIU-2019.3.4.exe
