@@ -6,6 +6,23 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 iOS免硬件 iOS脚本 版本�
 
 ## 最新发布版本
 
+### 1.5.0
+```text
+- 修复多线程操作图色同步的问题
+- 新增 device.getScreenWidthHeight 同时获取宽高
+  - getScreenWidth,getScreenHeight 标记为过期，有临界值问题
+- 新增 getOrientation 获取方向函数
+- 新增 setOrientation 设置方向函数
+- 新增 setLogViewSizeEx,showLogWindow,closeLogWindow 函数
+- 优化部分功能
+- [建议使用idea配置代码编译期间混淆后[参考ec安卓的混淆配置]，少量在实际生产中使用，该版本非稳定版本]
+
+```
+
+
+
+## 历史版本
+
 ### 1.4.3
 ```text
 - 修复findImageByColor问题
@@ -15,8 +32,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 iOS免硬件 iOS脚本 版本�
 - 优化部分功能
 - [建议使用idea配置代码编译期间混淆后[参考ec安卓的混淆配置]，少量在实际生产中使用，该版本非稳定版本]
 ```
-
-## 历史版本
 
 
 ### 1.4.0

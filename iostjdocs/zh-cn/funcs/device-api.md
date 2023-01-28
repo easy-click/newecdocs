@@ -43,8 +43,26 @@ function main() {
 main();
 ```
 
-## device.getScreenWidth 屏幕宽度
+## device.getScreenWidthHeight 屏幕宽度高度
+* 屏幕宽度高度
+* @return 整型
 
+```javascript
+
+function main() {
+  let aa = device.getScreenWidthHeight()
+  logd("getScreenWidthHeight "+aa)
+  let bb = aa.split(",")
+  logd("width "+bb[0])
+  logd("height "+bb[1])
+}
+
+main();
+```
+
+
+## device.getScreenWidth 屏幕宽度
+* [已过期]
 * 取得屏幕宽度
 * @return 整型
 
@@ -52,7 +70,7 @@ main();
 
 function main() {
   var width = device.getScreenWidth();
-  toast(width);
+  logd(width);
 }
 
 main();
@@ -60,6 +78,7 @@ main();
 
 ## device.getScreenHeight 屏幕高度
 
+* [已过期]
 * 取得屏幕高度
 * @return 整型
 
@@ -67,7 +86,7 @@ main();
 
 function main() {
   var height = device.getScreenHeight();
-  toast(height);
+  logd(height);
 }
 
 main();
@@ -82,7 +101,7 @@ main();
 
 function main() {
   var d = device.getScale();
-  toast(d);
+  logd(d);
 }
 
 main();
@@ -111,7 +130,7 @@ main();
 
 function main() {
   var osVersion = device.getOSVersion();
-  toast(osVersion);
+  logd(osVersion);
 }
 
 main();

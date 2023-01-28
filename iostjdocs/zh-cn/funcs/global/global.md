@@ -123,6 +123,7 @@ main();
  ```
 
 ## js导入
+
 ### require 导入JS
 
 * 导入JS模块
@@ -130,35 +131,37 @@ main();
 * @return 模块对象
 
 ```javascript
-function main(){
+function main() {
   //注意,js文件不要放在js目录或下级目录中
   //注意,EC iOS 脱机版本 1.3.+
   let lib1 = require("res/lib.js")
-  new lib1(1,2,3).say()
+  new lib1(1, 2, 3).say()
   let lib2 = require("res/lib2")
-  logd(lib2.add(1,2))
+  logd(lib2.add(1, 2))
 }
+
 main();
 //视频介绍:https://www.bilibili.com/video/BV1vz4y1S7gd?p=29&share_source=copy_web
 ```
 
 ```javascript
 // res/lib2.js 内容
-function add(a,b) {
-    return a+b;
+function add(a, b) {
+  return a + b;
 }
+
 var a1 = 1
-module.exports = {add,a1};
+module.exports = {add, a1};
 ```
 
 ```javascript
 // res/lib2js 内容
-module.exports = function(name,age,money) {
+module.exports = function (name, age, money) {
   this.name = name;
   this.age = age;
   this.money = money;
-  this.say = function() {
-    console.log('我的名字叫：'+this.name+'，我今年'+this.age+'岁，月薪为：'+this.money+'元；')
+  this.say = function () {
+    console.log('我的名字叫：' + this.name + '，我今年' + this.age + '岁，月薪为：' + this.money + '元；')
   }
 };
 
@@ -178,6 +181,7 @@ module.exports = function(name,age,money) {
   var d = JSON.stringify(m);
   logd(d);
 }
+
 main();
 ```
 
@@ -342,6 +346,136 @@ main();
 
 ```
 
+## 日志窗口
+
+### setLogViewSizeEx 设置日志窗口属性
+
+* 设置日志窗口大小扩展函数
+* @param map 例如
+* 解释：
+* x: 起始 x 位置，x坐标暂时不生效
+* y: 起始 Y 位置，y坐标暂时不生效
+* w:宽度
+* h:高度
+* textSize:日志的字体大小
+* textColor: 文字颜色 #336699
+* line: 展示多少行，默认是十行
+* backgroundColor:背景颜色，例如 #336699
+
+```javascript
+  function setlog() {
+  var m = {
+    "x": 2,
+    "y": 2,
+    "w": 300,
+    "h": 400,
+    "textSize": 26,
+    "backgroundColor": "#336699",
+    "textColor": "#000000"
+  }
+  //让主程序在前台
+  takeMeToFront()
+
+  showLogWindow();
+
+  logd("showLogWindow() " + showLogWindow())
+  for (let i = 0; i < 11; i++) {
+    sleep(1000)
+    logd("么我" + new Date())
+    if (i == 2) {
+      logd("closeLogWindow() " + closeLogWindow())
+      setLogViewSizeEx(m);
+    }
+    if (i == 10) {
+      logd("showLogWindow() " + showLogWindow())
+    }
+  }
+}
+
+setlog();
+
+```
+
+
+### showLogWindow 显示日志窗口
+
+* [主程序在后台进行无法使用]
+* 显示日志窗口，必须iOS设备支持画中画功能，并且开启画中画
+* @returns {boolean} true代表成功，false代表失败
+
+```javascript
+  function setlog() {
+  var m = {
+    "x": 2,
+    "y": 2,
+    "w": 300,
+    "h": 400,
+    "textSize": 26,
+    "backgroundColor": "#336699",
+    "textColor": "#000000"
+  }
+  //让主程序在前台
+  takeMeToFront()
+
+  showLogWindow();
+
+  logd("showLogWindow() " + showLogWindow())
+  for (let i = 0; i < 11; i++) {
+    sleep(1000)
+    logd("么我" + new Date())
+    if (i == 2) {
+      logd("closeLogWindow() " + closeLogWindow())
+      setLogViewSizeEx(m);
+    }
+    if (i == 10) {
+      logd("showLogWindow() " + showLogWindow())
+    }
+  }
+}
+
+setlog();
+
+```
+
+### closeLogWindow 关闭日志窗口
+
+* [主程序在后台进行无法使用]
+* 关闭日志窗口
+* @returns {boolean} true代表成功，false代表失败
+
+```javascript
+  function setlog() {
+  var m = {
+    "x": 2,
+    "y": 2,
+    "w": 300,
+    "h": 400,
+    "textSize": 26,
+    "backgroundColor": "#336699",
+    "textColor": "#000000"
+  }
+  takeMeToFront()
+
+  showLogWindow();
+
+  logd("showLogWindow() " + showLogWindow())
+  for (let i = 0; i < 11; i++) {
+    sleep(1000)
+    logd("么我" + new Date())
+    if (i == 2) {
+      logd("closeLogWindow() " + closeLogWindow())
+      setLogViewSizeEx(m);
+    }
+    if (i == 10) {
+      logd("showLogWindow() " + showLogWindow())
+    }
+  }
+}
+
+setlog();
+
+```
+
 ## 读取IEC包资源
 
 ### readIECFileAsString 读取IEC内部文件为字符串
@@ -426,7 +560,6 @@ main();
 
 ```
 
-
 ## UI参数读取
 
 ### deleteConfig 删除配置值
@@ -435,11 +568,12 @@ main();
 * @return {bool} true 代表成功 false 代表失败
 
 ```javascript
- function main(){
+ function main() {
   var testData = deleteConfig("test_key");
- }
- main();
- 
+}
+
+main();
+
 ```
 
 ### readConfigInt 读取整型配置
@@ -449,10 +583,11 @@ main();
 * @return 整型，找不到就返回0
 
 ```javascript
- function main(){
-     var testData = readConfigInt("test_key");
- }
- main();
+ function main() {
+  var testData = readConfigInt("test_key");
+}
+
+main();
 
 ```
 
@@ -463,11 +598,12 @@ main();
 * @return 字符串 找不到就返回空字符串
 
 ```javascript
- function main(){
-     var testData = readConfigString("test_key");
- }
- main();
- 
+ function main() {
+  var testData = readConfigString("test_key");
+}
+
+main();
+
 ```
 
 ### readConfigBoolean 读取布尔型配置
@@ -477,10 +613,11 @@ main();
 * @return true 或者 false
 
 ```javascript
-  function main(){
-      var testData = readConfigBoolean("test_key");
-  }
-  main();
+  function main() {
+  var testData = readConfigBoolean("test_key");
+}
+
+main();
 ```
 
 ### getConfigJSON 取所有配置
@@ -489,10 +626,11 @@ main();
 * @return JSON数据
 
 ```javascript
-  function main(){
-      var testData = getConfigJSON();
-  }
-  main();
+  function main() {
+  var testData = getConfigJSON();
+}
+
+main();
 ```
 
 ### updateConfig 更新配置
@@ -503,12 +641,12 @@ main();
 * @return {boolean} true 成功，false失败
 
 ```javascript
- function main(){
-    updateConfig("a","sss");
- }
- main();
-```
+ function main() {
+  updateConfig("a", "sss");
+}
 
+main();
+```
 
 ## 自动化服务相关
 
@@ -628,6 +766,7 @@ function main() {
   var result = takeMeToFront();
   logd(result);
 }
+
 main();
 ```
 
