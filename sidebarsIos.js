@@ -60,6 +60,7 @@ module.exports = {
         'zh-cn/funcs/plugin/plugins',
         'zh-cn/funcs/plugin/javajs',
         'zh-cn/advance/keyboard',
+        'zh-cn/advance/jsobfuscator',
       ]
     },
     "zh-cn/allplugin",

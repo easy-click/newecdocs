@@ -59,6 +59,8 @@ module.exports = {
         'zh-cn/advance/pkgipa',
         'zh-cn/advance/hotupdate',
         'zh-cn/advance/openapi',
+        'zh-cn/advance/jsobfuscator',
+
       ]
     },
     "zh-cn/question-answer",
