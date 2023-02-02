@@ -9,7 +9,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 OCR识别 资源下载 ]
 ## 说明
 
 - OCR模块是属于对图像进行识别
-- OCR模块的对象前缀是ocr，例如 ocr.initOcr()这样调用
+- OCR模块的对象前缀是 ocrAgent，例如 ocrAgent.initOcr()这样调用
 - 目前的OCR包含了 appleVision
 
 
@@ -18,7 +18,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 OCR识别 资源下载 ]
 :::
 
 
-## ocr.initOcr 初始化
+## ocrAgent.initOcr 初始化
 
 * 初始化OCR模块
 * @param map map参数表
@@ -77,7 +77,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 OCR识别 资源下载 ]
 }
 
 main();
-
 ```
 
 
