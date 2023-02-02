@@ -33,7 +33,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 网络函数 ]
     * responseCharset: 字符串，强制设置响应内容的编码集
 * @return Response 对象或者null
 
- ```javascript
+```javascript
 
 function main() {
   http_request();
@@ -251,7 +251,7 @@ main();
 * @param headers – 头标志例如{“a”:“11”}
 * @return true 代表成功 false代表失败
 
- ```javascript
+```javascript
 
 function main() {
   var url = "https://imtt.dd.qq.com/16891/apk/DF4FD15AF9A9B51BA74D2710CF738EEF.apk?fsname=com.ishugui_3.9.2.3068_3923068.apk&csr=1bbd";
@@ -260,7 +260,7 @@ function main() {
 }
 
 main();
- ```
+```
 
 ## http.downloadFileDefault 下载文件
 
@@ -270,7 +270,7 @@ main();
 * @param headers – 头标志例如{“a”:“11”}
 * @return true 代表成功 false代表失败
 
- ```javascript
+```javascript
 
 function main() {
   var url = "https://imtt.dd.qq.com/16891/apk/DF4FD15AF9A9B51BA74D2710CF738EEF.apk?fsname=com.ishugui_3.9.2.3068_3923068.apk&csr=1bbd";
@@ -279,7 +279,7 @@ function main() {
 }
 
 main();
- ```
+```
 
 ## http.httpGetDefault GET请求
 
@@ -289,7 +289,7 @@ main();
 * @param headers – 头标志例如{“a”:“11”}
 * @return 字符串 请求后返回的字符串
 
- ```javascript
+```javascript
 
 function main() {
   var url = "http://192.168.0.5:8081/api/httpGet?a=1";
@@ -299,7 +299,7 @@ function main() {
 }
 
 main();
- ```
+```
 
 ## http.httpGet GET请求
 
@@ -310,7 +310,7 @@ main();
 * @param headers – 头标志例如{“a”:“11”}
 * @return 字符串 请求后返回的字符串
 
- ```javascript
+```javascript
 
 function main() {
   var url = "http://192.168.0.5:8081/api/httpGet?a=1";
@@ -321,7 +321,7 @@ function main() {
 }
 
 main();
- ```
+```
 
 ## http.httpPost POST请求
 
@@ -333,7 +333,7 @@ main();
 * @param headers – 头标志例如{“a”:“11”}
 * @return 字符串 请求后返回的字符串
 
- ```javascript
+```javascript
 
 function main() {
   //不带文件的请求
@@ -345,9 +345,9 @@ function main() {
 }
 
 main();
- ```
+```
 
- ```javascript
+```javascript
 
 function main() {
   //带上传文件的请求
@@ -360,7 +360,7 @@ function main() {
 }
 
 main();
- ```
+```
 
 ## http.postJSON 发送JSON
 
@@ -371,7 +371,7 @@ main();
 * @param headers – 头标志例如{“a”:“11”}
 * @return 字符串 请求后返回的字符串
 
- ```javascript
+```javascript
 
 function main() {
   var url = "http://192.168.0.5:8081/api/postJSON";
@@ -392,7 +392,7 @@ main();
 * @param type 类库类型，1 = okhttp3, 2 = javawebsocket
 * @return {@link WebSocket } WebSocket对象
 
- ```javascript
+```javascript
 
 function main() {
   let result = [];
@@ -462,7 +462,7 @@ function main() {
 }
 
 main();
- ```
+```
 
 ### WebSocket 对象函数
 

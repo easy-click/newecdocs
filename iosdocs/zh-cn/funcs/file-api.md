@@ -16,28 +16,28 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 文件函数 ]
 * 获取当前设备沙盒的文件夹路径
 * @return 字符串
 
- ```javascript
+```javascript
  function main() {
   var data = file.getSandBoxDir();
   logd(data);
 }
 
 main();
- ```
+```
 
 ## file.getSandBoxFilePath 获取沙盒中的文件路径
 
 * 拼接出一个带沙盒路径的文件地址
 * @return 字符串
 
- ```javascript
+```javascript
  function main() {
   var data = file.getSandBoxFilePath("a.txt");
   logd(data);
 }
 
 main();
- ```
+```
 
 ## file.readFile 读取为字符串
 
@@ -45,7 +45,7 @@ main();
 * @param path 文件路径
 * @return 字符串
 
- ```javascript
+```javascript
 
 function main() {
   var data = file.readFile("D:/test.txt");
@@ -53,7 +53,7 @@ function main() {
 }
 
 main();
- ```
+```
 
 ## file.deleteLine 删除文件某一行
 
@@ -64,7 +64,7 @@ main();
 * @param contains 包含某个字符串就删除，如果为null代表这个条件不生效
 * @return {bool} true 成功 false 失败
 
- ```javascript
+```javascript
  function main() {
   //删除包含 时间 字符串的行
   let r = file.deleteLine("D:/a.txt", -1, "时间");
@@ -75,7 +75,7 @@ main();
 }
 
 main();
- ```
+```
 
 ## file.listDir 列出所有文件
 
@@ -83,7 +83,7 @@ main();
 * @param path 路径
 * @return 路径字符串数组
 
- ```javascript
+```javascript
 
 function main() {
   var data = file.listDir("D:/");
@@ -94,7 +94,7 @@ function main() {
 }
 
 main();
- ```
+```
 
 ## file.writeFile 写入文件
 
@@ -102,7 +102,7 @@ main();
 * @param data 字符串 数据
 * @param path 文件路径
 
- ```javascript
+```javascript
 
 function main() {
   var data = "Test";
@@ -118,7 +118,7 @@ main();
 * @param path 文件路径
 * @return 布尔型 true 代表创建成功
 
- ```javascript
+```javascript
 
 function main() {
   var create = file.create("D:/test.txt");
@@ -126,7 +126,7 @@ function main() {
 }
 
 main();
- ```
+```
 
 ## file.mkdirs 创建文件夹
 
@@ -134,7 +134,7 @@ main();
 * @param path 路径
 * @return 布尔型 true 代表成功，false代表失败
 
- ```javascript
+```javascript
 
 function main() {
   var t = file.mkdirs("D:/testdir/");
@@ -142,21 +142,21 @@ function main() {
 }
 
 main();
- ```
+```
 
 ## file.deleteAllFile 删除
 
 * 删除所有文件或者文件夹
 * @param path 文件或者文件路径
 
- ```javascript
+```javascript
 
 function main() {
   file.deleteAllFile("D:/test.txt");
 }
 
 main();
- ```
+```
 
 ## file.appendLine 追加字符串
 
@@ -165,7 +165,7 @@ main();
 * @param path 文件或者文件路径
 * @return 布尔型 true代表成功 false代表失败
 
- ```javascript
+```javascript
  function main() {
   var data = "sss";
   var t = file.appendLine(data, "D:/test.txt");
@@ -173,7 +173,7 @@ main();
 }
 
 main();
- ```
+```
 
 ## file.readLine 读取一行
 
@@ -182,7 +182,7 @@ main();
 * @param lineNo 行号
 * @return 字符串 返回一行字符串
 
- ```javascript
+```javascript
 
 function main() {
   var t = file.readLine("D:/test.txt", 1);
@@ -198,7 +198,7 @@ main();
 * @param path 路径
 * @return 字符串数组|null
 
- ```javascript
+```javascript
 
 function main() {
   var t = file.readAllLines("D:/test.txt");
@@ -206,7 +206,7 @@ function main() {
 }
 
 main();
- ```
+```
 
 ## file.exists 是否存在
 
@@ -214,7 +214,7 @@ main();
 * @param path 路径
 * @return 布尔型 true 代表成功，false代表失败
 
- ```javascript
+```javascript
 
 function main() {
   var t = file.exists("D:/testdir/");
@@ -222,7 +222,7 @@ function main() {
 }
 
 main();
- ```
+```
 
 ## file.copy 文件复制
 
@@ -232,14 +232,14 @@ main();
 * @param dest 目标文件路径
 * @return 布尔型 true 代表成功
 
- ```javascript
+```javascript
  function main() {
   var t = file.copy("D:/a.png", "D:/b.png");
   logd(t);
 }
 
 main();
- ```
+```
 
 ## file.readExcelRow 读取Excel的一行数据
 
