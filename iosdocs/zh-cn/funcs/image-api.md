@@ -167,7 +167,7 @@ main();
 * @param ext 扩展参数，可以调整截图的方式和质量，可以分别是
 * type: 1 代表截图 jpg格式的方式1 2 代表截图 jpg格式方式2 3代表png格式，png不支持质量参数 ，根据自己机器情况调用
 * quality: 图片质量，type=1的时候，支持 1， 50， 100，三种不同的质量标准
-*      当type =2 的时候，支持1-100图片质量
+* 当type =2 的时候，支持1-100图片质量
 * @return {null|AutoImage}
 
 ```javascript
@@ -1142,8 +1142,7 @@ main();
     * "c":9,"blockSize":51}
 * @return BufferedImage 对象或者null
 
- ```javascript
-
+```javascript
 function main() {
   let req = startEnv();
   if (!req) {
@@ -1176,7 +1175,7 @@ function main() {
 
 main();
 
- ```
+```
 
 ### image.binaryzationEx 二值化Image
 
