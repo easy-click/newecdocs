@@ -1326,6 +1326,60 @@ function main() {
 main();
 ```
 
+### image.getWidth 取得宽度
+
+* 取得宽度
+* @param img 图片对象
+* @return int
+
+```javascript
+function main() {
+  let req = startEnv();
+  if (!req) {
+    logd("申请权限失败");
+    return;
+  }
+  //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
+  sleep(1000)
+  let aimage = image.captureFullScreen();
+  if (aimage != null) {
+    let w = image.getWidth(aimage);
+    logd("w " + w);
+    //图片要回收
+    image.recycle(aimage)
+  }
+}
+
+main();
+```
+
+### image.getHeight 取得高度
+
+* 取得高度
+* @param img 图片对象
+* @return int
+
+```javascript
+function main() {
+  let req = startEnv();
+  if (!req) {
+    logd("申请权限失败");
+    return;
+  }
+  //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
+  sleep(1000)
+  let aimage = image.captureFullScreen();
+  if (aimage != null) {
+    let h = image.getHeight(aimage);
+    logd("h " + h);
+    //图片要回收
+    image.recycle(aimage)
+  }
+}
+
+main();
+```
+
 ### image.argb RGB字符串
 
 * 将整型的颜色值转成16进制RGB字符串
@@ -1726,26 +1780,27 @@ main();
 ```javascript
 
 function main() {
-      let req = startEnv();
-      if (!req) {
-          logd("申请权限失败");
-          return;
-      }
-   logd("申请截图结果... "+request)
-      //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
-       sleep(1000)
-   for (let  i = 0; i < 100; i++) {
-       let  d =image.captureFullScreen();
-       logd(d)
-       sleep(1000);
-       if (d) {
-           let  ds= image.imageToBitmap(d);
-           logd(ds)
-           image.recyle(d);
-       }
-   }
-  
+  let req = startEnv();
+  if (!req) {
+    logd("申请权限失败");
+    return;
+  }
+  logd("申请截图结果... " + request)
+  //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
+  sleep(1000)
+  for (let i = 0; i < 100; i++) {
+    let d = image.captureFullScreen();
+    logd(d)
+    sleep(1000);
+    if (d) {
+      let ds = image.imageToBitmap(d);
+      logd(ds)
+      image.recyle(d);
+    }
+  }
+
 }
+
 main();
 
 ```

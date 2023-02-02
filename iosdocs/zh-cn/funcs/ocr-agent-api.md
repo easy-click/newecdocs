@@ -1,5 +1,5 @@
 ---
-title: OCR识别 
+title: OCR识别-手机内执行  
 description: EasyClick 自动化脚本 iOS免越狱 OCR识别 资源下载 
 keywords: [EasyClick 自动化脚本 iOS免越狱 OCR识别 资源下载 ]
 ---
@@ -11,6 +11,12 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 OCR识别 资源下载 ]
 - OCR模块是属于对图像进行识别
 - OCR模块的对象前缀是ocr，例如 ocr.initOcr()这样调用
 - 目前的OCR包含了 appleVision
+
+
+:::tip
+- 这个模块运算是在手机内执行的，数据也是存在手机内
+:::
+
 
 ## ocr.initOcr 初始化
 
@@ -31,17 +37,17 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 OCR识别 资源下载 ]
   let appleVision = {
     "type": "appleVision"
   }
-  let inited = ocr.initOcr(appleVision)
+  let inited = ocrAgent.initOcr(appleVision)
   logd("初始化结果 -" + inited);
   if (!inited) {
-    loge("error : " + ocr.getErrorMsg());
+    loge("error : " + ocrAgent.getErrorMsg());
     return;
   }
 
   for (var ix = 0; ix < 20; ix++) {
 
     //读取一个bitmap
-    let img = image.captureFullScreen();
+    let img = imageAgent.captureFullScreen();
     if (!img) {
       loge("读取图片失败");
       continue;
@@ -49,7 +55,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 OCR识别 资源下载 ]
     console.time("1")
     logd("start---ocr");
     // 对图片进行识别
-    let result = ocr.ocrImage(img, 20 * 1000, {});
+    let result = ocrAgent.ocrImage(img, 20 * 1000, {});
     logd(result)
     if (result) {
       logd("ocr结果-》 " + JSON.stringify(result));
@@ -62,12 +68,12 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 OCR识别 资源下载 ]
     }
 
     logd("耗时: " + console.timeEnd(1) + " ms")
-    image.recycle(img)
+    ocrAgent.recycle(img)
     sleep(1000);
     logd("ix = " + ix)
   }
   //释放所有资源
-  ocr.releaseAll();
+  ocrAgent.releaseAll();
 }
 
 main();
@@ -75,10 +81,8 @@ main();
 ```
 
 
-## ocr.ocrImage 识别文字
-
+## ocrAgent.ocrImage 识别文字
 * 对 AutoImage 进行OCR，返回的是JSON数据，其中数据类似于与：
-
 ```json
   [
   {
@@ -119,7 +123,7 @@ OCR初始化
 OCR初始化
 ```
 
-## ocr.releaseAll 释放OCR资源
+## ocrAgent.releaseAll 释放OCR资源
 
 * 释放OCR占用的资源
 *

@@ -29,8 +29,11 @@ module.exports = {
       items: [
         'zh-cn/funcs/global/global',
         'zh-cn/funcs/global/global-shortcut',
+        'zh-cn/funcs/node-agent-api',
         'zh-cn/funcs/node-api',
+        'zh-cn/funcs/image-agent-api',
         'zh-cn/funcs/image-api',
+        'zh-cn/funcs/ocr-agent-api',
         'zh-cn/funcs/ocr-api',
         'zh-cn/funcs/device-api',
         'zh-cn/funcs/file-api',

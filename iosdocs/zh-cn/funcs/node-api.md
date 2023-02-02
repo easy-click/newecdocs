@@ -12,7 +12,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 节点函数 ]
 - 也可以使用设置节点获取参数的方式进行
 - **不适合的页面：比如适配播放页面等**
 
-###    
+###                        
 
 ## setFetchNodeParam 设置节点参数
 
@@ -501,55 +501,55 @@ main()
 
 ```javascript
 function main() {
-    //开始再这里编写代码了！！
-    logd("检查自动化环境...")
-    //如果自动化服务正常
-    if (!autoServiceStart(3)) {
-        logd("自动化服务启动失败，无法执行脚本")
-        exit();
-        return;
-    }
-    logd("开始执行脚本...")
-    // 设置读取节点的参数, 具体请看设置节点参数的含义
-   setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2","excludedAttributes":""})
-    // 先释放老的数据
-    releaseNode();
-    // 锁定新的节点数据
-    lockNode();
-    // 进入查找状态
-    // 按照 type 查找
-    let nd = type("XCUIElementTypeOther").getOneNodeInfo(1000)
-    if (nd) {
-        console.log("type 查找  节点信息 {}  ", JSON.stringify(nd))
-        // 如果找到了 就点击
-        let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
-        logd("点他: {}", c)
-    } else {
-        console.log("label 未查找  节点信息  ")
-    }
-    // 按照 type 正则表达式匹配
-    nd = typeMatch(".*XCUIElementTypeOther.*").getNodeInfo(1000)
-    if (nd) {
-        console.log("typeMatch 查找  节点信息 {}  ", JSON.stringify(nd))
-    } else {
-        console.log("ltypeMatch 未查找  节点信息  ")
-    }
-    // 先释放老的数据
-    releaseNode();
+  //开始再这里编写代码了！！
+  logd("检查自动化环境...")
+  //如果自动化服务正常
+  if (!autoServiceStart(3)) {
+    logd("自动化服务启动失败，无法执行脚本")
+    exit();
+    return;
+  }
+  logd("开始执行脚本...")
+  // 设置读取节点的参数, 具体请看设置节点参数的含义
+  setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2", "excludedAttributes": ""})
+  // 先释放老的数据
+  releaseNode();
+  // 锁定新的节点数据
+  lockNode();
+  // 进入查找状态
+  // 按照 type 查找
+  let nd = type("XCUIElementTypeOther").getOneNodeInfo(1000)
+  if (nd) {
+    console.log("type 查找  节点信息 {}  ", JSON.stringify(nd))
+    // 如果找到了 就点击
+    let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
+    logd("点他: {}", c)
+  } else {
+    console.log("label 未查找  节点信息  ")
+  }
+  // 按照 type 正则表达式匹配
+  nd = typeMatch(".*XCUIElementTypeOther.*").getNodeInfo(1000)
+  if (nd) {
+    console.log("typeMatch 查找  节点信息 {}  ", JSON.stringify(nd))
+  } else {
+    console.log("ltypeMatch 未查找  节点信息  ")
+  }
+  // 先释放老的数据
+  releaseNode();
 }
 
 function autoServiceStart(time) {
-    for (let i = 0; i < time; i++) {
-        if (isServiceOk()) {
-            return true;
-        }
-        let started = startEnv();
-        logd("第" + (i + 1) + "次启动服务结果: " + started);
-        if (isServiceOk()) {
-            return true;
-        }
+  for (let i = 0; i < time; i++) {
+    if (isServiceOk()) {
+      return true;
     }
-    return isServiceOk();
+    let started = startEnv();
+    logd("第" + (i + 1) + "次启动服务结果: " + started);
+    if (isServiceOk()) {
+      return true;
+    }
+  }
+  return isServiceOk();
 }
 
 main()
@@ -623,61 +623,61 @@ main()
 
 ```javascript
 function main() {
- //开始再这里编写代码了！！
- logd("检查自动化环境...")
- //如果自动化服务正常
- if (!autoServiceStart(3)) {
-     logd("自动化服务启动失败，无法执行脚本")
-     exit();
-     return;
- }
- logd("开始执行脚本...")
- // 设置读取节点的参数, 具体请看设置节点参数的含义
- setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2","excludedAttributes":""})
- // 先释放老的数据
- releaseNode();
- // 锁定新的节点数据
- lockNode();
- // 进入查找状态
- // 按照 value 查找
- let nd = value("XCUIElementTypeOther").getOneNodeInfo(1000)
- if (nd) {
-     console.log("value 查找  节点信息 {}  ", JSON.stringify(nd))
-     // 如果找到了 就点击
-     let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
-     logd("点他: {}", c)
- } else {
-     console.log("value 未查找  节点信息  ")
- }
- // 按照 type 正则表达式匹配
- nd = valueMatch(".*XCUIElementTypeOther.*").getNodeInfo(1000)
- if (nd) {
-     console.log("valueMatch 查找  节点信息 {}  ", JSON.stringify(nd))
- } else {
-     console.log("valueMatch 未查找  节点信息  ")
- }
- // 先释放老的数据
- releaseNode();
+  //开始再这里编写代码了！！
+  logd("检查自动化环境...")
+  //如果自动化服务正常
+  if (!autoServiceStart(3)) {
+    logd("自动化服务启动失败，无法执行脚本")
+    exit();
+    return;
+  }
+  logd("开始执行脚本...")
+  // 设置读取节点的参数, 具体请看设置节点参数的含义
+  setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2", "excludedAttributes": ""})
+  // 先释放老的数据
+  releaseNode();
+  // 锁定新的节点数据
+  lockNode();
+  // 进入查找状态
+  // 按照 value 查找
+  let nd = value("XCUIElementTypeOther").getOneNodeInfo(1000)
+  if (nd) {
+    console.log("value 查找  节点信息 {}  ", JSON.stringify(nd))
+    // 如果找到了 就点击
+    let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
+    logd("点他: {}", c)
+  } else {
+    console.log("value 未查找  节点信息  ")
+  }
+  // 按照 type 正则表达式匹配
+  nd = valueMatch(".*XCUIElementTypeOther.*").getNodeInfo(1000)
+  if (nd) {
+    console.log("valueMatch 查找  节点信息 {}  ", JSON.stringify(nd))
+  } else {
+    console.log("valueMatch 未查找  节点信息  ")
+  }
+  // 先释放老的数据
+  releaseNode();
 }
 
 function autoServiceStart(time) {
- for (let i = 0; i < time; i++) {
-     if (isServiceOk()) {
-         return true;
-     }
-     let started = startEnv();
-     logd("第" + (i + 1) + "次启动服务结果: " + started);
-     if (isServiceOk()) {
-         return true;
-     }
- }
- return isServiceOk();
+  for (let i = 0; i < time; i++) {
+    if (isServiceOk()) {
+      return true;
+    }
+    let started = startEnv();
+    logd("第" + (i + 1) + "次启动服务结果: " + started);
+    if (isServiceOk()) {
+      return true;
+    }
+  }
+  return isServiceOk();
 }
 
 main()
 ```
 
-## enabl enable属性全匹配
+## enable enable属性全匹配
 
 * enable 属性全匹配
 * 支持版本: EC iOS 中控 3.0.0+
@@ -737,48 +737,48 @@ main()
 
 ```javascript
 function main() {
-    //开始再这里编写代码了！！
-    logd("检查自动化环境...")
-    //如果自动化服务正常
-    if (!autoServiceStart(3)) {
-        logd("自动化服务启动失败，无法执行脚本")
-        exit();
-        return;
-    }
-    logd("开始执行脚本...")
-    // 设置读取节点的参数, 具体请看设置节点参数的含义
-    setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2","excludedAttributes":""})
-    // 先释放老的数据
-    releaseNode();
-    // 锁定新的节点数据
-    lockNode();
-    // 进入查找状态
-    // 按照 enabled , accessible 查找
-    let nd = enabled(true).accessible(true).getOneNodeInfo(1000)
-    if (nd) {
-        console.log(" 查找  节点信息 {}  ", JSON.stringify(nd))
-        // 如果找到了 就点击
-        let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
-        logd("点他: {}", c)
-    } else {
-        console.log(" 未查找  节点信息  ")
-    }
-    // 先释放老的数据
-    releaseNode();
+  //开始再这里编写代码了！！
+  logd("检查自动化环境...")
+  //如果自动化服务正常
+  if (!autoServiceStart(3)) {
+    logd("自动化服务启动失败，无法执行脚本")
+    exit();
+    return;
+  }
+  logd("开始执行脚本...")
+  // 设置读取节点的参数, 具体请看设置节点参数的含义
+  setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2", "excludedAttributes": ""})
+  // 先释放老的数据
+  releaseNode();
+  // 锁定新的节点数据
+  lockNode();
+  // 进入查找状态
+  // 按照 enabled , accessible 查找
+  let nd = enabled(true).accessible(true).getOneNodeInfo(1000)
+  if (nd) {
+    console.log(" 查找  节点信息 {}  ", JSON.stringify(nd))
+    // 如果找到了 就点击
+    let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
+    logd("点他: {}", c)
+  } else {
+    console.log(" 未查找  节点信息  ")
+  }
+  // 先释放老的数据
+  releaseNode();
 }
 
 function autoServiceStart(time) {
-    for (let i = 0; i < time; i++) {
-        if (isServiceOk()) {
-            return true;
-        }
-        let started = startEnv();
-        logd("第" + (i + 1) + "次启动服务结果: " + started);
-        if (isServiceOk()) {
-            return true;
-        }
+  for (let i = 0; i < time; i++) {
+    if (isServiceOk()) {
+      return true;
     }
-    return isServiceOk();
+    let started = startEnv();
+    logd("第" + (i + 1) + "次启动服务结果: " + started);
+    if (isServiceOk()) {
+      return true;
+    }
+  }
+  return isServiceOk();
 }
 
 main()
@@ -845,48 +845,48 @@ main()
 
 ```javascript
 function main() {
-    //开始再这里编写代码了！！
-    logd("检查自动化环境...")
-    //如果自动化服务正常
-    if (!autoServiceStart(3)) {
-        logd("自动化服务启动失败，无法执行脚本")
-        exit();
-        return;
-    }
-    logd("开始执行脚本...")
-    // 设置读取节点的参数, 具体请看设置节点参数的含义
-    setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2","excludedAttributes":""})
-    // 先释放老的数据
-    releaseNode();
-    // 锁定新的节点数据
-    lockNode();
-    // 进入查找状态
-    // 按照 index  查找
-    let nd = index(1).getOneNodeInfo(1000)
-    if (nd) {
-        console.log(" 查找 节点信息 {}  ", JSON.stringify(nd))
-        // 如果找到了 就点击
-        let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
-        logd("点他: {}", c)
-    } else {
-        console.log(" 未查找  节点信息  ")
-    }
-    // 先释放老的数据
-    releaseNode();
+  //开始再这里编写代码了！！
+  logd("检查自动化环境...")
+  //如果自动化服务正常
+  if (!autoServiceStart(3)) {
+    logd("自动化服务启动失败，无法执行脚本")
+    exit();
+    return;
+  }
+  logd("开始执行脚本...")
+  // 设置读取节点的参数, 具体请看设置节点参数的含义
+  setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2", "excludedAttributes": ""})
+  // 先释放老的数据
+  releaseNode();
+  // 锁定新的节点数据
+  lockNode();
+  // 进入查找状态
+  // 按照 index  查找
+  let nd = index(1).getOneNodeInfo(1000)
+  if (nd) {
+    console.log(" 查找 节点信息 {}  ", JSON.stringify(nd))
+    // 如果找到了 就点击
+    let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
+    logd("点他: {}", c)
+  } else {
+    console.log(" 未查找  节点信息  ")
+  }
+  // 先释放老的数据
+  releaseNode();
 }
 
 function autoServiceStart(time) {
-    for (let i = 0; i < time; i++) {
-        if (isServiceOk()) {
-            return true;
-        }
-        let started = startEnv();
-        logd("第" + (i + 1) + "次启动服务结果: " + started);
-        if (isServiceOk()) {
-            return true;
-        }
+  for (let i = 0; i < time; i++) {
+    if (isServiceOk()) {
+      return true;
     }
-    return isServiceOk();
+    let started = startEnv();
+    logd("第" + (i + 1) + "次启动服务结果: " + started);
+    if (isServiceOk()) {
+      return true;
+    }
+  }
+  return isServiceOk();
 }
 
 main()
@@ -899,48 +899,48 @@ main()
 
 ```javascript
 function main() {
- //开始再这里编写代码了！！
- logd("检查自动化环境...")
- //如果自动化服务正常
- if (!autoServiceStart(3)) {
-     logd("自动化服务启动失败，无法执行脚本")
-     exit();
-     return;
- }
- logd("开始执行脚本...")
- // 设置读取节点的参数, 具体请看设置节点参数的含义
- setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2","excludedAttributes":""})
- // 先释放老的数据
- releaseNode();
- // 锁定新的节点数据
- lockNode();
- // 进入查找状态
- // 按照 depth  查找
- let nd = depth(1).getOneNodeInfo(1000)
- if (nd) {
-     console.log(" 查找 节点信息 {}  ", JSON.stringify(nd))
-     // 如果找到了 就点击
-     let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
-     logd("点他: {}", c)
- } else {
-     console.log(" 未查找  节点信息  ")
- }
- // 先释放老的数据
- releaseNode();
+  //开始再这里编写代码了！！
+  logd("检查自动化环境...")
+  //如果自动化服务正常
+  if (!autoServiceStart(3)) {
+    logd("自动化服务启动失败，无法执行脚本")
+    exit();
+    return;
+  }
+  logd("开始执行脚本...")
+  // 设置读取节点的参数, 具体请看设置节点参数的含义
+  setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2", "excludedAttributes": ""})
+  // 先释放老的数据
+  releaseNode();
+  // 锁定新的节点数据
+  lockNode();
+  // 进入查找状态
+  // 按照 depth  查找
+  let nd = depth(1).getOneNodeInfo(1000)
+  if (nd) {
+    console.log(" 查找 节点信息 {}  ", JSON.stringify(nd))
+    // 如果找到了 就点击
+    let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
+    logd("点他: {}", c)
+  } else {
+    console.log(" 未查找  节点信息  ")
+  }
+  // 先释放老的数据
+  releaseNode();
 }
 
 function autoServiceStart(time) {
- for (let i = 0; i < time; i++) {
-     if (isServiceOk()) {
-         return true;
-     }
-     let started = startEnv();
-     logd("第" + (i + 1) + "次启动服务结果: " + started);
-     if (isServiceOk()) {
-         return true;
-     }
- }
- return isServiceOk();
+  for (let i = 0; i < time; i++) {
+    if (isServiceOk()) {
+      return true;
+    }
+    let started = startEnv();
+    logd("第" + (i + 1) + "次启动服务结果: " + started);
+    if (isServiceOk()) {
+      return true;
+    }
+  }
+  return isServiceOk();
 }
 
 main()
@@ -953,48 +953,48 @@ main()
 
 ```javascript
 function main() {
- //开始再这里编写代码了！！
- logd("检查自动化环境...")
- //如果自动化服务正常
- if (!autoServiceStart(3)) {
-     logd("自动化服务启动失败，无法执行脚本")
-     exit();
-     return;
- }
- logd("开始执行脚本...")
- // 设置读取节点的参数, 具体请看设置节点参数的含义
- setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2","excludedAttributes":""})
- // 先释放老的数据
- releaseNode();
- // 锁定新的节点数据
- lockNode();
- // 进入查找状态
- // 按照 selected  查找
- let nd = selected(true).getOneNodeInfo(1000)
- if (nd) {
-     console.log(" 查找 节点信息 {}  ", JSON.stringify(nd))
-     // 如果找到了 就点击
-     let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
-     logd("点他: {}", c)
- } else {
-     console.log(" 未查找  节点信息  ")
- }
- // 先释放老的数据
- releaseNode();
+  //开始再这里编写代码了！！
+  logd("检查自动化环境...")
+  //如果自动化服务正常
+  if (!autoServiceStart(3)) {
+    logd("自动化服务启动失败，无法执行脚本")
+    exit();
+    return;
+  }
+  logd("开始执行脚本...")
+  // 设置读取节点的参数, 具体请看设置节点参数的含义
+  setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2", "excludedAttributes": ""})
+  // 先释放老的数据
+  releaseNode();
+  // 锁定新的节点数据
+  lockNode();
+  // 进入查找状态
+  // 按照 selected  查找
+  let nd = selected(true).getOneNodeInfo(1000)
+  if (nd) {
+    console.log(" 查找 节点信息 {}  ", JSON.stringify(nd))
+    // 如果找到了 就点击
+    let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
+    logd("点他: {}", c)
+  } else {
+    console.log(" 未查找  节点信息  ")
+  }
+  // 先释放老的数据
+  releaseNode();
 }
 
 function autoServiceStart(time) {
- for (let i = 0; i < time; i++) {
-     if (isServiceOk()) {
-         return true;
-     }
-     let started = startEnv();
-     logd("第" + (i + 1) + "次启动服务结果: " + started);
-     if (isServiceOk()) {
-         return true;
-     }
- }
- return isServiceOk();
+  for (let i = 0; i < time; i++) {
+    if (isServiceOk()) {
+      return true;
+    }
+    let started = startEnv();
+    logd("第" + (i + 1) + "次启动服务结果: " + started);
+    if (isServiceOk()) {
+      return true;
+    }
+  }
+  return isServiceOk();
 }
 
 main()
@@ -1006,48 +1006,48 @@ main()
 
 ```javascript
 function main() {
-    //开始再这里编写代码了！！
-    logd("检查自动化环境...")
-    //如果自动化服务正常
-    if (!autoServiceStart(3)) {
-        logd("自动化服务启动失败，无法执行脚本")
-        exit();
-        return;
-    }
-    logd("开始执行脚本...")
-    // 设置读取节点的参数, 具体请看设置节点参数的含义
-    setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2","excludedAttributes":""})
-    // 先释放老的数据
-    releaseNode();
-    // 锁定新的节点数据
-    lockNode();
-    // 进入查找状态
-    // 按照 childCount  查找
-    let nd = childCount(2).getOneNodeInfo(1000)
-    if (nd) {
-        console.log(" 查找  节点信息 {}  ", JSON.stringify(nd))
-        // 如果找到了 就点击
-        let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
-        logd("点他: {}", c)
-    } else {
-        console.log(" 未查找  节点信息  ")
-    }
-    // 先释放老的数据
-    releaseNode();
+  //开始再这里编写代码了！！
+  logd("检查自动化环境...")
+  //如果自动化服务正常
+  if (!autoServiceStart(3)) {
+    logd("自动化服务启动失败，无法执行脚本")
+    exit();
+    return;
+  }
+  logd("开始执行脚本...")
+  // 设置读取节点的参数, 具体请看设置节点参数的含义
+  setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2", "excludedAttributes": ""})
+  // 先释放老的数据
+  releaseNode();
+  // 锁定新的节点数据
+  lockNode();
+  // 进入查找状态
+  // 按照 childCount  查找
+  let nd = childCount(2).getOneNodeInfo(1000)
+  if (nd) {
+    console.log(" 查找  节点信息 {}  ", JSON.stringify(nd))
+    // 如果找到了 就点击
+    let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
+    logd("点他: {}", c)
+  } else {
+    console.log(" 未查找  节点信息  ")
+  }
+  // 先释放老的数据
+  releaseNode();
 }
 
 function autoServiceStart(time) {
-    for (let i = 0; i < time; i++) {
-        if (isServiceOk()) {
-            return true;
-        }
-        let started = startEnv();
-        logd("第" + (i + 1) + "次启动服务结果: " + started);
-        if (isServiceOk()) {
-            return true;
-        }
+  for (let i = 0; i < time; i++) {
+    if (isServiceOk()) {
+      return true;
     }
-    return isServiceOk();
+    let started = startEnv();
+    logd("第" + (i + 1) + "次启动服务结果: " + started);
+    if (isServiceOk()) {
+      return true;
+    }
+  }
+  return isServiceOk();
 }
 
 main()
@@ -1060,48 +1060,48 @@ main()
 
 ```javascript
 function main() {
-    //开始再这里编写代码了！！
-    logd("检查自动化环境...")
-    //如果自动化服务正常
-    if (!autoServiceStart(3)) {
-        logd("自动化服务启动失败，无法执行脚本")
-        exit();
-        return;
-    }
-    logd("开始执行脚本...")
-    // 设置读取节点的参数, 具体请看设置节点参数的含义
-    setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2","excludedAttributes":""})
-    // 先释放老的数据
-    releaseNode();
-    // 锁定新的节点数据
-    lockNode();
-    // 进入查找状态
-    // 按照 bounds  查找
-    let nd = bounds(100, 100, 300, 300).getOneNodeInfo(1000)
-    if (nd) {
-        console.log(" 查找  节点信息 {}  ", JSON.stringify(nd))
-        // 如果找到了 就点击
-        let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
-        logd("点他: {}", c)
-    } else {
-        console.log(" 未查找  节点信息  ")
-    }
-    // 先释放老的数据
-    releaseNode();
+  //开始再这里编写代码了！！
+  logd("检查自动化环境...")
+  //如果自动化服务正常
+  if (!autoServiceStart(3)) {
+    logd("自动化服务启动失败，无法执行脚本")
+    exit();
+    return;
+  }
+  logd("开始执行脚本...")
+  // 设置读取节点的参数, 具体请看设置节点参数的含义
+  setFetchNodeParam({"labelFilter": "2", "maxDepth": "20", "visibleFilter": "2", "excludedAttributes": ""})
+  // 先释放老的数据
+  releaseNode();
+  // 锁定新的节点数据
+  lockNode();
+  // 进入查找状态
+  // 按照 bounds  查找
+  let nd = bounds(100, 100, 300, 300).getOneNodeInfo(1000)
+  if (nd) {
+    console.log(" 查找  节点信息 {}  ", JSON.stringify(nd))
+    // 如果找到了 就点击
+    let c = clickPoint(nd.bounds.centerX(), nd.bounds.centerY());
+    logd("点他: {}", c)
+  } else {
+    console.log(" 未查找  节点信息  ")
+  }
+  // 先释放老的数据
+  releaseNode();
 }
 
 function autoServiceStart(time) {
-    for (let i = 0; i < time; i++) {
-        if (isServiceOk()) {
-            return true;
-        }
-        let started = startEnv();
-        logd("第" + (i + 1) + "次启动服务结果: " + started);
-        if (isServiceOk()) {
-            return true;
-        }
+  for (let i = 0; i < time; i++) {
+    if (isServiceOk()) {
+      return true;
     }
-    return isServiceOk();
+    let started = startEnv();
+    logd("第" + (i + 1) + "次启动服务结果: " + started);
+    if (isServiceOk()) {
+      return true;
+    }
+  }
+  return isServiceOk();
 }
 
 main()
@@ -1115,19 +1115,19 @@ main()
 * 支持版本: EC iOS 中控 3.0.0+
 * @return {bool} true 成功，false 失败
 
-```json
-function main(){
+```javascript
+function main() {
   setFetchNodeParam({
-  "labelFilter": "2",
-  "maxDepth": "70",
-  "visibleFilter": "2",
-  "excludedAttributes": "visible,2"
-})
-let node = name("地图").getOneNodeInfo(10000)
-logd(JSON.stringify(node))
-if(node){
-  logd(node.clickRandom())
-}
+    "labelFilter": "2",
+    "maxDepth": "70",
+    "visibleFilter": "2",
+    "excludedAttributes": "visible,2"
+  })
+  let node = name("地图").getOneNodeInfo(10000)
+  logd(JSON.stringify(node))
+  if (node) {
+    logd(node.clickRandom())
+  }
 
 }
 
@@ -1140,19 +1140,19 @@ main()
 * 支持版本: EC iOS 中控 3.0.0+
 * @return {bool} true 成功，false 失败
 
-```json
-function main(){
+```javascript
+function main() {
   setFetchNodeParam({
-  "labelFilter": "2",
-  "maxDepth": "70",
-  "visibleFilter": "2",
-  "excludedAttributes": "visible,2"
-})
-let node = name("地图").getOneNodeInfo(10000)
-logd(JSON.stringify(node))
-if(node){
-  logd(node.clickRandom())
-}
+    "labelFilter": "2",
+    "maxDepth": "70",
+    "visibleFilter": "2",
+    "excludedAttributes": "visible,2"
+  })
+  let node = name("地图").getOneNodeInfo(10000)
+  logd(JSON.stringify(node))
+  if (node) {
+    logd(node.clickRandom())
+  }
 
 }
 
@@ -1220,34 +1220,19 @@ main()
 * 支持版本: EC iOS 中控 3.0.0+
 * @return {NodeInfo} 节点对象
 
-```json
+```javascript
 function main() {
   // 进入查找状态
-  let
-  nd
-  =
-  labelMatch(
-  ".*1.*"
-  ).getOneNodeInfo(1000)
-  if
-  (nd) {
-  console.log(
-  " 查找  节点信息 {}  ",
-  JSON.stringify(nd))
-  let
-  parent
-  =
-  nd.parent()
-  console.log(
-  " 查找 parent {}  ",
-  JSON.stringify(parent))
-} else {
-  console.log(
-  " 未查找  节点信息  "
-  )
-}
+  let nd = labelMatch(".*1.*").getOneNodeInfo(1000)
+  if (nd) {
+    console.log(" 查找  节点信息 {}  ", JSON.stringify(nd))
+    let parent = nd.parent()
+    console.log(" 查找 parent {}  ", JSON.stringify(parent))
+  } else {
+    console.log(" 未查找  节点信息  ")
+  }
 // 先释放老的数据
-releaseNode();
+  releaseNode();
 }
 
 
@@ -1261,34 +1246,19 @@ main()
 * @param index – 子节点索引
 * @return {NodeInfo} NodeInfo 对象 或者null
 
-```json
+```javascript
 function main() {
   // 进入查找状态
-  let
-  nd
-  =
-  labelMatch(
-  ".*1.*"
-  ).getOneNodeInfo(1000)
-  if
-  (nd) {
-  console.log(
-  " 查找  节点信息 {}  ",
-  JSON.stringify(nd))
-  let
-  child1
-  =
-  nd.child(0)
-  console.log(
-  " 查找 child {}  ",
-  JSON.stringify(child1))
-} else {
-  console.log(
-  " 未查找  节点信息  "
-  )
-}
+  let nd = labelMatch(".*1.*").getOneNodeInfo(1000)
+  if (nd) {
+    console.log(" 查找  节点信息 {}  ", JSON.stringify(nd))
+    let child1 = nd.child(0)
+    console.log(" 查找 child {}  ", JSON.stringify(child1))
+  } else {
+    console.log(" 未查找  节点信息  ")
+  }
 // 先释放老的数据
-releaseNode();
+  releaseNode();
 }
 
 
@@ -1301,34 +1271,19 @@ main()
 * 支持版本: EC iOS 中控 3.0.0+
 * @return {array} NodeInfo 节点集合
 
-```json
+```javascript
 function main() {
   // 进入查找状态
-  let
-  nd
-  =
-  labelMatch(
-  ".*1.*"
-  ).getOneNodeInfo(1000)
-  if
-  (nd) {
-  console.log(
-  " 查找  节点信息 {}  ",
-  JSON.stringify(nd))
-  let
-  allChildren
-  =
-  nd.allChildren()
-  console.log(
-  " 查找 allChildren {}  ",
-  JSON.stringify(allChildren))
-} else {
-  console.log(
-  " 未查找  节点信息  "
-  )
-}
+  let nd = labelMatch(".*1.*").getOneNodeInfo(1000)
+  if (nd) {
+    console.log(" 查找  节点信息 {}  ", JSON.stringify(nd))
+    let allChildren = nd.allChildren()
+    console.log(" 查找 allChildren {}  ", JSON.stringify(allChildren))
+  } else {
+    console.log(" 未查找  节点信息  ")
+  }
 // 先释放老的数据
-releaseNode();
+  releaseNode();
 }
 
 
@@ -1341,36 +1296,20 @@ main()
 * 支持版本: EC iOS 中控 3.0.0+
 * @return {array} NodeInfo 节点集合
 
-```json
+```javascript
 function main() {
   // 进入查找状态
-  let
-  nd
-  =
-  labelMatch(
-  ".*1.*"
-  ).getOneNodeInfo(1000)
-  if
-  (nd) {
-  console.log(
-  " 查找  节点信息 {}  ",
-  JSON.stringify(nd))
-  let
-  siblings
-  =
-  nd.siblings()
-  console.log(
-  " 查找 siblings {}  ",
-  JSON.stringify(siblings))
-} else {
-  console.log(
-  " 未查找  节点信息  "
-  )
-}
+  let nd = labelMatch(".*1.*").getOneNodeInfo(1000)
+  if (nd) {
+    console.log(" 查找  节点信息 {}  ", JSON.stringify(nd))
+    let siblings = nd.siblings()
+    console.log(" 查找 siblings {}  ", JSON.stringify(siblings))
+  } else {
+    console.log(" 未查找  节点信息  ")
+  }
 // 先释放老的数据
-releaseNode();
+  releaseNode();
 }
-
 
 main()
 ```
@@ -1381,36 +1320,20 @@ main()
 * 支持版本: EC iOS 中控 3.0.0+
 * @return {array} NodeInfo 节点集合
 
-```json
+```javascript
 function main() {
   // 进入查找状态
-  let
-  nd
-  =
-  labelMatch(
-  ".*1.*"
-  ).getOneNodeInfo(1000)
-  if
-  (nd) {
-  console.log(
-  " 查找  节点信息 {}  ",
-  JSON.stringify(nd))
-  let
-  previousSiblings
-  =
-  nd.previousSiblings()
-  console.log(
-  " 查找 previousSiblings {}  ",
-  JSON.stringify(previousSiblings))
-} else {
-  console.log(
-  " 未查找  节点信息  "
-  )
-}
+  let nd = labelMatch(".*1.*").getOneNodeInfo(1000)
+  if (nd) {
+    console.log(" 查找  节点信息 {}  ", JSON.stringify(nd))
+    let previousSiblings = nd.previousSiblings()
+    console.log(" 查找 previousSiblings {}  ", JSON.stringify(previousSiblings))
+  } else {
+    console.log(" 未查找  节点信息  ")
+  }
 // 先释放老的数据
-releaseNode();
+  releaseNode();
 }
-
 
 main()
 ```
@@ -1421,36 +1344,20 @@ main()
 * 支持版本: EC iOS 中控 3.0.0+
 * @return {array} NodeInfo 节点集合
 
-```json
+```javascript
 function main() {
   // 进入查找状态
-  let
-  nd
-  =
-  labelMatch(
-  ".*1.*"
-  ).getOneNodeInfo(1000)
-  if
-  (nd) {
-  console.log(
-  " 查找  节点信息 {}  ",
-  JSON.stringify(nd))
-  let
-  nextSiblings
-  =
-  nd.nextSiblings()
-  console.log(
-  " 查找 nextSiblings {}  ",
-  JSON.stringify(nextSiblings))
-} else {
-  console.log(
-  " 未查找  节点信息  "
-  )
-}
+  let nd = labelMatch(".*1.*").getOneNodeInfo(1000)
+  if (nd) {
+    console.log(" 查找  节点信息 {}  ", JSON.stringify(nd))
+    let nextSiblings = nd.nextSiblings()
+    console.log(" 查找 nextSiblings {}  ", JSON.stringify(nextSiblings))
+  } else {
+    console.log(" 未查找  节点信息  ")
+  }
 // 先释放老的数据
-releaseNode();
+  releaseNode();
 }
-
 
 main()
 ```
