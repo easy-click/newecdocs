@@ -9,7 +9,20 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,更新记录,安卓�
 # 更新记录
 
 ## 最新发布版本
+### 9.6.0
+```text
+# 9.6.0
+- 新增httpPostEx兼容e2ee上传文件服务器
+- 新增清理所有UI设置的函数 ui.removeAllUIConfig()
+- 修复screencapBitmap、screencapImage 不删除文件夹
+- 修复多线程获取节点偶尔java.util.ConcurrentModificationException的问题
+- 优化ui.stopTask日志悬浮窗触摸的问题
+- 优化悬浮窗的高度和宽度无法获取
+- 优化isScriptExit、exit函数
+```
 
+
+## 历史版本
 ### 9.5.0
 ```text
 # 9.5.0
@@ -17,9 +30,6 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,更新记录,安卓�
 - 修复打包后自定义文件落地问题
 - 优化部分功能
 ```
-
-
-## 历史版本
 
 ### 9.4.0
 ```text
