@@ -68,7 +68,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 OCR识别 资源下载 ]
     }
 
     logd("耗时: " + console.timeEnd(1) + " ms")
-    ocrAgent.recycle(img)
+    imageAgent.recycle(img)
     sleep(1000);
     logd("ix = " + ix)
   }
