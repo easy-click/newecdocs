@@ -1,10 +1,24 @@
 ---
-title: 版本记录
-description: EasyClick 自动化脚本 iOS免越狱 版本记录
+title: 版本记录 
+description: EasyClick 自动化脚本 iOS免越狱 版本记录 
 keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 ---
 
 ## 最新发布版本
+
+### 6.0.0
+
+```text
+- 重构投屏系统
+- 重构高级组网功能
+- 新增appHelper辅助模块(传输文件、剪切板、URL操作)
+- 新增旋转图像rotateImage函数
+- 优化桥接内存占用
+- 修复部分bug
+[6.0 如果不需要旋转图像，可以使用5.0的代理IPA]
+```
+
+## 历史版本
 
 ### 5.0.0
 
@@ -20,8 +34,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 [5.0 USB版代理程序与脱机版的合并为一个，所以需要重新安装代理ipa程序]
 ```
 
-
-## 历史版本
 ### 4.1.0
 
 ```text
@@ -30,6 +42,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 - 优化部分功能
 [已经安装了3.1的IPA，不用更新IPA了]
 ```
+
 ### 4.0.0
 
 ```text
@@ -44,6 +57,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 ```
 
 ### 3.5.0
+
 ``` text
 - 新增投屏界面重启设备功能
 - 新增重启reboot函数 
@@ -52,8 +66,8 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 [已经安装了3.1的IPA，不用更新IPA了]
 ```
 
-
 ### 3.4.0
+
 ``` text
 - 修复多点触摸问题 
 - 新增自适应二值化函数binaryzationEx
@@ -63,6 +77,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 ```
 
 ### 3.3.1
+
 ``` text
 # 3.3.1
 - 修复流式截图失败的问题
@@ -71,6 +86,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 ```
 
 ### 3.3.0
+
 ```json
 # 3.3.0
 - 新增监控页面的设备在线状态
@@ -82,11 +98,10 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 - 优化installApp和uninstallApp函数
 - 优化刷入开发者镜像功能
 - 优化多设备投屏问题
-- 更换JDK版本,减少内存CPU占用
+- 更换JDK版本, 减少内存CPU占用
 
 [已经安装了3.1的IPA，不用更新IPA了]
 ```
-
 
 ### 3.2.0
 
@@ -98,7 +113,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 
 [已经安装了3.1的IPA，不用更新IPA了]
 ```
-
 
 ### 3.1.0
 
@@ -112,12 +126,11 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 - 统一节点支持横屏和竖屏
 - 修复部分问题
 注意：
-    - 横竖屏坐标系以IDEA截图为准，IDEA截图是 竖屏就是竖屏坐标系，IDEA截图 横屏就是横屏坐标系
-    - 横竖屏坐标系自己根据实际情况切换，函数是 adjustScreenOrientation
-    - 新增的 captureFullScreenEx 调整图片质量可有效减少图片的大小和截图时间，建议尝试
+- 横竖屏坐标系以IDEA截图为准，IDEA截图是 竖屏就是竖屏坐标系，IDEA截图 横屏就是横屏坐标系
+- 横竖屏坐标系自己根据实际情况切换，函数是 adjustScreenOrientation
+- 新增的 captureFullScreenEx 调整图片质量可有效减少图片的大小和截图时间，建议尝试
 [该版本需要更新IPA、中控、开发插件]
 ```
-
 
 ### 3.0.0
 
@@ -126,9 +139,9 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 # 3.0.0
 
 - 新增节点函数功能
-- 新增IDEA 开发节点支持 
+- 新增IDEA 开发节点支持
 - 新增 setFetchNodeParam 设置节点抓取参数
-- 新增投屏输入文字功能 
+- 新增投屏输入文字功能
 - 新增 getOrientation，setOrientation 屏幕相关方向
 - 新增 adjustScreenOrientation 校正屏幕方向和坐标系
 - 新增 homeScreen，isLocked，lockScreen，unlockScreen 函数
@@ -137,7 +150,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 - 恢复测试自动化功能
 - 修复投屏的质量设置
 - 投屏和脚本横屏支持
-- 修复中控网页找不到设备问题 
+- 修复中控网页找不到设备问题
 - 修复IPA签名的部分问题
 - 注意事项: 由于PNG图片横竖屏有问题，底层实现全部切换到jpg模式，函数依然可以正常
 **该版本需要更新IPA、中控、开发插件**
@@ -150,9 +163,9 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 # 2.10.0
 - 新增网页端投屏和动作同步功能
 - 新增IDEA投屏控制
-- 新增 version 获取中控版本函数 
+- 新增 version 获取中控版本函数
 - 新增findImageByColorEx找图函数，带偏色和系数
-- 新增 setAgentSetting 函数，设置投屏质量,帧率 
+- 新增 setAgentSetting 函数，设置投屏质量,帧率
 - 新增 isScreenStreamOk 函数，判断投屏是否正常
 - 新增开放API文档[文档 - 高级功能 - 企业API文档]
 - 新增桥接配置开启自动化时是否重置USB链接[agent.resetUsbConAuto]
@@ -161,7 +174,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 - 优化多点触摸5指的问题
 - 修复脚本启动自动化失败问题
 
-这个版本无需更新ipa，是兼容老的版本！ 
+这个版本无需更新ipa，是兼容老的版本！
 
 ```
 
@@ -169,35 +182,33 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 
 ```json
 ## 2.9.0
-- 新增安装、卸载app功能，installApp,uninstallApp 函数 (无需启动自动化)
+- 新增安装、卸载app功能，installApp, uninstallApp 函数 (无需启动自动化)
 - 新增网页工具用于复制、粘贴、打开URL Scheme等操作，详情查看文档[高级功能-网页工具]部分
 - 新增桥接run15iOSIpaAgentAsApp、detectTimeout选项，详情查看文档[高级功能-系统配置]部分
 - 新增 resetUsbConn 重置USB链接函数
 - 新增IDEA开启、关闭自动化，重置USB链接功能
 - 新增网页关闭自动化，重置USB链接功能
-- 优化多点触摸支持5个手指 
+- 优化多点触摸支持5个手指
 
-这个版本无需更新ipa，是兼容老的版本！ 
+这个版本无需更新ipa，是兼容老的版本！
 
 ```
 
-
 ### 2.8.0
-
 
 ```json
 ## 2.8.0
 - 新增非mac不显示签名页面
 - 新增中控显示桥接版本信息
-- 新增开始运行时启动opencv的配置(默认不启动) 
-- 新增openApp和stopApp，启动和关闭应用 
-- 新增获取手机设备名称的函数 getDeviceName 
+- 新增开始运行时启动opencv的配置(默认不启动)
+- 新增openApp和stopApp，启动和关闭应用
+- 新增获取手机设备名称的函数 getDeviceName
 - 新增直接拖拽iec文件到中控直接运行
-- 新增部分企业版本开放API，可自定义中控，对接其他语言 
-- 修复脚本多次执行和无法二次执行的问题 
+- 新增部分企业版本开放API，可自定义中控，对接其他语言
+- 修复脚本多次执行和无法二次执行的问题
 - 修复15系统拔数据线后自动点击问题
 
-这个版本无需更新ipa，是兼容老的版本！    
+这个版本无需更新ipa，是兼容老的版本！
 
 ```
 
@@ -209,8 +220,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 - 新增设备监控页面排序
 ```
 
-
-
 ### 2.6.0
 
 ```json
@@ -220,13 +229,11 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 - 新增查找模式的选择
 - 新增idea找色找图，测试结果在界面上做标记
 - 更改端口请看桥接程序 config/config.toml文件中的设置
-    - 代理端口设置: [agent.agentPort]
-    - 投屏端口设置: [agent.screenPort]
-    - 发现设备模式: [agent.scanMode] 
+- 代理端口设置: [agent.agentPort]
+- 投屏端口设置: [agent.screenPort]
+- 发现设备模式: [agent.scanMode]
 这个版本无需更新ipa，是兼容老的版本！    
 ```
-
-
 
 ### 2.5.1
 
@@ -257,7 +264,7 @@ CPU占用: 10%
 加入两行：
 -Xms20g
 -Xmx20g
- 设置内存大小，20g是指最大最小都是20g内存，根据自己电脑实际情况设置
+设置内存大小，20g是指最大最小都是20g内存，根据自己电脑实际情况设置
 ```
 
 ### 2.4.0
@@ -265,21 +272,19 @@ CPU占用: 10%
 ```json
 ## 2.4.0
 - 新增idea代码模板
-- 优化并减少硬盘读写 
+- 优化并减少硬盘读写
 - 修复保存 bundleid 多个逗号问题
 - 默认关闭桥接的访问日志
 - 优化脚本日志打印
 -（该版本可以使用老的代理ipa，不用重新安装ipa）
 ```
 
-
 ### 2.3.0
-
 
 ```json
 ## 2.3.0
 - 新增【XCODE远程调试】安装代理IPA功能
-- 新增setAgentTimeout函数，设置请求桥接超时 
+- 新增setAgentTimeout函数，设置请求桥接超时
 - 新增activeAppInfo获取当前运行app
 - 新增中控网页搜索设备和别名排序功能
 - 新增中控定义端口
@@ -292,8 +297,6 @@ CPU占用: 10%
 
 ```
 
-
-
 ### 2.2.0
 
 ```json
@@ -302,7 +305,7 @@ CPU占用: 10%
 - 新增IDEA IOS 的java-js混合项目
 - 新增中控插件功能
 - 新增mysql数据库支持
-- 新增设备模块applist,getSerialNo,getDeviceAlias函数 
+- 新增设备模块applist, getSerialNo, getDeviceAlias函数
 - 新增启动自动化的getStartEnvMsg消息函数
 - 新增image模块captureFullScreenPng函数
 - 新增中控设备监控-操作-截图功能
@@ -321,13 +324,11 @@ CPU占用: 10%
 - 解决开发者镜像路径判断问题
 - 解决中控首页保存bundleid问题
 - 解决跑脚本报null的问题
-- 更改idea截图文件，防止与安卓冲突 
+- 更改idea截图文件，防止与安卓冲突
 - 修复Windows10 ocr无法初始化问题
 - 修复ocr高度不显示的问题
 - 完善设备沙盒文件夹getSandbox函数 
 ```
-
-
 
 ### 2.0.0
 
@@ -338,10 +339,6 @@ CPU占用: 10%
 - 优化部分功能，函数等
 ```
 
-
-
-
-
 ### 1.1.0
 
 ```json
@@ -351,10 +348,6 @@ CPU占用: 10%
 3、修复idea查找自动化代理程序问题
 
 ```
-
-
-
-
 
 ### 1.0.0
 

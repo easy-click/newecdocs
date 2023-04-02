@@ -35,6 +35,7 @@ module.exports = {
         'zh-cn/funcs/image-api',
         'zh-cn/funcs/ocr-agent-api',
         'zh-cn/funcs/ocr-api',
+        'zh-cn/funcs/apphelper-api',
         'zh-cn/funcs/device-api',
         'zh-cn/funcs/file-api',
         'zh-cn/funcs/storage-api',

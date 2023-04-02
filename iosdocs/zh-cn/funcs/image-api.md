@@ -1233,6 +1233,28 @@ main();
 
 ## 其他
 
+### imageAgent.rotateImage 旋转图像
+
+* 旋转图片
+* 支持EC iOS中控 6.0+
+* @param img 图片对象
+* @param degree 度数，0代表home键在下竖屏模式，-90代表逆时针旋转90度，home键在右，90度代表顺时针旋转90度，home键在左
+* @return {null|AutoImage}
+
+```javascript
+
+function main() {
+  let img = image.captureFullScreen()
+  logd(" img width "+image.getWidth(img2))
+  let img2 = image.rotateImage(img,-90);
+  image.recycle(img)
+  logd(" img2 width "+image.getWidth(img2))
+  image.recycle(img2)
+}
+
+main();
+```
+
 ### image.readImage 读取文件为Image
 
 * 读取在路径path的图片文件并返回一个{@link AutoImage}对象。如果文件不存在或者文件无法解码则返回null。

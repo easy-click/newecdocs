@@ -476,6 +476,26 @@ function main() {
 main();
 ```
 
+### appLaunchByPrefix 按前缀运行程序
+
+* 按照包名前缀查找并且运行程序
+* @param bundleIdPrefix app的 bundleID 前缀，多个用英文,逗号隔开
+* @return {boolean}| true代表成功
+
+```javascript
+
+function main() {
+  var result = appLaunchByPrefix("com.tencent.xin,123");
+  if (result) {
+    logd("成功");
+  } else {
+    logd("失败");
+  }
+}
+
+main();
+```
+
 ### appLaunch 运行程序
 
 * 运行程序
