@@ -13,6 +13,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 - 重构高级组网功能
 - 新增appHelper辅助模块(传输文件、剪切板、URL操作)
 - 新增旋转图像rotateImage函数
+- 新增setAssistiveTouch悬浮窗开关函数
 - 优化桥接内存占用
 - 修复部分bug
 [6.0 如果不需要旋转图像，可以使用5.0的代理IPA]

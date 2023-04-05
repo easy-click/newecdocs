@@ -579,6 +579,19 @@ main();
 
 ## 其他函数
 
+### setAssistiveTouch 悬浮球开关
+* 开关辅助触摸 悬浮球功能
+* 适合EC IOS 6.0.0+
+* @param open true代表打开，false代表隐藏
+* @return {boolean} true代表成功 false代表失败
+```javascript
+function main() {
+  var result = setAssistiveTouch();
+  logd(result);
+}
+
+main();
+```
 ### resetUsbConn 重置usb链接
 
 * 重置USB链接，如果开起来自动化可以使用这个尝试
