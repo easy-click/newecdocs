@@ -30,7 +30,9 @@ keywords: [EasyClick 自动化脚本 iOS免越狱  常见问题 ]
 - https://github.com/haikieu/xcode-developer-disk-image-all-platforms/tree/master/DiskImages/iPhoneOS.platform/DeviceSupport
 - 如果还是没有镜像，可以尝试将最靠近`你的iPhone版本`的`镜像版本文件夹名称修改与手机版本一致 `
 
-
+## 越狱机器如何安装ipa
+- 经过群友测试，先安装AppSync插件，然后在安装代理ipa可以成功
+- 成功的系统是 13.4.1,美版信号机
 
 ## 脚本运行 显示执行异常：com.js.main
 
