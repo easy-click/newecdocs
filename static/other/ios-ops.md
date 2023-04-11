@@ -1,3 +1,7 @@
+---
+title: EasyClick iOS 免越狱中控投屏使用手册
+
+---
 ## EasyClick iOS 免越狱中控投屏使用手册
 
 - 官网地址: https://ieasyclick.com/
@@ -13,8 +17,8 @@
 
 ### 自备签名
 
-- 在压缩包解压后，里面有<easyclick-usb-agent-xxx.ipa>文件，可以自己使用P12文件签名，可以让代理商协助完成，或者参见《免越狱投屏IPA签名教程.docx》文档
-- 注意：请使用网盘中的签名工具，工具名称 <签名工具-ResignTool-windows.zip>
+- 在压缩包解压后，里面有 easyclick-usb-agent-xxx.ipa 文件，可以自己使用P12文件签名，可以让代理商协助完成，或者参见《免越狱投屏IPA签名教程.docx》文档
+- 注意：请使用网盘中的签名工具，工具名称  签名工具-ResignTool-windows.zip 
 
 ### 购买签名
 
