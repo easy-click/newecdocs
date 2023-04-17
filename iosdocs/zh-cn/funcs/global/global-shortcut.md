@@ -246,7 +246,26 @@ function main() {
 
 main();
 ```
+### typingText 输入数据
 
+* 输入文字,模拟打字
+* EC IOS 6.1.0+
+* @param content 内容
+* @return {bool} true 成功，false 失败
+
+```javascript
+
+function main() {
+  var result = typingText("我是内容");
+  if (result) {
+    logd("是");
+  } else {
+    logd("否");
+  }
+}
+
+main();
+```
 ### ioHIDEvent 模拟键盘
 
 * 模拟人机交互，例如键盘输入和快捷键，具体健值请看
