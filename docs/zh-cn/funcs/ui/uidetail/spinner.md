@@ -13,6 +13,7 @@ keywords: [EasyClick 自动化脚本 android免root Spinner下拉选择框]
             android:tag="btn"
             android:text="选择1|选择2"
             android:textColor="#669999"
+            android:mode="dialog"
             android:textSize="14dp"
             android:defaultText="选择2"
             android:gravity="center"
@@ -34,5 +35,6 @@ keywords: [EasyClick 自动化脚本 android免root Spinner下拉选择框]
 | textColor | 文字颜色 | 16进制，例如#FFFFFF |
 | textSize | 文字大小 | 具体数字+dp |
 | defaultText | 默认选择的数据 | text中的某一项 |
+| mode | 模式 | dialog 代表对话框，dropdown代表下拉模式 |
 | popupHeight | 弹出框高度 | 具体数字+dp |
 
