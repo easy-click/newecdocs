@@ -769,6 +769,27 @@ main();
 
 
 ## 其他
+### image.rotateImage 旋转图像
+
+* 旋转图片
+* 支持EC 脱机版 1.6.0+
+* @param img 图片对象
+* @param degree 度数，0代表home键在下竖屏模式，-90代表逆时针旋转90度，home键在右，90度代表顺时针旋转90度，home键在左
+* @return {null|AutoImage}
+
+```javascript
+
+function main() {
+  let img = image.captureFullScreen()
+  logd(" img width "+image.getWidth(img2))
+  let img2 = image.rotateImage(img,-90);
+  image.recycle(img)
+  logd(" img2 width "+image.getWidth(img2))
+  image.recycle(img2)
+}
+
+main();
+```
 
 ### image.readImage 读取文件为Image
 

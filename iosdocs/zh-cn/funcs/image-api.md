@@ -1233,7 +1233,7 @@ main();
 
 ## 其他
 
-### imageAgent.rotateImage 旋转图像
+### image.rotateImage 旋转图像
 
 * 旋转图片
 * 支持EC iOS中控 6.0+

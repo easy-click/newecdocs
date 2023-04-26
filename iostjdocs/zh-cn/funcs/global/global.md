@@ -740,6 +740,22 @@ main();
 
 ## 其他
 
+
+
+### setPipCtrlScript 设置悬浮窗控制脚本启停
+
+* 设置悬浮窗是否可以控制脚本启停，防止脚本被其他视频软件占用时被停止
+* @param ctrl true 代表可以控制  false代表不可以防止
+* @returns {boolean} true代表成功，false代表失败
+
+```javascript
+function main() {
+  setPipCtrlScript(true);
+}
+
+main();
+```
+
 ### random 随机函数
 
 * 取得某个范围的随机值
