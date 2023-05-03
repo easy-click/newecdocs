@@ -5,10 +5,12 @@ title: EasyClick iOS 免越狱中控投屏使用手册
 ## EasyClick iOS 免越狱中控投屏使用手册（V6.2.0）
 
 - 官网地址: https://ieasyclick.com/
+- 论坛: http://bbs.ieasyclick.com/
+- 百度网盘下载： https://pan.baidu.com/s/124sTYQAZkedgfnTv3iFTZg 提取码：7bhy
 
 ## 下载文件
 
-- 找网盘下载ioscenter_windows开头的压缩包，并且解压到文件夹，文件夹和名称不要有特殊字符、空格、中文等
+- 到网盘下载ioscenter_windows开头的压缩包，并且解压到文件夹，文件夹和名称不要有特殊字符、空格、中文等
 - 双击ioscenter.exe开始运行中控程序
 
 <img src="myimages/image-20230408084252788.png" alt="image-20230408084252788" style="zoom:33%;" />
