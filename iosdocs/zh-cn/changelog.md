@@ -5,6 +5,24 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 ---
 
 ## 最新发布版本
+### 6.4.0
+
+```text
+- 新增UI设计器和数据编辑器 
+- 新增读取UI参数函数 readAllUIConfig 
+- 新增设备授权是否过期函数 isDeviceAuthOk
+- 修改投屏点击为clickPoint 
+- 修复电量在中控展示问题 
+- 新增 clickPointPressure, swipeToPointPressure
+- 修复投屏小屏幕放大有白色边框问题 
+- idea工程模板加上打印启动代理服务失败消息
+- 修复投屏横竖屏点击问题
+
+[6.x 如果不需要旋转图像，可以使用5.0的代理IPA]
+```
+
+## 历史版本
+
 ### 6.3.0
 
 ```text
@@ -16,7 +34,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 [6.x 如果不需要旋转图像，可以使用5.0的代理IPA]
 ```
 
-## 历史版本
+
 ### 6.2.0
 
 ```text

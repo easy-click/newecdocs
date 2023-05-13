@@ -8,6 +8,24 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件 资源下�
 
 全局模块中封装的快捷事件
 
+## 读取UI
+
+### readAllUIConfig 读取UI
+
+* 读取所有UI配置
+* @param tmplName UI模板文件名称
+* @return {JSON} JSON数据
+
+```javascript
+function main() {
+  var result = readAllUIConfig("抖音模板");
+  logd(result);
+  logd(JSON.stringify(result));
+}
+
+main();
+```
+
 ## 点击函数
 
 ### clickPoint 坐标点击
@@ -246,6 +264,7 @@ function main() {
 
 main();
 ```
+
 ### typingText 输入数据
 
 * 输入文字,模拟打字
@@ -266,6 +285,7 @@ function main() {
 
 main();
 ```
+
 ### ioHIDEvent 模拟键盘
 
 * 模拟人机交互，例如键盘输入和快捷键，具体健值请看
@@ -599,10 +619,12 @@ main();
 ## 其他函数
 
 ### setAssistiveTouch 悬浮球开关
+
 * 开关辅助触摸 悬浮球功能
 * 适合EC IOS 6.0.0+
 * @param open true代表打开，false代表隐藏
 * @return {boolean} true代表成功 false代表失败
+
 ```javascript
 function main() {
   var result = setAssistiveTouch();
@@ -611,6 +633,7 @@ function main() {
 
 main();
 ```
+
 ### resetUsbConn 重置usb链接
 
 * 重置USB链接，如果开起来自动化可以使用这个尝试
