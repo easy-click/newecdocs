@@ -48,6 +48,28 @@ function main() {
 main();
 ```
 
+### clickPointPressure 带压力点击坐标
+
+* 带压力点击坐标
+* 适合 EC iOS 6.4.0+
+* @param x x坐标
+* @param y y坐标
+* @param pressure 压力值 0 -1 区间
+* @return boolean|布尔型
+
+```javascript
+function main() {
+  var result = clickPointPressure(100, 100, 0.2);
+  if (result) {
+    logd("点击成功");
+  } else {
+    logd("点击失败");
+  }
+}
+
+main();
+```
+
 ### longClickPoint 坐标长点击
 
 * 长点击坐标
@@ -206,6 +228,32 @@ main();
 
 function main() {
   var result = swipeToPoint(10, 10, 100, 100, 200);
+  if (result) {
+    logd("滑动成功");
+  } else {
+    logd("滑动失败");
+  }
+}
+
+main();
+```
+
+### swipeToPointPressure 带压力坐标点滑动
+
+* 从一个坐标滑动到另一个坐标
+* 支持版本EC 中控 6.4.0+
+* @param startX 起始坐标的X轴值
+* @param startY 起始坐标的Y轴值
+* @param endX 结束坐标的X轴值
+* @param endY 结束坐标的Y轴值
+* @param duration 持续时长 单位毫秒
+* @param pressure 压力， 0 - 1之间
+* @return 布尔型 true 滑动成功, false 滑动失败
+
+```javascript
+
+function main() {
+  var result = swipeToPointPressure(10, 10, 100, 100, 200, 0.2);
   if (result) {
     logd("滑动成功");
   } else {
@@ -696,5 +744,38 @@ main();
 
 ```
 
+## 相册操作
 
+### uploadInsertImage 插入图片到相册
 
+* 通过代理ipa插入图片到相册
+* 适合EC IOS 6.5.0 +
+* @param path 图片路径
+* @return {boolean} true 成功，false 失败
+
+```javascript
+function main() {
+  let d = uploadInsertImage("D:/a.jpg");
+  logd(d);
+}
+
+main();
+
+```
+
+### uploadInsertVideo 插入视频到相册
+
+* 通过代理ipa插入视频到相册
+* 适合EC IOS 6.5.0 +
+* @param path 视频路径
+* @return {boolean} true 成功，false 失败
+
+```javascript
+function main() {
+  let d = uploadInsertVideo("D:/a.mp4");
+  logd(d);
+}
+
+main();
+
+```

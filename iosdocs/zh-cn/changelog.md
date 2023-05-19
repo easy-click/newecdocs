@@ -5,6 +5,20 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 ---
 
 ## 最新发布版本
+### 6.5.0
+
+```text
+- 新增投屏不通过辅助APP，直接上传图片、视频到相册功能 --OK
+- 新增投屏加上打开系统应用和快捷设置功能
+- 新增投屏**打开应用**可以自定义功能
+- 新增上传图片、视频到相册的函数 uploadInsertVideo，uploadInsertImage
+- 修改桥接配置文件中scanMode，加入发现设备模式=3时，监听 + 扫描查找设备
+- 优化部分功能
+[如果需要使用uploadInsertVideo，uploadInsertImage函数，需要重新签名6.5的IPA]
+[6.x 如果不需要旋转图像等新增函数，可以使用5.0的代理IPA]
+```
+
+## 历史版本
 ### 6.4.0
 
 ```text
@@ -20,9 +34,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 版本记录  ]
 
 [6.x 如果不需要旋转图像，可以使用5.0的代理IPA]
 ```
-
-## 历史版本
-
 ### 6.3.0
 
 ```text
