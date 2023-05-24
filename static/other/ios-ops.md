@@ -117,6 +117,13 @@ title: EasyClick iOS 免越狱中控投屏使用手册
   - <img src="myimages/image-20230408093924785.png" alt="image-20230408093924785" style="zoom:33%;" />
 - 子分辨率，对子屏幕分辨率进行调整
   - <img src="myimages/image-20230408094238083.png" alt="image-20230408094238083" style="zoom:33%;" />
+
+
+
+## 横竖屏幕坐标系切换
+
+
+
 - 横竖屏切换，可以对主屏、子屏幕进行横竖屏切换，特别适合游戏、普通app横竖屏的切换
   - <img src="myimages/image-20230408094306050.png" alt="image-20230408094306050" style="zoom:33%;" />
 
