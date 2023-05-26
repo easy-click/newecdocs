@@ -145,7 +145,7 @@ const config = {
           },
           {
             position: 'left',
-            label: '社区交流',
+            label: '作者交流',
             to: '/community/support',
           },
           {

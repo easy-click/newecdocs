@@ -1,10 +1,18 @@
 ---
-title: 支持
-description: EasyClick 社区支持
+title: 推荐作者及交流群 
+description: EasyClick 社区支持 
 keywords: [EasyClick 社区支持]
 ---
 
+## 推荐作者
+
+| 作者名 | 联系方式 | 擅长领域 | 作品清单  | 其他备注 | 客户评价 |
+| ----| ---- | ---- | ------| ------| ------|
+| 小天 | 飞机：@kj888888 | 安卓,facebook自动化 |  | 只接海外脚本，不包括台湾香港 |  |
+| 想wo够么 | qq286455540 | 安卓	百度极速版+映客直播 |  |  |  |
+
 ## 技术群支持
+
 - 欢迎技术爱好者加入我们的交流，也可以加我们的客服或者沙书记QQ，进行行业咨询的探讨
 - 沙书记QQ : 2557945562
 - 客服QQ: 2050858539
@@ -16,7 +24,8 @@ keywords: [EasyClick 社区支持]
     - QQ群5: 484379843
     - QQ群6: 435253761
 - 技术交流:
-    [http://bbs.ieasyclick.com](http://bbs.ieasyclick.com)    
+  [http://bbs.ieasyclick.com](http://bbs.ieasyclick.com)
+
 ## Github issues
 
 [Github issues](https://github.com/easy-click/easyclick-libs) 你都可以搜索你的问题或提出新的问题。
