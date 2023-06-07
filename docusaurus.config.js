@@ -236,7 +236,7 @@ const config = {
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} 易点新媒, Inc. All Rights Reserved. `
+        copyright: `<a href="http://www.shixianlaw.com/" target="_blank" style="color:white">安徽时宪律师事务所提供法务支持</a><br/>Copyright © ${new Date().getFullYear()} 易点新媒, Inc. All Rights Reserved.  `
       },
       // prism: {
       //   darkTheme: darkCodeTheme
