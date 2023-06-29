@@ -139,14 +139,24 @@ const config = {
             ],
           },
           {
+            type: 'dropdown',
+            label: '技术交流',
             position: 'left',
-            label: '技术论坛交流',
-            to: 'http://bbs.ieasyclick.com',
+            items: [
+              {
+                label: '技术论坛交流',
+                href: 'http://bbs.ieasyclick.com',
+              },
+              {
+                label: '作者交流',
+                href: '/community/support',
+              }
+            ],
           },
           {
             position: 'left',
-            label: '作者交流',
-            to: '/community/support',
+            label: '全球IP代理',
+            to: 'https://www.zhizhuip.com/?ref=ieasyclick',
           },
           {
             type: 'localeDropdown',
@@ -180,7 +190,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: '文档',
+            title: '产品文档',
             items: [
               {
                 label: '安卓开发文档',
@@ -197,6 +207,14 @@ const config = {
               {
                 label: '企业版云控',
                 to: 'docs/zh-cn/ecloud2/installcloud'
+              },
+              {
+                label: '企业版群控',
+                to: 'local_ctrl_server'
+              },
+              {
+                label: '全球IP代理',
+                to: 'https://www.zhizhuip.com/?ref=ieasyclick'
               }
             ]
           },
