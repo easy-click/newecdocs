@@ -34,6 +34,21 @@ function main() {
 main();
 ```
 
+### image.setFindColorImageMode 设置找色找图的算法模式
+* 设置找色找图的算法模式
+* 适合EC 9.10.0+
+* @param type 1 代表老的查找算法，2代表新的查找算法
+* @return {boolean|*}
+
+```javascript
+function main() {
+
+  image.setFindColorImageMode(2);
+ 
+}
+main();
+```
+
 ## 申请截图
 ### image.requestScreenCapture 申请截图权限
 * 向系统申请屏幕截图权限，返回是否请求成功。
