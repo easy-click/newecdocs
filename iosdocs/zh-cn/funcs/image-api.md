@@ -30,6 +30,27 @@ main();
 
 ```
 
+
+### image.setFindColorImageMode 设置找色的算法模式
+
+* 设置找色找图的算法模式
+* 适合EC iOS 6.11.0+
+* @param type 1 代表老的查找算法，2代表新的查找算法
+* @return {boolean|*}秒
+
+```javascript
+
+function main() {
+ 
+  image.setFindColorImageMode(1);
+  
+}
+
+main();
+
+```
+
+
 ## 流式截图
 
 ### image.startScreenStream 开启流式截图
