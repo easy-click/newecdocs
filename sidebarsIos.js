@@ -43,6 +43,7 @@ module.exports = {
         'zh-cn/funcs/thread-api',
         'zh-cn/funcs/utils-api',
         'zh-cn/funcs/jdbcmysql-api',
+        'zh-cn/funcs/netcard-api',
       ]
     },
     {
