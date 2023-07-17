@@ -5,7 +5,20 @@ description: EasyClick 自动化脚本 iOS免越狱
 ---
 
 ## 最新发布版本
+### 6.12.0
 
+**发布日期: 2023-07-13**
+
+```text
+- 新增集成网络验证功能，具体使用请看文档的网络验证模块
+- 新增独立保存脚本运行日志
+- 优化部分功能
+  [如果需要使用uploadInsertVideo，uploadInsertImage,ipaVersion函数，截图一模式横屏投屏功能，需要重新签名6.9的IPA]
+[6.x 如果不需要旋转图像，可以使用5.0的代理IPA]
+```
+
+
+## 历史版本
 ### 6.11.0
 
 **发布日期: 2023-07-03**
@@ -20,9 +33,6 @@ description: EasyClick 自动化脚本 iOS免越狱
   [如果需要使用uploadInsertVideo，uploadInsertImage,ipaVersion函数，截图一模式横屏投屏功能，需要重新签名6.9的IPA]
 [6.x 如果不需要旋转图像，可以使用5.0的代理IPA]
 ```
-
-## 历史版本
-
 ### 6.10.0
 
 **发布日期: 2023-06-25**
