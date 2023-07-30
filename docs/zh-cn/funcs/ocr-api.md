@@ -1,5 +1,7 @@
 ---
-title: OCR识别 description: EasyClick 自动化脚本 android免root OCR识别 keywords: [EasyClick 自动化脚本 android免root 代理事件  ]
+title: OCR识别 
+description: EasyClick 自动化脚本 android免root OCR识别 
+keywords: [EasyClick 自动化脚本 android免root 代理事件  ]
 ---
 
 ## 说明
