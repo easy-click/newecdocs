@@ -13,7 +13,7 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,更新记录,安卓�
 **发布时间: 2023-07-29**
 ```text
 
-# 9.1.0
+# 9.11.0
 - 新增 mlkit ocr功能
 - 新增idea图色工具二值化功能
 - 新增钉钉告警 sendDingDingMsg 函数
