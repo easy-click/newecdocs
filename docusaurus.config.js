@@ -213,6 +213,10 @@ const config = {
                 to: 'local_ctrl_server'
               },
               {
+                label: '网络验证平台',
+                to: 'http://uc.ieasyclick.com'
+              },
+              {
                 label: '全球IP代理',
                 to: 'https://www.zhizhuip.com/?ref=ieasyclick'
               }
