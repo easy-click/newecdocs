@@ -46,6 +46,7 @@ const sidebars = {
         'zh-cn/funcs/shell-api',
         'zh-cn/funcs/sqlite-api',
         'zh-cn/funcs/jdbcmysql-api',
+        'zh-cn/funcs/netcard-api',
       ]
     },
     {
