@@ -137,6 +137,7 @@ main();
 ### closeUsbDevice 关闭HID设备
 
 * 关闭HID设备
+* 该操作会取消HID主控和设备的通信，在适当的时候进行操作
 * 适配版本 EC 安卓 9.15.0+
 * @return {string} null 代表成功，其他代表错误消息
 
