@@ -34,6 +34,7 @@ const sidebars = {
         'zh-cn/funcs/global/selector-node',
         'zh-cn/funcs/acevent-api',
         'zh-cn/funcs/event-api',
+        'zh-cn/funcs/hid-event-api',
         'zh-cn/funcs/image-api',
         'zh-cn/funcs/ocr-api',
         'zh-cn/funcs/device-api',
@@ -115,6 +116,7 @@ const sidebars = {
         id: 'zh-cn/advance/index',
       },
       items: [
+        'zh-cn/advance/hid',
         'zh-cn/advance/hot-update',
         'zh-cn/advance/jsobfuscator',
         'zh-cn/advance/plugin/plugins',
