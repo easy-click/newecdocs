@@ -13,7 +13,8 @@ HID全称叫 (Human Interface Device)人机接口设备,这个过程是需要将
 ## 下载软件
 - 下载EasyClick HID主控程序，并在电脑上运行，下载网盘：https://pan.baidu.com/s/124sTYQAZkedgfnTv3iFTZg 提取码: 7bhy
   - 路径是安卓资源文件夹下的 EasyClick-HID中控-xxx.exe 文件，下载即可运行
-- Windows系统请下载libusb-win32驱动程序，地址: http://sourceforge.net/projects/libusb-win32/files/, 也可以到我们的网盘，安卓资源文件夹下载 libusb-win32-devel-filter-1.2.7.3.exe 文件安装
+- 驱动和环境的安装可以参考老冷的教程: https://www.bilibili.com/video/BV1Dp4y1K7JM/
+- 启动程序在网盘的安卓资源 - usb-hid驱动.zip文件，下载后，里面有libusbK驱动程序
 ## 运行软件
 - 双击exe文件后，会有命令框出现
 - 在浏览器打开 http://127.0.0.1:8988 即可看到如下的界面，会列出当前电脑链接的usb设备
