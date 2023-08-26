@@ -117,6 +117,7 @@ const sidebars = {
       },
       items: [
         'zh-cn/advance/hid',
+        'zh-cn/advance/netcard',
         'zh-cn/advance/hot-update',
         'zh-cn/advance/jsobfuscator',
         'zh-cn/advance/plugin/plugins',

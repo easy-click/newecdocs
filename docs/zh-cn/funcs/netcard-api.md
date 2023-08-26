@@ -12,7 +12,7 @@ keywords: [EasyClick 自动化脚本 android免root 网络验证函数 ]
 - 卡密自带心跳验证无需另外调用
 - 卡密自动验证脚本的安全性，增加防破解难度，这个有区别市面上的网络验证平台
 - 无论是集成版本的还是SDK版本的调用的方法都是一样的，都是**ecNetCard**开头的模块
-
+- 网络验证平台用法说明: [点我查看](/docs/zh-cn/advance/netcard)
 
 ## 卡密相关
 ### ecNetCard.netCardInit 初始化卡密
