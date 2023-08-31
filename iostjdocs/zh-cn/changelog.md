@@ -7,6 +7,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 iOS免硬件 iOS脚本 版本�
 ## 最新发布版本
 
 ### 1.7.0
+**发布时间: 2023-08-31**
 ```text
 - 修复time函数只返回3位数问题
 - 优化file.readAllLines问题
