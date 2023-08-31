@@ -67,11 +67,11 @@ export default function Index(props) {
                   <ul className="dropdown__menu">
                     <li>
                       <a className={`${styles.DropDownFont} dropdown__link`} href="/enterprise_server">
-                        企业版云控</a>
+                        企业版安卓云控</a>
                     </li>
                     <li>
                       <a className={`${styles.DropDownFont} dropdown__link`} href="/local_ctrl_server">
-                        企业版群控</a>
+                        企业版iOS群控</a>
                     </li>
 
                   </ul>
@@ -114,12 +114,12 @@ export default function Index(props) {
           <ul className={styles.mobile_nav_lists}>
             <li>
               <a href='/enterprise_server'>
-                企业版云控
+                企业版安卓云控
               </a>
             </li>
             <li>
               <a href='/local_ctrl_server'>
-                企业版群控
+                企业版iOS群控
               </a>
             </li>
             <li>

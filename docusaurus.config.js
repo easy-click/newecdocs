@@ -129,11 +129,11 @@ const config = {
             position: 'left',
             items: [
               {
-                label: '企业版云控',
+                label: '企业版安卓云控',
                 href: '/enterprise_server',
               },
               {
-                label: '企业版群控',
+                label: '企业版iOS群控',
                 href: '/local_ctrl_server',
               }
             ],
@@ -205,11 +205,11 @@ const config = {
                 to: 'iostjdocs/'
               },
               {
-                label: '企业版云控',
+                label: '企业版安卓云控',
                 to: 'docs/zh-cn/ecloud2/installcloud'
               },
               {
-                label: '企业版群控',
+                label: '企业版iOS群控',
                 to: 'local_ctrl_server'
               },
               {

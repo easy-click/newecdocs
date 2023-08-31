@@ -95,7 +95,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '企业版云控',
+      label: '企业版安卓云控',
       link: {
         type: 'doc',
         id: 'zh-cn/ecloud2/intro',

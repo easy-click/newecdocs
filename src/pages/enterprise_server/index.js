@@ -13,7 +13,7 @@ export default function Index() {
         <section className={`${styles.width} ${styles.outside_container}`}>
           {/* 标题 */}
           <div className={styles.title}>
-            <h1 style={{textAlign: 'center'}}>企业版云控产品介绍</h1>
+            <h1 style={{textAlign: 'center'}}>企业版安卓云控产品介绍</h1>
             <div style={{textAlign: 'center'}}>
 
               <a

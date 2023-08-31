@@ -6,6 +6,20 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 iOS免硬件 iOS脚本 版本�
 
 ## 最新发布版本
 
+### 1.7.0
+```text
+- 修复time函数只返回3位数问题
+- 优化file.readAllLines问题
+- 优化http.request必须加timeout参数问题
+- 修复setOrientation函数问题
+- 修复http.post参数是数字的问题
+- 优化device.getDeviceName函数
+- [建议使用idea配置代码编译期间混淆后[参考ec安卓的混淆配置]]
+```
+
+
+
+## 历史版本
 ### 1.6.0
 ```text
 - 新增setPipCtrlScript函数，用于控制与相机的冲突
@@ -17,9 +31,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 iOS免硬件 iOS脚本 版本�
 - [建议使用idea配置代码编译期间混淆后[参考ec安卓的混淆配置]，少量在实际生产中使用，该版本非稳定版本]
 ```
 
-
-
-## 历史版本
 
 ### 1.5.0
 ```text
