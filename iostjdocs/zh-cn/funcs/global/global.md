@@ -767,6 +767,19 @@ main();
 
 ## 其他
 
+### getDeviceExpTime 获取授权时间
+* 获取授权过期时间
+* 支持EC iOS脱机版本2.0+
+* @return {string} null 或者""，都是没有获取到，正常返回的是时间字符串 
+
+```javascript
+function main() {
+  var result = getDeviceExpTime();
+  logd(result);
+}
+
+main();
+```
 
 
 ### setPipCtrlScript 设置悬浮窗控制脚本启停

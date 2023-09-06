@@ -1,30 +1,33 @@
 ---
-title: EasyClick自动化脚本_iOS脚本_iOS免越狱_iOS免硬件_设备函数 
+title: EasyClick自动化脚本_iOS脚本_iOS免越狱_iOS免硬件_激活器函数 
 hide_title: false 
 hide_table_of_contents: false 
-sidebar_label: 设备函数
-description: EasyClick 自动化脚本 iOS免越狱 设备函数 
-keywords: [EasyClick自动化脚本,iOS脚本,iOS免越狱,iOS免硬件,设备函数 ]
+sidebar_label: 激活器函数
+description: EasyClick 自动化脚本 iOS免越狱 激活器函数 
+keywords: [EasyClick自动化脚本,iOS脚本,iOS免越狱,iOS免硬件,激活器函数 ]
 ---
 
-# 设备函数
+# 激活器函数
 
 ## 说明
 
-- 设备模块函数主要是跟设备信息相关联
-- 设备模块的对象前缀是device，
+- 激活器模块函数主要是通过运行在电脑设备的激活器对手机进行操作
+- 激活器函数模块的对象前缀是 tjCenter
+- 调用这个模块，需要手机和激活器程序在同一个局域网，网络互通才行，并且手机通过WIFI或者USB方式链接到电脑
+- 脱机激活器 请看 [高级功能 - 脱机激活器教程](/iostjdocs/zh-cn/advance/tjcenter)
 
-## device.getDeviceId 获取设备ID
+## tjCenter.setCenterUrl 设置脱机激活器地址
 
-* 获取手机的id
-* EC 脱机 2.0.0+以上可以使用，需要配合脱机版激活器才能正确获取到设备ID
-* 请看 [高级功能 - 脱机激活器教程](/iostjdocs/zh-cn/advance/tjcenter)
-* @return 字符串
+* 设置脱机激活器所在的地址
+* 支持EC iOS脱机版本2.0+
+* @param url 激活器地址
+* @return {string} null或者"" 代表成功，其他代表错误消息
 
 ```javascript
 
 function main() {
-  var xx = device.getDeviceId();
+  // 一般激活器固定的端口是 8020，只需要修改激活器电脑IP即可
+  let xx = tjCenter.setCenterUrl("http://192.168.2.6:8020");
   logd(xx);
 }
 
