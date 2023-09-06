@@ -56,6 +56,7 @@ module.exports = {
         id: 'zh-cn/advance/index',
       },
       items: [
+        'zh-cn/advance/tjcenter',
         'zh-cn/advance/pkgipa',
         'zh-cn/advance/hotupdate',
         'zh-cn/advance/openapi',

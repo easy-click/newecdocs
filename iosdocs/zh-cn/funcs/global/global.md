@@ -640,6 +640,33 @@ function main() {
 main();
 ```
 
+
+## 告警发送
+
+### sendDingDingMsg 发送钉钉消息
+
+* 发送钉钉消息
+* 适合EC USB 版本 6.16.0+
+* @param url 群组/部门 机器人Webhook地址
+* @param secret 群组/部门 机器人Webhook密钥, 可以不写使用关键字过滤方式
+* @param msg 要发送的消息
+* @param atMobile at手机号，多个用英文逗号隔开
+* @param atAll 是否at所有人，写true或者false
+* @return {string} 调用钉钉返回的json字符串结果,格式 {"errcode":0,"errmsg":"ok"}，errcode=0代表成功其他都是错误
+
+```javascript
+function main(){
+    // 演示的地址和密钥，具体获取参考这个网页： https://www.dingtalk.com/qidian/help-detail-20781541.html
+   // https://blog.csdn.net/weixin_44646065/article/details/110637713
+    let url = "https://oapi.dingtalk.com/robot/send?access_token=59735fa75d835dbfaa502bb42886fca982960d20sac5e1df6bba4dd1aba02999c"
+    let sec = "SEC2305788ab08e9534a33b86ae376697d3c9ee3095f331345d5ccd6e2e065ca8069"
+    var res = sendDingDingMsg(url,sec,"我是消息","",true);
+    logd("sendDingDingMsg:"+res);
+}
+main();
+```
+
+
 ## 授权
 
 ### isDeviceAuthOk 授权是否正常

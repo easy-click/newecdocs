@@ -6,6 +6,24 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 iOS免硬件 iOS脚本 版本�
 
 ## 最新发布版本
 
+### 2.0.0
+**发布时间: 2023-09-06**
+```text
+- 新增device.getDeviceName2函数
+- 实现device.getDeviceId函数
+- 新增getDeviceExpTime获取授权时间
+- 新增sendDingDingMsg钉钉告警函数
+- 新增tjCenter模块
+- 修复主程序偶尔启动黑屏问题
+- 优化部分功能
+- [建议使用idea配置代码编译期间混淆后[参考ec安卓的混淆配置]]
+- 2.0.0+需要配合脱机版激活器使用，详情请看 高级功能 - 脱机激活器教程
+```
+
+
+
+## 历史版本
+
 ### 1.7.0
 **发布时间: 2023-08-31**
 ```text
@@ -19,8 +37,6 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 iOS免硬件 iOS脚本 版本�
 ```
 
 
-
-## 历史版本
 ### 1.6.0
 ```text
 - 新增setPipCtrlScript函数，用于控制与相机的冲突
