@@ -27,165 +27,240 @@ keywords: [EasyClick自动化脚本,iOS脚本,iOS免越狱,iOS免硬件,激活�
 
 function main() {
   // 一般激活器固定的端口是 8020，只需要修改激活器电脑IP即可
-  let xx = tjCenter.setCenterUrl("http://192.168.2.6:8020");
-  logd(xx);
+  let set = tjCenter.setCenterUrl("http://192.168.2.6:8020")
+  if (set == null || set == "") {
+    logd("setCenterUrl  成功: " + set)
+  } else {
+    logd("setCenterUrl  失败: " + set)
+    return
+  }
 }
 
 main();
 ```
 
-## device.getDeviceName 获取设备名称
+## tjCenter.appLaunch 启动app
 
-* 获取设备名称，就是手机的名称
-* @return string
+* 通过脱机激活器启动app
+* 支持EC iOS脱机版本2.0+
+* @param deviceId 设备ID
+* @param bundleId 包名
+* @param killExist 杀死已存在的进程
+* @return {string} null或者"" 代表成功，其他代表错误消息
 
 ```javascript
 function main() {
-  var xx = device.getDeviceName();
-  logd(xx);
+  let set = tjCenter.setCenterUrl("http://192.168.2.6:8020")
+  if (set == null || set == "") {
+    logd("setCenterUrl  成功: " + set)
+  } else {
+    logd("setCenterUrl  失败: " + set)
+    return
+  }
+  let deviceId = device.getDeviceId()
+  logd("current deviceId : " + deviceId)
+
+  let appLaunch = tjCenter.appLaunch(deviceId, "com.tencent.mttlite", false)
+  if (appLaunch == null || appLaunch == "") {
+    logd("appLaunch  成功 ")
+  } else {
+    logd("appLaunch  失败: " + appLaunch)
+    return
+  }
 }
 
 main();
 ```
 
+## tjCenter.appKillByBundleId 启动app
 
-## device.getDeviceName2 获取设备名称2
+* 通过脱机激活器启动app
+* 支持EC iOS脱机版本2.0+
+* @param deviceId 设备ID
+* @param bundleId 包名
+* @param killExist 杀死已存在的进程
+* @return {string} null或者"" 代表成功，其他代表错误消息
 
-* 获取设备名称, 16+ iOS无法获取，请使用这个函数
-* EC 脱机 2.0.0+以上可以使用，需要配合脱机版激活器才能正确获取到设备名称
+```javascript
+function main() {
+  let set = tjCenter.setCenterUrl("http://192.168.2.6:8020")
+  if (set == null || set == "") {
+    logd("setCenterUrl  成功: " + set)
+  } else {
+    logd("setCenterUrl  失败: " + set)
+    return
+  }
+  let deviceId = device.getDeviceId()
+  logd("current deviceId : " + deviceId)
+
+  let appKillByBundleId = tjCenter.appKillByBundleId(deviceId, "com.tencent.mttlite")
+  if (appKillByBundleId == null || appKillByBundleId == "") {
+    logd("appKillByBundleId  成功")
+  } else {
+    logd("appKillByBundleId  失败: " + appKillByBundleId)
+    return
+  }
+}
+
+main();
+```
+
+## tjCenter.stopApp 杀死app
+
+* 通过脱机激活器启杀死app(另外一种实现方式)
+* 支持EC iOS脱机版本2.0+
+* @param deviceId 设备ID
+* @param bundleId 包名
+* @return {string} null或者"" 代表成功，其他代表错误消息
+
+```javascript
+function main() {
+  let set = tjCenter.setCenterUrl("http://192.168.2.6:8020")
+  if (set == null || set == "") {
+    logd("setCenterUrl  成功: " + set)
+  } else {
+    logd("setCenterUrl  失败: " + set)
+    return
+  }
+  let deviceId = device.getDeviceId()
+  logd("current deviceId : " + deviceId)
+
+  let stopApp = tjCenter.stopApp(deviceId, "com.tencent.mttlite")
+  if (stopApp == null || stopApp == "") {
+    logd("stopApp  成功")
+  } else {
+    logd("stopApp  失败: " + stopApp)
+    return
+  }
+}
+
+main();
+```
+
+## tjCenter.flushDevImage 刷入开发者镜像
+
+* 通过脱机激活器 刷入开发者镜像
+* 支持EC iOS脱机版本2.0+
+* @param deviceId 设备ID
+* @return {string} null或者"" 代表成功，其他代表错误消息
+
+```javascript
+function main() {
+  let set = tjCenter.setCenterUrl("http://192.168.2.6:8020")
+  if (set == null || set == "") {
+    logd("setCenterUrl  成功: " + set)
+  } else {
+    logd("setCenterUrl  失败: " + set)
+    return
+  }
+  let deviceId = device.getDeviceId()
+  logd("current deviceId : " + deviceId)
+
+  let devImage = tjCenter.flushDevImage(deviceId)
+  if (devImage == null || devImage == "") {
+    logd("flushDevImage  成功")
+  } else {
+    logd("flushDevImage  失败: " + devImage)
+    return
+  }
+}
+
+main();
+```
+
+## tjCenter.startAgent 开启agent程序启动自动化
+
+* 通过脱机激活器 开启agent程序
+* 前提是需要在激活器的网页上面设置好代理程序bundleId
 * 请看 [高级功能 - 脱机激活器教程](/iostjdocs/zh-cn/advance/tjcenter)
-* @return 字符串
+* 支持EC iOS脱机版本2.0+
+* @param deviceId 设备ID
+* @return {string} null或者"" 代表成功，其他代表错误消息
 
 ```javascript
-
 function main() {
-  var xx = device.getDeviceName2();
-  logd(xx);
+  let set = tjCenter.setCenterUrl("http://192.168.2.6:8020")
+  if (set == null || set == "") {
+    logd("setCenterUrl  成功: " + set)
+  } else {
+    logd("setCenterUrl  失败: " + set)
+    return
+  }
+  let deviceId = device.getDeviceId()
+  logd("current deviceId : " + deviceId)
+  let agent = tjCenter.startAgent(deviceId)
+  if (agent == null || agent == "") {
+    logd("startAgent  成功: " + set)
+  } else {
+    logd("startAgent  失败: " + set)
+    return
+  }
 }
 
 main();
 ```
 
-## device.getScreenWidthHeight 屏幕宽度高度
-* 屏幕宽度高度
-* @return 整型
+## tjCenter.authInit 初始化设备
+
+* 通过脱机激活器 初始化设备
+* 前提是需要在激活器的网页上面设置好主程序bundleId
+* 一般在网页上点击初始化后，不用调用这个函数
+* 请看 [高级功能 - 脱机激活器教程](/iostjdocs/zh-cn/advance/tjcenter)
+* 该操作会杀死当前主程序进程后重启
+* 支持EC iOS脱机版本2.0+
+* @param deviceId 设备ID
+* @return {string} null或者"" 代表成功，其他代表错误消息
 
 ```javascript
-
 function main() {
-  let aa = device.getScreenWidthHeight()
-  logd("getScreenWidthHeight "+aa)
-  let bb = aa.split(",")
-  logd("width "+bb[0])
-  logd("height "+bb[1])
+  let set = tjCenter.setCenterUrl("http://192.168.2.6:8020")
+  if (set == null || set == "") {
+    logd("setCenterUrl  成功: " + set)
+  } else {
+    logd("setCenterUrl  失败: " + set)
+    return
+  }
+  let deviceId = device.getDeviceId()
+  logd("current deviceId : " + deviceId)
+  let d = tjCenter.authInit(deviceId)
+  if (d == null || d == "") {
+    logd("authInit  成功: " + set)
+  } else {
+    logd("authInit  失败: " + set)
+    return
+  }
 }
 
 main();
 ```
 
+## tjCenter.setWifiCon 开启或关闭WIFI链接电脑
 
-## device.getScreenWidth 屏幕宽度
-* [已过期]
-* 取得屏幕宽度
-* @return 整型
+* 开启或者关闭 WIFI链接电脑
+* 支持EC iOS脱机版本2.0+
+* @param deviceId 设备ID
+* @param status 1 开启 2关闭
+* @return {string} null或者"" 代表成功，其他代表错误消息
 
 ```javascript
-
 function main() {
-  var width = device.getScreenWidth();
-  logd(width);
+  let set = tjCenter.setCenterUrl("http://192.168.2.6:8020")
+  if (set == null || set == "") {
+    logd("setCenterUrl  成功: " + set)
+  } else {
+    logd("setCenterUrl  失败: " + set)
+    return
+  }
+  let deviceId = device.getDeviceId()
+  logd("current deviceId : " + deviceId)
+  let d = tjCenter.setWifiCon(deviceId, "1")
+  if (d == null || d == "") {
+    logd("setWifiCon  成功: " + set)
+  } else {
+    logd("setWifiCon  失败: " + set)
+    return
+  }
 }
 
 main();
 ```
-
-## device.getScreenHeight 屏幕高度
-
-* [已过期]
-* 取得屏幕高度
-* @return 整型
-
-```javascript
-
-function main() {
-  var height = device.getScreenHeight();
-  logd(height);
-}
-
-main();
-```
-
-## device.getScale 屏幕缩放比
-
-* 屏幕缩放比
-* @return {float}
-
-```javascript
-
-function main() {
-  var d = device.getScale();
-  logd(d);
-}
-
-main();
-```
-
-## device.getModel 取得机型
-
-* 取得手机机型
-* @return 字符串
-
-```javascript
-
-function main() {
-  var model = device.getModel();
-  toast(model);
-}
-
-main();
-```
-
-## device.getOSVersion 取得手机版本号
-
-* @return 字符串
-
-```javascript
-
-function main() {
-  var osVersion = device.getOSVersion();
-  logd(osVersion);
-}
-
-main();
-```
-
-## device.getBattery 取得电量
-
-* 取得电量
-* @return int型
-
-```javascript
-
-function main() {
-  var res = device.getBattery();
-  logd(res);
-}
-
-main();
-```
-
-## device.isCharging 是否正在充电
-
-* 是否正在充电
-* @return 布尔型
-
-```javascript
-
-function main() {
-  var res = device.isCharging();
-  logd(res);
-}
-
-main();
-```
-
