@@ -36,6 +36,28 @@ main();
 
 ```
 
+### clickPointPressure 带压力点击坐标
+
+* 带压力点击坐标
+* 适合 EC 脱机 2.1.0+
+* @param x x坐标
+* @param y y坐标
+* @param pressure 压力值 0 -1 区间
+* @return boolean|布尔型
+
+```javascript
+function main() {
+  var result = clickPointPressure(100, 100, 0.2);
+  if (result) {
+    logd("点击成功");
+  } else {
+    logd("点击失败");
+  }
+}
+
+main();
+```
+
 ### longClickPoint 坐标长点击
 
 * 长点击坐标
@@ -194,6 +216,32 @@ main();
 
 function main() {
   var result = swipeToPoint(10, 10, 100, 100, 200);
+  if (result) {
+    logd("滑动成功");
+  } else {
+    logd("滑动失败");
+  }
+}
+
+main();
+```
+
+### swipeToPointPressure 带压力坐标点滑动
+
+* 从一个坐标滑动到另一个坐标
+* 支持版本 EC 脱机 2.1.0+
+* @param startX 起始坐标的X轴值
+* @param startY 起始坐标的Y轴值
+* @param endX 结束坐标的X轴值
+* @param endY 结束坐标的Y轴值
+* @param duration 持续时长 单位毫秒
+* @param pressure 压力， 0 - 1之间
+* @return 布尔型 true 滑动成功, false 滑动失败
+
+```javascript
+
+function main() {
+  var result = swipeToPointPressure(10, 10, 100, 100, 200, 0.2);
   if (result) {
     logd("滑动成功");
   } else {
@@ -417,10 +465,10 @@ main();
 function main() {
   setAgentTimeout(10000, 3000);
 }
+
 main();
 
 ```
-
 
 ### setAgentPort 设置代理运行的端口
 
@@ -431,11 +479,13 @@ main();
 function main() {
   setAgentPort(12008);
 }
+
 main();
 
 ```
 
 ### setComputeMode 设置算力模式
+
 * 设置计算算力运行模式，默认值是2
 * @param type: 1代表在 agent 中计算， 2 代表在 app中计算
 
@@ -443,10 +493,10 @@ main();
 function main() {
   setComputeMode(2);
 }
+
 main();
 
 ```
-
 
 ## 坐标系转换
 
@@ -460,8 +510,8 @@ main();
 
 ```javascript
 function main() {
-  let d = convertPointToClickable(100,300);
-  logd("x {} y {}",d.x,d.y)
+  let d = convertPointToClickable(100, 300);
+  logd("x {} y {}", d.x, d.y)
 }
 
 main();
