@@ -53,6 +53,50 @@ main();
 
 ## 流式截图
 
+
+### image.startPreCapScreen 预截图的函数
+
+* 预截图的函数，后台会开启线程循环截图
+* 可以提高截图效率
+* 适合EC iOS USB版本 6.18.0+
+* @param types:
+* 10 代表PNG格式，没有任何压缩，不开自动化也能截图
+* 1 代表截图 jpg格式的方式1
+* 2 代表截图 jpg格式方式2
+* 3 代表png格式，png不支持质量参数 ，根据自己机器情况调用
+* @param quality: 图片质量，type=1的时候，支持 1， 50， 100，三种不同的质量标准
+* 当type =2 的时候，支持1-100图片质量
+* @param delay 循环预先截图的间隔时间，单位是毫秒
+* @return {boolean|*} true代表成功 false代表失败
+
+```javascript
+
+function main() {
+  logd("isServiceOk " + isServiceOk());
+  startEnv()
+  logd("isServiceOk " + isServiceOk());
+
+  let start = image.startPreCapScreen("1", 50, 20);
+  logd("startPreCapScreen {}", start)
+  for (let i = 0; i < 10; i++) {
+    sleep(1000);
+    console.time("1")
+    let img = image.captureScreenStream()
+    logd("img {} time: {}", img, console.timeEnd("1"))
+    if (img) {
+      image.saveTo(img, "a.png");
+    }
+    image.recycle(img)
+  }
+  image.stopScreenStream()
+
+}
+
+main();
+```
+
+
+
 ### image.startScreenStream 开启流式截图
 
 * 初始化一个图像流的截屏模式，这个速度比其他的方式要快
