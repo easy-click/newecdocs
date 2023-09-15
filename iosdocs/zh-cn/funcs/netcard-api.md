@@ -6,7 +6,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 网络验证函数 ]
 
 ## 说明
 
-- 网络验证模块是官方开放的模块，需要到 [http://uc.ieasyclick.com](http://uc.ieasyclick.com) 用户中心管理后台提取卡密
+- 网络验证模块是官方开放的模块，需要到 [https://uc.ieasyclick.com](https://uc.ieasyclick.com) 用户中心管理后台提取卡密
 - 低于6.12.0版本的中控需要单独下载网络验证的SDK包，手动集成到脚本中,下载地址: [点我下载](/iosdocs/ec-netcard-1.0.0.zip)
 - 高于6.12.0版本的，可以直接使用函数调用方式，无需集成，简单易用
 - 卡密自带心跳验证无需另外调用

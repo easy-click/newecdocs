@@ -81,7 +81,7 @@ export default function Index(props) {
               <li>
                 <a
                   target={"_blank"}
-                  href="http://uc.ieasyclick.com">网络验证平台</a>
+                  href="https://uc.ieasyclick.com">网络验证平台</a>
               </li>
               <li>
                 <a
@@ -148,7 +148,7 @@ export default function Index(props) {
               </a>
             </li>
             <li>
-              <a href='http://uc.ieasyclick.com'>
+              <a href='https://uc.ieasyclick.com'>
                 网络验证平台
               </a>
             </li>
@@ -158,7 +158,7 @@ export default function Index(props) {
               </a>
             </li>
             <li>
-              <a href='http://bbs.ieasyclick.com'>
+              <a href='https://bbs.ieasyclick.com'>
                 论坛交流
               </a>
             </li>

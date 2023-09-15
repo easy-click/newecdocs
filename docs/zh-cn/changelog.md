@@ -17,7 +17,7 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,更新记录,安卓�
 - 新增HID自动化模式，该模式无需无障碍和USB调试即可实现点击，具体请看hid函数模块
 - 新增系统设置中HID模块信息设置
 - 优化部分功能
-网络验证使用请看文档，网络验证平台地址是: http://uc.ieasyclick.com
+网络验证使用请看文档，网络验证平台地址是: https://uc.ieasyclick.com
 
 
 ```
@@ -35,7 +35,7 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,更新记录,安卓�
 - 新增网络验证功能
 - 新增IDEA 模板加上网络验证功能
 - 修复多线程截图崩溃问题
-网络验证使用请看文档，网络验证平台地址是: http://uc.ieasyclick.com
+网络验证使用请看文档，网络验证平台地址是: https://uc.ieasyclick.com
 
 
 ```
@@ -207,7 +207,7 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,更新记录,安卓�
 - 修复资源文件中文名读取不了的问题
 - 修复开屏工作室名称乱码问题
 - 修论坛反馈的bug
-    - http://bbs.ieasyclick.com/thread-60-1-1.html
+    - https://bbs.ieasyclick.com/thread-60-1-1.html
 - 注意：该版本不兼容9以下开发插件打包的iec，请自行保证apk版本与iec版本一致
 ```
 

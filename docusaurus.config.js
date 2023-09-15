@@ -145,7 +145,7 @@ const config = {
             items: [
               {
                 label: '技术论坛交流',
-                href: 'http://bbs.ieasyclick.com',
+                href: 'https://bbs.ieasyclick.com',
               },
               {
                 label: '作者交流',
@@ -214,7 +214,7 @@ const config = {
               },
               {
                 label: '网络验证平台',
-                to: 'http://uc.ieasyclick.com'
+                to: 'https://uc.ieasyclick.com'
               },
               {
                 label: '全球IP代理',
@@ -249,7 +249,7 @@ const config = {
 
               {
                 label: '论坛交流',
-                to: 'http://bbs.ieasyclick.com'
+                to: 'https://bbs.ieasyclick.com'
               },
               {
                 label: '合作伙伴',
