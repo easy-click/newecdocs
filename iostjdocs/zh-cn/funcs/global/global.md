@@ -96,8 +96,8 @@ function main() {
 main();
 ```
 
-### restartScript 重启脚本 - [未实现]
-
+### restartScript 重启脚本 
+* 支持EC iOS脱机版本 2.2.0+
 * 重启脚本，适合无限循环，或者有异常的情况可以再次执行，
 * 注意: 该方法威力巨大，请自行控制好是否自动重启，否则只能强杀进程才能停止
 * @param path 新的IEC路径，如果不需要可以填写null
@@ -204,8 +204,8 @@ main();
 
 ## 监听脚本和服务
 
-### setStopCallback 脚本停止监听 [未实现]
-
+### setStopCallback 脚本停止监听
+* 支持EC iOS脱机版本 2.2.0+
 ```javascript
  function main() {
   setStopCallback(function () {
@@ -222,8 +222,8 @@ main();
 main();
 ```
 
-### setExceptionCallback 脚本异常停止监听 [未实现]
-
+### setExceptionCallback 脚本异常停止监听 
+* 支持EC iOS脱机版本 2.2.0+
 ```javascript
  function main() {
   setExceptionCallback(function (msg) {

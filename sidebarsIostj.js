@@ -36,6 +36,7 @@ module.exports = {
         'zh-cn/funcs/tjcenter-api',
         'zh-cn/funcs/worker-api',
         'zh-cn/funcs/utils-api',
+        'zh-cn/funcs/ecloud-tj-api',
       ]
     },
     {
