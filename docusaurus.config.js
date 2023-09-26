@@ -129,7 +129,7 @@ const config = {
             position: 'left',
             items: [
               {
-                label: '企业版安卓云控',
+                label: '企业版安卓iOS云控',
                 href: '/enterprise_server',
               },
               {
@@ -205,7 +205,7 @@ const config = {
                 to: 'iostjdocs/'
               },
               {
-                label: '企业版安卓云控',
+                label: '企业版安卓iOS云控',
                 to: 'docs/zh-cn/ecloud2/installcloud'
               },
               {

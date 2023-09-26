@@ -13,14 +13,14 @@ export default function Index() {
         <section className={`${styles.width} ${styles.outside_container}`}>
           {/* 标题 */}
           <div className={styles.title}>
-            <h1 style={{textAlign: 'center'}}>企业版安卓云控产品介绍</h1>
+            <h1 style={{textAlign: 'center'}}>企业版安卓iOS云控产品介绍</h1>
             <div style={{textAlign: 'center'}}>
 
               <a
                 className={`${styles.btns} ${styles.enterprise}`}
                 href='/docs/zh-cn/joinus'
               >
-                试用购买请联系我们
+                云控支持安卓和iOS，试用购买请联系我们
               </a>
             </div>
           </div>
