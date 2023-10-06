@@ -28,21 +28,19 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 OCR识别 资源下载 ]
 
 ```javascript
   function main() {
-  let appleVision = {
-    "type": "appleVision"
-  }
+  let appleVision = {"type":"appleVision","level":"accurate","languages":"zh-Hans,en-US"}
   let inited = ocr.initOcr(appleVision)
   logd("初始化结果 -" + inited);
   if (!inited) {
     loge("error : " + ocr.getErrorMsg());
     return;
-  }
+  }i
 
   for (var ix = 0; ix < 20; ix++) {
 
     //读取一个bitmap
     let img = image.captureFullScreen();
-    if (!img) {
+    if (img == null || img == undefined || img.uuid == null || img.uuid == undefined || img.uuid == "") {
       loge("读取图片失败");
       continue;
     }

@@ -690,7 +690,7 @@ main();
 
 * 使用输入法输入内容，前提是已经设置本程序的输入法为默认输入法
 * 适合没有节点的情况，例如游戏等
-* @param selectors 选择器，可以为空，如果为空，前提是输入框是聚焦的状态
+* @param selectors 选择器，***可以为空，如果为空，前提是输入框是聚焦的状态***
 * @param content 数据字符串, 特殊字符串解释： --ec_close_input-- 关闭软键盘，--ec_open_input-- 打开软键盘 ；--ec_show_input_view--
   显示键盘的视图，--ec_hide_input_view-- 不显示键盘的视图
 * @return {boolean|布尔型}
