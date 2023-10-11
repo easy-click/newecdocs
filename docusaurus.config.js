@@ -154,9 +154,19 @@ const config = {
             ],
           },
           {
+            type: 'dropdown',
             position: 'left',
-            label: '全球IP代理',
-            to: 'https://www.zhizhuip.com/?ref=ieasyclick',
+            label: 'IP代理/无人直播',
+            items: [
+              {
+                label: '无人直播场控',
+                href: '/wrzb_music',
+              },
+              {
+                label: '全球IP代理',
+                to: 'https://www.zhizhuip.com/?ref=ieasyclick',
+              }
+            ],
           },
           {
             type: 'localeDropdown',
