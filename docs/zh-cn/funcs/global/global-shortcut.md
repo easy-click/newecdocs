@@ -1097,6 +1097,28 @@ function main() {
 main();
 ```
 
+
+### home2 返回主页2
+
+* 返回主页，无需权限和自动化
+* 适配EC 安卓9.16.0+
+* @return {null|布尔型}
+
+```javascript
+
+function main() {
+  var result = home2();
+  if (result) {
+    toast("成功");
+  } else {
+    toast("失败");
+  }
+}
+
+main();
+```
+
+
 ### splitScreen 分割屏幕
 
 * 执行条件：无障碍5.0以上或者手势执行为代理服务
