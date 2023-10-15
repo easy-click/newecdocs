@@ -19,6 +19,7 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,更新记录,安卓�
 - 新增IDEA一键涂色制作透明图
 - 新增IDEA新增ctrl+左键涂色
 - 新增IDEA图色工具坐标定位点、圈出范围功能
+- 优化IDEA图色工具鼠标滚轮放大图片功能
 - 优化部分功能
 - 网络验证平台地址是: https://uc.ieasyclick.com
 
