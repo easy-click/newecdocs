@@ -9,18 +9,17 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,更新记录,安卓�
 # 更新记录
 
 ## 最新发布版本
-### 9.16.0
-**发布时间: 2023-10-15**
+### 9.17.0
+**发布时间: 2023-10-20**
 ```text
 
-# 9.16.0
-- 新增home2函数，返回主页，适配HID模式
-- 新增IDEA图色鼠标放大颜色
-- 新增IDEA一键涂色制作透明图
-- 新增IDEA新增ctrl+左键涂色
-- 新增IDEA图色工具坐标定位点、圈出范围功能
-- 优化IDEA图色工具鼠标滚轮放大图片功能
+# 9.17.0
+- 升级TesseractOCR到5.3.3版本，支持LSTM神经网络
+- 修复TesseractOCR崩溃问题
+- 优化ocr模块，可以同时运行不同的ocr识别
 - 优化部分功能
+- 字库可以使用TesseractOCR训练，工具软件为网盘的 jTessBoxEditor.zip
+
 - 网络验证平台地址是: https://uc.ieasyclick.com
 
 

@@ -10,6 +10,24 @@ keywords: [EasyClick 自动化脚本 android免root 代理事件  ]
 - OCR模块的对象前缀是ocr，例如 ocr.initOcr()这样调用
 - 目前的OCR包含了mlkit,ocrLite,百度AI的easyedge,paddleocr,Tesseract和百度在线识别
 - Tesseract 请下载对应的语言包或者自己创建语言包
+- 版本高于9.17.0的，请看 【Tesseract 例子 [高于9.17版本]】例子，因为api已经更改了
+
+
+## ocr.newOcr 实例一个ocr
+
+* 初始化一个ocr实例
+* 适配版本 EC安卓 9.17.0+
+```javascript
+function main() {
+    let o = ocr.newOcr();
+    // 这里做初始化和识别
+    
+    
+    o.releaseAll()
+}
+```
+
+
 
 ## ocr.initOcr 初始化
 
@@ -20,9 +38,10 @@ keywords: [EasyClick 自动化脚本 android免root 代理事件  ]
 * type : OCR类型，
 * 值分别为mlkit=GOOGLE的MLKit tess = Tesseract模块，baiduOnline=百度在在线识别模块，paddleocr=百度离线的paddleocr，easyedge=百度AI OCR
 * ocrLite = ocrLite
-* 如果类型是 tess,请将训练的模型放到 /sdcard/tessdata/ 文件夹下,参数设置为 : {"type":"tess","language":"chi_sim","debug":false}<Br/>
-* language: 语言数据集文件， 例如chi_sim.traineddata 代表是中文简体语言，参数就填写chi_sim
-* debug: 代码是否设置调试模式，一般设置false即可
+* 如果类型是 tess,请将训练的模型放到 /sdcard/tessdata/ 文件夹下,参数设置为 : {"type":"tess","language":"chi_sim","debug":false,"ocrEngineMode":3}<Br/>
+* language: 语言数据集文件， 例如 chi_sim.traineddata 代表是中文简体语言，参数就填写 chi_sim,多个可以用+链接，例如:chi_sim+eng+num
+* ocrEngineMode: 识别引擎类型，0 OEM_TESSERACT_ONLY ， 1 OEM_LSTM_ONLY,2 OEM_TESSERACT_LSTM_COMBINED,3 OEM_DEFAULT
+* rilLevel: PageIteratorLevel 参数，-1 自适应， 0: RIL_BLOCK, 1: RIL_PARA, 2: RIL_TEXTLINE, 3: RIL_WORD, 4:RIL_SYMBOL
 * 如果类型是 baiduOnline, 参数设置为 : {"type":"baiduOnline","ak":"xxx","sk":"xx"}<Br/>
 * ak = api key,sk = secret key, 百度OCR文档地址 : https://ai.baidu.com/ai-doc/OCR/Ck3h7y2ia<Br/>
 * 如果类型是 ocrLite, 参数设置为 : {"type":"ocrLite","numThread":4,"padding":10,"maxSideLen":0}<Br/>
@@ -31,7 +50,7 @@ keywords: [EasyClick 自动化脚本 android免root 代理事件  ]
 * maxSideLen: 按图片最长边的长度，此值为0代表不缩放，例：1024，如果图片长边大于1024则把图像整体缩小到1024再进行图像分割计算，如果图片长边小于1024则不缩放，如果图片长边小于32，则缩放到32。<br/>
 * @return {bool} 布尔型 成功或者失败
 
-- easyedge OCR例子
+### easyedge OCR例子 [低于9.17版本]
 
 ```javascript
   function main() {
@@ -111,7 +130,7 @@ main();
 
 ```
 
-- Paddle OCR例子
+### Paddle OCR例子 [低于9.17版本]
 
 ```javascript
   function main() {
@@ -187,7 +206,7 @@ main();
 
 ```
 
-- Tesseract 例子
+### Tesseract 例子 [低于9.17版本]
 
 ```javascript
 function main() {
@@ -249,7 +268,7 @@ main();
 
 ```
 
-- 百度在线OCR例子
+### 百度在线OCR例子 [低于9.17版本]
 
 ```javascript
 
@@ -311,7 +330,7 @@ main();
 
 ```
 
-- Mlkit OCR例子
+### Mlkit OCR例子 [低于9.17版本]
 
 ```javascript
   function main() {
@@ -354,6 +373,68 @@ main();
   }
   //释放所有资源
   ocr.releaseAll();
+}
+
+main();
+
+```
+
+
+### Tesseract 例子 [高于9.17版本]
+
+```javascript
+function main() {
+  logd("isServiceOk " + isServiceOk());
+  startEnv()
+  logd("isServiceOk " + isServiceOk());
+  let request = image.requestScreenCapture(10000, 0);
+  if (!request) {
+    request = image.requestScreenCapture(10000, 0);
+  }
+  logd("申请截图结果... " + request)
+  if (!request) {
+    loge("申请截图权限失败,检查是否开启后台弹出,悬浮框等权限")
+    exit()
+  }
+  //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
+  sleep(1000)
+
+  //Tesseract模块初始化参数
+  let tessInitMap = {
+    "type": "tess",
+    "language": "chi_sim+eng+num",
+    "debug": false
+  }
+  let tsOcr = ocr.newOcr();
+  let inited = tsOcr.initOcr(tessInitMap)
+  logd("初始化结果 -" + inited);
+  if (!inited) {
+    loge("error : " + tsOcr.getErrorMsg());
+    return;
+  }
+
+  //读取一个bitmap
+  let bitmap = image.readBitmap("/sdcard/a.png");
+  if (!bitmap) {
+    loge("读取图片失败");
+    return;
+  }
+  // 对图片进行识别
+  let result = tsOcr.ocrBitmap(bitmap, 20 * 1000, {});
+  if (result) {
+    logd("ocr结果-》 " + JSON.stringify(result));
+    for (var i = 0; i < result.length; i++) {
+      var value = result[i];
+      logd("文字 : " + value.label + " x: " + value.x + " y: " + value.y + " width: " + value.width + " height: " + value.height);
+    }
+  } else {
+    logw("未识别到结果");
+  }
+
+  bitmap.recycle();
+  //释放所有资源
+  tsOcr.releaseAll();
+
 }
 
 main();
