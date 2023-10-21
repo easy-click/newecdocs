@@ -4,6 +4,9 @@ description: EasyClick 自动化脚本 iOS免越狱  加入我们
 keywords: [EasyClick 自动化脚本 iOS免越狱  加入我们 ]
 ---
 
+## 官方企业微信
+<img src="/img/qywx.png" width="200px"/>
+
 - 欢迎技术爱好者加入我们的交流，也可以加我们的客服或者沙书记QQ，进行行业咨询的探讨
 
 * 沙书记QQ : 2557945562

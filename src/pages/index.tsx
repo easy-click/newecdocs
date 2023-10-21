@@ -517,7 +517,7 @@ export default function Home() {
                             <h4 style={{fontSize: '20px'}}>
                                社区
                             </h4>
-                            <p>
+                            <p style={{height:'90px'}}>
                                 加入我们的QQ群，一起交流学习技术
                             </p>
                         </div>
@@ -529,7 +529,7 @@ export default function Home() {
                             <h4 style={{fontSize: '20px'}}>
                                 客服
                             </h4>
-                            <p>
+                            <p style={{height:'90px'}}>
                                客服QQ: 2050858539
                             </p>
                         </div>
@@ -541,10 +541,22 @@ export default function Home() {
                             <h4 style={{fontSize: '20px'}}>
                                 贡献
                             </h4>
-                            <p>
+                            <p style={{height:'90px'}}>
                              欢迎参与贡献,你可以提出Issues和解决Issues开始
                             </p>
                         </div>
+                    </a>
+
+                    <a href='/community/support'>
+                        <div className={styles.join_detali}>
+                            <h4 style={{fontSize: '20px'}}>
+                                企业微信
+                            </h4>
+                            <p style={{height:'90px'}}>
+                                <img src="/img/qywx2.png" width="90px"/>
+                            </p>
+                        </div>
+
                     </a>
                 </div>
             </footer>
