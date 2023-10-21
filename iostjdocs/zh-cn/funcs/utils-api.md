@@ -145,16 +145,17 @@ main();
 
 ## 随机
 
-### utils.randomInt 随机整型数据
+### utils.getRangeInt 取得某个范围的随机值
 
-* 随机整型数据
-* @param length 位数，要随机产生多少位的整型数据
-* @return 整型
+* 取得某个范围的随机值
+* @param min 最小值
+* @param max 最大值
+* @return 整型 在min和max中间的值, 不包含最大值，但是包含最小值
 
 ```javascript
 
 function main() {
-  var r = utils.randomInt(2);
+  var r = utils.getRangeInt(2,10);
 }
 
 main();
