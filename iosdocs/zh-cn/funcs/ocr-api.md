@@ -8,7 +8,22 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 OCR识别 资源下载 ]
 
 - OCR模块是属于对图像进行识别
 - OCR模块的对象前缀是ocr，例如 ocr.initOcr()这样调用
-- 目前的OCR包含了 ocrLite
+- 目前的OCR包含了 ocrLite,TesseractOCR
+
+
+
+## ocr.newOcr 实例一个ocr
+
+* 初始化一个ocr实例
+* 适配版本 EC iOS 6.23.0+
+```javascript
+function main() {
+    let o = ocr.newOcr();
+    // 这里做初始化和识别
+    o.releaseAll()
+}
+```
+
 
 ## ocr.initOcr 初始化
 
@@ -21,10 +36,17 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 OCR识别 资源下载 ]
     * baseDir: ocrLite 类库存放路径，一般会和ec自带在同个目录下,文件夹名称是: OcrLiteNcnn
     * cpuType: 主机的cpu类型，分别是win-lib-cpu-x64，win-lib-cpu-x86,Linux-Lib-CPU,Darwin-Lib-CPU
     * 如果baseDir和cpuType不填写，程序会自动查找
+* 如果类型是tess:
+  * 参数设置为: {"type":"tess","path":"d:\\tesseract-ocr\\tessdata","baseDir":"d:\\tesseract-ocr"}
+  * baseDir: 代表是tesseract安装路径,安装包下载: https://github.com/tesseract-ocr/tesseract/releases 或者官方王下载jTessBoxEditor.zip包含了训练工具和tesseract的dll
+  * path: 代表是tesseract 的 tesssdata 文件夹
+  * language: 语言数据集文件， 例如 chi_sim.traineddata 代表是中文简体语言，参数就填写 chi_sim,多个可以用+链接，例如:chi_sim+eng+num
+  * ocrEngineMode: 识别引擎类型，0 OEM_TESSERACT_ONLY ， 1 OEM_LSTM_ONLY,2 OEM_TESSERACT_LSTM_COMBINED,3 OEM_DEFAULT
+  * rilLevel: PageIteratorLevel 参数，-1 自适应， 0: RIL_BLOCK, 1: RIL_PARA, 2: RIL_TEXTLINE, 3: RIL_WORD, 4:RIL_SYMBOL
 * @return {bool} 布尔型 成功或者失败
 
 
-- ocrLite OCR例子
+### ocrLite OCR例子[6.23.0之前]
 
 ```javascript
   function main() {
@@ -72,6 +94,58 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 OCR识别 资源下载 ]
   }
   //释放所有资源
   ocr.releaseAll();
+}
+
+main();
+
+```
+
+
+
+
+### tess OCR例子[6.23.0之后]
+
+```javascript
+  function main() {
+  let pa = {"type":"tess","path":"d:/tesseract-ocr/tessdata","baseDir":"d:\\tesseract-ocr"}
+  let tocr = ocr.newOcr()
+  let inited = tocr.initOcr(ocrLite)
+  logd("初始化结果 -" + inited);
+  if (!inited) {
+    loge("error : " + tocr.getErrorMsg());
+    return;
+  }
+
+  for (var ix = 0; ix < 20; ix++) {
+
+    //读取一个bitmap
+    let bitmap = image.readBitmap("D:/Screenshot_20210127_152932_com.huawei.android.lau.jpg");
+    if (!bitmap) {
+      loge("读取图片失败");
+      continue;
+    }
+    console.time("1")
+    logd("start---ocr");
+    // 对图片进行识别
+    let result = tocr.ocrBitmap(bitmap, 20 * 1000, {});
+    logd(result)
+    if (result) {
+      logd("ocr结果-》 " + JSON.stringify(result));
+      for (var i = 0; i < result.length; i++) {
+        var value = result[i];
+        logd("文字 : " + value.label + " x: " + value.x + " y: " + value.y + " width: " + value.width + " height: " + value.height);
+      }
+    } else {
+      logw("未识别到结果");
+    }
+
+    logd("耗时: " + console.timeEnd(1) + " ms")
+    image.recycle(bitmap)
+    sleep(1000);
+    logd("ix = " + ix)
+  }
+  //释放所有资源
+  tocr.releaseAll();
 }
 
 main();

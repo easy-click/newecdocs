@@ -500,7 +500,22 @@ main();
 }
 
 main();
+```
+
+### isDeviceOnline 设备是否在线
+
+* 设备是否在线
+* @return true或者false
+
+```javascript
+ function main() {
+  var result = isDeviceOnline();
+}
+
+main();
  ```
+
+
 
 ### startEnv 启动自动化
 
