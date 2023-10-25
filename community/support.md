@@ -7,8 +7,8 @@ keywords: [EasyClick 社区支持]
 ## 官方客服
 - 技术支持 沙书记QQ : 2557945562
 - 客服QQ: 2050858539
-- 官方企业微信:<br/>
-  <img src="/img/qywx.png" width="200px"/>
+- 官方微信:<br/>
+  <img src="/img/wx2.png" width="200px"/>
 
 
 ## 推荐作者

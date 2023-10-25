@@ -550,10 +550,10 @@ export default function Home() {
                     <a href='/community/support'>
                         <div className={styles.join_detali}>
                             <h4 style={{fontSize: '20px'}}>
-                                企业微信
+                                微信
                             </h4>
                             <p style={{height:'90px'}}>
-                                <img src="/img/qywx2.png" width="90px"/>
+                                <img src="/img/wx2.png" width="90px"/>
                             </p>
                         </div>
 

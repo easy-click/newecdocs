@@ -9,8 +9,8 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,安卓手机自动化
 
 # 加入我们
 
-## 官方企业微信
-<img src="/img/qywx.png" width="200px"/>
+## 官方微信
+<img src="/img/wx2.png" width="200px"/>
 
 
 ## 我们的联系方式
