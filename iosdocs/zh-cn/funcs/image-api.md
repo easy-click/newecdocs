@@ -299,6 +299,30 @@ function main() {
 main();
 ```
 
+
+
+### image.captureFullScreenNoAuto 无需自动化截图
+
+* 无需自动化截图
+* 这个稍微慢点，如果需要速度快，请看[startPreCapScreen]函数
+* 适配EC iOS USB版本 6.25.0+
+* @return {null|AutoImage}
+
+```javascript
+function main() {
+  for (let i = 0; i < 10; i++) {
+    let cap = image.captureFullScreenNoAuto()
+    logd("截图数据: " + cap)
+    sleep(1000)
+    //图片要回收
+    image.recycle(cap)
+  }
+}
+
+main();
+```
+
+
 ## 比色
 
 ### image.cmpColor 多点比色

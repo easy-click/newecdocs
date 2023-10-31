@@ -423,12 +423,13 @@ main();
 
 * 运行程序
 * @param bundleId app的 bundleID
-* @return int 整型 进程的id
+* @param ignoreState 1 忽略之前打开的状态，直接打开，其他填写 ""
+* @return {boolean} true 代表成功
 
 ```javascript
 
 function main() {
-  var result = appLaunch("com.tencent.xin");
+  var result = appLaunch("com.tencent.xin","1");
   logd("result " + result);
 }
 
@@ -439,12 +440,13 @@ main();
 
 * 使用bundleID杀死一个进程
 * @param bundleId app的 bundleID
+* @param ignoreState 1 忽略之前打开的状态，直接杀掉进程，其他填写 ""
 * @return {boolean} true 成功，false 失败成功
 
 ```javascript
 
 function main() {
-  var result = appKillByBundleId("com.tencent.xin");
+  var result = appKillByBundleId("com.tencent.xin","1");
   if (result) {
     logd("成功");
   } else {

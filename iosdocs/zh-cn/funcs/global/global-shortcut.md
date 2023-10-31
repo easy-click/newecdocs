@@ -586,6 +586,7 @@ main();
 ### appLaunch 运行程序
 
 * 运行程序
+* 不需要开启自动化  
 * @param bundleId app的 bundleID
 * @return int 整型 进程的id
 
@@ -603,9 +604,35 @@ function main() {
 main();
 ```
 
+
+### appLaunchEx 打开一个app
+
+* 打开一个app
+* 适配EC iOS USB版本 6.25.0+
+* 需要开启自动化
+* @param bundleId app的bundleID
+* @param ignoreState 1 忽略之前打开的状态，直接打开，其他填写 ""
+* @return {boolean} true 代表成功
+
+```javascript
+
+function main() {
+  var result = appLaunchEx("com.tencent.xin","1");
+  if (result ) {
+    logd("成功");
+  } else {
+    logd("失败");
+  }
+}
+
+main();
+```
+
+
 ### appKillByBundleId 杀死程序
 
 * 使用bundleID杀死一个进程
+* 不需要开启自动化  
 * @param bundleId app的 bundleID
 * @return {boolean} true 成功，false 失败成功
 
@@ -622,6 +649,32 @@ function main() {
 
 main();
 ```
+
+
+
+### appKillByBundleIdEx 杀死程序
+
+* 使用bundleID杀死一个进程
+* 适配EC iOS USB版本 6.25.0+
+* 需要开启自动化
+* @param bundleId app的 bundleID
+* @param ignoreState 1 忽略之前打开的状态，直接杀掉进程，其他填写 ""
+* @return {boolean} true 成功，false 失败
+
+```javascript
+
+function main() {
+  var result = appKillByBundleIdEx("com.tencent.xin","1");
+  if (result) {
+    logd("成功");
+  } else {
+    logd("失败");
+  }
+}
+
+main();
+```
+
 
 ### installApp 使用 路径 安装app
 

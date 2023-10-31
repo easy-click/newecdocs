@@ -5,6 +5,27 @@ description: EasyClick 自动化脚本 iOS免越狱
 ---
 
 ## 最新发布版本
+### 6.25.0
+
+**发布日期: 2023-10-31**
+
+```text
+- 新增自动化截图 captureFullScreenNoAuto
+- 新增IDEA Enter键取色,支持上下左右方向键移动
+- 新增 appLaunchEx 和 appKillByBundleIdEx 函数
+- 优化投屏清理后台和打开应用功能
+- 增加config.toml配置screenOpenApp、screenKillApp，具体请看config.toml中的说明
+- 优化部分功能
+```
+
+:::tip
+** 使用新的appLaunchEx和appKillByBundleIdEx需要更新到代理ipa **
+:::
+
+## 历史版本
+
+
+
 ### 6.23.0
 
 **发布日期: 2023-10-24**
@@ -18,7 +39,7 @@ description: EasyClick 自动化脚本 iOS免越狱
 - 优化部分功能
 ```
 
-## 历史版本
+
 ### 6.22.0
 
 **发布日期: 2023-10-16**
