@@ -75,9 +75,9 @@ export default function Home() {
                             专业游戏、营销自动化解决方案
                         </animated.h2>
                         <animated.div style={animatedTexts[0]} className={styles.rainbond_description}>
-                                易点新媒旗下EasyClick自动化产品,
-                                安卓&iOS&PC&Web自动化脚本，自动化测试专业工具，支持多个平台快速构建自动化测试脚本.
-                                新媒体云控专业营销平台，多端控制设备，实时远程投屏控制.
+                            易点新媒旗下EasyClick自动化产品,
+                            安卓&iOS&PC&Web自动化脚本，自动化测试专业工具，支持多个平台快速构建自动化测试脚本.
+                            新媒体云控专业营销平台，多端控制设备，实时远程投屏控制.
                         </animated.div>
                         <animated.div style={animatedTexts[1]} className={styles.btnBox}>
                             <a
@@ -105,11 +105,9 @@ export default function Home() {
                     </div>
                     <animated.div
                         className={styles.know_rainbond_video}
-                        style={animatedTexts[1]}
-                    >
+                        style={animatedTexts[1]}>
                         <div
-                            className={clsx('mask_video', styles.know_rainbond_video_div)}
-                        >
+                            className={clsx('mask_video', styles.know_rainbond_video_div)}>
                             <img src='/img/video/sss.jpg' alt='EasyClick开发工具预览'
                                  className={styles.know_rainbond_video_div_img}/>
                         </div>
@@ -189,7 +187,7 @@ export default function Home() {
                                     }
                                     onClick={handleWhyRainbondFirst}
                                 >
-                                        使用简单
+                                    使用简单
                                 </motion.button>
                                 <motion.button
                                     whileHover={{scale: 1.1}}
@@ -199,7 +197,7 @@ export default function Home() {
                                     }
                                     onClick={handleWhyRainbondSecond}
                                 >
-                                        开发智能
+                                    开发智能
                                 </motion.button>
                                 <motion.button
                                     whileHover={{scale: 1.1}}
@@ -209,7 +207,7 @@ export default function Home() {
                                     }
                                     onClick={handleWhyRainbondThird}
                                 >
-                                        多端兼容
+                                    多端兼容
                                 </motion.button>
                                 {/* <button
                 className={
@@ -225,7 +223,7 @@ export default function Home() {
                                     <div>
                                         <img src='/img/pass.svg' alt='安装IDEA插件即可体验'/>
                                         <span>&nbsp;&nbsp;
-                                                安装IDEA插件即可体验
+                                            安装IDEA插件即可体验
                   </span>
                                     </div>
                                     <div>
@@ -237,7 +235,7 @@ export default function Home() {
                                     <div>
                                         <img src='/img/pass.svg' alt='自带模板功能，多模板兼顾'/>
                                         <span>&nbsp;&nbsp;
-                                                自带模板功能，多模板兼顾
+                                            自带模板功能，多模板兼顾
                   </span>
                                     </div>
                                     <div>
@@ -259,7 +257,7 @@ export default function Home() {
                                     <div>
                                         <img src='/img/pass.svg' alt='智能的代码纠错能力'/>
                                         <span>&nbsp;&nbsp;
-                                                智能的代码纠错能力
+                                            智能的代码纠错能力
                   </span>
                                     </div>
                                     <div>
@@ -271,7 +269,7 @@ export default function Home() {
                                     <div>
                                         <img src='/img/pass.svg' alt='完善的打包定制功能'/>
                                         <span>&nbsp;&nbsp;
-                                           完善的打包定制功能
+                                            完善的打包定制功能
                   </span>
                                     </div>
                                 </div>
@@ -299,7 +297,7 @@ export default function Home() {
                                     <div>
                                         <img src='/img/pass.svg' alt=' js java 互相操作支持'/>
                                         <span>&nbsp;&nbsp;
-                                          js java 互相操作支持
+                                            js java 互相操作支持
                   </span>
                                     </div>
                                 </div>
@@ -331,7 +329,7 @@ export default function Home() {
                                 className={`${styles.how_rainbond_desc_container_start} ${styles.active_btn}`}
                             >
                                 <a href='/docs/'>
-                                   开始安卓开发
+                                    开始安卓开发
                                     &nbsp; {'>'}
                                 </a>
                             </motion.button>
@@ -390,12 +388,12 @@ export default function Home() {
                                     <div className={styles.desc_title}>
                                         <h4>
                                             {/* <a href='usescene/IntegrationDev'>一体化开发测试环境</a> */}
-                                                一体化安卓开发环境
+                                            一体化安卓开发环境
                                         </h4>
                                     </div>
                                     <div className={styles.desc_detail}>
                                         <p>
-                                                集成化的安卓免root脚本开发和测试环境，提供开箱即用的体验
+                                            集成化的安卓免root脚本开发和测试环境，提供开箱即用的体验
                                         </p>
                                     </div>
                                     {/* <i className={styles.angle}></i> */}
@@ -410,12 +408,12 @@ export default function Home() {
                                     <div className={styles.desc_title}>
                                         <h4>
                                             {/* <a href='usescene/AppManagement'>企业级应用统一管理</a> */}
-                                                一体化iOS开发环境
+                                            一体化iOS开发环境
                                         </h4>
                                     </div>
                                     <div className={styles.desc_detail}>
                                         <p>
-                                              集成iOS免越狱开发环境和中控功能
+                                            集成iOS免越狱开发环境和中控功能
                                         </p>
                                     </div>
                                 </div>
@@ -435,7 +433,7 @@ export default function Home() {
                                     </div>
                                     <div className={styles.desc_detail}>
                                         <p>
-                                          支持安卓和iOS双端的节点查找，自动化测试更丝滑
+                                            支持安卓和iOS双端的节点查找，自动化测试更丝滑
                                         </p>
                                     </div>
                                 </div>
@@ -444,7 +442,7 @@ export default function Home() {
                             <a href='/docs/zh-cn/funcs/image-api' style={{position: 'relative'}}>
                                 <div className={styles.left_logo}>
                                     {/* <img src='/img/cursor.svg' /> */}
-                                   详情
+                                    详情
                                 </div>
                                 <div className={styles.desc}>
                                     <div className={styles.desc_title}>
@@ -455,7 +453,7 @@ export default function Home() {
                                     </div>
                                     <div className={styles.desc_detail}>
                                         <p>
-                                          集成opencv，paddleocr，orclite等，支持找图、找色、ocr多重模式
+                                            集成opencv，paddleocr，orclite等，支持找图、找色、ocr多重模式
                                         </p>
                                     </div>
                                 </div>
@@ -470,12 +468,12 @@ export default function Home() {
                                     <div className={styles.desc_title}>
                                         <h4>
                                             {/* <a href='usescene/componentReuse'>业务积木式拼装</a> */}
-                                          多模板支持
+                                            多模板支持
                                         </h4>
                                     </div>
                                     <div className={styles.desc_detail}>
                                         <p>
-                                           支持HTML5,原生的UI，多模板融合，UI视觉效果更好
+                                            支持HTML5,原生的UI，多模板融合，UI视觉效果更好
                                         </p>
                                     </div>
                                 </div>
@@ -490,12 +488,12 @@ export default function Home() {
                                     <div className={styles.desc_title}>
                                         <h4>
                                             {/* <a href='usescene/x86ToArm'>国产化和信创支撑</a> */}
-                                          原生云控支持
+                                            原生云控支持
                                         </h4>
                                     </div>
                                     <div className={styles.desc_detail}>
                                         <p>
-                                          自带原生云控，无缝支持，随时下发任务，投屏操作
+                                            自带原生云控，无缝支持，随时下发任务，投屏操作
                                         </p>
                                     </div>
                                 </div>
@@ -515,9 +513,9 @@ export default function Home() {
                         </div>
                         <div className={styles.join_detali}>
                             <h4 style={{fontSize: '20px'}}>
-                               社区
+                                社区
                             </h4>
-                            <p style={{height:'90px'}}>
+                            <p style={{height: '90px'}}>
                                 加入我们的QQ群，一起交流学习技术
                             </p>
                         </div>
@@ -529,8 +527,8 @@ export default function Home() {
                             <h4 style={{fontSize: '20px'}}>
                                 客服
                             </h4>
-                            <p style={{height:'90px'}}>
-                               客服QQ: 2050858539
+                            <p style={{height: '90px'}}>
+                                客服QQ: 2050858539
                             </p>
                         </div>
                     </a>
@@ -541,8 +539,8 @@ export default function Home() {
                             <h4 style={{fontSize: '20px'}}>
                                 贡献
                             </h4>
-                            <p style={{height:'90px'}}>
-                             欢迎参与贡献,你可以提出Issues和解决Issues开始
+                            <p style={{height: '90px'}}>
+                                欢迎参与贡献,你可以提出Issues和解决Issues开始
                             </p>
                         </div>
                     </a>
@@ -552,7 +550,7 @@ export default function Home() {
                             <h4 style={{fontSize: '20px'}}>
                                 微信
                             </h4>
-                            <p style={{height:'90px'}}>
+                            <p style={{height: '90px'}}>
                                 <img src="/img/wx2.png" width="90px"/>
                             </p>
                         </div>
