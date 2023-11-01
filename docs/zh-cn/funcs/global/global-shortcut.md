@@ -644,6 +644,28 @@ main();
 
 ## 输入数据
 
+
+### imeInputViewShown 输入法键盘是否展示
+* 使用输入法输入内容时，输入法键盘视图是否展示出来
+* 前提：在EC 系统设置中，勾选了 显示输入法键盘
+* 适配EC 9.18.0+
+* @return {boolean|布尔型} true代表视图展示 false代表未展示
+
+```javascript
+
+function main() {
+  var result = imeInputViewShown();
+  if (result) {
+    toast("是");
+  } else {
+    toast("否");
+  }
+}
+
+main();
+```
+
+
 ### currentIsOurIme 是否是自带输入法
 
 * 当前是否是我们的输入法
