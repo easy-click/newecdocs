@@ -13,7 +13,7 @@ export default function Index() {
         <section className={`${styles.width} ${styles.outside_container}`}>
           {/* 标题 */}
           <div className={styles.title}>
-            <h1 style={{textAlign: 'center'}}>企业版iOS群控投屏产品介绍</h1>
+            <h1 style={{textAlign: 'center'}}>企业版iOS投屏产品介绍</h1>
             <div style={{textAlign: 'center'}}>
               该产品适合批量操作iOS系统,免越狱，适合业务场景跨境电商、tiktok营销、MCN机构、批量游戏搬砖打金等
               <br/>
@@ -47,7 +47,7 @@ export default function Index() {
                     margin: '40px 0px'
                   }}
                 >
-                  <li>iOS免越狱群控、投屏
+                  <li>iOS免越狱中控、投屏
                   </li>
                   <li>批量投屏，批量控制
                   </li>

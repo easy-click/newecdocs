@@ -133,7 +133,7 @@ const config = {
                 href: '/enterprise_server',
               },
               {
-                label: '企业版iOS群控',
+                label: '企业版iOS投屏',
                 href: '/local_ctrl_server',
               }
             ],
@@ -219,7 +219,7 @@ const config = {
                 to: 'docs/zh-cn/ecloud2/installcloud'
               },
               {
-                label: '企业版iOS群控',
+                label: '企业版iOS投屏',
                 to: 'local_ctrl_server'
               },
               {
@@ -268,7 +268,7 @@ const config = {
             ]
           }
         ],
-        copyright: `<a href="http://www.shixianlaw.com/" target="_blank" style="color:white">安徽时宪律师事务所提供法务支持</a><br/>Copyright © ${new Date().getFullYear()} 易点新媒, Inc. All Rights Reserved.  `
+        copyright: `<a href="http://www.shixianlaw.com/" target="_blank" style="color:white">安徽时宪律师事务所提供法务支持</a><br/>Copyright © ${new Date().getFullYear()} 易点新媒, Inc. All Rights Reserved. <br/><a href="https://beian.miit.gov.cn/" target="_blank" style="color:white">皖ICP备2023020527号-4</a> `
       },
       // prism: {
       //   darkTheme: darkCodeTheme
