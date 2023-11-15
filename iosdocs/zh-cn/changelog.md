@@ -5,6 +5,19 @@ description: EasyClick 自动化脚本 iOS免越狱
 ---
 
 ## 最新发布版本
+### 6.26.0
+
+**发布日期: 2023-11-15**
+
+```text
+- 新增imageAgent.toBase64函数
+- 优化中控设备链接后自动启动自动化
+- 优化部分功能
+```
+
+
+## 历史版本
+
 ### 6.25.0
 
 **发布日期: 2023-10-31**
@@ -21,10 +34,6 @@ description: EasyClick 自动化脚本 iOS免越狱
 :::tip
 ** 使用新的appLaunchEx和appKillByBundleIdEx需要更新到代理ipa **
 :::
-
-## 历史版本
-
-
 
 ### 6.23.0
 

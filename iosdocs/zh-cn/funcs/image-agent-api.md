@@ -743,6 +743,56 @@ function main() {
 main();
 ```
 
+### imageAgent.toBase64 转Base64
+
+* 取得图片的base64字符串
+* 适配 EC iOS USB版本 6.26.0+
+* @param img 图片对象
+* @return {string} base64的数据
+
+```javascript
+function main() {
+  let req = startEnv();
+  if (!req) {
+    logd("申请权限失败");
+    return;
+  }
+  sleep(1000)
+  let aimage = imageAgent.captureFullScreen();
+  if (aimage != null) {
+    let h = imageAgent.toBase64(aimage);
+    logd("h " + h);
+    //图片要回收
+    imageAgent.recycle(aimage)
+  }
+}
+
+main();
+```
+
+```javascript
+
+function main() {
+  let req = startEnv();
+  if (!req) {
+    logd("申请权限失败");
+    return;
+  }
+  logd("申请截图结果... " + request)
+  //申请完权限至少等1s(垃圾设备多加点)再截图,否则会截不到图
+  sleep(1000)
+  let imageX = imageAgent.captureFullScreen();
+  let r = imageAgent.clip(imageX, 100, 100, 300, 400);
+  toast("result " + r);
+  //图片要回收
+  imageAgent.recycle(imageX)
+  imageAgent.recycle(r)
+}
+
+main();
+```
+
+
 ## 图片交换
 
 ### imageAgent.pushImageToAgent 推送图像到手机
