@@ -133,8 +133,12 @@ const config = {
                 href: '/enterprise_server',
               },
               {
-                label: '企业版iOS投屏',
+                label: '企业版iOS USB投屏',
                 href: '/local_ctrl_server',
+              },
+              {
+                label: '企业版iOS无线中控投屏',
+                href: '/ios_wifi_server',
               }
             ],
           },
@@ -219,8 +223,12 @@ const config = {
                 to: 'docs/zh-cn/ecloud2/installcloud'
               },
               {
-                label: '企业版iOS投屏',
+                label: '企业版iOS USB投屏',
                 to: 'local_ctrl_server'
+              },
+              {
+                label: '企业版iOS无线中控投屏',
+                to: 'ios_wifi_server',
               },
               {
                 label: '网络验证平台',

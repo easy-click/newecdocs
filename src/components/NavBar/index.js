@@ -71,7 +71,11 @@ export default function Index(props) {
                     </li>
                     <li>
                       <a className={`${styles.DropDownFont} dropdown__link`} href="/local_ctrl_server">
-                        企业版iOS投屏</a>
+                        企业版iOS USB投屏</a>
+                    </li>
+                    <li>
+                      <a className={`${styles.DropDownFont} dropdown__link`} href="/ios_wifi_server">
+                        企业版iOS无线中控投屏</a>
                     </li>
 
                   </ul>
@@ -132,7 +136,12 @@ export default function Index(props) {
             </li>
             <li>
               <a href='/local_ctrl_server'>
-                企业版iOS投屏
+                企业版iOS USB投屏
+              </a>
+            </li>
+            <li>
+              <a href='/ios_wifi_server'>
+                企业版iOS无线中控投屏
               </a>
             </li>
             <li>

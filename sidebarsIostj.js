@@ -64,7 +64,19 @@ module.exports = {
         'zh-cn/advance/hotupdate',
         'zh-cn/advance/openapi',
         'zh-cn/advance/jsobfuscator',
+      ]
+    },
 
+    {
+      type: 'category',
+      label: '脱机中控投屏',
+      link: {
+        type: 'doc',
+        id: 'zh-cn/funcs/tjcenter/index',
+      },
+      items: [
+        'zh-cn/funcs/tjcenter/changelog',
+        'zh-cn/funcs/tjcenter/index',
       ]
     },
     "zh-cn/question-answer",

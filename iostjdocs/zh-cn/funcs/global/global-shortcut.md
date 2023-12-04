@@ -500,6 +500,32 @@ main();
 
 ```
 
+## 中控相关函数
+
+### getCenterTaskInfo 获取中控任务参数
+
+* 取得中控发过来的任务参数信息
+* 中控启动脚本，可以配置参数，在这里使用本函数获取参数，给脚本使用  
+* 适合版本 EC iOS 脱机版本  3.8.0+
+* @return {JSON} 对象
+
+```javascript
+function main() {
+  let taskInfo = getCenterTaskInfo();
+  logd(JSON.stringify(taskInfo))
+  if (taskInfo){
+    // 获取任务参数
+    let value = taskInfo["valueJson"]
+    // 获取某个参数值，例如姓名
+    // let xm = value["姓名"]
+    logd(JSON.stringify(value))
+  }
+}
+
+main();
+
+```
+
 ## 坐标系转换
 
 ### convertPointToClickable 横屏坐标转竖屏点击坐标
