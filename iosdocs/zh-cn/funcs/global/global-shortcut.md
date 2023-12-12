@@ -26,6 +26,28 @@ function main() {
 main();
 ```
 
+
+### readAllUIConfig2 读取UI第二种UI
+
+* 读取UI参数配置
+* 设计器在中控界面-UI参数（新版）按钮
+* 适合EC iOS USB版 6.28.0+
+* 注意：这个需要使用新版本的UI配置,读取顺序是 优先读取单个设备配置 ，如果单个设备配置无任何数据，就读取 全局配置，
+* 返回参数中 含有 __from_global__ 这样的key，代表是来源于全局参数
+* @param tmplName 参数组名
+* @param forceGlobal 是否强制使用全局，true 代表丢弃单个设备配置，统一使用全局参数
+* @return {JSON} JSON数据
+
+```javascript
+function main() {
+  var result = readAllUIConfig2("抖音模板",false);
+  logd(result);
+  logd(JSON.stringify(result));
+}
+
+main();
+```
+
 ## 点击函数
 
 ### clickPoint 坐标点击
