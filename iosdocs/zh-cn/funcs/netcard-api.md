@@ -20,6 +20,7 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 网络验证函数 ]
 * 适配版本 EC iOS 中控 6.12.0+
 * @param appId 应用的appId，用户中心后台获取
 * @param appSecret 应用的密钥，用户中心后台获取
+* @param deviceIdType 卡密授权id类型，1代表是使用设备id，2代表是ecid，6.29.0新增的参数
 * @return {bool} true 成功 false 失败
 ```javascript
 
@@ -34,7 +35,7 @@ function main() {
   let cardNo="cbwolrftnw"
 
 
-  let inited= ecNetCard.netCardInit(appId,appSecret)
+  let inited= ecNetCard.netCardInit(appId,appSecret,"2")
   logd("inited card => "+JSON.stringify(inited));
   let bind = ecNetCard.netCardBind(cardNo)
   logd("bind "+JSON.stringify(bind))
@@ -108,7 +109,7 @@ function main() {
   let cardNo="cbwolrftnw"
 
 
-  let inited= ecNetCard.netCardInit(appId,appSecret)
+  let inited= ecNetCard.netCardInit(appId,appSecret,"2")
   logd("inited card => "+JSON.stringify(inited));
   let bind = ecNetCard.netCardBind(cardNo)
   logd("bind "+JSON.stringify(bind))
@@ -184,7 +185,7 @@ function main() {
   let cardNo="cbwolrftnw"
 
 
-  let inited= ecNetCard.netCardInit(appId,appSecret)
+  let inited= ecNetCard.netCardInit(appId,appSecret,"2")
   logd("inited card => "+JSON.stringify(inited));
   let bind = ecNetCard.netCardBind(cardNo)
   logd("bind "+JSON.stringify(bind))
@@ -267,7 +268,7 @@ function main() {
   let cardNo="cbwolrftnw"
 
 
-  let inited= ecNetCard.netCardInit(appId,appSecret)
+  let inited= ecNetCard.netCardInit(appId,appSecret,"2")
   logd("inited card => "+JSON.stringify(inited));
   let bind = ecNetCard.netCardBind(cardNo)
   logd("bind "+JSON.stringify(bind))
@@ -344,7 +345,7 @@ function main() {
   let cardNo="cbwolrftnw"
 
 
-  let inited= ecNetCard.netCardInit(appId,appSecret)
+  let inited= ecNetCard.netCardInit(appId,appSecret,"2")
   logd("inited card => "+JSON.stringify(inited));
   let bind = ecNetCard.netCardBind(cardNo)
   logd("bind "+JSON.stringify(bind))
