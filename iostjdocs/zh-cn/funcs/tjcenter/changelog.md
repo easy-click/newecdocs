@@ -6,7 +6,7 @@ keywords: [EasyClick自动化脚本,iOS脚本,iOS免越狱,iOS免硬件,脚本�
 ## 最新发布版本
 ### 1.1.0
 
-**发布时间: 2023-12-15**
+**发布时间: 2023-12-15**cloudchangelog
 
 ```text
 - 新增脚本列表
