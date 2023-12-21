@@ -391,6 +391,47 @@ function main() {
 main();
 ```
 
+
+## 找非色
+### imageAgent.findNotColor 找非色
+
+* 在图片中找到颜色和color完全不相等的点，如果没有找到，则返回null。
+* 适配EC USB 6.30.0+
+* @param image 图片
+* @param color 要寻找的颜色类似， 0xCDD7E9-0x101010,0xCDD7E9-0x101010,EC 工具生成
+* @param threshold 找色时颜色相似度取值为 0.0 ~ 1.0
+* @param x 区域的X起始坐标
+* @param y 区域的Y起始坐标
+* @param ex 终点X坐标
+* @param ey 终点Y坐标
+* @param limit 限制个数
+* @param orz 方向，分别从1-8
+* @return 多个Point 坐标点数组或者null
+
+```javascript
+
+function main() {
+  let aimage = imageAgent.captureFullScreen();
+  if (aimage != null) {
+    let points = imageAgent.findNotColor(aimage, "0xCDD7E9-0x101010,0xCDD7E9-0x101010", 0.9, 0, 0, 0, 0, 10, 1);
+    logd("points " + JSON.stringify(points));
+    //这玩意是个数组
+    if (points) {
+      for (let i = 0; i < points.length; i++) {
+        logd(JSON.stringify(points[i]), points[i].x, points[i].y)
+        //点击坐标
+        clickPoint(points[i].x, points[i].y)
+      }
+    }
+    //图片要回收
+    imageAgent.recycle(aimage)
+  }
+
+}
+
+main();
+```
+
 ## 找图
 
 ### imageAgent.findImageByColor 透明找图

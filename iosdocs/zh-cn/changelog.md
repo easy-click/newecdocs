@@ -5,6 +5,23 @@ description: EasyClick 自动化脚本 iOS免越狱
 ---
 
 ## 最新发布版本
+### 6.30.0
+
+**发布日期: 2023-12-21**
+
+```text
+- 新增找非色image.findNotColor函数
+- 新增找非色imageAgent.findNotColor函数
+- 新增idea图色面板findNotColor测试功能
+- 优化部分功能
+- [使用imageAgent.findNotColor需要升级代理IPA]
+```
+:::tip
+对于设备id会变化的业务情况，请使用ecid授权，
+如果使用了官方的网络验证，也设置为ecid验证模式
+:::
+
+## 历史版本
 ### 6.29.0
 
 **发布日期: 2023-12-15**
@@ -15,13 +32,6 @@ description: EasyClick 自动化脚本 iOS免越狱
 - 新增网络验证初始化函数支持ecid或者设备ID切换
 - 优化部分功能
 ```
-:::tip
-对于设备id会变化的业务情况，请使用ecid授权，
-如果使用了官方的网络验证，也设置为ecid验证模式
-:::
-
-## 历史版本
-
 ### 6.28.0
 
 **发布日期: 2023-12-12**
