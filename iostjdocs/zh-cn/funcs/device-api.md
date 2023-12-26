@@ -31,6 +31,42 @@ function main() {
 main();
 ```
 
+
+## device.getEcid 获取Ecid
+
+* 获取Ecid
+* EC 脱机 3.11.0+以上可以使用，需要配合脱机版激活器才能正确获取到设备ID
+* 请看 [高级功能 - 脱机激活器教程](/iostjdocs/zh-cn/advance/tjcenter)
+* @return 字符串
+
+```javascript
+
+function main() {
+  var xx = device.getEcid();
+  logd(xx);
+}
+
+main();
+```
+
+## device.getSerialNo 获取序列号
+
+* 获取序列号
+* EC 脱机 3.11.0+以上可以使用，需要配合脱机版激活器才能正确获取到设备ID
+* 请看 [高级功能 - 脱机激活器教程](/iostjdocs/zh-cn/advance/tjcenter)
+* @return 字符串
+
+```javascript
+
+function main() {
+  var xx = device.getSerialNo();
+  logd(xx);
+}
+
+main();
+```
+
+
 ## device.getDeviceName 获取设备名称
 
 * 获取设备名称，就是手机的名称
