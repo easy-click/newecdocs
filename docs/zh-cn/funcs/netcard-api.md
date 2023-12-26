@@ -21,7 +21,7 @@ keywords: [EasyClick 自动化脚本 android免root 网络验证函数 ]
 * 适配版本 EC 安卓 9.13.0+
 * @param appId 应用的appId，用户中心后台获取
 * @param appSecret 应用的密钥，用户中心后台获取
-* @return {bool} true 成功 false 失败
+* @return {JSON} null 成功 , JSON 数据代表失败
 ```javascript
 
 function main() {

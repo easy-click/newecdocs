@@ -1,7 +1,5 @@
 ---
-title: 全局快捷事件 
-description: EasyClick 自动化脚本 iOS免越狱 全局快捷事件 资源下载 
-keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件 资源下载 ]
+title: 全局快捷事件 description: EasyClick 自动化脚本 iOS免越狱 全局快捷事件 资源下载 keywords: [EasyClick 自动化脚本 iOS免越狱 全局快捷事件 资源下载 ]
 ---
 
 ## 说明
@@ -26,21 +24,20 @@ function main() {
 main();
 ```
 
-
 ### readAllUIConfig2 读取UI第二种UI
 
 * 读取UI参数配置
 * 设计器在中控界面-UI参数（新版）按钮
 * 适合EC iOS USB版 6.28.0+
 * 注意：这个需要使用新版本的UI配置,读取顺序是 优先读取单个设备配置 ，如果单个设备配置无任何数据，就读取 全局配置，
-* 返回参数中 含有 __from_global__ 这样的key，代表是来源于全局参数
+* 返回参数中 含有 \_\_from_global\_\_ 这样的key，代表是来源于全局参数
 * @param tmplName 参数组名
 * @param forceGlobal 是否强制使用全局，true 代表丢弃单个设备配置，统一使用全局参数
 * @return {JSON} JSON数据
 
 ```javascript
 function main() {
-  var result = readAllUIConfig2("抖音模板",false);
+  var result = readAllUIConfig2("抖音模板", false);
   logd(result);
   logd(JSON.stringify(result));
 }
@@ -608,7 +605,7 @@ main();
 ### appLaunch 运行程序
 
 * 运行程序
-* 不需要开启自动化  
+* 不需要开启自动化
 * @param bundleId app的 bundleID
 * @return int 整型 进程的id
 
@@ -626,7 +623,6 @@ function main() {
 main();
 ```
 
-
 ### appLaunchEx 打开一个app
 
 * 打开一个app
@@ -639,8 +635,8 @@ main();
 ```javascript
 
 function main() {
-  var result = appLaunchEx("com.tencent.xin","1");
-  if (result ) {
+  var result = appLaunchEx("com.tencent.xin", "1");
+  if (result) {
     logd("成功");
   } else {
     logd("失败");
@@ -650,11 +646,10 @@ function main() {
 main();
 ```
 
-
 ### appKillByBundleId 杀死程序
 
 * 使用bundleID杀死一个进程
-* 不需要开启自动化  
+* 不需要开启自动化
 * @param bundleId app的 bundleID
 * @return {boolean} true 成功，false 失败成功
 
@@ -672,8 +667,6 @@ function main() {
 main();
 ```
 
-
-
 ### appKillByBundleIdEx 杀死程序
 
 * 使用bundleID杀死一个进程
@@ -686,7 +679,7 @@ main();
 ```javascript
 
 function main() {
-  var result = appKillByBundleIdEx("com.tencent.xin","1");
+  var result = appKillByBundleIdEx("com.tencent.xin", "1");
   if (result) {
     logd("成功");
   } else {
@@ -696,7 +689,6 @@ function main() {
 
 main();
 ```
-
 
 ### installApp 使用 路径 安装app
 
