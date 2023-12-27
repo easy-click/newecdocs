@@ -979,7 +979,6 @@ main();
 * @param fetchInvisibleNode 是否抓取隐藏的元素，默认不抓取
 * @param fetchNotImportantNode 是否抓取不重要的元素，默认抓取
 * @param algorithm 节点查找算法,默认是nsf，分别有 nsf = 节点静态算法，bsf= 广度优先， dsf=深度度优先
-
 * @return {boolean|*}
 
 ```javascript
@@ -991,6 +990,30 @@ function main() {
 
 main();
 ```
+
+### setBlockNodeAttr 屏蔽节点属性
+
+* 设置要屏蔽的节点属性
+* 设置后，系统不会抓取这些节点数据属性
+* 适配 EC 9.23.0+
+* @param blockNode 字符串，以英文逗号分割，例如 clz,index,bounds，获取属性值，参考idea节点面板的右侧属性
+* blockNode 设置为 "" , 代表恢复默认
+* @return {boolean|*}
+```javascript
+
+function main() {
+  var result = setBlockNodeAttr("row,bounds,index");
+  toast("result:" + result);
+  let data = dumpXml()
+  logd(data)
+
+  // 恢复默认
+  setBlockNodeAttr("")
+}
+
+main();
+```
+
 
 ### addNodeFlag 加上节点获取的某个标志位
 

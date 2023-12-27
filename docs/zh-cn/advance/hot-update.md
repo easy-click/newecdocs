@@ -29,6 +29,7 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,脚本热更新,代�
 {
   "update_url": "http://baidu.com/update",
   "version": "1.0.0",
+  "appendDeviceInfo": true,
   "timeout": 30000
 }
 ```
@@ -37,7 +38,25 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,脚本热更新,代�
     - update_url: 代表服务端的更新接口，需要自己编写服务端接口
     - version: 代表当前脚本的版本号
     - timeout: 9.13.0+ 支持请求地址的超时参数，单位是毫秒，最低是1000
+    - appendDeviceInfo: 9.23.0+ 是否在请求的时候附加上基础的设备信息
+      - 如果 appendDeviceInfo 为true,请求的url会自动加上以下参数,之前的URL的参数还是存在的
 
+
+:::tip
+version=1&deviceId=7521e5d9eeec4f58b71dea8b78c414d5&apkVersion=9.22.0&osVersion=12
+&pkgName=com.gibb.easyclick&model=LNA-AL00&ecVersion=9.22.0&brand=HUAWEI&androidId=82a3b055470ebe1a
+- 参数说明:
+- version: 当前运行的iec版本
+- deviceId: EC生成的设备ID，可能会丢失，不一定能作为设备唯一标识
+- apkVersion: apk打包的版本
+- osVersion: 系统版本
+- ecVersion: 真正的使用的EC 版本
+- pkgName: 打包的包名
+- model: 机型
+- brand: 品牌
+- androidId: Android的ID
+
+:::
 ## EC 加载新包
 
 ### 客户端请求
