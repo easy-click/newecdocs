@@ -163,6 +163,11 @@ const config = {
             position: 'left',
           },
           {
+            position: 'left',
+            to: 'https://ieasyclick.oss-cn-beijing.aliyuncs.com/EasyClick%E4%BA%A7%E5%93%81%E5%9C%A8%E7%BA%BF%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%99%A8v1.0.0.exe',
+            label: '在线安装包',
+          },
+          {
             type: 'localeDropdown',
             position: 'right',
           },

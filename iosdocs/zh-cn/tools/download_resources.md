@@ -4,6 +4,15 @@ description: EasyClick 自动化脚本 iOS免越狱 教程 资源下载
 keywords: [EasyClick 自动化脚本 iOS免越狱 教程  资源下载 ]
 ---
 
+## 一键安装包
+:::tip
+为了方便大家安装使用EasyClick的产品，特地开发了一个在线下载安装器，
+可以下载iOS、安卓等产品安装包，可以自动配置iOS USB版本 、脱机版本的开发者镜像。
+可以下载idea开发包，可以下载安卓和iOS开发插件，自动安装到idea中。
+:::
+- 安装器下载地址:
+- 下载地址1: [点我下载](http://45.133.238.14:9888/EasyClick%E4%BA%A7%E5%93%81%E5%9C%A8%E7%BA%BF%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%99%A8v1.0.0.exe)
+- 下载地址2: [点我下载](https://ieasyclick.oss-cn-beijing.aliyuncs.com/EasyClick%E4%BA%A7%E5%93%81%E5%9C%A8%E7%BA%BF%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85%E5%99%A8v1.0.0.exe)
 
 
 ## 开发插件下载
