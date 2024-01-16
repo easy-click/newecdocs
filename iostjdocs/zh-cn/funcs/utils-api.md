@@ -161,3 +161,36 @@ function main() {
 main();
 ```
 
+## base64
+### utils.base64Encode base64编码
+
+* base64编码
+* @param data 需要编码的字符串
+* @returns {string|*} 编码结果
+
+```javascript
+
+function main() {
+  var r = utils.base64Encode("111");
+  logd(r)
+}
+
+main();
+```
+
+
+### utils.base64Decode base64解码
+
+* base64解码
+* @param data 需要解码的字符串
+* @returns {string|*} 解码结果
+
+```javascript
+
+function main() {
+  var r = utils.base64Decode("MjIy");
+  logd(r)
+}
+
+main();
+```
