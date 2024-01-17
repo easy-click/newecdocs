@@ -393,7 +393,7 @@
 > ```
 
 
-## closeScreen 关闭屏幕，省点模式
+## closeScreen 关闭屏幕，省电模式
 
 * 关闭屏幕，屏幕不亮，但是依然可以自动点击
 * @return 布尔型 true 成功，false 失败
