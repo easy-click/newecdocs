@@ -18,6 +18,7 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,更新记录,安卓�
 # 9.26.0
 - 新增idea混淆apk的类打包选项
 - 新增混淆activity、service等功能
+- 优化idea保存和选择保存上次路径功能
 - 优化部分功能，减少EC特征
 - 网络验证平台地址是: https://uc.ieasyclick.com
 - [打包选择随机生成activity，service类名，自定义无障碍和输入类名，可有效减少EC的特征]
