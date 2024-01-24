@@ -333,12 +333,15 @@ main();
 ### setSaveLogEx 保存日志
 
 * 设置保存日志信息到文件中，可以使用爱思软件导出日志
+* EC iOS 3.13+新增了level参数
 * @param save 是否保存
-* @param {string} 保存日志文件的目录
+* @param level 日志等级，值分别是 debug,info,warn,error,off，排序分别是debug<info<warn<error，
+* 例如 off代表关闭所有级别日志，debug代表打印包含logd,logi,logw,loge的日志，info代表打印包含logi,logw,loge的日志，warn 代表打印包含logw,loge的日志
+* @return 保存日志文件的目录
 
 ```javascript
  function main() {
-  let d = setSaveLogEx(true)
+  let d = setSaveLogEx(true,"debug")
   logd(d)
 }
 
