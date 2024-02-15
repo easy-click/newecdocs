@@ -33,7 +33,23 @@ keywords: [EasyClick自动化脚本,iOS脚本,iOS免越狱,iOS免硬件,高级�
 - 参数解析
     - update_url: 代表服务端的更新接口，需要自己编写服务端接口
     - version: 代表当前脚本的版本号，- version写整数，app会自动做版本大小对比，大于的版本才会提示升级
-
+- 3.15新增参数
+:::tip
+  3.15.0+版本新增了更多参数<br/>
+  如果update_url配置了 http://baidu.com/update，请求地址将会变成
+  http://baidu.com/update?ecid=000c109803a&systemVersion=15.2&time=1707107343187&deviceId=6acc090e33f76e&model=iPhone&serialNo=F4GSPUAZHG6W&version=100&deviceName=iPhone7&pkgName=xxx
+  - ecid: 设备的ecid，一般改机也不会变化
+  - systemVersion: 系统的版本
+  - time: 请求时间 毫秒
+  - deviceId: 设备的udid
+  - model: 机型
+  - serialNo: 设备序号
+  - deviceName: 设备名称
+  - version: 当前的脚本的版本，update.json文件中配置的
+  - pkgName: 当前重新的包名，也就是bundleId
+  
+  
+:::
 ## EC 加载新包
 
 ### 客户端请求

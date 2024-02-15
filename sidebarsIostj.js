@@ -33,6 +33,7 @@ module.exports = {
         'zh-cn/funcs/device-api',
         'zh-cn/funcs/file-api',
         'zh-cn/funcs/http-api',
+        'zh-cn/funcs/ime-api',
         'zh-cn/funcs/tjcenter-api',
         'zh-cn/funcs/worker-api',
         'zh-cn/funcs/utils-api',
