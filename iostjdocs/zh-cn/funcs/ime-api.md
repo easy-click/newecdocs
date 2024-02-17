@@ -75,7 +75,7 @@ function main() {
     logw("启用输入法后，需要点击输入法，弹出[打包的app名称(默认是易点云测，鹅黄色背景)]键盘方可使用函数")
     return
   }
-  let result = imeApi.pase("我是粘贴数据")
+  let result = imeApi.paste("我是粘贴数据")
   logd("输入框的粘贴数据是: " + result)
 }
 
