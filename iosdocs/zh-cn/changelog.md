@@ -40,7 +40,7 @@ description: EasyClick 自动化脚本 iOS免越狱
 :::tip
 - 使用投屏输入法或者imeApi模块需要安装脱机版本主程序ipa，或者 文件传输助手IPA
 - 文件传输助手IPA 就是  脱机版本主程序ipa
-  :::
+:::
 
 ### 6.30.0
 
