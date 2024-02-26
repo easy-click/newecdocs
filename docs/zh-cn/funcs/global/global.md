@@ -36,6 +36,35 @@ function main(){
 main();
 ```
 
+## 中控投屏相关
+### getCenterTaskInfo 获取中控任务
+
+* 取得中控发过来的任务参数信息
+* 中控启动脚本，可以配置参数，在这里使用本函数获取参数，给脚本使用
+* 适合版本 EC 安卓 9.27.0+
+* 注意：这个需要使用参数配置,读取顺序是 优先读取单个设备配置 ，如果单个设备配置无任何数据，就读取 全局配置，
+* 返回参数中 含有 __from_global__ 这样的key，代表是来源于全局参数
+* @return {JSON} 对象
+
+```javascript
+function main(){
+  while(true){
+    logd("---> "+new Date())
+    sleep(2000);
+    let info = getCenterTaskInfo()
+    logd("info -> "+JSON.stringify(info))
+
+    if (info) {
+      logd("test param => "+info['valueJson']['test']);
+    }
+    sleep(2000);
+  }
+}
+main()
+```
+
+
+
 ## 插件模块加载
 
 ### loadDex 载入dex或者apk

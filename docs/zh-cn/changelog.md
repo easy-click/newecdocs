@@ -16,12 +16,14 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,更新记录,安卓�
 ```text
 
 # 9.27.0
-- 新增getCenterTaskInfo 获取中控配置函数
+- 新增 getCenterTaskInfo 获取中控配置函数
 - 新增系统设置链接中控投屏设置
+- 新增idea 截图可以选择adb或者录屏模式截图
 - 新增PC中控软件支持
 - 新增PC投屏软件支持
 - 优化shell执行命令函数
 - 优化部分功能
+
 - 网络验证平台地址是: https://uc.ieasyclick.com
 - [打包选择随机生成activity，service类名，自定义无障碍和输入类名，可有效减少EC的特征]
 
