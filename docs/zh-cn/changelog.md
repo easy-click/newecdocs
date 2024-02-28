@@ -23,6 +23,7 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,更新记录,安卓�
 - 新增PC中控软件支持
 - 新增PC投屏软件支持
 - 优化shell执行命令函数
+- 修复部分手机弹出通知栏channel null的问题
 - 优化部分功能
 - 网络验证平台地址是: https://uc.ieasyclick.com
 ```
