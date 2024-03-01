@@ -164,7 +164,10 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,中控投屏,抖音�
   <img src='/andqk/auth4.png' width='500' />
 
 ## 常见问题
+### 杀毒软件删除问题
+- 杀毒软件可能android-bridge.exe和seqb.exe当成病毒杀到，请到杀软件的信任区 信任这个两个文件，然后重启软件
 ### adb冲突
+
  - 解决办法：
    - [连接设备/adb问题](https://bbs.ieasyclick.com/thread-147-1-1.html)
    - [Adb被占用解决办法](https://bbs.ieasyclick.com/thread-22-1-1.html)  
