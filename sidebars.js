@@ -110,6 +110,18 @@ const sidebars = {
     },
     {
       type: 'category',
+      label: '企业版安卓中控投屏',
+      link: {
+        type: 'doc',
+        id: 'zh-cn/centerscreen/intro',
+      },
+      items: [
+        'zh-cn/centerscreen/screenchangelog',
+        'zh-cn/centerscreen/guid',
+      ]
+    },
+    {
+      type: 'category',
       label: '高级功能',
       link: {
         type: 'doc',
