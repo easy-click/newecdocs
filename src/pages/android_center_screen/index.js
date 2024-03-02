@@ -48,7 +48,7 @@ export default function Index() {
                 <h1>中控管理</h1>
               </div>
               <div className={styles.type_sort_details}>
-                <img alt="EasyClick 安卓中控投屏系统" src="/andqk/qkxc1.png"/>
+                <img alt="EasyClick 安卓中控投屏系统" src="/andqk/qkxc1.jpg"/>
                 <ul
                   style={{
                     listStyle: 'none',
@@ -76,7 +76,7 @@ export default function Index() {
                 <h1>全屏操作</h1>
               </div>
               <div className={styles.type_sort_details}>
-                <img alt="EasyClick 安卓中控投屏系统" src="/andqk/qkxc2.png"/>
+                <img alt="EasyClick 安卓中控投屏系统" src="/andqk/qkxc2.jpg"/>
                 <ul
                   className={styles.enterprise}
                   style={{
@@ -105,7 +105,7 @@ export default function Index() {
                 <h1>投屏操作</h1>
               </div>
               <div className={styles.type_sort_details}>
-                <img alt="EasyClick 安卓中控投屏系统" src="/andqk/qkxc3.png"/>
+                <img alt="EasyClick 安卓中控投屏系统" src="/andqk/qkxc3.jpg"/>
                 <ul
                   className={styles.cloud}
                   style={{
@@ -133,7 +133,7 @@ export default function Index() {
                 <h1>分组、分辨率设置</h1>
               </div>
               <div className={styles.type_sort_details}>
-                <img alt="EasyClick 安卓中控投屏系统" src="/andqk/qkxc4.png"/>
+                <img alt="EasyClick 安卓中控投屏系统" src="/andqk/qkxc4.jpg"/>
                 <ul
                   className={styles.cloud}
                   style={{
@@ -161,7 +161,7 @@ export default function Index() {
                 <h1>图像视频传输</h1>
               </div>
               <div className={styles.type_sort_details}>
-                <img alt="EasyClick 安卓中控投屏系统" src="/andqk/qkxc5.png"/>
+                <img alt="EasyClick 安卓中控投屏系统" src="/andqk/qkxc5.jpg"/>
                 <ul
                   className={styles.cloud}
                   style={{
@@ -191,7 +191,7 @@ export default function Index() {
                 <h1>脚本参数</h1>
               </div>
               <div className={styles.type_sort_details}>
-                <img alt="EasyClick 安卓中控投屏系统" src="/andqk/qkxc6.png"/>
+                <img alt="EasyClick 安卓中控投屏系统" src="/andqk/qkxc6.jpg"/>
                 <ul
                   className={styles.enterprise}
                   style={{
