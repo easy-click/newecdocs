@@ -129,6 +129,10 @@ const config = {
             position: 'left',
             items: [
               {
+                label: '企业版安卓中控投屏',
+                href: '/android_center_screen',
+              },
+              {
                 label: '企业版安卓iOS云控',
                 href: '/enterprise_server',
               },
@@ -212,6 +216,10 @@ const config = {
               {
                 label: 'iOS 脱机版开发文档',
                 to: 'iostjdocs/'
+              },
+              {
+                label: '企业版安卓中控投屏',
+                to: 'docs/zh-cn/centerscreen/guid'
               },
               {
                 label: '企业版安卓iOS云控',
