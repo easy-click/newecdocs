@@ -118,11 +118,11 @@
 }
 /* 首屏 */
 #section_first {
-  padding: 180px 16px 24px;
+  padding: 160px 16px 24px;
   display: grid;
   gap: 24px;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 84px;
+  margin-bottom: 34px;
   /* background: linear-gradient(to bottom, #dfdddd 0%, #f1f0f0 100%); */
 }
 
@@ -228,7 +228,7 @@
   flex-wrap: wrap;
 }
 .img_container {
-  width: 10%;
+  width: 25%;
   padding: 12px;
 }
 .img_container > a {
@@ -240,10 +240,7 @@
   height: 100px;
   padding: 0px 8px;
 }
-.img_container > a > img {
-  max-height: 6rem;
-  min-width: 4rem;
-}
+
 /* 文档 */
 #section_third {
   padding: 0 16px;
@@ -548,7 +545,7 @@
 }
 // 为什么选择Rainbond
 #section_why_rainbond {
-  padding: 64px 16px;
+  padding: 4px 16px;
   // 描述
   .how_rainbond_desc_container {
     display: flex;
@@ -739,5 +736,5 @@
   margin: 24px 0px 48px;
   color: #637792;
   font-size: 16px;
-  max-width: 360px;
+  max-width: 480px;
 }

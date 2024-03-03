@@ -70,14 +70,18 @@ export default function Home() {
                             })}
                             style={animatedTexts[0]}
                         >
-                            手机自动化脚本专家
+                            手机自动化技术领导者
                             <br/>
-                            专业游戏、营销自动化解决方案
+                            短视频营销自动化解决方案
                         </animated.h2>
                         <animated.div style={animatedTexts[0]} className={styles.rainbond_description}>
                             易点新媒旗下EasyClick自动化产品,
-                            安卓&iOS&PC&Web自动化脚本，自动化测试专业工具，支持多个平台快速构建自动化测试脚本.
+                            安卓&iOS&PC&Web自动化脚本，自动化测试专业工具，多个平台快速构建自动化脚本.
                             新媒体云控专业营销平台，多端控制设备，实时远程投屏控制.
+                            <br/>
+                            Facebook、Tiktok、Line、Whatsapp、Twitter、Youtube以及国内短视频平台专业营销软件
+                            <br/>
+                            优秀且资质齐全的海外代理IP服务商
                         </animated.div>
                         <animated.div style={animatedTexts[1]} className={styles.btnBox}>
                             <a
@@ -112,71 +116,62 @@ export default function Home() {
                                  className={styles.know_rainbond_video_div_img}/>
                         </div>
                     </animated.div>
+
                 </section>
-                {/* 第二屏 */}
-                {/*<section id={styles.section_second} className={styles.width}>*/}
-                {/*    <animated.div*/}
-                {/*        className={styles.community_case}*/}
-                {/*        style={animatedTexts[1]}*/}
-                {/*    >*/}
-                {/*        <div className={styles.img_container}>*/}
-                {/*            <a href='#' style={{cursor: 'default'}}>*/}
-                {/*                <img src='/img/users/boe.png' alt=''/>*/}
-                {/*            </a>*/}
-                {/*        </div>*/}
-                {/*        <div className={styles.img_container} style={{width: '160px'}}>*/}
-                {/*            <a href='#' style={{cursor: 'default'}}>*/}
-                {/*                <img src='/img/users/mky.png' alt=''/>*/}
-                {/*            </a>*/}
-                {/*        </div>*/}
-                {/*        <div className={styles.img_container}>*/}
-                {/*            <a href='#' style={{cursor: 'default'}}>*/}
-                {/*                <img src='/img/users/zhx.jpeg' alt=''/>*/}
-                {/*            </a>*/}
-                {/*        </div>*/}
-                {/*        <div className={styles.img_container}>*/}
-                {/*            <a href='#' style={{cursor: 'default'}}>*/}
-                {/*                <img src='/img/users/lvzhiyun.png' alt=''/>*/}
-                {/*            </a>*/}
-                {/*        </div>*/}
-                {/*        <div className={styles.img_container} style={{width: '150px'}}>*/}
-                {/*            <a href='#' style={{cursor: 'default'}}>*/}
-                {/*                <img src='/img/users/lyyl.png' alt=''/>*/}
-                {/*            </a>*/}
-                {/*        </div>*/}
-                {/*        <div className={styles.img_container}>*/}
-                {/*            <a href='#' style={{cursor: 'default'}}>*/}
-                {/*                <img src='/img/users/zggk.jpg' alt=''/>*/}
-                {/*            </a>*/}
-                {/*        </div>*/}
-                {/*        <div className={styles.img_container}>*/}
-                {/*            <a href='#' style={{cursor: 'default'}}>*/}
-                {/*                <img src='/img/users/bkrj.png' alt=''/>*/}
-                {/*            </a>*/}
-                {/*        </div>*/}
-                {/*        <div className={styles.img_container} style={{width: '150px'}}>*/}
-                {/*            <a href='#' style={{cursor: 'default'}}>*/}
-                {/*                <img src='/img/users/xinanmingzu.png' alt=''/>*/}
-                {/*            </a>*/}
-                {/*        </div>*/}
-                {/*    </animated.div>*/}
-                {/*</section>*/}
-                {/* 为什么选择Rainbond */}
+                {/*第二屏*/}
+                <section id={styles.section_second} className={styles.width}>
+                    <h2
+                        style={{
+                            textAlign: 'center',
+                            marginBottom: '40px',
+                            position: 'relative'
+                        }}>
+                        <span className={styles.how_rainbond}>
+                               EasyClick
+                            </span>
+                        部分产品案例
+                    </h2>
+                    <animated.div
+                        className={styles.community_case}
+                        style={animatedTexts[1]}>
+                        <div className={styles.img_container}>
+                            <a href='/local_ctrl_server'>
+                                <img src='/index/iostp/1.jpg' alt='EasyClick iOS免越狱投屏'/>
+                            </a>
+                        </div>
+                        <div className={styles.img_container}>
+                            <a href='/enterprise_server'>
+                                <img src='/index/ecloud/ecloud-3.jpg' alt='EasyClick 支持安卓和iOS的云控'/>
+                            </a>
+                        </div>
+                        <div className={styles.img_container}>
+                            <a href='/android_center_screen'>
+                                <img src='/andqk/qkxc5.jpg' alt='EasyClick 安卓中控投屏'/>
+                            </a>
+                        </div>
+                        <div className={styles.img_container}>
+                            <a href='/ios_wifi_server'>
+                                <img src='/index/ioswifitj/tjscreen2.jpg' alt='EasyClick iOS 脱机投屏'/>
+                            </a>
+                        </div>
+                    </animated.div>
+                </section>
+
                 <OverPack style={{overflow: 'hidden'}} playScale={0.15}>
                     <section id={styles.section_why_rainbond} className={styles.width}>
                         <div className={styles.dosc_logo}>
                         </div>
-                        <h1
+                        <h2
                             style={{
                                 textAlign: 'center',
-                                marginBottom: '70px',
+                                marginBottom: '40px',
                                 position: 'relative'
                             }}>
                             为什么选择
                             <span className={styles.how_rainbond}>
                                EasyClick ？
                             </span>
-                        </h1>
+                        </h2>
                         <div className={styles.how_rainbond_desc_container} key="why_rainbond_desc">
                             <div className={styles.how_rainbond_btn}>
                                 <motion.button
@@ -343,7 +338,7 @@ export default function Home() {
                             <img src='/img/smallimages/RainbondStudy.png' alt='观看视频学习'/>
                         </p>
                         <br/>
-                        <h1
+                        <h2
                             style={{
                                 textAlign: 'center',
                                 marginBottom: '56px',
@@ -352,7 +347,7 @@ export default function Home() {
                         >
                             观看视频学习 &nbsp;
                             <span className={styles.how_rainbond}>EasyClick</span>
-                        </h1>
+                        </h2>
                         <Cswiper/>
                         <Swiper/>
                     </div>
@@ -364,7 +359,7 @@ export default function Home() {
                             <img src='/img/smallimages/RainbondDoWhat.png' alt='EasyClick有哪些能力'/>
                         </p>
                         <br/>
-                        <h1
+                        <h2
                             style={{
                                 textAlign: 'center',
                                 marginBottom: '56px',
@@ -374,7 +369,7 @@ export default function Home() {
                             <span className={styles.how_rainbond}>EasyClick</span>
                             &nbsp;
                             有哪些能力?
-                        </h1>
+                        </h2>
 
                         <div
                             className={`${styles.docs} docs_container`}
@@ -506,7 +501,7 @@ export default function Home() {
             </div>
             {/* 底部 */}
             <footer className={`${styles.footer_container} `}>
-                <h1>参与其中</h1>
+                <h2>参与其中</h2>
                 <div className={`${styles.join_type} ${styles.width}`}>
                     <a href='/docs/zh-cn/joinus' target='_blank'>
                         <div className={styles.join_logo}>
