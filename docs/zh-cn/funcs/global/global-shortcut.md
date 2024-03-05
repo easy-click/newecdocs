@@ -442,7 +442,7 @@ function main() {
 main();
 ```
 
-###   
+###     
 
 ## 滚动函数
 
@@ -644,8 +644,8 @@ main();
 
 ## 输入数据
 
-
 ### imeInputViewShown 输入法键盘是否展示
+
 * 使用输入法输入内容时，输入法键盘视图是否展示出来
 * 前提：在EC 系统设置中，勾选了 显示输入法键盘
 * 适配EC 9.18.0+
@@ -664,7 +664,6 @@ function main() {
 
 main();
 ```
-
 
 ### currentIsOurIme 是否是自带输入法
 
@@ -999,6 +998,7 @@ main();
 * @param blockNode 字符串，以英文逗号分割，例如 clz,index,bounds，获取属性值，参考idea节点面板的右侧属性
 * blockNode 设置为 "" , 代表恢复默认
 * @return {boolean|*}
+
 ```javascript
 
 function main() {
@@ -1013,7 +1013,6 @@ function main() {
 
 main();
 ```
-
 
 ### addNodeFlag 加上节点获取的某个标志位
 
@@ -1142,7 +1141,6 @@ function main() {
 main();
 ```
 
-
 ### home2 返回主页2
 
 * 返回主页，无需权限和自动化
@@ -1162,7 +1160,6 @@ function main() {
 
 main();
 ```
-
 
 ### splitScreen 分割屏幕
 

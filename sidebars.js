@@ -35,6 +35,7 @@ const sidebars = {
         'zh-cn/funcs/acevent-api',
         'zh-cn/funcs/event-api',
         'zh-cn/funcs/hid-event-api',
+        'zh-cn/funcs/center-api',
         'zh-cn/funcs/image-api',
         'zh-cn/funcs/ocr-api',
         'zh-cn/funcs/device-api',
