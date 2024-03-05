@@ -8,7 +8,7 @@ keywords: [EasyClick 自动化脚本 android免root 中控投屏函数  ]
 
 - 中控投屏模块，是需要配合EC的中控投屏系统使用的
 - 中控投屏软件安装使用文档: [中控投屏使用手册](/docs/zh-cn/centerscreen/guid)
-- 中控投屏模块的对象前缀是 centerApi，例如 device.getFileData这样调用
+- 中控投屏模块的对象前缀是 centerApi，例如 centerApi.getFileData这样调用
 
 ## centerApi.getCenterTaskInfo 获取中控任务信息
 
