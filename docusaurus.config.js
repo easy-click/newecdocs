@@ -156,7 +156,7 @@ const config = {
                 href: 'https://bbs.ieasyclick.com',
               },
               {
-                label: '作者交流',
+                label: '官方客服&脚本定制',
                 href: '/community/support',
               }
             ],
