@@ -9,6 +9,9 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,脚本热更新,代�
 
 # 代码热更新
 
+## 官方热更新服务
+- [点我进入官方热更新](/docs/zh-cn/advance/netcard#热更新管理)
+
 ## 什么是热更新
 
 :::tip
@@ -20,6 +23,7 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,脚本热更新,代�
 - 注意: 一定要保持update.json文件和服务端接口返回的版本好一直，否则可能导致异常情况
 
 ## EC如何热更新
+- 如果不想配置，官方有热更新服务， [点我进入官方热更新](/docs/zh-cn/advance/netcard#热更新管理)
 
 打开工程下面的update.json，内容如下:
 :::
@@ -118,7 +122,10 @@ version=1&deviceId=7521e5d9eeec4f58b71dea8b78c414d5&apkVersion=9.22.0&osVersion=
 ### hotupdater.updateReq 请求更新
 
 * 请求热更新接口，如果是false，也有可能是无需更新，可以使用getErrorMsg查看具体得信息
-* 适用版本(EC 5.20.0+)
+* @param updateUrl 更新地址 不写，就使用update.json配置的数据
+* @param version 当前版本，使用整形数据，例如 1这样的数字
+* @param appendDeviceInfo 是否拼接设备信息数据 true 或者 false
+* @param timeout 请求超时时间 单位是毫秒
 * @return {bool} true 代表需要更新 false代表无需更新
 
 ```javascript
@@ -126,7 +133,10 @@ function main() {
   let version = 7;
   toast("Hello World - " + version);
   //请求服务器是否有新版本
-  let updateResult = hotupdater.updateReq();
+  // 使用update.json模式
+  //let updateResult = hotupdater.updateReq("",0,true,9000);
+  // 使用自定义的模式 url 
+  let updateResult = hotupdater.updateReq("http://baidu.com",0,true,9000);
   logd("请求更新是否有: " + updateResult);
   if (!updateResult) {
     logw("请求失败错误信息: " + hotupdater.getErrorMsg());

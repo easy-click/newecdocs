@@ -72,6 +72,21 @@ keywords: [EasyClick,手机自动化脚本,自动化软件,脚本热更新,代�
   - 变量内容: 变量对应的内容
   - 支持远程修改: 是否可以通过脚本对这个值进行修改，修改函数是 ecNetCard.netCardUpdateCloudVar
     <br/><img src='/androidimg/netcard-5.png' width="300" />
+
+## 热更新管理
+- 网络验证自带的热更新管理，对接阿里云的OSS存储系统，可以直接上传iec文件
+### 配置OSS信息
+- 点击OSS配置管理，新增OSS存储，根据提示填写阿里云的OSS信息，
+  - 需要填写取AccessKeyId和AccessKeySecret [OSS如何获取AccessKeyId和AccessKeySecret?点我了解 ](https://www.aliyun.com/search?k=oss+accessKeyId&scene=all)
+  <br/><img src='/androidimg/cardhotupdate-1.png' width="300" />
+  - 新增OSS存储示意图
+  <br/><img src='/androidimg/cardhotupdate-2.png' width="300" />
+
+### 上传热更新脚本文件
+- 点击新增脚本,填写并上传iec脚本文件，版本配置为整数，**上传脚本之前，要到软件列表中，新建一个软件**
+  <br/><img src='/androidimg/cardhotupdate-3.png' width="300" />
+- 上传脚本后，会自动根据配置文件传到阿里云的OSS存储中，并且生成下载地址和md5
+- 点击保存即可，其他的编辑、启用、对话框等和之前热更新配置一样
 ## 防破解建议
 :::tip
 - 使用网络验证卡密
