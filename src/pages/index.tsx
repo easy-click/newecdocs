@@ -70,18 +70,14 @@ export default function Home() {
                             })}
                             style={animatedTexts[0]}
                         >
-                            手机自动化技术领导者
+                            手机自动化测试技术领导者
                             <br/>
-                            短视频营销自动化解决方案
+                            自动化办公专业解决方案
                         </animated.h2>
                         <animated.div style={animatedTexts[0]} className={styles.rainbond_description}>
                             易点新媒旗下EasyClick自动化产品,
-                            安卓&iOS&PC&Web自动化脚本，自动化测试专业工具，多个平台快速构建自动化脚本.
-                            新媒体云控专业营销平台，多端控制设备，实时远程投屏控制.
-                            <br/>
-                            Facebook、Tiktok、Line、Whatsapp、Twitter、Youtube以及国内短视频平台专业营销软件
-                            <br/>
-                            优秀且资质齐全的海外代理IP服务商
+                            安卓&iOS&PC&Web自动化测试脚本，自动化测试专业工具，多个平台快速构建自动化测试脚本.
+                            新媒体专业营销平台，多端控制设备，实时远程投屏控制，专业编写自动化脚本平台
                         </animated.div>
                         <animated.div style={animatedTexts[1]} className={styles.btnBox}>
                             <a

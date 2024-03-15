@@ -35,7 +35,7 @@ export default function Index(props) {
 
           <a href='/' className={`${styles.mytitle}`}>
             <img className={`${styles.mylogo}`} src='/img/easyclick.png'/>
-            <span className={`${styles.mytitle2}`}>EasyClick - 自动化营销领导者</span>
+            <span className={`${styles.mytitle2}`}>EasyClick - 自动化测试领导者</span>
           </a>
           {/* 右侧列表 */}
           <div className={styles.nav_container}>
