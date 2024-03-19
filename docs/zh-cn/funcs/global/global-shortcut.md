@@ -1789,9 +1789,43 @@ main();
 function main() {
   var result = setLogText("开始运行...", "#ffffff", 18);
 }
-
 main();
 ```
+
+
+### expandLogView 展开日志悬浮窗
+
+* 展开日志悬浮窗
+* 适配EC 9.32.0+
+* @return true 成功，false代表失败
+
+```javascript
+
+function main() {
+  showLogWindow();
+  sleep(1000)
+  var result = expandLogView();
+}
+main();
+```
+
+
+### collapseLogView 折叠日志悬浮窗
+
+* 折叠日志悬浮窗，只保留标题
+* 适配EC 9.32.0+
+* @return true 成功，false代表失败
+
+```javascript
+
+function main() {
+  showLogWindow();
+  sleep(1000)
+  var result = collapseLogView();
+}
+main();
+```
+
 
 ## 定时任务
 
