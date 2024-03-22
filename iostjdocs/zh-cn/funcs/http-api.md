@@ -396,8 +396,8 @@ function testwebsocket() {
   //新建一个ws连接
   var ws = http.newWebsocket("ws://192.168.2.13:8120/api/ws/device?deviceId=111", {"t1": "100"});
   ws.setWriteTimeout(5);
-  //心跳检测
-  ws.setPingInterval(1)
+  //心跳检测 建议设置为5 
+  ws.setPingInterval(5)
   ws.setConnectionTimeout(5)
   //设置连接打开的时候监听器
   ws.onOpen(function (ws1) {

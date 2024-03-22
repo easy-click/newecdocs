@@ -402,8 +402,8 @@ function main() {
   ws.setCallTimeout(5);
   ws.setReadTimeout(5);
   ws.setWriteTimeout(5);
-  //心跳检测
-  ws.setPingInterval(1)
+  //心跳检测 建议设置为0 因为有的服务端没有ping
+  ws.setPingInterval(0)
 
   //设置type=2的时候心跳检测时间
   ws.setConnectionLostTimeout(5)
