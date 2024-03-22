@@ -442,7 +442,7 @@ function main() {
 main();
 ```
 
-###     
+###        
 
 ## 滚动函数
 
@@ -1664,31 +1664,40 @@ main();
 * 设置日志窗口大小扩展函数
 * backgroundImg适用版本(EC 6.0.0+)
 * @param map 例如
-   ```json
-      {
-          "x":100,
-          "y":100,
-        "w":100,
-         "h":200,
-        "textSize":12,
-          "backgroundColor":"#ffffff",
-         "backgroundImg":"res/a.png",
-          "title":"我是日志",
-          "backgroundAlpha":255,
-          "showTitle":true
-     }
-     解释：
-         x: 起始X位置
-        y: 起始Y位置
-         w:宽度
-          h:高度
-          textSize:日志的字体大小
-          backgroundColor:背景颜色，例如#336699
-          title:日志框标题
-          showTitle：是否显示标题
-         backgroundImg 背景图片,支持GIF动画，放到工程的res文件夹，录入填写res/a.png
-         backgroundAlpha 背景图的透明度 255 - 0
-   ```
+
+:::tip
+```json
+{
+  "x": 100,
+  "y": 100,
+  "w": 100,
+  "h": 200,
+  "textSize": 12,
+  "backgroundColor": "#ffffff",
+  "backgroundImg": "res/a.png",
+  "title": "我是日志",
+  "backgroundAlpha": 255,
+  "showTitle": true,
+  "canTouch": false,
+  "showCloseBtn": true
+}
+```
+- x: 起始X位置
+- y: 起始Y位置
+- w: 宽度
+- h: 高度
+- textSize: 日志的字体大小
+- backgroundColor:背景颜色，例如#336699
+- title: 日志框标题
+- showTitle：是否显示标题
+- backgroundImg 背景图片, 支持GIF动画，放到工程的res文件夹，录入填写res/a.png
+- backgroundAlpha 背景图的透明度 255 - 0
+- 9.33.0+新增参数:
+  - canTouch: 代表是否可以触摸，包含移动点击等悬浮窗事件，false代表脚本运行期间不可以触摸，默认是false，具有穿透作用，true代表脚本运行期间可以接受事件
+  - showCloseBtn: 是否显示关闭按钮，false不显示 true显示
+  
+:::
+
 * @return bool true代表成功，false代表失败
 
 ```javascript
@@ -1707,6 +1716,7 @@ main();
 
 
   showLogWindow();
+  sleep(2000);
   setLogViewSizeEx(m);
   sleep(5000);
 }
@@ -1719,6 +1729,14 @@ main();
 * 设置日志顶部固定窗口属性
 * 适合EC 6.17.0+
 * @param param map参数
+
+:::tip
+解释:
+- show: 是否展示 
+- h: 高度 必须大于0
+- textSize: 日志的字体大小
+- backgroundColor: 背景颜色，例如#336699
+:::
 
 ```javascript
 
@@ -1745,13 +1763,6 @@ main();
 
 ```
 
-```json
-解释:
-*      show: 是否展示
-*      h: 高度 -1 代表自适应
-*      textSize: 日志的字体大小
-*      backgroundColor: 背景颜色，例如#336699
-```
 
 ### setFixedViewText 展示固定消息
 
@@ -1763,7 +1774,7 @@ main();
   requestFloatViewPermission(1000);
   var m = {
     "show": true,
-    "h": -1,
+    "h": 100,
     "textSize": 12,
     "backgroundColor": "#ffffff"
   }
@@ -1789,9 +1800,9 @@ main();
 function main() {
   var result = setLogText("开始运行...", "#ffffff", 18);
 }
+
 main();
 ```
-
 
 ### expandLogView 展开日志悬浮窗
 
@@ -1806,9 +1817,9 @@ function main() {
   sleep(1000)
   var result = expandLogView();
 }
+
 main();
 ```
-
 
 ### collapseLogView 折叠日志悬浮窗
 
@@ -1823,9 +1834,9 @@ function main() {
   sleep(1000)
   var result = collapseLogView();
 }
+
 main();
 ```
-
 
 ## 定时任务
 
