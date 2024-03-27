@@ -27,9 +27,8 @@ keywords: [EasyClick 自动化脚本 iOS免越狱 网络函数 ]
     * header:  HTTP 请求头，map参数,例如 {"UA":"test"}
     * cookie: HTTP 请求Cookie，map参数, 例如 {"a":1}
     * data:HTTP POST的数据，map参数, 例如 {"a":1}
-    * file:要上传的文件，集合参数，例如
-    * [{"key":"a1","fileName":"a.txt","filePath":"D:/"},{"key":"a1","fileName":"a.jpg","filePath":"D:/","contentType":"image/jpg"}]
-        - 其中contentType可有可无
+    * file:要上传的文件，例如
+    * {"file1":"a1.png","file2":"a2.png"}
     * responseCharset: 字符串，强制设置响应内容的编码集
 * @return Response 对象或者null
 
@@ -54,7 +53,7 @@ function http_request() {
   //header:{"UA":"test"}
   //cookie:{"a":1}
   //data:{"a":1}
-  //file:[{}]
+  //file:{}
   //responseCharset: string
   var md = utils.dataMd5("12345");
   var md2 = utils.fileMd5("D:/sb.png");
@@ -82,19 +81,11 @@ function http_request() {
     "pwd2": md,
     "md2": md2
   };
-  var file = [
+  var file =
     {
-      "key": "file",
-      "fileName": "f.png",
-      "filePath": "D:/sb.png"
-    },
-    {
-      "key": "file",
-      "fileName": "f2.png",
-      "filePath": "D:/sde.png",
-      "contentType": "image/png"
+      "file1": "a.png",
+      "file2": "f.png"
     }
-  ];
   var params = {
     "url": url,
     "method": "POST",
@@ -139,9 +130,8 @@ main();
     * header:  HTTP 请求头，map参数,例如 {"UA":"test"}
     * cookie: HTTP 请求Cookie，map参数, 例如 {"a":1}
     * data:HTTP POST的数据，map参数, 例如 {"a":1}
-    * file:要上传的文件，集合参数，例如
-    * [{"key":"a1","fileName":"a.txt","filePath":"D:/"},{"key":"a1","fileName":"a.jpg","filePath":"D:/","contentType":"image/jpg"}]
-        - 其中contentType可有可无
+    * file:要上传的文件，例如
+    * {"file1":"a1.png","file2":"a2.png"}
     * responseCharset: 字符串，强制设置响应内容的编码集
 * @return Response 对象或者null
 
@@ -166,7 +156,7 @@ function http_request() {
   //header:{"UA":"test"}
   //cookie:{"a":1}
   //data:{"a":1}
-  //file:[{}]
+  //file:{}
   //responseCharset: string
   var md = utils.dataMd5("12345");
   var md2 = utils.fileMd5("D:/sb.png");
@@ -194,19 +184,10 @@ function http_request() {
     "pwd2": md,
     "md2": md2
   };
-  var file = [
-    {
-      "key": "file",
-      "fileName": "f.png",
-      "filePath": "D:/sb.png"
-    },
-    {
-      "key": "file",
-      "fileName": "f2.png",
-      "filePath": "D:/sde.png",
-      "contentType": "image/png"
-    }
-  ];
+  var file = {
+    "file1": "a.png",
+    "file2": "b.png"
+  }
   var params = {
     "url": url,
     "method": "POST",
@@ -262,11 +243,10 @@ function main() {
 main();
 ```
 
-
 ## http.downloadFile2 断点续传下载文件
 
 * 下载远程文件到本地，支持断点续传
-* 适配EC iOS脱机版本3.2.0+  
+* 适配EC iOS脱机版本3.2.0+
 * @param remoteUrl 远程文件URL
 * @param file 要保存到本地的文件对象
 * @param timeout 下载超时，单位是毫秒
@@ -279,15 +259,15 @@ function main() {
   for (let i = 0; i < 10; i++) {
     var url = "http://192.168.2.19/1.mp4";
     let f = file.getSandBoxFilePath("1.mp4")
-    logd("download filepath: {}",f)
-    logd("file.exists() "+file.exists(f));
+    logd("download filepath: {}", f)
+    logd("file.exists() " + file.exists(f));
     // 如果删除了文件 就会从头开始下载 不会断点续传了
     //file.deleteAllFile(f)
     var x = http.downloadFile2(url, f, 10 * 1000, {"User-Agent": "test"});
     logd("download result-    " + x);
     if (x) {
-      let save =  utils.saveVideoToAlbumPath(f)
-      logd("save "+save)
+      let save = utils.saveVideoToAlbumPath(f)
+      logd("save " + save)
       return
     }
 
@@ -296,8 +276,6 @@ function main() {
 
 main();
 ```
-
-
 
 ## http.httpGet GET请求
 
